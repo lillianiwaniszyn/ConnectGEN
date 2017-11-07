@@ -15,3 +15,5 @@ C:\Users\Lillian\source\repos\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateR
 C:\Users\Lillian\source\repos\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
 C:\Users\Lillian\source\repos\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
 C:\Users\Lillian\source\repos\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\Lillian\source\repos\WpfApp1\WpfApp1\obj\Debug\existingAccount.g.cs
+C:\Users\Lillian\source\repos\WpfApp1\WpfApp1\obj\Debug\existingAccount.baml

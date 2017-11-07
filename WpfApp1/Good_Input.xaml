@@ -31,16 +31,16 @@
             </Label.Background>
         </Label>
         <Label Content="User Name:" Name="UserNameLabel" Foreground="#FFE0E0E0" Margin="89,88,237.667,206.667"/>
-        <TextBox Name="Fname" Margin="159,88,196.667,206.667"/>
+        <TextBox Name="Fname" Margin="159,88,196.667,206.667" Text="CoraBrown725"/>
         <Label Content="First Name:" Name="FNameLabel"  Foreground="#FFE0E0E0" Margin="89,119,237.667,175.667"/>
-        <TextBox Name="Lname" Margin="159,119,196.667,175.667" TextChanged="Lname_TextChanged"/>
+        <TextBox Name="Lname" Margin="159,119,196.667,175.667" TextChanged="Lname_TextChanged" Text="Cora"/>
         <Label Content="Last Name:" Foreground="#FFE0E0E0" Name="LNameLabel"  Margin="89,150,237.667,144.667"/>
-        <TextBox Name="Age" Margin="159,150,196.667,144.667"/>
+        <TextBox Name="Age" Margin="159,150,196.667,144.667" Text="Brown"/>
         <Label Content="PIN:" Name="PINLabel"  Foreground="#FFE0E0E0" Margin="89,176,237.667,118.667"/>
-        <TextBox Name="PIN1" Margin="159,181,337.667,113.667"/>
-        <TextBox Name="PIN2" Margin="186,181,310.667,113.667"/>
-        <TextBox Name="PIN3" Margin="213,181,283.667,113.667"/>
-        <TextBox Name="PIN4" Margin="240,181,256.667,113.667"/>
+        <TextBox Name="PIN1" Margin="159,181,337.667,113.667" Text="4"/>
+        <TextBox Name="PIN2" Margin="186,181,310.667,113.667" Text="4"/>
+        <TextBox Name="PIN3" Margin="213,181,283.667,113.667" Text="0"/>
+        <TextBox Name="PIN4" Margin="240,181,256.667,113.667" Text="0"/>
         <Label Content="Language:" Foreground="#FFE0E0E0" Name="LanguageLabel"  Margin="89,212,237.667,82.667"/>
         <ComboBox Margin="159,212,167.667,82.667">
             <ComboBoxItem IsSelected="True">English</ComboBoxItem>
@@ -49,8 +49,8 @@
 
         </ComboBox>
 
-        <Button Margin="159,256,167.667,25.667" Foreground="#BEBEBE" >Create Account</Button>
+        <Button Margin="159,256,167.667,25.667" >Create Account</Button>
         <Image Source="C:\Users\Lillian\Documents\CPSC 481\back-button.png" Margin="-40,246,386.667,9.667"/>
-        
+
     </Grid>
 </Window>

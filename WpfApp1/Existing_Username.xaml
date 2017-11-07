@@ -31,7 +31,7 @@
             </Label.Background>
         </Label>
         <Label Content="User Name:" Name="UserNameLabel" Foreground="#FFE0E0E0" Margin="89,88,237.667,206.667"/>
-        <TextBox Name="Fname" Margin="159,88,196.667,206.667"/>
+        <TextBox Name="Fname" Margin="159,88,196.667,206.667" Text="Lillian"/>
         <Label Content="First Name:" Name="FNameLabel"  Foreground="#FFE0E0E0" Margin="89,119,237.667,175.667"/>
         <TextBox Name="Lname" Margin="159,119,196.667,175.667" TextChanged="Lname_TextChanged"/>
         <Label Content="Last Name:" Foreground="#FFE0E0E0" Name="LNameLabel"  Margin="89,150,237.667,144.667"/>
@@ -51,6 +51,6 @@
 
         <Button Margin="159,256,167.667,25.667" Foreground="#BEBEBE" >Create Account</Button>
         <Image Source="C:\Users\Lillian\Documents\CPSC 481\back-button.png" Margin="-40,246,386.667,9.667"/>
-        
+        <Label Content="*Username already taken" Name="Error"  Foreground="#FF0000" Margin="327,88,-0.333,206.667"/>
     </Grid>
 </Window>
