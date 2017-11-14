@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -13,111 +13,203 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TranslateScreens
+namespace ConnectGenApp
 {
     /// <summary>
     /// Interaction logic for MessageScreen.xaml
     /// </summary>
     public partial class MessageScreen : Window
     {
+        // Windows; Need these variables in order to switch windows.
+        ProgramStartWindow restartWindow = new ProgramStartWindow();
+        ContactsScreen contactScreen = new ContactsScreen();
+
+        // Constructor
         public MessageScreen()
         {
-
-            // Next to chat name, put a profile picture section to see who they're talking to each other.
-            // Ask Shaheed about his code for the back button.
             InitializeComponent();
-            // Need these two lines. Otherwise, default setting will always be hidden. Therefore, clicking on the translate button won't work.
-            translationPopUp.Visibility = Visibility.Hidden;
-            // Should be set to hidden. But, for the screenshots, will need to have it visible.
-            messagePopUp.Visibility = Visibility.Visible;
+            //
+            // Test Messages are successively shown. Can remove.
+            SimulateIncomingMessage("Malik", "Hi Grandma Cora. It was very nice seeing you. I hope to see you again!");
+            SimulateOutgoingMessage("Thanks Malik. I had a lot of fun, too.");
+            SimulateIncomingMessage("Malik", "That is good to hear.");
+            SimulateIncomingMessage("Malik", "Will you be able to go to dinner tomorrow?");
+            //
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
+        // WORKS. Method for exiting the chat. Opens unto the contacts screen.
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Close();
+            contactScreen.Show();
         }
 
-        // In the event that the user clicks on the actual icon, which is covering part of the button.
-        private void BackArrowIcon_Click(object sender, RoutedEventArgs e)
-        {
-            BackButton_Click(sender, e);
-        }
-
+        // WORKS. Method for logging out of the chat. Opens onto the login page.
         private void LogOutButton_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Close();
+            restartWindow.Show();
         }
 
-        private void SendMessageButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
+        // NOT CREATED YET. Messages are cleared from the screen and are replaced with the picture pop-up window.
+        // Need to get Sabrina's code for this. (Currently moves to a user control: AddImageMenu)
         private void AddImageButton_Click(object sender, RoutedEventArgs e)
         {
-           
+            // Remove the messages from the chat. In its place, add an image menu.
+            msgDisplay.Children.Clear();
+            msgDisplay.Children.Add(new AddImageMenu());
         }
 
-        // In the event that the user clicks on the actual icon, which is covering part of the button.
-        private void AddImageIcon_Click(object sender, RoutedEventArgs e)
-        {
-            AddImageButton_Click(sender, e);
-        }
-
+        // NOT CREATED YET. Messages are cleared from the screen and replaced with the translate menu.
+        // Need to create a similar function on incoming messages. (IncomingMessages.xaml.cs --> TextBubble OnClick)
+        // Need to find a way to access translations (Google Translate?).
         private void TranslateButton_Click(object sender, RoutedEventArgs e)
         {
-            translationPopUp.Visibility = Visibility.Visible;
+            // Remove the messages from the chat. In its place, a translation menu is added.
+            msgDisplay.Children.Clear();
+            msgDisplay.Children.Add(new TranslationMenu());
         }
-
-        // In the event that the user clicks on the actual icon, which is covering part of the button.
-        private void TranslateIcon_Click(object sender, RoutedEventArgs e)
+        
+        // WORKS. Method for extracting the message from the text box and calling the SimulateOutgoingMessage function.
+        private void SendMessageButton_Click(object sender, RoutedEventArgs e)
         {
-            TranslateButton_Click(sender, e);
+            // Obtain the text message written in the messageBox.
+            string textMessage = messageBox.Text;
+            // Erases the message, such that user can write something new without erasing the previous message.
+            messageBox.Text = ""; 
+            // Call the SimulateOutgoingMessage function to put the message into the chat.
+            SimulateOutgoingMessage(textMessage);
         }
 
-        private void CloseTranslationPopUpButton_Click(object sender, RoutedEventArgs e)
+        // NOT COMPLETELY IMPLEMENTED.
+        // Need to Complete: Figure out if the user is on the chat of the sender.
+        // Need to Complete: Call SimulateMsgNotification function if not.
+        // Able to obtain the time that the message was sent. Calls the GetTimefromVar method to change the format.
+        // Creates a user control for IncomingMessages, which will contain the time stamp and the message formatted using the ChangeTextFormat function.
+        public void SimulateIncomingMessage(string senderName, string textMessage)
         {
-            translationPopUp.Visibility = Visibility.Hidden;
+            // If not on the chat of the sender,
+            // Call the SimulateMsgNotification function. User senderName as parameter.
+
+            // Otherwise,
+            // Get the date and time that the message was sent. Format it, such that only time is shown.
+            DateTime currentDateAndTime = DateTime.Now;
+            string timeStamp = GetTimefromVar(currentDateAndTime);
+            // Format the textMessage parameter, such that the message doesn't exceed the size of the text bubble.
+            string finalTextMessage = ChangeTextFormat(textMessage);
+
+            // Create the user control for IncomingMessages.
+            IncomingMessages newMessage = new IncomingMessages();
+            // Fill in user control using the formatted time stamp and text message.
+            newMessage.TimeStamp.Content = timeStamp;
+            newMessage.TextMsg.Content = finalTextMessage;
+            // Add userControl to stackPanel.
+            msgDisplay.Children.Add(newMessage);
         }
 
-        private void DoTranslationButton_Click(object sender, RoutedEventArgs e)
+        // WORKS. Method that changes the format of the DateTime variable to only contain the time.
+        public string GetTimefromVar(DateTime currentDateAndTime)
         {
+            // Converts the DateTime variable into a string variable.
+            string dateAndTime = currentDateAndTime.ToString();
+            // Set the currentTime to an empty string.
+            string currentTime = "";
+            // Knowing that indexes 0 to 10 contains the date, the index starts at 11.
+            int index = 11;
 
+            // While the end of the string hasn't been reached 'M' (Spaces already in String),
+            while (dateAndTime[index] != 'M')
+            {
+                // Add the character to the string containing the currentTime.
+                currentTime = currentTime + dateAndTime[index];
+                // Move into the next index.
+                index++;
+            }
+
+            // Since 'M' wasn't included in the while loop, 'M' needs to be added.
+            currentTime = currentTime + "M";
+
+            // Return the newly formatted time stamp.
+            return currentTime;
         }
 
-        private void CopyToTextBoxButton_Click(object sender, RoutedEventArgs e)
+        // WORKS. Limit for Text Bubble: 19 Characters per Row, 6 Rows
+        // Method that changes the format of the text message to fit into the text bubble.
+        public string ChangeTextFormat(string textMessage)
         {
+            // Start with an empty string for the final text message.
+            string finalTextMessage = "";
+            // Split the text message, such that each index is a word.
+            string[] TextMessageWords = textMessage.Split(null);
 
+            // Start with an empty line, index of 0, and a character count of 0.
+            string currentLine = "";
+            int index = 0;
+            int charCount = currentLine.Length;
+
+            // While the index is not out of bounds,
+            while (index < TextMessageWords.Length)
+            {
+                // Create a temporary line that contains the current line and the new word.
+                string tempLine = currentLine + " " + TextMessageWords[index];
+                // Create a variable that counts the number of characters in this new line.
+                int temp = tempLine.Length;
+                // If the temporary line has less characters than the maximum allowed for each row,
+                if (temp < 20)
+                {
+                    // Set the current line to contain the new word. 
+                    currentLine = tempLine;
+                    // Count the new character count, which now contains the new word.
+                    charCount = currentLine.Length;
+                }
+                // But if the new word causes the line to exceed the maximum number of characters,
+                else
+                {
+                    // The previous line, from before the word was added, is a part of the final message.
+                    // As well, a new line is created. 
+                    finalTextMessage = finalTextMessage + currentLine + Environment.NewLine;
+                    // The current line will now contain only the new word.
+                    currentLine = "" + TextMessageWords[index];
+                    // The amount of characters of this line depends on the length of the new word.
+                    charCount = currentLine.Length;
+                }
+
+                // Move on to the new word of the array.
+                index++;
+            }
+
+            // Add last line created to the final message.
+            finalTextMessage = finalTextMessage + currentLine;
+
+            // Return this final message to be later added to the user control. 
+            return finalTextMessage;
         }
 
-        private void CloseMsgPopUpButton_Click(object sender, RoutedEventArgs e)
+        // WORKS. 
+        // Able to obtain the time that the message was sent. Calls the GetTimefromVar method to change the format.
+        // Creates a user control for OutgoingMessages, which will contain the time stamp and the message formatted using the ChangeTextFormat function.
+        public void SimulateOutgoingMessage(string textMessage)
         {
-            messagePopUp.Visibility = Visibility.Hidden;
+            // Get the date and time that the message was sent. Format it, such that only time is shown.
+            DateTime currentDateAndTime = DateTime.Now;
+            string timeStamp = GetTimefromVar(currentDateAndTime);
+            // Format the textMessage parameter, such that the message doesn't exceed the size of the text bubble.
+            string finalTextMessage = ChangeTextFormat(textMessage);
+
+            // Create the user control for OutgoingMessages.
+            OutgoingMessages newMessage = new OutgoingMessages();
+            // Fill in user control using the formatted time stamp and text message.
+            newMessage.TimeStamp.Content = timeStamp;
+            newMessage.TextMsg.Content = finalTextMessage;
+            // Add userControl to stackPanel.
+            msgDisplay.Children.Add(newMessage);
         }
 
-        private void ChangeChatButton_Click(object sender, RoutedEventArgs e)
+
+        public void SimulateMsgNotification(string senderName)
         {
-
+            
         }
-
-        private void initialMessageBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void reverseLangButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void reverseLangButtonIcon_Click(object sender, RoutedEventArgs e)
-        {
-            reverseLangButton_Click(sender, e);
-        }
+        
     }
 }
