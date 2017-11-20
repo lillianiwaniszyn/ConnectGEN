@@ -1,4 +1,4 @@
-﻿<Window x:Class="WpfApp1.Window1"
+﻿<Window x:Class="WpfApp1.Good_Input"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -33,7 +33,7 @@
         <Label Content="User Name:" Name="UserNameLabel" Foreground="#FFE0E0E0" Margin="89,88,237.667,206.667"/>
         <TextBox Name="Fname" Margin="159,88,196.667,206.667" Text="CoraBrown725"/>
         <Label Content="First Name:" Name="FNameLabel"  Foreground="#FFE0E0E0" Margin="89,119,237.667,175.667"/>
-        <TextBox Name="Lname" Margin="159,119,196.667,175.667" TextChanged="Lname_TextChanged" Text="Cora"/>
+        <TextBox Name="Lname" Margin="159,119,196.667,175.667"  Text="Cora"/>
         <Label Content="Last Name:" Foreground="#FFE0E0E0" Name="LNameLabel"  Margin="89,150,237.667,144.667"/>
         <TextBox Name="Age" Margin="159,150,196.667,144.667" Text="Brown"/>
         <Label Content="PIN:" Name="PINLabel"  Foreground="#FFE0E0E0" Margin="89,176,237.667,118.667"/>

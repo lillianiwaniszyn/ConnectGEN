@@ -1,4 +1,4 @@
-﻿<Window Background ="Transparent" x:Class="WpfApp1.MainWindow"
+﻿<Window Background ="Transparent" x:Class="WpfApp1.ForgotPIN"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -29,9 +29,9 @@
         <Label Content="Contact First Name:" Name="ContactLName"  Foreground="#FFE0E0E0" Margin="73,184,253.667,110.667"/>
         <TextBox Name="Fname" Margin="196,91,159.667,203.667"/>
         <Label Content="Please enter your First Name, Last Name, and name of one contact&#x0a; associated with your account so we can verify your identity." Name="FNameLabel"  Foreground="#FFE0E0E0" Margin="73,50,40.667,211.667" FontWeight="Bold"/>
-        <TextBox Name="Lname" Margin="196,122,159.667,172.667" TextChanged="Lname_TextChanged"/>
-        <TextBox Name="CFname" Margin="196,153,159.667,141.667" TextChanged="Lname_TextChanged"/>
-        <TextBox Name="CLname" Margin="196,184,159.667,110.667" TextChanged="Lname_TextChanged"/>
+        <TextBox Name="Lname" Margin="196,122,159.667,172.667" />
+        <TextBox Name="CFname" Margin="196,153,159.667,141.667" />
+        <TextBox Name="CLname" Margin="196,184,159.667,110.667" />
         <Label Content="Your Last Name:" Foreground="#FFE0E0E0" Name="LNameLabel"  Margin="89,122,237.667,172.667"/>
         <Button Margin="167,272,159.667,9.667"  >Restore Account</Button>
         <Image Source="C:\Users\Lillian\Documents\CPSC 481\back-button.png" Margin="-40,246,386.667,9.667"/>

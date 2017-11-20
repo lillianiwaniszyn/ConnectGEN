@@ -60,6 +60,18 @@
     <Compile Include="newAccount.xaml.cs">
       <DependentUpon>newAccount.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Existing_Username.xaml.cs">
+      <DependentUpon>Existing_Username.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Good_Input.xaml.cs">
+      <DependentUpon>Good_Input.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPIN.xaml.cs">
+      <DependentUpon>ForgotPIN.xaml</DependentUpon>
+    </Compile>
     <Page Include="existingAccount.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -77,6 +89,22 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="newAccount.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Existing_Username.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Good_Input.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ForgotPIN.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

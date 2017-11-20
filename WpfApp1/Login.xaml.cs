@@ -21,7 +21,7 @@ namespace WpfApp1
     {
         public Window3()
         {
-            InitializeComponent();
+           
         }
     }
 }

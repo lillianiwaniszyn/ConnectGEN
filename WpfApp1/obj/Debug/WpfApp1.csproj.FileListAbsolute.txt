@@ -17,3 +17,11 @@ C:\Users\Lillian\source\repos\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
 C:\Users\Lillian\source\repos\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
 C:\Users\Lillian\source\repos\WpfApp1\WpfApp1\obj\Debug\existingAccount.g.cs
 C:\Users\Lillian\source\repos\WpfApp1\WpfApp1\obj\Debug\existingAccount.baml
+C:\Users\Lillian\source\repos\WpfApp1\WpfApp1\obj\Debug\Login.g.cs
+C:\Users\Lillian\source\repos\WpfApp1\WpfApp1\obj\Debug\Existing_Username.g.cs
+C:\Users\Lillian\source\repos\WpfApp1\WpfApp1\obj\Debug\Good_Input.g.cs
+C:\Users\Lillian\source\repos\WpfApp1\WpfApp1\obj\Debug\ForgotPIN.g.cs
+C:\Users\Lillian\source\repos\WpfApp1\WpfApp1\obj\Debug\Login.baml
+C:\Users\Lillian\source\repos\WpfApp1\WpfApp1\obj\Debug\Existing_Username.baml
+C:\Users\Lillian\source\repos\WpfApp1\WpfApp1\obj\Debug\Good_Input.baml
+C:\Users\Lillian\source\repos\WpfApp1\WpfApp1\obj\Debug\ForgotPIN.baml
