@@ -25,3 +25,6 @@ C:\Users\Lillian\source\repos\WpfApp1\WpfApp1\obj\Debug\Existing_Account.g.cs
 C:\Users\Lillian\source\repos\WpfApp1\WpfApp1\obj\Debug\Existing_Account.baml
 C:\Users\Lillian\source\repos\WpfApp1\WpfApp1\obj\Debug\LoginMainWindow.g.cs
 C:\Users\Lillian\source\repos\WpfApp1\WpfApp1\obj\Debug\LoginMainWindow.baml
+C:\Users\hanum.lee\Source\Repos\ConnectGEN3\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\hanum.lee\Source\Repos\ConnectGEN3\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\hanum.lee\Source\Repos\ConnectGEN3\WpfApp1\obj\Debug\WpfApp1.pdb

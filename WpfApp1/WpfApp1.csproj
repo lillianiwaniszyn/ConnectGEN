@@ -54,8 +54,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AudioCallWaiting.xaml.cs">
+      <DependentUpon>AudioCallWaiting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="existingAccount.xaml.cs">
+      <DependentUpon>existingAccount.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Existing_Account.xaml.cs">
       <DependentUpon>Existing_Account.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IncomingMessages.xaml.cs">
+      <DependentUpon>IncomingMessages.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MessageScreen.xaml.cs">
+      <DependentUpon>MessageScreen.xaml</DependentUpon>
     </Compile>
     <Compile Include="NewAccount.xaml.cs">
       <DependentUpon>NewAccount.xaml</DependentUpon>
@@ -72,7 +87,25 @@
     <Compile Include="ForgotPIN.xaml.cs">
       <DependentUpon>ForgotPIN.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TranslationMenu.xaml.cs">
+      <DependentUpon>TranslationMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Videocall.xaml.cs">
+      <DependentUpon>Videocall.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AudioCallWaiting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="existingAccount.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Existing_Account.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="IncomingMessages.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -88,6 +121,14 @@
       <DependentUpon>LoginMainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MessageScreen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="NewAccount.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -108,8 +149,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="OutgoingMessages.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TranslationMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Videocall.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OutgoingMessages.xaml.cs">
+      <DependentUpon>OutgoingMessages.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
