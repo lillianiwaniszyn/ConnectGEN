@@ -17,11 +17,11 @@ namespace WpfApp1
     /// <summary>
     /// Interaction logic for Window3.xaml
     /// </summary>
-    public partial class Window3 : Window
+    public partial class Login : Window
     {
-        public Window3()
+        public Login()
         {
-           
+            InitializeComponent();
         }
     }
 }

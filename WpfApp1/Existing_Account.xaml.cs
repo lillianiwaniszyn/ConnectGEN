@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Interaction logic for Window5.xaml
+    /// Interaction logic for Window2.xaml
     /// </summary>
-    public partial class Good_Input : Window
+    public partial class Exisitng_Account : Window
     {
-        public Good_Input()
+        public Exisitng_Account()
         {
             InitializeComponent();
         }

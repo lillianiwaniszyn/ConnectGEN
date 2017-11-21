@@ -24,8 +24,12 @@
                 <ImageBrush/>
             </Label.Background>
         </Label>
-        <Image Source="C:\Users\Lillian\Documents\CPSC 481\plus3.png" Margin="155,204,159.667,26.667"/>
+        <Button Name="btnAnswer4" Click="OnClick1" Margin="159,209,207.667,42.667" Background="Transparent">
+            <Image Source="images/plus3.png"></Image>
+        </Button>
+        
         <Label HorizontalContentAlignment="Center" Name="addAccount"  
+               
     Content="Create New Account"  Foreground="#FFE0E0E0"
     Canvas.Left="10" Canvas.Top="10"   
     FontSize="20" FontFamily="Arial Black"  

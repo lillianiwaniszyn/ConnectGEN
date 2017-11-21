@@ -17,16 +17,21 @@ namespace WpfApp1
     /// <summary>
     /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class NewAccount : Window
     {
-        public Window1()
+        
+        public NewAccount()
         {
             InitializeComponent();
         }
-
-        private void Lname_TextChanged(object sender, TextChangedEventArgs e)
+        void OnClick2(object sender, RoutedEventArgs e)
         {
+            MainWindow mw = new MainWindow();
+            mw.Show();
+            this.Close();
 
         }
+
+
     }
 }

@@ -54,11 +54,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="existingAccount.xaml.cs">
-      <DependentUpon>existingAccount.xaml</DependentUpon>
+    <Compile Include="Existing_Account.xaml.cs">
+      <DependentUpon>Existing_Account.xaml</DependentUpon>
     </Compile>
-    <Compile Include="newAccount.xaml.cs">
-      <DependentUpon>newAccount.xaml</DependentUpon>
+    <Compile Include="NewAccount.xaml.cs">
+      <DependentUpon>NewAccount.xaml</DependentUpon>
     </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
@@ -72,11 +72,11 @@
     <Compile Include="ForgotPIN.xaml.cs">
       <DependentUpon>ForgotPIN.xaml</DependentUpon>
     </Compile>
-    <Page Include="existingAccount.xaml">
+    <Page Include="Existing_Account.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="MainWindow.xaml">
+    <Page Include="LoginMainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -84,11 +84,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="LoginMainWindow.xaml.cs">
+      <DependentUpon>LoginMainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="newAccount.xaml">
+    <Page Include="NewAccount.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -134,6 +134,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\plus3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\back-button.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

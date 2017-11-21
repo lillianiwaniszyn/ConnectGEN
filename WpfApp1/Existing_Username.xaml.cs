@@ -17,11 +17,11 @@ namespace WpfApp1
     /// <summary>
     /// Interaction logic for Window4.xaml
     /// </summary>
-    public partial class Window4 : Window
+    public partial class Existing_Username : Window
     {
-        public Window4()
+        public Existing_Username()
         {
-          
+            InitializeComponent();
         }
     }
 }

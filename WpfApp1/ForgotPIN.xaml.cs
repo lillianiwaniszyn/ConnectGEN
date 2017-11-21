@@ -17,11 +17,12 @@ namespace WpfApp1
     /// <summary>
     /// Interaction logic for Window6.xaml
     /// </summary>
-    public partial class Window6 : Window
+    public partial class ForgotPIN : Window
     {
-        public Window6()
+        public ForgotPIN()
         {
-
+            InitializeComponent();
         }
+ 
     }
 }

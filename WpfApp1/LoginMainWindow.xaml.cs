@@ -20,9 +20,20 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
+        NewAccount newAccount1 = new NewAccount();
+
         public MainWindow()
         {
             InitializeComponent();
+
+        }
+        void OnClick1(object sender, RoutedEventArgs e)
+        {
+
+
+            newAccount1.Show();
+            this.Close();
+        
         }
     }
 }
