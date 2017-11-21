@@ -15,7 +15,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Rectangle HorizontalAlignment="Left" Height="319" Stroke="Black" VerticalAlignment="Top" Width="106">
+        <Rectangle HorizontalAlignment="Left" Height="319" Stroke="Black" VerticalAlignment="Top" Width="92">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -23,17 +23,17 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Button x:Name="logoutButton" HorizontalAlignment="Left" Height="54" Margin="10,255,0,0" VerticalAlignment="Top" Width="82" Background="Transparent" >
-            <Image Source="Images/logout.png" Height="53" Width="98" />
+        <Button x:Name="logoutButton" HorizontalAlignment="Left" Height="54" Margin="10,255,0,0" VerticalAlignment="Top" Width="65" Background="Transparent" Click="logoutButton_Click" >
+            <Image Source="Images/logout.png" Height="53" Width="72" />
         </Button>
-        <Label x:Name="unreadLabel" Content="    UNREAD" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="106" Foreground="White" FontWeight="Bold" FontSize="14"/>
-        <Button x:Name="middleContact" HorizontalAlignment="Left" Height="123" Margin="249,99,0,0" VerticalAlignment="Top" Width="125" Background="Transparent" >
+        <Label x:Name="unreadLabel" Content="   UNREAD" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="92" Foreground="White" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="middleContact" HorizontalAlignment="Left" Height="123" Margin="249,99,0,0" VerticalAlignment="Top" Width="125" Background="Transparent" Click="middleContact_Click_1" >
             <Image Source="Images/jazmineBrown.png" Height="113" Width="133"/>
         </Button>
-        <Button x:Name="leftContact" HorizontalAlignment="Left" VerticalAlignment="Top" Width="83" Margin="161,119,0,0" Height="80" Background="Transparent">
+        <Button x:Name="leftContact" HorizontalAlignment="Left" VerticalAlignment="Top" Width="83" Margin="161,119,0,0" Height="80" Background="Transparent" Click="leftContact_Click">
             <Image Source="Images/joaquinSimmons.jpg" Height="53" Width="84"/>
         </Button>
-        <Button x:Name="rightContact" HorizontalAlignment="Left" VerticalAlignment="Top" Width="83" Margin="379,119,0,0" Height="80" Background="Transparent">
+        <Button x:Name="rightContact" HorizontalAlignment="Left" VerticalAlignment="Top" Width="83" Margin="379,119,0,0" Height="80" Background="Transparent" Click="rightContact_Click">
             <Image Source="Images/malikBrown.jpg"/>
         </Button>
         <Button x:Name="leftArrow" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Margin="111,141,0,0" Height="31" Background="Transparent" >
@@ -59,5 +59,26 @@
                 </Image.RenderTransform>
             </Image>
         </Button>
+        <Button x:Name="addContactImageButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Margin="111,10,0,0" Height="42" Background =" Transparent" Click="addContactImageButton_Click">
+            <Image Source ="images/plus3.png"/>
+        </Button>
+        <Button x:Name= "myProfilePictureButton" HorizontalAlignment="Left" Height="35" Margin="356,10,0,0" VerticalAlignment="Top" Width="35" Background="Transparent" Click="myProfilePictureButton_Click">
+            <Image Source="images/coraBrown.jpg"/>
+        </Button>
+        <Button x:Name ="myProfileButton" Content="CORA BROWN" HorizontalAlignment="Left" VerticalAlignment="Top" Width="92" Margin="391,19,0,0" Foreground="White" Background="Transparent" FontWeight="Bold" Click="myProfileButton_Click"/>
+        <Button x:Name ="addContactButton" Content="ADD CONTACT" HorizontalAlignment="Left" Height="25" Margin="92,45,0,0" VerticalAlignment="Top" Width="79" Foreground="White" Background="Transparent" Click="addContactButton_Click" FontSize="10" FontWeight="Bold"/>
+        <Slider HorizontalAlignment="Left" Height="29" Margin="161,290,0,0" VerticalAlignment="Top" Width="301"/>
+        <Button x:Name ="messageIcon" HorizontalAlignment="Left" Height="56" Margin="214,227,0,0" VerticalAlignment="Top" Width="56" Background="Transparent" Click="messageIcon_Click">
+            <Image Source="images/message.png" Height="51" Width="56"/>
+        </Button >
+        <Button x:Name ="audioIcon" HorizontalAlignment="Left" Height="57" Margin="275,233,0,0" VerticalAlignment="Top" Width="57" Background="Transparent" Click="audioIcon_Click">
+            <Image Source="images/call.png "/>
+        </Button >
+        <Button x:Name ="videoIcon" HorizontalAlignment="Left" VerticalAlignment="Top" Width="56" Margin="337,227,0,0" Height="56" Background="Transparent" Click="videoIcon_Click">
+            <Image Source="images/video.png"/>
+        </Button >
+        <Button x:Name="infoIcon" HorizontalAlignment="Left" Height="49" Margin="287,45,0,0" VerticalAlignment="Top" Width="49" Background="Transparent" Click="infoIcon_Click">
+            <Image Source ="images/info2.png"/>
+        </Button >
     </Grid>
 </Window>

@@ -18,10 +18,72 @@ namespace WpfApp1
     /// Interaction logic for Window1.xaml
     /// </summary>
     public partial class Window1 : Window
-    {
+    { 
+
         public Window1()
         {
             InitializeComponent();
+        }
+
+        private void middleContact_Click(object sender, RoutedEventArgs e)
+        {
+            // make the pop-ups visible
+        }
+
+        private void myProfileButton_Click(object sender, RoutedEventArgs e)
+        {
+            // move to edit my profile page
+        }
+
+        private void myProfilePictureButton_Click(object sender, RoutedEventArgs e)
+        {
+            // move to edit my profile page
+        }
+
+        private void addContactImageButton_Click(object sender, RoutedEventArgs e)
+        {
+            // move to search for a contact page 
+        }
+
+        private void logoutButton_Click(object sender, RoutedEventArgs e)
+        {
+            // move to main page when app opened (with profile choices)
+        }
+
+        private void addContactButton_Click(object sender, RoutedEventArgs e)
+        {
+            // move to search for a contact page 
+        }
+
+        private void rightContact_Click(object sender, RoutedEventArgs e)
+        {
+            // move contact to center, then make pop-ups visible
+        }
+
+        private void leftContact_Click(object sender, RoutedEventArgs e)
+        {
+            // move contact to center, then make pop-ups visible 
+        }
+
+        private void infoIcon_Click(object sender, RoutedEventArgs e)
+        {
+            // move to edit contact page
+        }
+
+        private void messageIcon_Click(object sender, RoutedEventArgs e)
+        {
+            // move to message screen 
+        }
+
+        private void audioIcon_Click(object sender, RoutedEventArgs e)
+        {
+            // move to audio call screen
+        }
+
+        private void videoIcon_Click(object sender, RoutedEventArgs e)
+        {
+            // move to video call screen
+
         }
     }
 }
