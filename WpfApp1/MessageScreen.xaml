@@ -64,7 +64,7 @@
                 </TextBox.Background>
             </TextBox>
             <Button x:Name="sendMessageButton" Canvas.Left="1133" Canvas.Top="642" Height="84" Width="66" Background ="Transparent"  Click="SendMessageButton_Click" BorderBrush="{x:Null}" >
-                <Image Source="send.png" Height="73" Width="64"/>
+                <Image Source="images/send.png" Height="73" Width="64"/>
             </Button>
             <ScrollViewer Canvas.Left="262" Canvas.Top="162" Width="979" CanContentScroll="True">
                 <StackPanel x:Name="msgDisplay" Height="444" Canvas.Left="260" Canvas.Top="162" Width="980"/>
