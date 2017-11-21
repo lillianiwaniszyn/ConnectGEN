@@ -25,24 +25,30 @@
                 <ImageBrush/>
             </Label.Background>
         </Label>
-        <Image Source="C:\Users\Lillian\Documents\CPSC 481\plus3.png" Margin="130,259,199.667,9.667" RenderTransformOrigin="0.561,0.741" Grid.Column="1"/>
+
+
         <Label HorizontalContentAlignment="Center" Name="addAccount"  
     Content="Create New Account"  Foreground="#FFE0E0E0"   
     FontSize="20" FontFamily="Arial Black"  
     FontWeight="Bold" Margin="81,224,141.667,45.667" Grid.Column="1"/>
-        <Button Margin="97,87,141.667,169.667" Grid.Column="1">
+        <Button Margin="97,87,141.667,169.667" Grid.Column="1" Click="OnClickB">
             <StackPanel Orientation="Horizontal">
-                <Image Source="C:\Users\Lillian\Documents\CPSC 481\corabrown.jpg"/>
+                <Image Source="images/corabrown.jpg"/>
                 <TextBlock Text="Cora Brown:&#x0a;Press to Login" VerticalAlignment="Center" FontSize="20" FontFamily="Arial Black" Width="185"/>
             </StackPanel>
 
         </Button>
-        <Button Margin="97,160,141.667,96.667" Grid.Column="1">
+        <Button Margin="97,160,141.667,96.667" Grid.Column="1" Click="OnClickC">
             <StackPanel Orientation="Horizontal">
-                <Image Source="C:\Users\Lillian\Documents\CPSC 481\blank.png" Width="56"/>
+                <Image Source="images/blank.png" Width="56"/>
                 <TextBlock Text="Other User:&#x0a;Press to Login" VerticalAlignment="Center" FontSize="20" FontFamily="Arial Black" Width="185"/>
             </StackPanel>
 
         </Button>
+        <Button BorderThickness="0"  
+    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="198,266,0,0" VerticalAlignment="Top" Width="75" Background="Transparent" Click="OnClickA">
+            <Image Source ="images/plus3.png" />
+        </Button>
+
     </Grid>
 </Window>

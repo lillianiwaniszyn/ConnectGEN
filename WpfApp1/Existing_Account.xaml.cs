@@ -23,5 +23,30 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+        void OnClickA(object sender, RoutedEventArgs e)
+        {
+
+
+            NewAccount na = new NewAccount();
+            na.Show();
+            this.Close();
+
+        }
+        void OnClickB(object sender, RoutedEventArgs e)
+        {
+
+
+            //to do... implement where to go for main screen
+            this.Close();
+
+        }
+        void OnClickC(object sender, RoutedEventArgs e)
+        {
+
+            Login l = new Login();
+            l.Show();
+            this.Close();
+
+        }
     }
 }
