@@ -54,6 +54,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddContactList.xaml.cs">
+      <DependentUpon>AddContactList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddContacts.xaml.cs">
+      <DependentUpon>AddContacts.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AudioCallWaiting.xaml.cs">
       <DependentUpon>AudioCallWaiting.xaml</DependentUpon>
     </Compile>
@@ -93,6 +99,14 @@
     <Compile Include="Videocall.xaml.cs">
       <DependentUpon>Videocall.xaml</DependentUpon>
     </Compile>
+    <Page Include="AddContactList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddContacts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AudioCallWaiting.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

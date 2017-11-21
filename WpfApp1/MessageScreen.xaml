@@ -16,7 +16,7 @@
                     </LinearGradientBrush>
                 </Canvas.Background>
                 <Button x:Name="backButton"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="235" Canvas.Left="10" Canvas.Top="11" Background="Transparent" Click="BackButton_Click" Height="120" BorderBrush="{x:Null}">
-                    <Image Name="backArrowImg" Source="back.png" Stretch="Fill" Height="120" Width="164"/>
+                    <Image Name="backArrowImg" Source="images/back.png" Stretch="Fill" Height="120" Width="164"/>
                 </Button>
                 <Label Content="BACK" Foreground="White" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="35" Canvas.Left="86" Canvas.Top="44" Width="122"/>
                 <Button x:Name="logOutButton" Foreground="White" HorizontalAlignment="Left" Height="124" VerticalAlignment="Top" Width="154" Background="Transparent" Click="LogOutButton_Click" Canvas.Left="50" Canvas.Top="590" BorderBrush="{x:Null}">
