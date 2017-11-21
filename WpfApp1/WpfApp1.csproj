@@ -192,10 +192,57 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\plus3.png" />
+    <Resource Include="images\accept.png" />
+    <Resource Include="images\acceptcall.png" />
+    <Resource Include="images\accepticon.png" />
+    <Resource Include="images\acceptvideo.png" />
+    <Resource Include="images\AddImage.png" />
+    <Resource Include="images\Arrow_sharp_red_left.png" />
+    <Resource Include="images\back.png" />
+    <Resource Include="images\cancel.png" />
+    <Resource Include="images\cancelicon.png" />
+    <Resource Include="images\checkmark.png" />
+    <Resource Include="images\checkmark2.png" />
+    <Resource Include="images\cimoneSimmons.jpeg" />
+    <Resource Include="images\coraBrown.jpg" />
+    <Resource Include="images\decline.png" />
+    <Resource Include="images\declineicon.png" />
+    <Resource Include="images\declinevideo.png" />
+    <Resource Include="images\delete.png" />
+    <Resource Include="images\deleteicon.png" />
+    <Resource Include="images\edit.png" />
+    <Resource Include="images\edit.png.png" />
+    <Resource Include="images\endcall.png" />
+    <Resource Include="images\face.png" />
+    <Resource Include="images\headshot.jpg" />
+    <Resource Include="images\jazmineBrown.png" />
+    <Resource Include="images\joaquinSimmons.jpg" />
+    <Resource Include="images\kid1.png" />
+    <Resource Include="images\kid2.png" />
+    <Resource Include="images\kid3.png" />
+    <Resource Include="images\leftArrow.png" />
+    <Resource Include="images\malikBrown.jpg" />
+    <Resource Include="images\plus.png" />
+    <Resource Include="images\plushalf.png" />
+    <Resource Include="images\readme.txt" />
+    <Resource Include="images\reverseArrows.png" />
+    <Resource Include="images\save.png" />
+    <Resource Include="images\saveicon.ico" />
+    <Resource Include="images\scrollArrow.png" />
+    <Resource Include="images\search.png" />
+    <Resource Include="images\send.png" />
+    <Resource Include="images\simon.jpg" />
+    <Resource Include="images\simone.jpg" />
+    <Resource Include="images\TextBubble.png" />
+    <Resource Include="images\TranslateIcon.png" />
+    <Resource Include="images\triangleDown.png" />
+    <Resource Include="images\triangleUp.png" />
+    <Resource Include="images\whitearrow.png" />
+    <Resource Include="images\whiteedit.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\back-button.png" />
+    <Resource Include="images\plus3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
