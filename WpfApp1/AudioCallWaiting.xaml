@@ -25,7 +25,7 @@
         </Button>
         <Button x:Name="End_Call_Copy1" Content="" VerticalContentAlignment="Center" Margin="355,292,150,74">
             <Button.Background>
-                <ImageBrush ImageSource="images/triangleUp.png"/>
+                <ImageBrush ImageSource="images/triangleDown.png"/>
             </Button.Background>
         </Button>
         <Label x:Name="Waiting" Content="W a i t i n g" HorizontalAlignment="Left" Height="58" Margin="195,209,0,0" VerticalAlignment="Top" Width="231" FontSize="36" Foreground="White" HorizontalContentAlignment="Center" FontFamily="Arial">
