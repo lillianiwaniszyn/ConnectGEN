@@ -93,6 +93,9 @@
     <Compile Include="Videocall.xaml.cs">
       <DependentUpon>Videocall.xaml</DependentUpon>
     </Compile>
+    <Compile Include="mainScreen.xaml.cs">
+      <DependentUpon>mainScreen.xaml</DependentUpon>
+    </Compile>
     <Page Include="AudioCallWaiting.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -160,6 +163,10 @@
     <Page Include="Videocall.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="mainScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -243,6 +250,9 @@
   <ItemGroup>
     <Resource Include="images\back-button.png" />
     <Resource Include="images\plus3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\logout.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
