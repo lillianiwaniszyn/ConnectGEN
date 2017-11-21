@@ -22,12 +22,12 @@
         <Label x:Name="Volume" Content="Volume" Height="41" Canvas.Left="21" Canvas.Top="118" Width="87" Foreground="#FFDED5D5" HorizontalContentAlignment="Center" FontSize="16" OpacityMask="Black" FontFamily="Arial"/>
         <Button x:Name="End_Call_Copy" Content="" Height="53" Canvas.Left="21" Canvas.Top="46" Width="87" OpacityMask="Black">
             <Button.Background>
-                <ImageBrush ImageSource="triangleUp.png"/>
+                <ImageBrush ImageSource="images/triangleUp.png"/>
             </Button.Background>
         </Button>
         <Button x:Name="End_Call_Copy1" Content="" Height="53" Canvas.Left="21" Canvas.Top="164" Width="87" VerticalContentAlignment="Center" OpacityMask="Black">
             <Button.Background>
-                <ImageBrush ImageSource="triangleDown.png"/>
+                <ImageBrush ImageSource="images/triangleDown.png"/>
             </Button.Background>
         </Button>
         <Label x:Name="Waiting" Content="W a i t i n g" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="392" FontSize="48" Foreground="White" Canvas.Left="147" Canvas.Top="250" FontFamily="Arial" HorizontalContentAlignment="Center" Visibility="Hidden">
