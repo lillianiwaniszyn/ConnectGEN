@@ -51,3 +51,4 @@ C:\Users\sabrina.lakhdhir\Source\Repos\ConnectGEN\WpfApp1\obj\Debug\mainScreen.g
 C:\Users\sabrina.lakhdhir\Source\Repos\ConnectGEN\WpfApp1\obj\Debug\App.g.cs
 C:\Users\sabrina.lakhdhir\Source\Repos\ConnectGEN\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
 C:\Users\sabrina.lakhdhir\Source\Repos\ConnectGEN\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\sabrina.lakhdhir\Source\Repos\ConnectGEN\WpfApp1\obj\Debug\PopUps.g.cs

@@ -68,17 +68,5 @@
         <Button x:Name ="myProfileButton" Content="CORA BROWN" HorizontalAlignment="Left" VerticalAlignment="Top" Width="92" Margin="391,19,0,0" Foreground="White" Background="Transparent" FontWeight="Bold" Click="myProfileButton_Click"/>
         <Button x:Name ="addContactButton" Content="ADD CONTACT" HorizontalAlignment="Left" Height="25" Margin="92,45,0,0" VerticalAlignment="Top" Width="79" Foreground="White" Background="Transparent" Click="addContactButton_Click" FontSize="10" FontWeight="Bold"/>
         <Slider HorizontalAlignment="Left" Height="29" Margin="161,290,0,0" VerticalAlignment="Top" Width="301"/>
-        <Button x:Name ="messageIcon" HorizontalAlignment="Left" Height="56" Margin="214,227,0,0" VerticalAlignment="Top" Width="56" Background="Transparent" Click="messageIcon_Click">
-            <Image Source="images/message.png" Height="51" Width="56"/>
-        </Button >
-        <Button x:Name ="audioIcon" HorizontalAlignment="Left" Height="57" Margin="275,233,0,0" VerticalAlignment="Top" Width="57" Background="Transparent" Click="audioIcon_Click">
-            <Image Source="images/call.png "/>
-        </Button >
-        <Button x:Name ="videoIcon" HorizontalAlignment="Left" VerticalAlignment="Top" Width="56" Margin="337,227,0,0" Height="56" Background="Transparent" Click="videoIcon_Click">
-            <Image Source="images/video.png"/>
-        </Button >
-        <Button x:Name="infoIcon" HorizontalAlignment="Left" Height="49" Margin="287,45,0,0" VerticalAlignment="Top" Width="49" Background="Transparent" Click="infoIcon_Click">
-            <Image Source ="images/info2.png"/>
-        </Button >
     </Grid>
 </Window>

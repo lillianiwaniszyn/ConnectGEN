@@ -87,6 +87,9 @@
     <Compile Include="ForgotPIN.xaml.cs">
       <DependentUpon>ForgotPIN.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PopUps.xaml.cs">
+      <DependentUpon>PopUps.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TranslationMenu.xaml.cs">
       <DependentUpon>TranslationMenu.xaml</DependentUpon>
     </Compile>
@@ -155,6 +158,10 @@
     <Page Include="OutgoingMessages.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PopUps.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="TranslationMenu.xaml">
       <Generator>MSBuild:Compile</Generator>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConnectGenApp;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +19,9 @@ namespace WpfApp1
     /// Interaction logic for Window1.xaml
     /// </summary>
     public partial class Window1 : Window
-    { 
+    {
+        PopUps popupIcons = new PopUps();
+        Exisitng_Account existingAccount = new Exisitng_Account();
 
         public Window1()
         {
@@ -28,62 +31,50 @@ namespace WpfApp1
         private void middleContact_Click(object sender, RoutedEventArgs e)
         {
             // make the pop-ups visible
+            popupIcons.Show();
         }
 
         private void myProfileButton_Click(object sender, RoutedEventArgs e)
         {
             // move to edit my profile page
+            this.Close();
         }
 
         private void myProfilePictureButton_Click(object sender, RoutedEventArgs e)
         {
             // move to edit my profile page
+            this.Close();
         }
 
         private void addContactImageButton_Click(object sender, RoutedEventArgs e)
         {
             // move to search for a contact page 
+            this.Close();
         }
 
         private void logoutButton_Click(object sender, RoutedEventArgs e)
         {
             // move to main page when app opened (with profile choices)
+            this.Close();
+            existingAccount.Show();
         }
 
         private void addContactButton_Click(object sender, RoutedEventArgs e)
         {
             // move to search for a contact page 
+            this.Close();
         }
 
         private void rightContact_Click(object sender, RoutedEventArgs e)
         {
             // move contact to center, then make pop-ups visible
+            popupIcons.Show();
         }
 
         private void leftContact_Click(object sender, RoutedEventArgs e)
         {
             // move contact to center, then make pop-ups visible 
-        }
-
-        private void infoIcon_Click(object sender, RoutedEventArgs e)
-        {
-            // move to edit contact page
-        }
-
-        private void messageIcon_Click(object sender, RoutedEventArgs e)
-        {
-            // move to message screen 
-        }
-
-        private void audioIcon_Click(object sender, RoutedEventArgs e)
-        {
-            // move to audio call screen
-        }
-
-        private void videoIcon_Click(object sender, RoutedEventArgs e)
-        {
-            // move to video call screen
-
+            popupIcons.Show();
         }
     }
 }
