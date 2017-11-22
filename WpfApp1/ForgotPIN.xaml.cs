@@ -23,6 +23,19 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
- 
+        void OnClickRestore(object sender, RoutedEventArgs e)
+        {
+            //to do... figure out what we want to do when we restore account
+            this.Close();
+        }
+        void OnClickFP(object sender, RoutedEventArgs e)
+        {
+            Login l = new Login();
+            l.Show();
+            this.Close();
+        }
+
+
+
     }
 }
