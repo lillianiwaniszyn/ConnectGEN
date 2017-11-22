@@ -23,5 +23,27 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+        void OnClickFP(object sender, RoutedEventArgs e)
+        {
+
+
+            ForgotPIN fp = new ForgotPIN();
+            fp.Show();
+            this.Close();
+
+        }
+        void OnClickBack(object sender, RoutedEventArgs e)
+        {
+            Exisitng_Account ea = new Exisitng_Account();
+            ea.Show();
+            this.Close();
+
+        }
+        void OnClickLogin(object sender, RoutedEventArgs e)
+        {
+            //to do.. implement this to go to main screen
+            this.Close();
+
+        }
     }
 }

@@ -27,7 +27,7 @@
                 <ImageBrush/>
             </Label.Background>
         </Label>
-        <Image Source="C:\Users\Lillian\Documents\CPSC 481\plus3.png" Margin="19.804,190,193.667,78.667" RenderTransformOrigin="0.561,0.741" Grid.Column="2"/>
+
         <Label HorizontalContentAlignment="Center" Name="addAccount"  
     Content="Login"  Foreground="#FFE0E0E0"   
     FontSize="20" FontFamily="Arial Black"  
@@ -39,7 +39,15 @@
         <TextBox Name="PIN2" Margin="51.804,107,271.667,186.667" RenderTransformOrigin="4.332,4.212" Grid.Column="2"/>
         <TextBox Name="PIN3" Margin="12.804,73,216.667,220.667" RenderTransformOrigin="4.332,4.212" Grid.Column="2"/>
         <TextBox Name="PIN4" Margin="129.804,107,193.667,186.667" RenderTransformOrigin="4.332,4.212" Grid.Column="2"/>
-        <Button Margin="99,267,161.667,9.667" Grid.Column="1" Grid.ColumnSpan="2" >Forgot PIN?</Button>
-        <Image Source="C:\Users\Lillian\Documents\CPSC 481\back-button.png" Margin="0,120,75.196,-128.333" Grid.ColumnSpan="2" />
+        <Button Margin="99,267,161.667,9.667" Grid.Column="1" Grid.ColumnSpan="2"  Click="OnClickFP">Forgot PIN?</Button>
+        <Button BorderThickness="0"  
+    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="0,257,0,0" VerticalAlignment="Top" Width="87" Height="54" Background="Transparent" Click="OnClickBack">
+            <Image Source=" images/back-button.png"/>
+        </Button>
+        <Button BorderThickness="0"  
+    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Grid.Column="2" HorizontalAlignment="Left" Margin="49.667,187,0,0" VerticalAlignment="Top" Width="75" Background="Transparent" Click="OnClickLogin">
+            <Image Source=" images/plus3.png"/>
+        </Button>
+
     </Grid>
 </Window>
