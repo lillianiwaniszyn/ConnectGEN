@@ -33,12 +33,16 @@
         <TextBox Name="CFname" Margin="196,153,159.667,141.667" />
         <TextBox Name="CLname" Margin="196,184,159.667,110.667" />
         <Label Content="Your Last Name:" Foreground="#FFE0E0E0" Name="LNameLabel"  Margin="89,122,237.667,172.667"/>
-        <Button Margin="167,272,159.667,9.667"  >Restore Account</Button>
-        <Image Source="C:\Users\Lillian\Documents\CPSC 481\back-button.png" Margin="-40,246,386.667,9.667"/>
+        <Button Margin="167,272,159.667,9.667" Click="OnClickRestore">Restore Account</Button>
+
         <Label Content="New PIN:" Name="PINLabel"  Foreground="#FFE0E0E0" Margin="131,215,195.667,79.667"/>
         <TextBox Name="PIN1" Margin="196,215,300.667,79.667"/>
         <TextBox Name="PIN2" Margin="223,215,273.667,79.667"/>
         <TextBox Name="PIN3" Margin="250,215,246.667,79.667"/>
         <TextBox Name="PIN4" Margin="277,215,219.667,79.667"/>
+        <Button BorderThickness="0"  
+    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" HorizontalAlignment="Left" Margin="10,253,0,0" VerticalAlignment="Top" Width="75" Background="Transparent" Click="OnClickFP">
+            <Image Source="images/back-button.png"/>
+        </Button>
     </Grid>
 </Window>
