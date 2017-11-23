@@ -7,8 +7,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="50" d:DesignWidth="200">
     <Grid>
-        <Image x:Name="image" Source="images/coraBrown.jpg" HorizontalAlignment="Left" Height="50" VerticalAlignment="Center" Width="50"/>
-        <Label x:Name="label" Content="Cora Brown" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50,0" Height="50" Width="100" FontFamily="Arial Black" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Image x:Name="image" Source="images/headShot.jpg" HorizontalAlignment="Left" Height="50" VerticalAlignment="Center" Width="50"/>
+        <Label x:Name="label" Content="Contact" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50,0" Height="50" Width="100" FontFamily="Arial Black" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <Image x:Name="addplus" Source="images/plus.png" HorizontalAlignment="Left" Height="40" VerticalAlignment="Bottom" Width="38" Margin="155,0,0,6"/>
 
 

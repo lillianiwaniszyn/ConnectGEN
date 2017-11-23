@@ -22,26 +22,36 @@ namespace WpfApp1
         public AddContacts()
         {
             InitializeComponent();
+            AddContactList contactlist = new AddContactList();
+
+        }
+        public void MakeList()
+        {
+
+        }
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close(); 
+            //newWindowShow 
         }
 
-        private void back_Click(object sender, RoutedEventArgs e)
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
 
-        private void listView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void List_scrollUp(object sender, RoutedEventArgs e)
+        {
+        
+        }
+
+        private void List_scrollDown(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void list_scrollUp(object sender, RoutedEventArgs e)
+        private void SearchFor(object sender, TextCompositionEventArgs e)
         {
 
-        }
-
-        private void list_scrollDown(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

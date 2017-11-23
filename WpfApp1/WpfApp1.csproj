@@ -63,6 +63,7 @@
     <Compile Include="AudioCallWaiting.xaml.cs">
       <DependentUpon>AudioCallWaiting.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Contacts.cs" />
     <Compile Include="existingAccount.xaml.cs">
       <DependentUpon>existingAccount.xaml</DependentUpon>
     </Compile>

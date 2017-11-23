@@ -13,15 +13,15 @@
                 <GradientStop Color="#FF2D628D" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Button x:Name="backArrow" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Height ="100" Width="100" Click="back_Click">
+        <Button x:Name="backArrow" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Height ="73" Width="100" Click="back_Click" Margin="0,14,0,0">
             <Button.Template>
                 <ControlTemplate>
                     <Image Source="images/back.png"/>
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Label x:Name="backlabel" Content="BACK" HorizontalAlignment="Left" Height="34" Margin="23,33,0,0" VerticalAlignment="Top" Width="77" FontFamily="Arial Black" FontSize="20" Foreground="White"/>
-        <TextBox x:Name="searchContact" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" Text="        SEARCH" VerticalAlignment="Top" Width="263" Margin="182,10,0,0" FontSize="22" Foreground="Gray"/>
+
+        <TextBox x:Name="searchContact" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" Text="        SEARCH" VerticalAlignment="Top" Width="263" Margin="182,10,0,0" FontSize="22" Foreground="Gray" TextInput="SearchFor"/>
         <Image x:Name="searchicon" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="53" Source="images/search.png" Margin="182,10,0,0" OpacityMask="White"/>
         <ListView x:Name="listView" HorizontalAlignment="Left" Height="221" Margin="118,67,0,0" VerticalAlignment="Top" Width="327" SelectionChanged="listView_SelectionChanged" Foreground="{x:Null}" Background="{x:Null}">
             <ListView.View>
@@ -52,6 +52,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
+        <Button x:Name="backlbutton" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Margin="18,36,0,0" FontFamily="Arial Black" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Height="27" FontSize="20" Click="Back_Click"/>
 
     </Grid>
 </Window>
