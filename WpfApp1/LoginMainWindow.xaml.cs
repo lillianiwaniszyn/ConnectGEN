@@ -18,11 +18,11 @@ namespace WpfApp1
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class LoginMainWindow : Window
     {
         NewAccount newAccount1 = new NewAccount();
 
-        public MainWindow()
+        public LoginMainWindow()
         {
             InitializeComponent();
 
