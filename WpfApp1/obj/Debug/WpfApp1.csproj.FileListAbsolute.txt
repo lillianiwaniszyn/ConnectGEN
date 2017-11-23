@@ -75,3 +75,4 @@ C:\Users\hanum.lee\Source\Repos\ConnectGEN\WpfApp1\obj\Debug\WpfApp1_MarkupCompi
 C:\Users\hanum.lee\Source\Repos\ConnectGEN\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
 C:\Users\hanum.lee\Source\Repos\ConnectGEN\WpfApp1\obj\Debug\WpfApp1.exe
 C:\Users\hanum.lee\Source\Repos\ConnectGEN\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\hanum.lee\Source\Repos\ConnectGEN\WpfApp1\obj\Debug\AudioCall.g.cs
