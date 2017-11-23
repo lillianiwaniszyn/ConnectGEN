@@ -24,18 +24,12 @@
                 <ImageBrush/>
             </Label.Background>
         </Label>
-        <Label Content="Your First Name:" Name="Message"  Foreground="#FFE0E0E0" Margin="89,91,237.667,203.667"/>
-        <Label Content="Contact First Name:" Name="ContactFName"  Foreground="#FFE0E0E0" Margin="73,153,253.667,141.667"/>
-        <Label Content="Contact First Name:" Name="ContactLName"  Foreground="#FFE0E0E0" Margin="73,184,253.667,110.667"/>
         <TextBox Name="Fname" Margin="196,91,159.667,203.667"/>
         <Label Content="Please enter your First Name, Last Name, and name of one contact&#x0a; associated with your account so we can verify your identity." Name="FNameLabel"  Foreground="#FFE0E0E0" Margin="73,50,40.667,211.667" FontWeight="Bold"/>
         <TextBox Name="Lname" Margin="196,122,159.667,172.667" />
         <TextBox Name="CFname" Margin="196,153,159.667,141.667" />
         <TextBox Name="CLname" Margin="196,184,159.667,110.667" />
-        <Label Content="Your Last Name:" Foreground="#FFE0E0E0" Name="LNameLabel"  Margin="89,122,237.667,172.667"/>
         <Button Margin="167,272,159.667,9.667" Click="OnClickRestore">Restore Account</Button>
-
-        <Label Content="New PIN:" Name="PINLabel"  Foreground="#FFE0E0E0" Margin="131,215,195.667,79.667"/>
         <TextBox Name="PIN1" Margin="196,215,300.667,79.667"/>
         <TextBox Name="PIN2" Margin="223,215,273.667,79.667"/>
         <TextBox Name="PIN3" Margin="250,215,246.667,79.667"/>
@@ -44,5 +38,10 @@
     Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" HorizontalAlignment="Left" Margin="10,253,0,0" VerticalAlignment="Top" Width="75" Background="Transparent" Click="OnClickFP">
             <Image Source="images/back-button.png"/>
         </Button>
+        <Label Content="Your First Name:" Name="Message"  Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="89,91,0,0" VerticalAlignment="Top"/>
+        <Label Content="Your Last Name:" Foreground="#FFE0E0E0" Name="LNameLabel" HorizontalAlignment="Left" Margin="90,122,0,0" VerticalAlignment="Top"/>
+        <Label Content="Contact First Name:" Name="ContactFName"  Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="73,154,0,0" VerticalAlignment="Top"/>
+        <Label Content="Contact Last Name:" Name="ContactLName"  Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="78,184,0,0" VerticalAlignment="Top"/>
+        <Label Content="New PIN:" Name="PINLabel"  Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="112,215,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
