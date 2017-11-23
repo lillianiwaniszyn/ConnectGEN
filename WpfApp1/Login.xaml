@@ -32,9 +32,7 @@
     Content="Login"  Foreground="#FFE0E0E0"   
     FontSize="20" FontFamily="Arial Black"  
     FontWeight="Bold" Margin="83,155,140.667,114.667" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <Label Content="User Name:" Name="UserNameLabel" Foreground="#FFE0E0E0" Margin="25,73,347.667,220.667" Grid.Column="1" FontSize="16" FontWeight="Bold" Grid.ColumnSpan="2"/>
         <TextBox Name="UNAme" Margin="90.804,105,232.667,186.667" RenderTransformOrigin="4.332,4.212" Grid.Column="2"/>
-        <Label Content="PIN:" Name="PINLabel"  Foreground="#FFE0E0E0" Margin="83,105,347.667,186.667" RenderTransformOrigin="0.91,1.974" Grid.Column="1" FontSize="16" FontWeight="Bold" Grid.ColumnSpan="2"/>
         <TextBox Name="PIN1" Margin="12.804,107,310.667,186.667" RenderTransformOrigin="4.332,4.212" Grid.Column="2"/>
         <TextBox Name="PIN2" Margin="51.804,107,271.667,186.667" RenderTransformOrigin="4.332,4.212" Grid.Column="2"/>
         <TextBox Name="PIN3" Margin="12.804,73,216.667,220.667" RenderTransformOrigin="4.332,4.212" Grid.Column="2"/>
@@ -48,6 +46,8 @@
     Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Grid.Column="2" HorizontalAlignment="Left" Margin="49.667,187,0,0" VerticalAlignment="Top" Width="75" Background="Transparent" Click="OnClickLogin">
             <Image Source=" images/plus3.png"/>
         </Button>
+        <Label Content="User Name:" Name="UserNameLabel" Foreground="#FFE0E0E0"  FontSize="16" FontWeight="Bold" Grid.Column="1" HorizontalAlignment="Left" Margin="18,68,0,0" VerticalAlignment="Top" Width="107" RenderTransformOrigin="0.924,0.662" Grid.ColumnSpan="2"/>
+        <Label Content="PIN:" Name="PINLabel"  Foreground="#FFE0E0E0" FontSize="16" FontWeight="Bold" Grid.Column="1" HorizontalAlignment="Left" Margin="18,103,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.151,0.586"/>
 
     </Grid>
 </Window>
