@@ -13,7 +13,7 @@
                 <GradientStop Color="#FF2D628D" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Image Source="C:\Users\Lillian\Documents\CPSC 481\face.png" Margin="228,0,65.667,196.667">
+        <Image Source="images\face.png" Margin="228,0,65.667,196.667">
             <Image.OpacityMask>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -50,7 +50,7 @@
         </ComboBox>
 
         <Button Margin="159,256,167.667,25.667" >Create Account</Button>
-        <Image Source="C:\Users\Lillian\Documents\CPSC 481\back-button.png" Margin="-40,246,386.667,9.667"/>
+        <Image Source="images\back-button.png" Margin="-40,246,386.667,9.667"/>
 
     </Grid>
 </Window>
