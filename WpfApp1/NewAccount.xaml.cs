@@ -26,14 +26,8 @@ namespace WpfApp1
         }
         void OnClick2(object sender, RoutedEventArgs e)
         {
-            LoginMainWindow mw = new LoginMainWindow();
+            MainWindow mw = new MainWindow();
             mw.Show();
-            this.Close();
-
-        }
-        void OnClick3(object sender, RoutedEventArgs e)
-        {
-        //to do... take us to main when account is created
             this.Close();
 
         }

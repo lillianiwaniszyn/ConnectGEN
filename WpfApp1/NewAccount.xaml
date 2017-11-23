@@ -30,34 +30,29 @@
                 <ImageBrush/>
             </Label.Background>
         </Label>
-
+        <Label Content="User Name:" Name="UserNameLabel" Foreground="#FFE0E0E0" Margin="89,88,237.667,206.667"/>
         <TextBox Name="Fname" Margin="159,88,196.667,206.667"/>
+        <Label Content="First Name:" Name="FNameLabel"  Foreground="#FFE0E0E0" Margin="89,119,237.667,175.667"/>
         <TextBox Name="Lname" Margin="159,119,196.667,175.667" />
+        <Label Content="Last Name:" Foreground="#FFE0E0E0" Name="LNameLabel"  Margin="89,150,237.667,144.667"/>
         <TextBox Name="Age" Margin="159,150,196.667,144.667"/>
+        <Label Content="PIN:" Name="PINLabel"  Foreground="#FFE0E0E0" Margin="89,176,237.667,118.667"/>
         <TextBox Name="PIN1" Margin="159,181,337.667,113.667"/>
         <TextBox Name="PIN2" Margin="186,181,310.667,113.667"/>
         <TextBox Name="PIN3" Margin="213,181,283.667,113.667"/>
         <TextBox Name="PIN4" Margin="240,181,256.667,113.667"/>
+        <Label Content="Language:" Foreground="#FFE0E0E0" Name="LanguageLabel"  Margin="89,212,237.667,82.667"/>
         <ComboBox Margin="159,212,167.667,82.667">
             <ComboBoxItem IsSelected="True">English</ComboBoxItem>
             <ComboBoxItem >French</ComboBoxItem>
             <ComboBoxItem>Spanish</ComboBoxItem>
 
         </ComboBox>
-        <Button BorderThickness="0"  
-    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Name="btnAnswer1" Click="OnClick2" Margin="-31,252,397.667,-0.333" Background="Transparent">
+        <Button Name="btnAnswer4" Click="OnClick2" Margin="-31,252,397.667,-0.333" Background="Transparent">
             <Image Source="images/back-button.png"></Image>
         </Button>
-        <Button Name="btnAnswer2" Click="OnClick3" Margin="170,269,196.667,9.667"  Content="Create Account">
-            
-        </Button>
-        <Label Content="User Name:" Name="UserNameLabel" Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="89,88,0,0" VerticalAlignment="Top"/>
-        <Label Content="First Name:" Name="FNameLabel"  Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="90,119,0,0" VerticalAlignment="Top"/>
-        <Label Content="Last Name:" Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="89,150,0,0" VerticalAlignment="Top"/>
-        <Label Content="PIN:" Name="PINLabel"  Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="90,181,0,0" VerticalAlignment="Top"/>
-        <Label Content="Language:" Foreground="#FFE0E0E0" Name="LanguageLabel" HorizontalAlignment="Left" Margin="89,212,0,0" VerticalAlignment="Top"/>
 
 
-
+        
     </Grid>
 </Window>
