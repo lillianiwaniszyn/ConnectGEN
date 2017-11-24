@@ -1,5 +1,4 @@
-﻿using ConnectGenApp;
-using CPCS481Project;
+﻿using CPCS481Project;
 using System;
 using System.Collections.Generic;
 using System.Linq;
