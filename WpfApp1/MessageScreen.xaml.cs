@@ -21,8 +21,9 @@ namespace WpfApp1
     public partial class MessageScreen : Window
     {
         // Windows; Need these variables in order to switch windows.
-        ProgramStartWindow restartWindow = new ProgramStartWindow();
-        ContactsScreen contactScreen = new ContactsScreen();
+        MainWindow restartWindow = new MainWindow();
+        // Might want to change below to mainScreen after the file has been fixed.
+        Window1 contactScreen = new Window1();
 
         // Constructor
         public MessageScreen()
@@ -57,7 +58,8 @@ namespace WpfApp1
         {
             // Remove the messages from the chat. In its place, add an image menu.
             msgDisplay.Children.Clear();
-            msgDisplay.Children.Add(new AddImageMenu());
+            // Replace the contents of Add() with the actual file name for adding images.
+            // msgDisplay.Children.Add(new AddImageMenu());
         }
 
         // NOT CREATED YET. Messages are cleared from the screen and replaced with the translate menu.
@@ -69,14 +71,14 @@ namespace WpfApp1
             msgDisplay.Children.Clear();
             msgDisplay.Children.Add(new TranslationMenu());
         }
-        
+
         // WORKS. Method for extracting the message from the text box and calling the SimulateOutgoingMessage function.
         private void SendMessageButton_Click(object sender, RoutedEventArgs e)
         {
             // Obtain the text message written in the messageBox.
             string textMessage = messageBox.Text;
             // Erases the message, such that user can write something new without erasing the previous message.
-            messageBox.Text = ""; 
+            messageBox.Text = "";
             // Call the SimulateOutgoingMessage function to put the message into the chat.
             SimulateOutgoingMessage(textMessage);
         }
@@ -208,8 +210,8 @@ namespace WpfApp1
 
         public void SimulateMsgNotification(string senderName)
         {
-            
+
         }
-        
+
     }
 }
