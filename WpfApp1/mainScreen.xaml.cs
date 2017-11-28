@@ -17,17 +17,17 @@ namespace WpfApp1
     /// <summary>
     /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class MainScreen : Window
     {
         PopUps popupIcons = new PopUps();
         Exisitng_Account existingAccount = new Exisitng_Account();
 
-        public Window1()
+        public MainScreen()
         {
             InitializeComponent();
         }
 
-        private void middleContact_Click(object sender, RoutedEventArgs e)
+        private void middleContact_Click_1(object sender, RoutedEventArgs e)
         {
             // make the pop-ups visible
             popupIcons.Show();
