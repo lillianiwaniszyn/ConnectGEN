@@ -52,7 +52,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="backlbutton" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Margin="18,36,0,0" FontFamily="Arial Black" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Height="27" FontSize="20" Click="Back_Click"/>
+        <Button x:Name="backlbutton" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Margin="18,36,0,0" FontFamily="Arial Black" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Height="27" FontSize="20" Click="back_Click"/>
 
     </Grid>
 </Window>

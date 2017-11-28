@@ -20,7 +20,7 @@ namespace WpfApp1
     /// </summary>
     public partial class AudioCall : Window
     {
-        Window1 mainScreen = new Window1();
+        MainScreen mainScreen = new MainScreen();
         public AudioCall()
         {
             InitializeComponent();

@@ -23,5 +23,30 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SearchFor(object sender, TextCompositionEventArgs e)
+        {
+
+        }
+
+        private void listView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void list_scrollUp(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void list_scrollDown(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
