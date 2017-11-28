@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\karla\Source\Repos\ConnectGEN3\WpfApp1\obj\Debug\
+C:\Users\hanum.lee\Source\Repos\ConnectGEN6\WpfApp1\obj\Debug\
 WpfApp1
 none
 false
 DEBUG;TRACE
-C:\Users\karla\Source\Repos\ConnectGEN3\WpfApp1\App.xaml
-19-172138719
+C:\Users\hanum.lee\Source\Repos\ConnectGEN6\WpfApp1\App.xaml
+18-1161803374
 
-27232405456
+26716870076
 131569487696
-AddContacts.xaml;AudioCall.xaml;AudioCallWaiting.xaml;existingAccount.xaml;Existing_Account.xaml;IncomingMessages.xaml;LoginMainWindow.xaml;MainWindow.xaml;MessageScreen.xaml;NewAccount.xaml;Login.xaml;Existing_Username.xaml;Good_Input.xaml;ForgotPIN.xaml;OutgoingMessages.xaml;PopUps.xaml;TranslationMenu.xaml;Videocall.xaml;mainScreen.xaml;
+AddContacts.xaml;AudioCall.xaml;AudioCallWaiting.xaml;Existing_Account.xaml;IncomingMessages.xaml;LoginMainWindow.xaml;MainWindow.xaml;MessageScreen.xaml;NewAccount.xaml;Login.xaml;Existing_Username.xaml;Good_Input.xaml;ForgotPIN.xaml;OutgoingMessages.xaml;PopUps.xaml;TranslationMenu.xaml;Videocall.xaml;mainScreen.xaml;
 
 True
 

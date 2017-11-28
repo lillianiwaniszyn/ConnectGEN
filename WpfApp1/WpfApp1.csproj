@@ -63,9 +63,6 @@
     <Compile Include="AudioCallWaiting.xaml.cs">
       <DependentUpon>AudioCallWaiting.xaml</DependentUpon>
     </Compile>
-    <Compile Include="existingAccount.xaml.cs">
-      <DependentUpon>existingAccount.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Existing_Account.xaml.cs">
       <DependentUpon>Existing_Account.xaml</DependentUpon>
     </Compile>
@@ -114,10 +111,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AudioCallWaiting.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="existingAccount.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
