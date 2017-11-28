@@ -36,7 +36,8 @@ namespace WpfApp1
         {
 
 
-            //to do... implement where to go for main screen
+            MainScreen ms =  new MainScreen();
+            ms.Show();
             this.Close();
 
         }
