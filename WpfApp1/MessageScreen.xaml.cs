@@ -23,7 +23,7 @@ namespace WpfApp1
         // Windows; Need these variables in order to switch windows.
         MainWindow restartWindow = new MainWindow();
         // Might want to change below to mainScreen after the file has been fixed.
-        Window1 contactScreen = new Window1();
+        MainScreen contactScreen = new MainScreen();
 
         // Constructor
         public MessageScreen()
