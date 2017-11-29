@@ -15,29 +15,39 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for Window2.xaml
     /// </summary>
-    public partial class NewAccount : Window
+    public partial class Login_Main : Window
     {
-        
-        public NewAccount()
+        public Login_Main()
         {
             InitializeComponent();
         }
-        void OnClick2(object sender, RoutedEventArgs e)
+        void OnClickA(object sender, RoutedEventArgs e)
         {
-            Login_Main mw = new Login_Main();
-            mw.Show();
+
+
+            NewAccount na = new NewAccount();
+            na.Show();
             this.Close();
 
         }
-        void OnClick3(object sender, RoutedEventArgs e)
+        void OnClickB(object sender, RoutedEventArgs e)
         {
-        //to do... take us to main when account is created
+
+
+            Home_Screen hs =  new Home_Screen();
+            hs.Show();
             this.Close();
 
         }
+        void OnClickC(object sender, RoutedEventArgs e)
+        {
 
+            Login l = new Login();
+            l.Show();
+            this.Close();
 
+        }
     }
 }

@@ -1,5 +1,4 @@
-﻿using CPCS481Project;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,7 +20,7 @@ namespace WpfApp1
     public partial class PopUps : Window
     {
         MessageScreen message = new MessageScreen();
-        MainWindow video = new MainWindow(); // video screen??? 
+        Login_Main video = new Login_Main (); // video screen??? 
         AudioCallWaiting audio = new AudioCallWaiting();
 
         public PopUps()

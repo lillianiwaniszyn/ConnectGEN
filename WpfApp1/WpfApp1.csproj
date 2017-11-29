@@ -63,14 +63,11 @@
     <Compile Include="AudioCallWaiting.xaml.cs">
       <DependentUpon>AudioCallWaiting.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Existing_Account.xaml.cs">
-      <DependentUpon>Existing_Account.xaml</DependentUpon>
+    <Compile Include="Login_Main.xaml.cs">
+      <DependentUpon>Login_Main.xaml</DependentUpon>
     </Compile>
     <Compile Include="IncomingMessages.xaml.cs">
       <DependentUpon>IncomingMessages.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="MessageScreen.xaml.cs">
       <DependentUpon>MessageScreen.xaml</DependentUpon>
@@ -99,8 +96,8 @@
     <Compile Include="Videocall.xaml.cs">
       <DependentUpon>Videocall.xaml</DependentUpon>
     </Compile>
-    <Compile Include="mainScreen.xaml.cs">
-      <DependentUpon>mainScreen.xaml</DependentUpon>
+    <Compile Include="Home_Screen.xaml.cs">
+      <DependentUpon>Home_Screen.xaml</DependentUpon>
     </Compile>
     <Page Include="AddContacts.xaml">
       <SubType>Designer</SubType>
@@ -114,7 +111,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Existing_Account.xaml">
+    <Page Include="Login_Main.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -134,10 +131,6 @@
       <DependentUpon>LoginMainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="MessageScreen.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -178,7 +171,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="mainScreen.xaml">
+    <Page Include="Home_Screen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

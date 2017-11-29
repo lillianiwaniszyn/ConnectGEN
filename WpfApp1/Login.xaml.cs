@@ -34,8 +34,8 @@ namespace WpfApp1
         }
         void OnClickBack(object sender, RoutedEventArgs e)
         {
-            Exisitng_Account ea = new Exisitng_Account();
-            ea.Show();
+            Login_Main log = new Login_Main();
+            log.Show();
             this.Close();
 
         }

@@ -21,9 +21,9 @@ namespace WpfApp1
     public partial class MessageScreen : Window
     {
         // Windows; Need these variables in order to switch windows.
-        MainWindow restartWindow = new MainWindow();
+        Login_Main restartWindow = new Login_Main();
         // Might want to change below to mainScreen after the file has been fixed.
-        MainScreen contactScreen = new MainScreen();
+        Home_Screen contactScreen = new Home_Screen();
 
         // Constructor
         public MessageScreen()
