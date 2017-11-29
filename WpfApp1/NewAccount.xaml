@@ -13,14 +13,6 @@
                 <GradientStop Color="#FF2D628D" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Image Source="images\face.png" Margin="228,0,65.667,196.667">
-            <Image.OpacityMask>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="#FF2D628D" Offset="1"/>
-                </LinearGradientBrush>
-            </Image.OpacityMask>
-        </Image>
         <Label HorizontalContentAlignment="Center" Name="ConnectGEN"  
     Content="Click to add new profle picture" Height="40"  Foreground="#FFE0E0E0"
     Canvas.Left="10" Canvas.Top="10"   
@@ -43,7 +35,7 @@
             <Image Source="images/back-button.png"></Image>
         </Button>
         <Button Name="createAccountBtn" Click="OnClick3" Margin="170,269,196.667,9.667"  Content="Create Account">
-            
+
         </Button>
         <Label Content="User Name:" Name="UserNameLabel" Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="89,88,0,0" VerticalAlignment="Top"/>
         <Label Content="First Name:" Name="FNameLabel"  Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="90,119,0,0" VerticalAlignment="Top"/>
@@ -57,6 +49,10 @@
             <ComboBoxItem >French</ComboBoxItem>
             <ComboBoxItem>Spanish</ComboBoxItem>
         </ComboBox>
+        <Button BorderThickness="0"  
+     HorizontalAlignment="Left" Margin="213,10,0,0" VerticalAlignment="Top" Width="75" Background="Transparent">
+            <Image  Source=" images/blank2.png" Height="45"/>
+        </Button>
 
 
 
