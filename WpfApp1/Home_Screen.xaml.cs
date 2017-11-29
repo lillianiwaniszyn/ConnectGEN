@@ -51,6 +51,8 @@ namespace WpfApp1
         void LogoutButton_Click(object sender, RoutedEventArgs e)
         {
             // move to main page when app opened (with profile choices)
+            Login_Main lm = new Login_Main();
+            lm.Show();
             this.Close();
 
         }
