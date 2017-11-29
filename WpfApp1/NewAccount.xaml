@@ -34,10 +34,10 @@
         <TextBox Name="Fname" Margin="159,88,196.667,206.667" TextChanged="Validate_Username"/>
         <TextBox Name="Lname" Margin="159,119,196.667,175.667" />
         <TextBox Name="Age" Margin="159,150,196.667,144.667"/>
-        <TextBox Name="PIN1" Margin="159,181,337.667,113.667"/>
-        <TextBox Name="PIN2" Margin="186,181,310.667,113.667"/>
-        <TextBox Name="PIN3" Margin="213,181,283.667,113.667"/>
-        <TextBox Name="PIN4" Margin="240,181,256.667,113.667"/>
+        <TextBox Name="PIN1" Margin="159,181,337.667,113.667" TextChanged="Validate_PIN1"/>
+        <TextBox Name="PIN2" Margin="186,181,310.667,113.667" TextChanged="Validate_PIN2"/>
+        <TextBox Name="PIN3" Margin="213,181,283.667,113.667" TextChanged="Validate_PIN3"/>
+        <TextBox Name="PIN4" Margin="240,181,256.667,113.667" TextChanged="Validate_PIN4"/>
         <ComboBox Margin="159,212,167.667,82.667">
             <ComboBoxItem IsSelected="True">English</ComboBoxItem>
             <ComboBoxItem >French</ComboBoxItem>
@@ -48,7 +48,7 @@
     Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Name="btnAnswer1" Click="OnClick2" Margin="-31,252,397.667,-0.333" Background="Transparent">
             <Image Source="images/back-button.png"></Image>
         </Button>
-        <Button Name="btnAnswer2" Click="OnClick3" Margin="170,269,196.667,9.667"  Content="Create Account">
+        <Button Name="createAccountBtn" Click="OnClick3" Margin="170,269,196.667,9.667"  Content="Create Account">
             
         </Button>
         <Label Content="User Name:" Name="UserNameLabel" Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="89,88,0,0" VerticalAlignment="Top"/>
@@ -58,6 +58,7 @@
         <Label Content="Language:" Foreground="#FFE0E0E0" Name="LanguageLabel" HorizontalAlignment="Left" Margin="89,212,0,0" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="-512,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <Label  Name ="validUsername" Foreground="#FF0000" HorizontalAlignment="Left" Margin="327,88,0,0" VerticalAlignment="Top"/>
+        <Label Name ="validPIN"  Foreground="#FF0000" HorizontalAlignment="Left" Margin="327,186,0,0" VerticalAlignment="Top"/>
 
 
 
