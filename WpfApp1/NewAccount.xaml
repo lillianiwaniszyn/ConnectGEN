@@ -31,7 +31,7 @@
             </Label.Background>
         </Label>
 
-        <TextBox Name="Fname" Margin="159,88,196.667,206.667"/>
+        <TextBox Name="Fname" Margin="159,88,196.667,206.667" TextChanged="Validate_Username"/>
         <TextBox Name="Lname" Margin="159,119,196.667,175.667" />
         <TextBox Name="Age" Margin="159,150,196.667,144.667"/>
         <TextBox Name="PIN1" Margin="159,181,337.667,113.667"/>
@@ -56,6 +56,8 @@
         <Label Content="Last Name:" Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="89,150,0,0" VerticalAlignment="Top"/>
         <Label Content="PIN:" Name="PINLabel"  Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="90,181,0,0" VerticalAlignment="Top"/>
         <Label Content="Language:" Foreground="#FFE0E0E0" Name="LanguageLabel" HorizontalAlignment="Left" Margin="89,212,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="-512,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label  Name ="validUsername" Foreground="#FF0000" HorizontalAlignment="Left" Margin="327,88,0,0" VerticalAlignment="Top"/>
 
 
 

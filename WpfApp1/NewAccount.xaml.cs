@@ -19,7 +19,8 @@ namespace WpfApp1
     /// </summary>
     public partial class NewAccount : Window
     {
-        
+        string[] existing_Usernames = new string[] { "liwanisz", "Lillian", "cora", "Cora", "Cora1"};
+
         public NewAccount()
         {
             InitializeComponent();
@@ -33,9 +34,26 @@ namespace WpfApp1
         }
         void OnClick3(object sender, RoutedEventArgs e)
         {
-        //to do... take us to main when account is created
+            Home_Screen hs = new Home_Screen();
+            hs.Show();
             this.Close();
 
+        }
+        void Validate_Username(object sender, TextChangedEventArgs e)
+        {
+
+            
+            if (existing_Usernames.Contains(Fname.Text))
+                {
+                    validUsername.Content = "*Username already taken";
+                }
+            else
+            {
+                validUsername.Content = "";
+            }
+
+
+            
         }
 
 
