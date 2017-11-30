@@ -237,16 +237,12 @@ namespace WpfApp1
                     */
                     if (msgContents[1] == "I")
                     {
-                        //IncomingMessages currentIncomingMsg = new IncomingMessages();
-                        //currentIncomingMsg.msgLabel.Content = msgContents[2];
-                        //stackPanel1.Children.Add(currentIncomingMsg);
+                        SimulateIncomingMessage(temporaryUsername, msgContents[2]);
                     }
 
                     else if (msgContents[1] == "O")
                     {
-                        //OutgoingMessages currentOutgoingMsg = new OutgoingMessages();
-                        //currentOutgoingMsg.msgLabel.Content = msgContents[2];
-                        //stackPanel1.Children.Add(currentOutgoingMsg);
+                        SimulateOutgoingMessage(msgContents[2]);
                     }
                 }
             }
