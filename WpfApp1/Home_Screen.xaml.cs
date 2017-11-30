@@ -19,6 +19,8 @@ namespace WpfApp1
     /// </summary>
     public partial class Home_Screen : Window
     {
+        Global_Data dataClass = new Global_Data();
+        int middleImage;
         public Home_Screen()
         {
             InitializeComponent();
@@ -73,6 +75,22 @@ namespace WpfApp1
         {
             // move contact to center, then make pop-ups visible 
             this.Close();
+        }
+
+        private void rightArrow_Click(object sender, RoutedEventArgs e)
+        {
+            middleImage++;
+            LeftImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage - 1]));
+            MiddleImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage]));
+            RightImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage + 1]));
+        }
+
+        private void leftArrow_Click(object sender, RoutedEventArgs e)
+        {
+            middleImage--;
+            LeftImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage - 1]));
+            MiddleImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage]));
+            RightImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage + 1]));
         }
     }
 }
