@@ -32,10 +32,10 @@
     Content="Login"  Foreground="#FFE0E0E0"   
     FontSize="20" FontFamily="Arial Black"  
     FontWeight="Bold" Margin="83,155,140.667,114.667" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <TextBox Name="UNAme" Margin="90.804,105,232.667,186.667" RenderTransformOrigin="4.332,4.212" Grid.Column="2"/>
+        <TextBox Name="PIN3" Margin="90.804,107,232.667,186.667" RenderTransformOrigin="4.332,4.212" Grid.Column="2"/>
         <TextBox Name="PIN1" Margin="12.804,107,310.667,186.667" RenderTransformOrigin="4.332,4.212" Grid.Column="2"/>
         <TextBox Name="PIN2" Margin="51.804,107,271.667,186.667" RenderTransformOrigin="4.332,4.212" Grid.Column="2"/>
-        <TextBox Name="PIN3" Margin="12.804,73,216.667,220.667" RenderTransformOrigin="4.332,4.212" Grid.Column="2"/>
+        <TextBox Name="Username" Margin="12.804,73,216.667,220.667" RenderTransformOrigin="4.332,4.212" Grid.Column="2"/>
         <TextBox Name="PIN4" Margin="129.804,107,193.667,186.667" RenderTransformOrigin="4.332,4.212" Grid.Column="2"/>
         <Button Margin="99,267,161.667,9.667" Grid.Column="1" Grid.ColumnSpan="2"  Click="OnClickFP">Forgot PIN?</Button>
         <Button BorderThickness="0"  
@@ -48,6 +48,7 @@
         </Button>
         <Label Content="User Name:" Name="UserNameLabel" Foreground="#FFE0E0E0"  FontSize="16" FontWeight="Bold" Grid.Column="1" HorizontalAlignment="Left" Margin="18,68,0,0" VerticalAlignment="Top" Width="107" RenderTransformOrigin="0.924,0.662" Grid.ColumnSpan="2"/>
         <Label Content="PIN:" Name="PINLabel"  Foreground="#FFE0E0E0" FontSize="16" FontWeight="Bold" Grid.Column="1" HorizontalAlignment="Left" Margin="18,103,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.151,0.586"/>
+        <Label Name="invalidCreds" Foreground ="Red" Grid.Column="2" HorizontalAlignment="Left" Margin="195.667,99,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
