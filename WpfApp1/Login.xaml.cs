@@ -22,6 +22,7 @@ namespace WpfApp1
     {
         
         public static string[] enteredPIN = new string[4];
+        
         public Login()
         {
 
@@ -57,7 +58,10 @@ namespace WpfApp1
             enteredPIN[3] = Pin4;
             string stringPIN = string.Join("", enteredPIN);
             int index = Array.IndexOf(Global_Data.existing_Usernames, Username.Text);
+            Console.WriteLine(stringPIN);
+            Console.WriteLine(Global_Data.passwords[index]);
             if (stringPIN == Global_Data.passwords[index])
+            
             {
                 //authenticate the user here
                 hs.Show();

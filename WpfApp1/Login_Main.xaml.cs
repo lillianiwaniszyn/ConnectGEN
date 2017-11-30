@@ -21,6 +21,16 @@ namespace WpfApp1
     {
         public Login_Main()
         {
+            Global_Data.existing_Usernames[0] = "liwanisz";
+            Global_Data.existing_Usernames[1] = "Lillian";
+            Global_Data.existing_Usernames[2] = "cora";
+            Global_Data.existing_Usernames[3] = "Cora";
+            Global_Data.existing_Usernames[4] = "Cora1";
+            Global_Data.passwords[0] = "1234";
+            Global_Data.passwords[1] = "3245";
+            Global_Data.passwords[2] = "0000";
+            Global_Data.passwords[3] = "1111";
+            Global_Data.passwords[4] = "3333";
             InitializeComponent();
         }
         void OnClickA(object sender, RoutedEventArgs e)
