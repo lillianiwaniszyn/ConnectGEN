@@ -100,6 +100,9 @@
     <Compile Include="Browse_Pictures.xaml.cs">
       <DependentUpon>Browse_Pictures.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VideoCallWaiting.xaml.cs">
+      <DependentUpon>VideoCallWaiting.xaml</DependentUpon>
+    </Compile>
     <Page Include="AddContacts.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -173,6 +176,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Browse_Pictures.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VideoCallWaiting.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
