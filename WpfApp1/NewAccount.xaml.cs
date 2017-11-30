@@ -19,7 +19,7 @@ namespace WpfApp1
     /// </summary>
     public partial class NewAccount : Window
     {
-        string[] existing_Usernames = new string[] { "liwanisz", "Lillian", "cora", "Cora", "Cora1"};
+       // string[] existing_Usernames = new string[] { "liwanisz", "Lillian", "cora", "Cora", "Cora1"};
         //this is very bad... sorry :(
         string[] numbers = new string[] { "0", "1", "2", "3", "4","5","6","7","8","9" };
         //set flags to change colour of button
@@ -58,7 +58,7 @@ namespace WpfApp1
         {
 
             
-            if (existing_Usernames.Contains(Fname.Text))
+            if (Global_Data.existing_Usernames.Contains(Fname.Text))
                 {
                     validUsername.Content = "*Username already taken";
                 createAccountBtn.IsEnabled = false;

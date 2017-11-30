@@ -63,6 +63,7 @@
     <Compile Include="AudioCallWaiting.xaml.cs">
       <DependentUpon>AudioCallWaiting.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Global_Data.cs" />
     <Compile Include="Login_Main.xaml.cs">
       <DependentUpon>Login_Main.xaml</DependentUpon>
     </Compile>
@@ -80,9 +81,6 @@
     </Compile>
     <Compile Include="Existing_Username.xaml.cs">
       <DependentUpon>Existing_Username.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Good_Input.xaml.cs">
-      <DependentUpon>Good_Input.xaml</DependentUpon>
     </Compile>
     <Compile Include="ForgotPIN.xaml.cs">
       <DependentUpon>ForgotPIN.xaml</DependentUpon>
@@ -144,10 +142,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Existing_Username.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Good_Input.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -272,6 +266,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\info2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\blank2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

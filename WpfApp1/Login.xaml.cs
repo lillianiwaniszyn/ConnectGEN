@@ -20,9 +20,8 @@ namespace WpfApp1
     /// </summary>
     public partial class Login : Window
     {
-        string[] existing_Usernames = new string[] { "liwanisz", "Lillian", "cora", "Cora", "Cora1" };
-        string[] passwords = new string[] { "1234", "3245", "0000", "1111", "3333" };
-        string[] enteredPIN = new string[4];
+        
+        public static string[] enteredPIN = new string[4];
         public Login()
         {
 
@@ -57,8 +56,8 @@ namespace WpfApp1
             string Pin4 = PIN4.Text;
             enteredPIN[3] = Pin4;
             string stringPIN = string.Join("", enteredPIN);
-            int index = Array.IndexOf(existing_Usernames, Username.Text);
-            if (stringPIN == passwords[index])
+            int index = Array.IndexOf(Global_Data.existing_Usernames, Username.Text);
+            if (stringPIN == Global_Data.passwords[index])
             {
                 //authenticate the user here
                 hs.Show();
