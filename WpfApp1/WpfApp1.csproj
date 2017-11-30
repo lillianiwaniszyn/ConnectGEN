@@ -270,5 +270,8 @@
   <ItemGroup>
     <Resource Include="images\blank2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="AllMsgs.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
