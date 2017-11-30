@@ -97,6 +97,9 @@
     <Compile Include="Home_Screen.xaml.cs">
       <DependentUpon>Home_Screen.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Browse_Pictures.xaml.cs">
+      <DependentUpon>Browse_Pictures.xaml</DependentUpon>
+    </Compile>
     <Page Include="AddContacts.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -166,6 +169,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Home_Screen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Browse_Pictures.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -272,6 +279,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="AllMsgs.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\selfie.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
