@@ -213,5 +213,34 @@ namespace WpfApp1
 
         }
 
+        public void ReadTextFile(string temporaryUsername)
+        {
+            string line;
+            string currentMessage;
+            // 5 Places in the event an out of bound issues occurs.
+            string[] msgContents;
+            char[] splitOn = { '|' };
+
+            // Read the file.
+            System.IO.StreamReader file = new System.IO.StreamReader("AllMsgs.txt");
+            while ((line = file.ReadLine()) != null)
+            {
+                currentMessage = line;
+                msgContents = currentMessage.Split(splitOn);
+               if (msgContents[0] == temporaryUsername)
+                {
+                    /* Works. Shows only the messages for username.
+                    System.Console.WriteLine(msgContents[0]);
+                    System.Console.WriteLine(msgContents[1]);
+                    System.Console.WriteLine(msgContents[2]);
+                    */
+
+                }
+            }
+            file.Close();
+            // Not sure what this is needed for.
+            System.Console.ReadLine();
+        }
+
     }
 }
