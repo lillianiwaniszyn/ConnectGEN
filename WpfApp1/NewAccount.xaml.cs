@@ -47,6 +47,14 @@ namespace WpfApp1
             this.Close();
 
         }
+        void ChangePic(object sender, RoutedEventArgs e)
+        {
+            Browse_Pictures bp = new Browse_Pictures();
+            bp.ShowDialog();
+
+            // this.Close();
+
+        }
         void OnClick3(object sender, RoutedEventArgs e)
         {
             Home_Screen hs = new Home_Screen();
