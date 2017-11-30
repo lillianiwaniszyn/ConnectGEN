@@ -227,14 +227,27 @@ namespace WpfApp1
             {
                 currentMessage = line;
                 msgContents = currentMessage.Split(splitOn);
-               if (msgContents[0] == temporaryUsername)
+                
+                if (msgContents[0] == temporaryUsername)
                 {
                     /* Works. Shows only the messages for username.
                     System.Console.WriteLine(msgContents[0]);
                     System.Console.WriteLine(msgContents[1]);
                     System.Console.WriteLine(msgContents[2]);
                     */
+                    if (msgContents[1] == "I")
+                    {
+                        //IncomingMessages currentIncomingMsg = new IncomingMessages();
+                        //currentIncomingMsg.msgLabel.Content = msgContents[2];
+                        //stackPanel1.Children.Add(currentIncomingMsg);
+                    }
 
+                    else if (msgContents[1] == "O")
+                    {
+                        //OutgoingMessages currentOutgoingMsg = new OutgoingMessages();
+                        //currentOutgoingMsg.msgLabel.Content = msgContents[2];
+                        //stackPanel1.Children.Add(currentOutgoingMsg);
+                    }
                 }
             }
             file.Close();
