@@ -50,9 +50,10 @@
             <ComboBoxItem>Spanish</ComboBoxItem>
         </ComboBox>
         <Button BorderThickness="0"  
-     HorizontalAlignment="Left" Margin="213,10,0,0" VerticalAlignment="Top" Width="75" Background="Transparent">
-            <Image  Source=" images/blank2.png" Height="45"/>
+     HorizontalAlignment="Left" Margin="213,10,0,0" VerticalAlignment="Top" Width="75" Background="Transparent" Click="ChangePic">
+            <Image  Name ="profPic" Source="images/blank2.png" Height="45" />
         </Button>
+        
 
 
 
