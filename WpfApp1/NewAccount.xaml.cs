@@ -40,6 +40,7 @@ namespace WpfApp1
             checkPIN4 = false;
             createAccountBtn.IsEnabled = false;
         }
+
         void OnClick2(object sender, RoutedEventArgs e)
         {
             Login_Main mw = new Login_Main();
@@ -50,6 +51,7 @@ namespace WpfApp1
         void ChangePic(object sender, RoutedEventArgs e)
         {
             Browse_Pictures bp = new Browse_Pictures();
+            bp.DataContext = this;
             bp.ShowDialog();
 
             // this.Close();

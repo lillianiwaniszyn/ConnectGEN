@@ -29,11 +29,13 @@ namespace WpfApp1
 
         void Set_Profile_Picture(object sender, RoutedEventArgs e)
         {
-            NewAccount n = new NewAccount();
+            NewAccount n = (NewAccount)this.DataContext;
             Image myImage = new Image();
             myImage.Source = new BitmapImage(new Uri("images/simon.jpg", UriKind.RelativeOrAbsolute));
+
             this.Close();
-            //return myImage.Source;
+            n.profPic.Source = myImage.Source;
+            n.Show();
             
         }
     }
