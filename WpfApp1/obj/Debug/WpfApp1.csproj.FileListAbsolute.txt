@@ -245,3 +245,6 @@ C:\Users\karla\Source\Repos\ConnectGEN\WpfApp1\obj\Debug\WpfApp1.csproj.Generate
 C:\Users\karla\Source\Repos\ConnectGEN\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
 C:\Users\karla\source\repos\ConnectGEN\WpfApp1\obj\Debug\Browse_Pictures.g.cs
 C:\Users\karla\source\repos\ConnectGEN\WpfApp1\obj\Debug\Browse_Pictures.baml
+C:\Users\hanum.lee\Source\Repos\ConnectGEN2\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\hanum.lee\Source\Repos\ConnectGEN2\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\hanum.lee\Source\Repos\ConnectGEN2\WpfApp1\obj\Debug\WpfApp1.pdb
