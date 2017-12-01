@@ -1,28 +1,27 @@
-﻿<Window x:Class="WpfApp1.PopUps"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfApp1"
-        mc:Ignorable="d"
-        Title="PopUps" Height="350" Width="525">
-    <Grid Margin="0,0,2,0">
-        <Rectangle HorizontalAlignment="Left" Height="319" VerticalAlignment="Top" Width="520" Margin="0,0,-5,0"/>
-        <Button x:Name ="messageIcon" HorizontalAlignment="Left" Height="56" Margin="214,227,0,0" VerticalAlignment="Top" Width="56" Background="Transparent" Click="messageIcon_Click">
-            <Image Source="images/message.png" Height="51" Width="56"/>
+﻿<UserControl x:Class="WpfApp1.PopUps"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Button x:Name="infoIcon" HorizontalAlignment="Left" Height="55" Margin="114,52,0,0" VerticalAlignment="Top" Width="55" Background="Transparent" Click="infoIcon_Click" Visibility="Visible">
+            <Image Source=" images/info2.png"/>
         </Button >
-        <Button x:Name ="audioIcon" HorizontalAlignment="Left" Height="57" Margin="275,233,0,0" VerticalAlignment="Top" Width="57" Background="Transparent" Click="audioIcon_Click">
-            <Image Source="images/call.png "/>
+        <Button x:Name="messageIcon" HorizontalAlignment="Left" Height="55" Margin="54,209,0,0" VerticalAlignment="Top" Width="55" Background="Transparent" Click="messageIcon_Click" Visibility="Visible">
+            <Image Source=" images/message.png"/>
         </Button >
-        <Button x:Name ="videoIcon" HorizontalAlignment="Left" VerticalAlignment="Top" Width="56" Margin="337,227,0,0" Height="56" Background="Transparent" Click="videoIcon_Click">
-            <Image Source="images/video.png"/>
+        <Button x:Name="audioIcon" HorizontalAlignment="Left" Height="55" Margin="114,224,0,0" VerticalAlignment="Top" Width="55" Background="Transparent" Click="audioIcon_Click" Visibility="Visible">
+            <Image Source="images/call.png"/>
         </Button >
-        <Button x:Name="infoIcon" HorizontalAlignment="Left" Height="49" Margin="287,45,0,0" VerticalAlignment="Top" Width="49" Background="Transparent" Click="infoIcon_Click">
-            <Image Source ="images/info2.png"/>
+        <Button x:Name="videoIcon"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="55" Margin="174,209,0,0" Height="55" Background="Transparent" Click="videoIcon_Click" Visibility="Visible">
+            <Image Source=" images/video.png"/>
         </Button >
-        <Button x:Name ="messageIconLabel" Content="Message" HorizontalAlignment="Left" VerticalAlignment="Top" Width="56" Margin="214,275,0,0" Height="21" Background="Transparent" Foreground="White" Click="messageIconLabel_Click"/>
-        <Button x:Name ="audioIconLabel" Content="Audio" HorizontalAlignment="Left" VerticalAlignment="Top" Width="57" Margin="275,283,0,0" Height="21" Background="Transparent" Foreground="White" Click="audioIconLabel_Click"/>
-        <Button x:Name ="videoIconLabel" Content="video" HorizontalAlignment="Left" VerticalAlignment="Top" Width="56" Margin="337,276,0,0" Height="21" Background="Transparent" Foreground="White" Click="videoIconLabel_Click"/>
-        <Button x:Name="infoIconLabel" Content="Edit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="49" Margin="287,30,0,0" Height=" 21" Background="Transparent" Foreground="White" Click="infoIconLabel_Click"/>
+
+
+
+
     </Grid>
-</Window>
+</UserControl>

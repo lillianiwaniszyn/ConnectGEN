@@ -29,7 +29,12 @@ namespace WpfApp1
         private void MiddleContact_Click_1(object sender, RoutedEventArgs e)
         {
             // make the pop-ups visible
-            this.Close();
+            PopUps popups = new PopUps();
+            popups.infoIcon.Visibility = System.Windows.Visibility.Visible;
+            popups.messageIcon.Visibility = System.Windows.Visibility.Visible;
+            popups.audioIcon.Visibility = System.Windows.Visibility.Visible;
+            popups.videoIcon.Visibility = System.Windows.Visibility.Visible;
+            popups.Visibility = System.Windows.Visibility.Visible;
         }
 
         private void MyProfileButton_Click(object sender, RoutedEventArgs e)
