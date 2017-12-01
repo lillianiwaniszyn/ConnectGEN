@@ -208,9 +208,16 @@ namespace WpfApp1
         }
 
 
+        // NOT CREATED YET. Will need to display the notification, or multiple. (Can receive multiple messages.)
+        // Current Idea: Might want to create a user control for notification, which will replace the message display.
         public void SimulateMsgNotification(string senderName)
         {
+            MessageNotification newMessage = new MessageNotification();
+            newMessage.senderName.Content = senderName;
 
+            // Bug: Clears other notifications. 
+            msgDisplay.Children.Clear();
+            msgDisplay.Children.Add(newMessage);
         }
 
         public void ReadTextFile(string temporaryUsername)
