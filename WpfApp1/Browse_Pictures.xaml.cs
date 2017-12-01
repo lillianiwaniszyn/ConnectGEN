@@ -29,9 +29,20 @@ namespace WpfApp1
 
         void Set_Profile_Picture(object sender, RoutedEventArgs e)
         {
+            string s = (sender as Button).Name; //get name of button sending us to this function
+            if(s == "jazmineBrown"  )
+            {
+                s = s + ".png";
+            }
+            else
+            {
+                s = s + ".jpg";
+            }
+            string selectedPicture = "images/" + s;
+            Console.WriteLine(s);
             NewAccount n = (NewAccount)this.DataContext;
             Image myImage = new Image();
-            myImage.Source = new BitmapImage(new Uri("images/simon.jpg", UriKind.RelativeOrAbsolute));
+            myImage.Source = new BitmapImage(new Uri(selectedPicture, UriKind.RelativeOrAbsolute));
 
             this.Close();
             n.profPic.Source = myImage.Source;
