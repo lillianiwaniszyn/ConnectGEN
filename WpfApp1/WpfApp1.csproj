@@ -57,6 +57,9 @@
     <Compile Include="AddContacts.xaml.cs">
       <DependentUpon>AddContacts.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AddContactUC.xaml.cs">
+      <DependentUpon>AddContactUC.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AudioCall.xaml.cs">
       <DependentUpon>AudioCall.xaml</DependentUpon>
     </Compile>
@@ -104,6 +107,10 @@
       <DependentUpon>VideoCallWaiting.xaml</DependentUpon>
     </Compile>
     <Page Include="AddContacts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddContactUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

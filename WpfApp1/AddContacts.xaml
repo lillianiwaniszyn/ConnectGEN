@@ -23,13 +23,6 @@
 
         <TextBox x:Name="searchContact" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" Text="        SEARCH" VerticalAlignment="Top" Width="263" Margin="182,10,0,0" FontSize="22" Foreground="Gray" TextInput="SearchFor"/>
         <Image x:Name="searchicon" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="53" Source="images/search.png" Margin="182,10,0,0" OpacityMask="White"/>
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="221" Margin="118,67,0,0" VerticalAlignment="Top" Width="327" SelectionChanged="listView_SelectionChanged" Foreground="{x:Null}" Background="{x:Null}">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn/>
-                </GridView>
-            </ListView.View>
-        </ListView>
         <Button x:Name="scrollUp" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="466,67,0,0" Click="list_scrollUp">
             <Button.Template>
                 <ControlTemplate>
@@ -53,6 +46,7 @@
             </Button.Template>
         </Button>
         <Button x:Name="backlbutton" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Margin="18,36,0,0" FontFamily="Arial Black" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Height="27" FontSize="20" Click="back_Click"/>
+        <StackPanel HorizontalAlignment="Left" Height="210" VerticalAlignment="Top" Width="360" Margin="100,99,0,0"/>
 
     </Grid>
 </Window>
