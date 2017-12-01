@@ -42,6 +42,7 @@ namespace WpfApp1
             Console.WriteLine(s);
             NewAccount n = (NewAccount)this.DataContext;
             Image myImage = new Image();
+            Global_Data.currentProfilePic = selectedPicture;
             myImage.Source = new BitmapImage(new Uri(selectedPicture, UriKind.RelativeOrAbsolute));
 
             this.Close();
