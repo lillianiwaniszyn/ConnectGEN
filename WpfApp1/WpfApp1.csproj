@@ -316,6 +316,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Communication\" />
+    <Folder Include="Translation\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
