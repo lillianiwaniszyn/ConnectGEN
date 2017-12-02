@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("white_search.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("translation/spanish.txt")]
 
 

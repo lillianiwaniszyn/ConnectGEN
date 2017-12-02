@@ -316,7 +316,24 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Communication\" />
-    <Folder Include="Translation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Translation\French.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Translation\German.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Translation\Italian.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Translation\Polish.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Translation\Russian.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Translation\Spanish.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
