@@ -69,6 +69,9 @@
     <Compile Include="EditContact.xaml.cs">
       <DependentUpon>EditContact.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EditProfile.xaml.cs">
+      <DependentUpon>EditProfile.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Global_Data.cs" />
     <Compile Include="Login_Main.xaml.cs">
       <DependentUpon>Login_Main.xaml</DependentUpon>
@@ -126,6 +129,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="EditContact.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditProfile.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
