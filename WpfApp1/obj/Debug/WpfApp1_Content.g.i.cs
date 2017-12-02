@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("allmsgs.txt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("white_search.png")]
 
 

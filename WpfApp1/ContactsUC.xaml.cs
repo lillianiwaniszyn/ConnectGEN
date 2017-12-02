@@ -16,13 +16,18 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Interaction logic for AddContactUC.xaml
+    /// Interaction logic for ContactsUC.xaml
     /// </summary>
-    public partial class AddContactUC : UserControl
+    public partial class ContactsUC : UserControl
     {
-        public AddContactUC()
+        public ContactsUC()
         {
             InitializeComponent();
+        }
+
+        private void addContact(object sender, RoutedEventArgs e)
+        {
+            //Do something here 
         }
     }
 }

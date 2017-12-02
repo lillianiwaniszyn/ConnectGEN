@@ -1,0 +1,60 @@
+﻿<Window x:Class="WpfApp1.EditContact"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="EditContact" Height="825" Width="1500">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FF2D628C" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Image x:Name="Contact" Source="images/headshot.jpg" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="300" Margin="432,31,0,0"/>
+        <Image Source="images/whiteedit.png" HorizontalAlignment="Left" Margin="432,336,0,391" Width="69" />
+        <Label Content="Change" HorizontalAlignment="Left" VerticalAlignment="Top" Height="67" Width="211" Margin="506,336,0,0" Foreground="White" FontFamily="Arial Black" FontSize="36" RenderTransformOrigin="0.194,0.355"/>
+        <Button Content="changeImage" HorizontalAlignment="Left" VerticalAlignment="Top" Width="285" Margin="432,336,0,0" Height="67" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="ChangePic"/>
+        <Image Source="images/whiteedit.png" HorizontalAlignment="Left" Margin="1076,264,0,463" Width="72" />
+        <Label Content="Change" HorizontalAlignment="Left" VerticalAlignment="Top" Height="67" Width="211" Margin="1150,264,0,0" Foreground="White" FontFamily="Arial Black" FontSize="36" RenderTransformOrigin="0.194,0.355"/>
+        <Button x:Name="changeName" Content="changeImage" HorizontalAlignment="Left" VerticalAlignment="Top" Width="285" Margin="1076,264,0,0" Height="67" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="ChangeName"/>
+        <Popup x:Name="popup" Width="100" Height="100" PlacementTarget="{Binding ElementName=text}"
+            StaysOpen="False">
+            <Grid>
+                <StackPanel Margin="218,-500,-1174,454" Background="#FF0FD4CC">
+                    <Label Content="Enter Name: " Background="#FF0FD4CC" FontFamily="Arial Black" FontSize="48"/>
+                    <TextBox Background="#FF0FD4CC" BorderBrush="Black" Foreground="Black" FontFamily="Arial Black" FontSize="72" Height="81" />
+                </StackPanel>
+            </Grid>
+        </Popup>
+        <Label x:Name="contactName" Content="Contact Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="737,174,0,0" Height="85" Width="698" FontFamily="Arial Black" Foreground="White" FontSize="48"/>
+        <Button x:Name="Save" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,460,0,0" Height="200" Click="Save_Click">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="images/saveicon.ico" Height="200" Margin="0,0,0,0"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="650,460,0,0" Height="200" Click="Cancel_Click">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="images/cancelicon.png" Height="200" Margin="0,0,0,0"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="1050,460,0,0" Height="200" Click="Delete_Click">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="images/deleteicon.png" Height="200" Margin="0,0,0,0"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label Content="Save" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="272,660,0,0" Height="64" Width="144" Background="{x:Null}" FontFamily="Arial Black" FontSize="48" Foreground="White"/>
+        <Label Content="Cancel" HorizontalAlignment="Left" Margin="652,660,0,70" Width="198" Background="{x:Null}" FontFamily="Arial Black" FontSize="48" Foreground="White"/>
+        <Label Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1060,660,0,0" Height="64" Width="194" Background="{x:Null}" FontFamily="Arial Black" FontSize="48" Foreground="White"/>
+
+
+    </Grid>
+</Window>
