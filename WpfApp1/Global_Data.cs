@@ -15,6 +15,12 @@ namespace WpfApp1
         public string[] profilePicPath = new string[100]; //paths to everyone's profile pictures
         public static string[,] contacts = new string[100, 100]; //2d arrays in c# are different than Java, FYI
         public static string currentProfilePic;
+        public static string languageChosen;
+
+        public static void InitializeLanguage(string chosen)
+        {
+            languageChosen = chosen;
+        }
     }
 
 
