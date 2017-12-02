@@ -29,9 +29,9 @@
                     <ContextMenu AllowDrop="True"/>
                 </ComboBox.ContextMenu>
                 <ComboBoxItem Content="English"/>
+                <ComboBoxItem Content="French"/>
                 <ComboBoxItem Content="German"/>
-                <ComboBoxItem Content="Japanese"/>
-                <ComboBoxItem Content="Mandarin"/>
+                <ComboBoxItem Content="Italian"/>
                 <ComboBoxItem Content="Polish"/>
                 <ComboBoxItem Content="Russian"/>
                 <ComboBoxItem Content="Spanish"/>

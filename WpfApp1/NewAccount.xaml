@@ -44,9 +44,13 @@
         <Label Content="Language:" Foreground="#FFE0E0E0" Name="LanguageLabel" HorizontalAlignment="Left" Margin="89,212,0,0" VerticalAlignment="Top"/>
         <Label  Name ="validUsername" Foreground="#FF0000" HorizontalAlignment="Left" Margin="327,88,0,0" VerticalAlignment="Top"/>
         <Label Name ="validPIN"  Foreground="#FF0000" HorizontalAlignment="Left" Margin="327,186,0,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="159,216,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBox x:Name="languageMenu" HorizontalAlignment="Left" Margin="159,216,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem IsSelected="True">English</ComboBoxItem>
-            <ComboBoxItem >French</ComboBoxItem>
+            <ComboBoxItem>French</ComboBoxItem>
+            <ComboBoxItem>German</ComboBoxItem>
+            <ComboBoxItem>Italian</ComboBoxItem>
+            <ComboBoxItem>Polish</ComboBoxItem>
+            <ComboBoxItem>Russian</ComboBoxItem>
             <ComboBoxItem>Spanish</ComboBoxItem>
         </ComboBox>
         <Button BorderThickness="0"  
