@@ -314,5 +314,8 @@
   <ItemGroup>
     <Resource Include="images\white_search.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Communication\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
