@@ -67,20 +67,54 @@ namespace WpfApp1
         // Need to find a way to access translations (Google Translate?).
         private void TranslateButton_Click(object sender, RoutedEventArgs e)
         {
-            // Remove the messages from the chat. In its place, a translation menu is added.
+            // Remove the messages from the chat.
             msgDisplay.Children.Clear();
-            msgDisplay.Children.Add(new TranslationMenu());
+            // Create a translate menu that contains this screen as a parameter. (In order to re-enable buttons when it has been deleted.)
+            TranslationMenu currentTranslationMenu = new TranslationMenu();
+            // Replace the text in the translation menu with the text written in the chat's text box.
+            currentTranslationMenu.initialMessageBox.Text = messageBox.Text;
+            // In the place where chat messages were located, add the translation menu.
+            msgDisplay.Children.Add(currentTranslationMenu);
+            // Make sure that no other activity can take place by disabling all other buttons.
+            DisableAllButtons();
+        }
+
+        // Works. Method that removes the prompt text as long as the mouse is over the textbox.
+        private void DeletePromptText(object sender, MouseEventArgs e)
+        {
+            // Make that the error label isn't there.
+            // noMessageErrorLabel.Visibility = Visibility.Hidden;
+            // Makes sure that there isn't a message typed into the text box. 
+            if (messageBox.Text == "Click here to type your message.")
+            {
+                // Removes text, such that user can enter a new message.
+                messageBox.Text = "";
+            }
         }
 
         // WORKS. Method for extracting the message from the text box and calling the SimulateOutgoingMessage function.
+        // Need to create: Method that makes sure that the content in the box is not the standard message. Will have to create an error message/notification.
         private void SendMessageButton_Click(object sender, RoutedEventArgs e)
         {
             // Obtain the text message written in the messageBox.
             string textMessage = messageBox.Text;
             // Erases the message, such that user can write something new without erasing the previous message.
             messageBox.Text = "";
-            // Call the SimulateOutgoingMessage function to put the message into the chat.
-            SimulateOutgoingMessage(textMessage);
+
+            // Error Check: If the standard message is still in the text box...
+            // Will assume that user will not enter in a message that consists only of spaces.
+            if (textMessage == "Click here to type your message.")
+            {
+                // Make error message visible.
+                // noMessageErrorLabel.Visibility = Visibility.Visible;
+                // Make sure that prompt is back.
+                messageBox.Text = "Click here to type your message.";
+            }
+            else
+            {
+                // Call the SimulateOutgoingMessage function to put the message into the chat.
+                SimulateOutgoingMessage(textMessage);
+            }
         }
 
         // NOT COMPLETELY IMPLEMENTED.
