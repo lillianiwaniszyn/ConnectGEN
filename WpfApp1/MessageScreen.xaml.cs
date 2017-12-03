@@ -212,12 +212,43 @@ namespace WpfApp1
         // Current Idea: Might want to create a user control for notification, which will replace the message display.
         public void SimulateMsgNotification(string senderName)
         {
-            MessageNotification newMessage = new MessageNotification();
-            newMessage.senderName.Content = senderName;
+            //MessageNotification newMessage = new MessageNotification();
+            //newMessage.senderName.Content = senderName;
 
             // Bug: Clears other notifications. 
             msgDisplay.Children.Clear();
-            msgDisplay.Children.Add(newMessage);
+            //msgDisplay.Children.Add(newMessage);
+        }
+
+        // In the event that an action that demands all attention has stopped taking place, all buttons must be enabled again.
+        public void EnableAllButtons()
+        {
+            // Back Button
+            backButton.IsEnabled = true;
+            // Log Out Button
+            logOutButton.IsEnabled = true;
+            // Send Button
+            sendMessageButton.IsEnabled = true;
+            // Add Image Button
+            addImageButton.IsEnabled = true;
+            // Translate Button
+            translateButton.IsEnabled = true;
+        }
+
+        // Works.
+        // In the event that an action is taking place that demands all attention, all buttons must be disabled.
+        public void DisableAllButtons()
+        {
+            // Back Button
+            backButton.IsEnabled = false;
+            // Log Out Button
+            logOutButton.IsEnabled = false;
+            // Send Button
+            sendMessageButton.IsEnabled = false;
+            // Add Image Button
+            addImageButton.IsEnabled = false;
+            // Translate Button
+            translateButton.IsEnabled = false;
         }
 
         public void ReadTextFile(string temporaryUsername)
