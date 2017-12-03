@@ -27,7 +27,14 @@ namespace WpfApp1
 
         private void closeTranslationPopUp_Click(object sender, RoutedEventArgs e)
         {
-            (this.Parent as Panel).Children.Clear();
+            // Get past window.
+            MessageScreen oldScreen = (MessageScreen)this.DataContext;
+
+            // Clear translation menu from the stack panel.
+            oldScreen.msgDisplay.Children.Clear();
+
+            // Re-enable the buttons on the window.
+            oldScreen.EnableAllButtons();
         }
     }
 }
