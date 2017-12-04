@@ -57,9 +57,11 @@ namespace WpfApp1
             // this.Close();
 
         }
-        void OnClick3(object sender, RoutedEventArgs e)
+        void CreateAccount(object sender, RoutedEventArgs e)
         {
             Home_Screen hs = new Home_Screen();
+            String s = languageMenu.Text;
+            Global_Data.languageChosen = s;
             hs.Show();
             this.Close();
 

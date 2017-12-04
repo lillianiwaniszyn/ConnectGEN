@@ -34,7 +34,7 @@
     Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Name="btnAnswer1" Click="OnClick2" Margin="-31,252,397.667,-0.333" Background="Transparent">
             <Image Source="images/back-button.png"></Image>
         </Button>
-        <Button Name="createAccountBtn" Click="OnClick3" Margin="170,269,196.667,9.667"  Content="Create Account">
+        <Button Name="createAccountBtn" Click="CreateAccount" Margin="170,269,196.667,9.667"  Content="Create Account">
 
         </Button>
         <Label Content="User Name:" Name="UserNameLabel" Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="89,88,0,0" VerticalAlignment="Top"/>
