@@ -23,5 +23,24 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void SendNowButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AddToMessageButton_Click(object sender, RoutedEventArgs e)
+        {
+            AddImages previousWindow = (AddImages)this.DataContext;
+            MessageScreen firstWindow = (MessageScreen)previousWindow.DataContext;
+            // Add to MessageScreen textbox somehow.
+        }
+
+        private void CancelButton_Click(object sender, RoutedEventArgs e)
+        {
+            AddImages previousWindow = (AddImages)this.DataContext;
+            previousWindow.EnableAllButtons();
+            this.Close();
+        }
     }
 }
