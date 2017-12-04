@@ -32,6 +32,26 @@ namespace WpfApp1
             oldWindow.EnableAllButtons();
         }
 
+        private void InitialMessageBox_MouseEnter(object sender, MouseEventArgs e)
+        {
+            // Makes sure that there isn't a message typed into the text box.
+            if ((initialMessageBox.Text == "Click here to type your message.") || (initialMessageBox.Text == "Click here to type your message..."))
+            {
+                // Removes the prompt text, such that the user can enter a new message.
+                initialMessageBox.Text = "";
+            }
+        }
+
+        private void InitialMessageBox_MouseLeave(object sender, MouseEventArgs e)
+        {
+            // Makes sure that there wasn't a message typed into the text box.
+            if (initialMessageBox.Text == "")
+            {
+                // Recreates the prompt text.
+                initialMessageBox.Text = "Click here to type your message...";
+            }
+        }
+
         private void ReverseButton_Click(object sender, RoutedEventArgs e)
         {
             object temporaryVar = initialLanguageMenu.SelectedValue;
