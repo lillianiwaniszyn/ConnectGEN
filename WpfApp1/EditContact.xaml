@@ -23,13 +23,15 @@
         <Popup x:Name="popup" Width="100" Height="100" PlacementTarget="{Binding ElementName=text}"
             StaysOpen="False">
             <Grid>
-                <StackPanel Margin="218,-500,-1174,454" Background="#FF0FD4CC">
+                <StackPanel Margin="218,-500,-1174,349" Background="#FF0FD4CC">
                     <Label Content="Enter Name: " Background="#FF0FD4CC" FontFamily="Arial Black" FontSize="48"/>
                     <TextBox Background="#FF0FD4CC" BorderBrush="Black" Foreground="Black" FontFamily="Arial Black" FontSize="72" Height="81" />
+                    <Button Content="CHANGE NAME" Height="103" Margin="0,0,530,0" Background="#FF0FD4CC" BorderBrush="Black" Foreground="Black" FontFamily="Arial Black" FontSize="48"/>
+
                 </StackPanel>
             </Grid>
         </Popup>
-        <Label x:Name="contactName" Content="Contact Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="737,174,0,0" Height="85" Width="698" FontFamily="Arial Black" Foreground="White" FontSize="48"/>
+        <TextBox x:Name="ccname" HorizontalAlignment="Left" Height="85" TextWrapping="Wrap" Text="User Name" VerticalAlignment="Top" Width="698" Margin="737,174,0,0" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontFamily="Arial Black" FontSize="48"/>
         <Button x:Name="Save" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,460,0,0" Height="200" Click="Save_Click">
             <Button.Template>
                 <ControlTemplate>
@@ -54,6 +56,7 @@
         <Label Content="Save" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="272,660,0,0" Height="64" Width="144" Background="{x:Null}" FontFamily="Arial Black" FontSize="48" Foreground="White"/>
         <Label Content="Cancel" HorizontalAlignment="Left" Margin="652,660,0,70" Width="198" Background="{x:Null}" FontFamily="Arial Black" FontSize="48" Foreground="White"/>
         <Label Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1060,660,0,0" Height="64" Width="194" Background="{x:Null}" FontFamily="Arial Black" FontSize="48" Foreground="White"/>
+
 
 
     </Grid>

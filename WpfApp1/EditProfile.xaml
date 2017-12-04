@@ -13,13 +13,13 @@
                 <GradientStop Color="#FF2D628C" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Image x:Name="Contact" Source="images/headshot.jpg" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="300" Margin="432,31,0,0"/>
+        <Image x:Name="User" Source="images/headshot.jpg" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="300" Margin="432,31,0,0"/>
         <Image Source="images/whiteedit.png" HorizontalAlignment="Left" Margin="432,336,0,391" Width="69" />
         <Label Content="Change" HorizontalAlignment="Left" VerticalAlignment="Top" Height="67" Width="211" Margin="506,336,0,0" Foreground="White" FontFamily="Arial Black" FontSize="36" RenderTransformOrigin="0.194,0.355"/>
         <Button Content="changeImage" HorizontalAlignment="Left" VerticalAlignment="Top" Width="285" Margin="432,336,0,0" Height="67" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="ChangePic"/>
         <Image Source="images/whiteedit.png" HorizontalAlignment="Left" Margin="1076,264,0,463" Width="72" />
         <Label Content="Change" HorizontalAlignment="Left" VerticalAlignment="Top" Height="67" Width="211" Margin="1150,264,0,0" Foreground="White" FontFamily="Arial Black" FontSize="36" RenderTransformOrigin="0.194,0.355"/>
-        <Button x:Name="changeName" Content="changeImage" HorizontalAlignment="Left" VerticalAlignment="Top" Width="285" Margin="1076,264,0,0" Height="67" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="ChangeName"/>
+        <Button x:Name="changeUserName" Content="changeImage" HorizontalAlignment="Left" VerticalAlignment="Top" Width="285" Margin="1076,264,0,0" Height="67" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="ChangeName"/>
         <Popup x:Name="popup" Width="100" Height="100" PlacementTarget="{Binding ElementName=text}"
             StaysOpen="False">
             <Grid>

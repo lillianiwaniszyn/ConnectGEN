@@ -19,8 +19,6 @@ namespace WpfApp1
     /// </summary>
     public partial class EditContact : Window
     {
-        string contactName;
-        string imagefile;
         Global_Data dataClass = new Global_Data();
         public EditContact()
         {
