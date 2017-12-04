@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Window1" Height="344.8" Width="520.8">
+        Title="Home" Height="344.8" Width="520.8">
     <Grid Margin="0,0,2,0">
         <Rectangle HorizontalAlignment="Left" Height="319" Stroke="Black" VerticalAlignment="Top" Width="515">
             <Rectangle.Fill>
@@ -23,23 +23,23 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Button x:Name="logoutButton" HorizontalAlignment="Left" Height="54" Margin="10,255,0,0" VerticalAlignment="Top" Width="65" Background="Transparent" Click="LogoutButton_Click" >
+        <Button BorderThickness="0" x:Name="logoutButton" HorizontalAlignment="Left" Height="54" Margin="10,255,0,0" VerticalAlignment="Top" Width="65" Background="Transparent" Click="LogoutButton_Click" >
             <Image Source="Images/logout.png" Height="53" Width="72" />
         </Button>
         <Label x:Name="unreadLabel" Content="   UNREAD" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="92" Foreground="White" FontWeight="Bold" FontSize="14"/>
-        <Button x:Name="middleContact" HorizontalAlignment="Left" Height="123" Margin="249,99,0,0" VerticalAlignment="Top" Width="125" Background="Transparent" Click="MiddleContact_Click_1" >
+        <Button  BorderThickness="0" x:Name="middleContact" HorizontalAlignment="Left" Height="123" Margin="249,99,0,0" VerticalAlignment="Top" Width="125" Background="Transparent" Click="MiddleContact_Click_1" >
             <Image x:Name="MiddleImage" Source="Images/jazmineBrown.png" Height="113" Width="133"/>
         </Button>
-        <Button x:Name="leftContact" HorizontalAlignment="Left" VerticalAlignment="Top" Width="83" Margin="161,119,0,0" Height="80" Background="Transparent" Click="LeftContact_Click">
+        <Button  BorderThickness="0" x:Name="leftContact" HorizontalAlignment="Left" VerticalAlignment="Top" Width="83" Margin="161,119,0,0" Height="80" Background="Transparent" Click="LeftContact_Click">
             <Image x:Name="LeftImage" Source="Images/joaquinSimmons.jpg" Height="53" Width="84"/>
         </Button>
-        <Button x:Name="rightContact" HorizontalAlignment="Left" VerticalAlignment="Top" Width="83" Margin="379,119,0,0" Height="80" Background="Transparent" Click="RightContact_Click">
+        <Button  BorderThickness="0" x:Name="rightContact" HorizontalAlignment="Left" VerticalAlignment="Top" Width="83" Margin="379,119,0,0" Height="80" Background="Transparent" Click="RightContact_Click">
             <Image x:Name="RightImage" Source="Images/malikBrown.jpg"/>
         </Button>
-        <Button x:Name="leftArrow" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Margin="111,141,0,0" Height="31" Background="Transparent" Click="leftArrow_Click" >
+        <Button  BorderThickness="0" x:Name="leftArrow" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Margin="111,141,0,0" Height="31" Background="Transparent" Click="leftArrow_Click" >
             <Image Source="Images/back.png"/>
         </Button>
-        <Button x:Name="rightArrow" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Background="Transparent" Margin="467,139,0,0" RenderTransformOrigin="0.5,0.5" Height="35" Click="rightArrow_Click">
+        <Button  BorderThickness="0" x:Name="rightArrow" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Background="Transparent" Margin="467,139,0,0" RenderTransformOrigin="0.5,0.5" Height="35" Click="rightArrow_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -59,14 +59,14 @@
                 </Image.RenderTransform>
             </Image>
         </Button>
-        <Button x:Name="addContactImageButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Margin="111,10,0,0" Height="42" Background =" Transparent" Click="AddContactImageButton_Click">
+        <Button  BorderThickness="0" x:Name="addContactImageButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Margin="111,10,0,0" Height="42" Background =" Transparent" Click="AddContactImageButton_Click">
             <Image Source ="images/plus3.png"/>
         </Button>
-        <Button x:Name= "myProfilePictureButton" HorizontalAlignment="Left" Height="35" Margin="356,10,0,0" VerticalAlignment="Top" Width="35" Background="Transparent" Click="MyProfilePictureButton_Click">
+        <Button  BorderThickness="0" x:Name= "myProfilePictureButton" HorizontalAlignment="Left" Height="35" Margin="356,10,0,0" VerticalAlignment="Top" Width="35" Background="Transparent" Click="MyProfilePictureButton_Click">
             <Image Source="images/coraBrown.jpg"/>
         </Button>
-        <Button x:Name ="myProfileButton" Content="CORA BROWN" HorizontalAlignment="Left" VerticalAlignment="Top" Width="92" Margin="391,19,0,0" Foreground="White" Background="Transparent" FontWeight="Bold" Click="MyProfileButton_Click"/>
-        <Button x:Name ="addContactButton" Content="ADD CONTACT" HorizontalAlignment="Left" Height="25" Margin="92,45,0,0" VerticalAlignment="Top" Width="79" Foreground="White" Background="Transparent" Click="AddContactButton_Click" FontSize="10" FontWeight="Bold"/>
+        <Button BorderThickness="0" x:Name ="myProfileButton" Content="CORA BROWN" HorizontalAlignment="Left" VerticalAlignment="Top" Width="92" Margin="391,19,0,0" Foreground="White" Background="Transparent" FontWeight="Bold" Click="MyProfileButton_Click"/>
+        <Button BorderThickness="0" x:Name ="addContactButton" Content="ADD CONTACT" HorizontalAlignment="Left" Height="25" Margin="92,45,0,0" VerticalAlignment="Top" Width="79" Foreground="White" Background="Transparent" Click="AddContactButton_Click" FontSize="10" FontWeight="Bold"/>
         <Slider HorizontalAlignment="Left" Height="29" Margin="161,290,0,0" VerticalAlignment="Top" Width="301"/>
     </Grid>
 </Window>
