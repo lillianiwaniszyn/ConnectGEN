@@ -133,7 +133,7 @@ namespace WpfApp1
                 currentWord = oldMessageArray[i].ToLower();
 
                 // Read the file.
-                System.IO.StreamReader file = new System.IO.StreamReader("C:/Users/karla/source/repos/ConnectGenApp/ConnectGenApp/Translation/" + newLanguage + ".txt");
+                System.IO.StreamReader file = new System.IO.StreamReader("Translation/" + newLanguage + ".txt");
                 while ((line = file.ReadLine()) != null)
                 {
                     twoLanguages = line.Split(splitLine);
@@ -227,7 +227,7 @@ namespace WpfApp1
                 currentWord = oldMessageArray[i].ToLower();
 
                 // Read the file.
-                System.IO.StreamReader file = new System.IO.StreamReader("C:/Users/karla/source/repos/ConnectGenApp/ConnectGenApp/Translation/" + oldLanguage + ".txt");
+                System.IO.StreamReader file = new System.IO.StreamReader("Translation/" + oldLanguage + ".txt");
                 while ((line = file.ReadLine()) != null)
                 {
                     twoLanguages = line.Split(splitLine);
