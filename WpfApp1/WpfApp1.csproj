@@ -349,5 +349,8 @@
   <ItemGroup>
     <Resource Include="Translation\Spanish.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\KarlaJuego.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

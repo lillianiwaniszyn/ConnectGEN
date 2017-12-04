@@ -5,8 +5,71 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="AddImageMenu" Height="300" Width="300">
-    <Grid>
-        
-    </Grid>
+        Closed="AddImagesMenu_Closed"
+        Title="Select Picture" Height="400" Width="410">
+    <ScrollViewer HorizontalAlignment="Left" Height="370" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="394" CanContentScroll="True">
+        <Grid Height="900" Width="375">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="125" />
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="125" />
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="125" />
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="125" />
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="125" />
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="125" />
+            </Grid.RowDefinitions>
+            <Label x:Name="Date1" Grid.Row="0" Grid.Column="0" Content="Dec. 15, 2017" FontFamily="Arial Black"/>
+            <Button x:Name="KarlaJuego" Grid.Row="1" Grid.Column="0" Background="Transparent" Click="GetConfirmation">
+                <Image Source="images/KarlaJuego.jpg"/>
+            </Button>
+            <Button x:Name="selfie" Grid.Row="1" Grid.Column="1" Background="Transparent" Click="GetConfirmation">
+                <Image Source="images/selfie.jpg"/>
+            </Button>
+            <Label x:Name="Date2" Grid.Row="2" Content="Dec. 11, 2017" FontFamily="Arial Black" Background="Transparent"/>
+            <Button x:Name="simone" Grid.Row="3" Grid.Column="0" Background="Transparent" Click="GetConfirmation">
+                <Image Source="images/simone.jpg"/>
+            </Button>
+            <Label x:Name="Date3" Grid.Row="4" Content="Dec. 5, 2017" FontFamily="Arial Black"/>
+            <Button x:Name="malikBrown" Grid.Row="5" Grid.Column="0" Background="Transparent" Click="GetConfirmation">
+                <Image Source="images/malikBrown.jpg"/>
+            </Button>
+            <Button x:Name="simon" Grid.Row="5" Grid.Column="1" Background="Transparent" Click="GetConfirmation">
+                <Image Source="images/simon.jpg"/>
+            </Button>
+            <Label x:Name="Date4" Grid.Row="6" Content="Dec. 4, 2017" FontFamily="Arial Black"/>
+            <Button x:Name="kid1" Grid.Row="7" Grid.Column="0" Background="Transparent" Click="GetConfirmation">
+                <Image Source="images/kid1.png"/>
+            </Button>
+            <Button x:Name="kid2" Grid.Row="7" Grid.Column="1" Background="Transparent" Click="GetConfirmation">
+                <Image Source="images/kid2.png"/>
+            </Button>
+            <Button x:Name="kid3" Grid.Row="7" Grid.Column="2" Background="Transparent" Click="GetConfirmation">
+                <Image Source="images/kid3.png"/>
+            </Button>
+            <Label x:Name="Date5" Grid.Row="8" Content="Nov. 30, 2017" FontFamily="Arial Black"/>
+            <Button x:Name="coraBrown" Grid.Row="9" Grid.Column="0" Background="Transparent" Click="GetConfirmation">
+                <Image Source="images/coraBrown.jpg"/>
+            </Button>
+            <Button x:Name="jazmineBrown" Grid.Row="9" Grid.Column="1" Background="Transparent" Click="GetConfirmation">
+                <Image Source="images/jazmineBrown.png"/>
+            </Button>
+            <Button x:Name="joaquinSimmons" Grid.Row="9" Grid.Column="2" Background="Transparent" Click="GetConfirmation">
+                <Image Source="images/joaquinSimmons.jpg"/>
+            </Button>
+            <Label x:Name="Date6" Grid.Row="10" Content="Nov. 21, 2017" FontFamily="Arial Black"/>
+            <Button x:Name="cimoneSimmons" Grid.Row="11" Grid.Column="0" Background="Transparent" Click="GetConfirmation">
+                <Image Source="images/cimoneSimmons.jpeg"/>
+            </Button>
+        </Grid>
+    </ScrollViewer>
 </Window>

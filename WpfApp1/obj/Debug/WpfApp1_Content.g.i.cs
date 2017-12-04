@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("translation/spanish.txt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/karlajuego.jpg")]
 
 
