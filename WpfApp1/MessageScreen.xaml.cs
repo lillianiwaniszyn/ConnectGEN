@@ -57,7 +57,7 @@ namespace WpfApp1
         private void AddImageButton_Click(object sender, RoutedEventArgs e)
         {
             DisableAllButtons();
-            AddImages newImageMenu = new AddImages();
+            AddImageMenu newImageMenu = new AddImageMenu();
             newImageMenu.DataContext = this;
             newImageMenu.Show();
         }
