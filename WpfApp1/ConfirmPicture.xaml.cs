@@ -31,14 +31,14 @@ namespace WpfApp1
 
         private void AddToMessageButton_Click(object sender, RoutedEventArgs e)
         {
-            AddImages previousWindow = (AddImages)this.DataContext;
+            AddImageMenu previousWindow = (AddImageMenu)this.DataContext;
             MessageScreen firstWindow = (MessageScreen)previousWindow.DataContext;
             // Add to MessageScreen textbox somehow.
         }
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
-            AddImages previousWindow = (AddImages)this.DataContext;
+            AddImageMenu previousWindow = (AddImageMenu)this.DataContext;
             previousWindow.EnableAllButtons();
             this.Close();
         }
