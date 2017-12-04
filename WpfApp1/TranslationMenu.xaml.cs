@@ -32,6 +32,13 @@ namespace WpfApp1
             oldWindow.EnableAllButtons();
         }
 
+        private void ReverseButton_Click(object sender, RoutedEventArgs e)
+        {
+            object temporaryVar = initialLanguageMenu.SelectedValue;
+            initialLanguageMenu.SelectedValue = finalLanguageMenu.SelectedValue;
+            finalLanguageMenu.SelectedValue = temporaryVar;
+        }
+
         private void TranslateButton_Click(object sender, RoutedEventArgs e)
         {
             // Get languages from the menus.
