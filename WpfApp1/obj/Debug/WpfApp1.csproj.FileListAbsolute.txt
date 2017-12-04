@@ -383,3 +383,5 @@ C:\Users\karla\Source\Repos\ConnectGEN5\WpfApp1\obj\Debug\WpfApp1.g.resources
 C:\Users\karla\Source\Repos\ConnectGEN5\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
 C:\Users\karla\Source\Repos\ConnectGEN5\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.Cache
 C:\Users\karla\Source\Repos\ConnectGEN5\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\karla\Source\Repos\ConnectGEN5\WpfApp1\obj\Debug\AddImageMenu.g.cs
+C:\Users\karla\Source\Repos\ConnectGEN5\WpfApp1\obj\Debug\ConfirmPicture.g.cs

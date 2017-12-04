@@ -56,10 +56,10 @@ namespace WpfApp1
         // Need to get Sabrina's code for this. (Currently moves to a user control: AddImageMenu)
         private void AddImageButton_Click(object sender, RoutedEventArgs e)
         {
-            // Remove the messages from the chat. In its place, add an image menu.
-            msgDisplay.Children.Clear();
-            // Replace the contents of Add() with the actual file name for adding images.
-            // msgDisplay.Children.Add(new AddImageMenu());
+            DisableAllButtons();
+            AddImages newImageMenu = new AddImages();
+            newImageMenu.DataContext = this;
+            newImageMenu.Show();
         }
 
         // NOT CREATED YET. Messages are cleared from the screen and replaced with the translate menu.
