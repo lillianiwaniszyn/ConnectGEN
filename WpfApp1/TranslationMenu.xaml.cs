@@ -127,7 +127,7 @@ namespace WpfApp1
                 h++;
             }
 
-            // Go through each words in the oldMessageArray/.
+            // Go through each words in the oldMessageArray.
             for (int i = 0; i < arrayLength; i++)
             {
                 currentWord = oldMessageArray[i].ToLower();
@@ -209,27 +209,81 @@ namespace WpfApp1
             string[] twoLanguages;
             char[] splitLine = { '|' };
 
-            // Go through each words in the oldMessageArray/.
+            // Boolean to check if a match was found.
+            Boolean matchFound = false;
+            // Array of words not matched.
+            string[] notFound = new string[100];
+            // Make sure that each entry is null.
+            int h = 0;
+            while (h < 100)
+            {
+                notFound[h] = "";
+                h++;
+            }
+
+            // Go through each words in the oldMessageArray.
             for (int i = 0; i < arrayLength; i++)
             {
                 currentWord = oldMessageArray[i].ToLower();
 
                 // Read the file.
-                System.IO.StreamReader file = new System.IO.StreamReader("Translation/" + oldLanguage + ".txt");
+                System.IO.StreamReader file = new System.IO.StreamReader("C:/Users/karla/source/repos/ConnectGenApp/ConnectGenApp/Translation/" + oldLanguage + ".txt");
                 while ((line = file.ReadLine()) != null)
                 {
                     twoLanguages = line.Split(splitLine);
 
                     if (twoLanguages[1] == currentWord)
                     {
+                        matchFound = true;
                         finalMessage = finalMessage + twoLanguages[0] + " ";
                     }
+                }
+                if (matchFound == false)
+                {
+                    // Add the word as typed.
+                    finalMessage = finalMessage + currentWord + " ";
+                    // However, wil add the word to the arrays of words not matched.
+                    int k = 0;
+                    while (notFound[k] != "")
+                    {
+                        k++;
+                    }
+                    notFound[k] = currentWord;
                 }
                 file.Close();
                 // Not sure what this is supposed to do.
                 System.Console.ReadLine();
+                // Need to re-initialize matchFound as false;
+                matchFound = false;
             }
 
+            string missingWords = "";
+            string pastWord = "";
+            string newWord = "";
+
+            // Create an error message for words that weren't found in the text file.
+            int l = 0;
+            while (notFound[l] != "")
+            {
+                pastWord = newWord;
+                newWord = notFound[l];
+                // Makes sure that the first word doesn't have a comma beforehand.
+                if (pastWord != "")
+                {
+                    missingWords = missingWords + pastWord + ", ";
+                }
+                l++;
+            }
+            // Makes sure that the last word doesn't have a random comma after.
+            missingWords = missingWords + newWord;
+            // If the string was completed, then there must be words not found in the text file.
+            if (missingWords != "")
+            {
+                // Change content of error message.
+                translationErrorMessage.Content = "Error: Could not translate the following words: " + missingWords + "." + Environment.NewLine + "Please check if the first language chosen was correct or if you've misspelled any words.";
+                // Make error message visible.
+                translationErrorMessage.Visibility = Visibility.Visible;
+            }
             // Return the final message.
             return finalMessage;
         }
