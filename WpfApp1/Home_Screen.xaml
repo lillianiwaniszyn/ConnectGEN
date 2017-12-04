@@ -62,8 +62,8 @@
         <Button  BorderThickness="0" x:Name="addContactImageButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Margin="111,10,0,0" Height="42" Background =" Transparent" Click="AddContactImageButton_Click">
             <Image Source ="images/plus3.png"/>
         </Button>
-        <Button  BorderThickness="0" x:Name= "myProfilePictureButton" HorizontalAlignment="Left" Height="35" Margin="356,10,0,0" VerticalAlignment="Top" Width="35" Background="Transparent" Click="MyProfilePictureButton_Click">
-            <Image Source="images/coraBrown.jpg"/>
+        <Button  BorderThickness="0" Name= "myProfilePictureButton" HorizontalAlignment="Left" Height="35" Margin="356,10,0,0" VerticalAlignment="Top" Width="35" Background="Transparent" Click="MyProfilePictureButton_Click">
+            <Image  Name ="currentProfPic" Source="images/coraBrown.jpg"/>
         </Button>
         <Button BorderThickness="0" x:Name ="myProfileButton" Content="CORA BROWN" HorizontalAlignment="Left" VerticalAlignment="Top" Width="92" Margin="391,19,0,0" Foreground="White" Background="Transparent" FontWeight="Bold" Click="MyProfileButton_Click"/>
         <Button BorderThickness="0" x:Name ="addContactButton" Content="ADD CONTACT" HorizontalAlignment="Left" Height="25" Margin="92,45,0,0" VerticalAlignment="Top" Width="79" Foreground="White" Background="Transparent" Click="AddContactButton_Click" FontSize="10" FontWeight="Bold"/>

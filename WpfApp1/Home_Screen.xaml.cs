@@ -37,16 +37,19 @@ namespace WpfApp1
             popups.Visibility = System.Windows.Visibility.Visible;
         }
 
-        private void MyProfileButton_Click(object sender, RoutedEventArgs e)
+        void MyProfileButton_Click(object sender, RoutedEventArgs e)
         {
-            // move to edit my profile page
+            
             this.Close();
         }
 
         private void MyProfilePictureButton_Click(object sender, RoutedEventArgs e)
         {
-            // move to edit my profile page
-            this.Close();
+
+            Change_Profile_Picture cpp = new Change_Profile_Picture();
+            cpp.DataContext = this;
+            cpp.ShowDialog();
+           // this.Close();
         }
 
         private void AddContactImageButton_Click(object sender, RoutedEventArgs e)
