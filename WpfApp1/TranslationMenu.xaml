@@ -42,6 +42,7 @@
             <Button x:Name="reverseButton" Canvas.Left="247" Canvas.Top="231" Width="75" Height="33" Click="ReverseButton_Click">
                 <Image Source="images/reverseArrows.png"/>
             </Button>
+            <Label x:Name="translationErrorMessage" Content="[error message]" Canvas.Left="10" Canvas.Top="10" Height="45" Width="959" FontFamily="Arial Black" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Red" Visibility="Hidden"/>
         </Canvas>
     </Grid>
 </Window>

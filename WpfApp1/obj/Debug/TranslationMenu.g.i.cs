@@ -187,6 +187,7 @@ namespace WpfApp1
         }
 
         internal System.Windows.Controls.Button reverseButton;
+        internal System.Windows.Controls.Label translationErrorMessage;
     }
 }
 
