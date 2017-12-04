@@ -17,7 +17,13 @@
                 <ComboBox.ContextMenu>
                     <ContextMenu AllowDrop="True"/>
                 </ComboBox.ContextMenu>
-                https://github.com/lillianiwaniszyn/ConnectGEN.git
+                <ComboBoxItem Content="English"/>
+                <ComboBoxItem Content="French"/>
+                <ComboBoxItem Content="German"/>
+                <ComboBoxItem Content="Italian"/>
+                <ComboBoxItem Content="Polish"/>
+                <ComboBoxItem Content="Russian"/>
+                <ComboBoxItem Content="Spanish"/>
             </ComboBox>
             <ComboBox x:Name="finalLanguageMenu" HorizontalAlignment="Left" VerticalAlignment="Top" Width="235" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ScrollViewer.CanContentScroll="True" Canvas.Left="139" Canvas.Top="269" Height="43">
                 <ComboBox.ContextMenu>
