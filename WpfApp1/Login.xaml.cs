@@ -44,6 +44,21 @@ namespace WpfApp1
             this.Close();
 
         }
+        void Pin1(object sender, RoutedEventArgs e)
+        {
+            PIN2.Focus();
+
+        }
+        void Pin2(object sender, RoutedEventArgs e)
+        {
+            PIN3.Focus();
+
+        }
+        void Pin3(object sender, RoutedEventArgs e)
+        {
+            PIN4.Focus();
+
+        }
         void OnClickLogin(object sender, RoutedEventArgs e)
         {
             //to do.. implement this to go to main screen if username and password are correct
