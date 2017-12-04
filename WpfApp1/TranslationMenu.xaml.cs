@@ -27,7 +27,7 @@ namespace WpfApp1
             translationErrorMessage.Visibility = Visibility.Hidden;
         }
 
-        private void TranslationPopUp_Closed(object sender, EventArgs e)
+        private void TranslationMenu_Closed(object sender, EventArgs e)
         {
             // Get DataContext.
             MessageScreen oldWindow = (MessageScreen)this.DataContext;
