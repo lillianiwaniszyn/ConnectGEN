@@ -185,8 +185,8 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="TranslationMenu.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Videocall.xaml">
       <Generator>MSBuild:Compile</Generator>

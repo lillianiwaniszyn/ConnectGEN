@@ -67,16 +67,16 @@ namespace WpfApp1
         // Need to find a way to access translations (Google Translate?).
         private void TranslateButton_Click(object sender, RoutedEventArgs e)
         {
-            // Remove the messages from the chat.
-            msgDisplay.Children.Clear();
             // Create a translate menu that contains this screen as a parameter. (In order to re-enable buttons when it has been deleted.)
             TranslationMenu currentTranslationMenu = new TranslationMenu();
+            // Add DataContext to the translation menu.
+            currentTranslationMenu.DataContext = this;
             // Replace the text in the translation menu with the text written in the chat's text box.
             currentTranslationMenu.initialMessageBox.Text = messageBox.Text;
-            // In the place where chat messages were located, add the translation menu.
-            msgDisplay.Children.Add(currentTranslationMenu);
             // Make sure that no other activity can take place by disabling all other buttons.
             DisableAllButtons();
+            // Show the new window.
+            currentTranslationMenu.Show();
         }
 
         // Works. Method that removes the prompt text as long as the mouse is over the textbox.
