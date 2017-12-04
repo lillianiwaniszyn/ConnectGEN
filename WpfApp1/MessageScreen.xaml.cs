@@ -275,14 +275,19 @@ namespace WpfApp1
         {
             // Back Button
             backButton.IsEnabled = false;
+            backButton.Background = Brushes.Gray;
             // Log Out Button
             logOutButton.IsEnabled = false;
+            logOutButton.Background = Brushes.Gray;
             // Send Button
             sendMessageButton.IsEnabled = false;
+            sendMessageButton.Background = Brushes.Gray;
             // Add Image Button
             addImageButton.IsEnabled = false;
+            addImageButton.Background = Brushes.Gray;
             // Translate Button
             translateButton.IsEnabled = false;
+            translateButton.Background = Brushes.Gray;
         }
 
         public void ReadTextFile(string temporaryUsername)
