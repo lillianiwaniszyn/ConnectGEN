@@ -24,7 +24,69 @@ namespace WpfApp1
             InitializeComponent();
            
         }
-        
+        void HighLight(object sender, RoutedEventArgs e)
+            //only highlight one picture at a time
+        {
+            SelectImage.IsEnabled = true;
+            simon.Background = Brushes.Transparent;
+            simone.Background = Brushes.Transparent;
+            malikBrown.Background = Brushes.Transparent;
+            joaquinSimmons.Background = Brushes.Transparent;
+            jazmineBrown.Background = Brushes.Transparent;
+            girl_selfie.Background = Brushes.Transparent;
+            coraBrown.Background = Brushes.Transparent;
+            selfie.Background = Brushes.Transparent;
+
+            (sender as Button).Background = Brushes.SteelBlue;
+
+        }
+        void Set_Image(object sender, RoutedEventArgs e)
+            //bad code... i know :(
+        {
+            string selectedPic = null;
+            if (simon.Background == Brushes.SteelBlue)
+            {
+                selectedPic = "images/simon.jpg";
+            }
+            if (simone.Background == Brushes.SteelBlue)
+            {
+                selectedPic = "images/simone.jpg";
+            }
+            if (malikBrown.Background == Brushes.SteelBlue)
+            {
+                selectedPic = "images/malikBrown.jpg";
+            }
+            if (joaquinSimmons.Background == Brushes.SteelBlue)
+            {
+                selectedPic = "images/joaquinSimmons.jpg";
+            }
+            if (jazmineBrown.Background == Brushes.SteelBlue)
+            {
+                selectedPic = "images/jazmineBrown.png";
+            }
+            if (girl_selfie.Background == Brushes.SteelBlue)
+            {
+                selectedPic = "images/girl_selfie.jpg";
+            }
+            if (coraBrown.Background == Brushes.SteelBlue)
+            {
+                selectedPic = "images/coraBrown.jpg";
+            }
+            if (selfie.Background == Brushes.SteelBlue)
+            {
+                selectedPic = "images/selfie.jpg";
+            }
+            NewAccount n = (NewAccount)this.DataContext;
+            Image myImage = new Image();
+            Global_Data.currentProfilePic = selectedPic;
+            myImage.Source = new BitmapImage(new Uri(selectedPic, UriKind.RelativeOrAbsolute));
+
+            this.Close();
+            n.profPic.Source = myImage.Source;
+            n.Show();
+        }
+
+
 
 
         void Set_Profile_Picture(object sender, RoutedEventArgs e)
@@ -39,7 +101,6 @@ namespace WpfApp1
                 s = s + ".jpg";
             }
             string selectedPicture = "images/" + s;
-            Console.WriteLine(s);
             NewAccount n = (NewAccount)this.DataContext;
             Image myImage = new Image();
             Global_Data.currentProfilePic = selectedPicture;
