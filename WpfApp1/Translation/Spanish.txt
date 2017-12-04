@@ -1,66 +1,66 @@
-"back"|"regreso"
-"search"|"buscar"
-"up"|"arriba"
-"down"|"abajo"
-"volume"|"el volumen"
-"end"|"termina"
-"call"|"la llamada"
-"waiting"|"esperando"
-"save"|"salvar"
-"cancel"|"cancelar"
-"delete"|"borrar"
-"change"|"cambio"
-"please"|"por favor,"
-"enter"|"entrar"
-"your"|"tu"
-"first"|"primero"
-"name"|"nombre"
-"first name"|"nombre de pila"
-"last"|"último"
-"last name"|"apellido"
-"and"|"y"
-"of"|"de"
-"one"|"uno"
-"contact"|"contacto"
-"associated"|"asociado"
-"with"|"con"
-"account"|"cuenta"
-"so"|"entonces"
-"we"|"nosotros"
-"can"|"poder"
-"verify"|"verificar"
-"identity"|"identitad"
-"new"|"neuvo"
-"pin"|"pin"
-"restore"|"restaurar"
-"please enter your first name, last name, and name of one contact associated with your account so we can verify your identity"|"por favor, ingrese su nombre, apellido y nombre de un contacto asociado con su cuenta. entonces podemos verificar su identidad."
-"unread"|"no leído"
-"out"|"fuera"
-"log out"|"cerrar sesión"
-"logout"|"cerrar sesión"
-"add"|"añadir"
-"username"|"usuario"
-"user name"|"usuario"
-"in"|"en"
-"log in"|"iniciar sesión"
-"login"|"iniciar sesión"
-"forgot"|"olvidó"
-"image"|"imagen"
-"translate"|"traducir"
-"send"|"mandar"
-"click"|"hacer clic"
-"type"|"digitar"
-"message"|"el mensaje"
-"here"|"aquí"
-"type your message here..."|"escribe ty mensaje aquí..."
-"click here to type your message..."|"haga clic aquí para escribir su mensaje..."
-"to"|"a"
-"copy"|"copiar"
-"text"|"texto"
-"box"|"caja"
-"copy to text box"|"copiar al cuadro de texto"
-"translated message"|"mensaje traducido"
-"will"|"será"
-"appear"|"aparecer"
-"will appear"|"aparecerá"
-"your translated message will appear here..."|"su mensaje traducido aparecerá aquí..."
+back|regreso
+search|buscar
+up|arriba
+down|abajo
+volume|el volumen
+end|termina
+call|la llamada
+waiting|esperando
+save|salvar
+cancel|cancelar
+delete|borrar
+change|cambio
+please|por favor,
+enter|entrar
+your|tu
+first|primero
+name|nombre
+first name|nombre de pila
+last|último
+last name|apellido
+and|y
+of|de
+one|uno
+contact|contacto
+associated|asociado
+with|con
+account|cuenta
+so|entonces
+we|nosotros
+can|poder
+verify|verificar
+identity|identitad
+new|neuvo
+pin|pin
+restore|restaurar
+please enter your first name, last name, and name of one contact associated with your account so we can verify your identity|por favor, ingrese su nombre, apellido y nombre de un contacto asociado con su cuenta. entonces podemos verificar su identidad.
+unread|no leído
+out|fuera
+log out|cerrar sesión
+logout|cerrar sesión
+add|añadir
+username|usuario
+user name|usuario
+in|en
+log in|iniciar sesión
+login|iniciar sesión
+forgot|olvidó
+image|imagen
+translate|traducir
+send|mandar
+click|hacer clic
+type|digitar
+message|el mensaje
+here|aquí
+type your message here...|escribe ty mensaje aquí...
+click here to type your message...|haga clic aquí para escribir su mensaje...
+to|a
+copy|copiar
+text|texto
+box|caja
+copy to text box|copiar al cuadro de texto
+translated message|mensaje traducido
+will|será
+appear|aparecer
+will appear|aparecerá
+your translated message will appear here...|su mensaje traducido aparecerá aquí...

@@ -1,67 +1,67 @@
-"back"|"retournez"
-"search"|"cherchez"
-"up"|"en haut"
-"down"|"vers le bas"
-"volume"|"le volume"
-"end"|"finissez"
-"call"|"l'appel"
-"waiting"|"attente"
-"save"|"sauvez"
-"cancel"|"annulez"
-"delete"|"supprimez"
-"change"|"changez"
-"please"|"s'il vous plait,"
-"enter"|"entrez"
-"your"|"votre"
-"first"|"premier"
-"name"|"nom"
-"first name"|"prénom"
-"last"|"dernier"
-"last name"|"nom de famille"
-"and"|"et"
-"of"|"de"
-"one"|"un"
-"of one"|"d'un"
-"contact"|"contact"
-"associated"|"associé"
-"with"|"avec"
-"account"|"compte"
-"so"|"alors"
-"we"|"nous"
-"can"|"allons"
-"verify"|"vérifier"
-"identity"|"l'identité"
-"new"|"nouveau"
-"pin"|épingle"
-"restore"|"restaurez"
-"please enter your first name, last name, and name of one contact associated with your account so we can verify your identity."|s'il vous plait, entrez votre prénom, nom de famille, et nom d'un contact associé avec votre compte. Alors, nous allons vérifier l'identité."
-"unread"|"non lu"
-"out"|"en dehors"
-"log out"|"déconnectez"
-"logout"|"déconnectez"
-"add"|"ajoutez"
-"username"|"nom d'utilisateur"
-"user name"|"nom d'utilisateur"
-"in"|dans
-"log in"|"connectez"
-"login"|"connectez"
-"forgot"|"oublié"
-"image"|"l'image"
-"translate"|"traduisez"
-"send"|"envoyez"
-"click"|"cliquez"
-"type"|"tapez"
-"message"|"message"
-"here"|"ici"
-"type your message here..."|"tapez votre message ici..."
-"click here to type your message..."|"cliquez ici pour taper votre message..."
-"to"|"à"
-"copy"|"copiez"
-"text"|"texte"
-"box"|"boîte"
-"copy to text box"|"copiez dans la zone de texte"
-"translated message"|"message traduit"
-"will"|"a"
-"appear"|"apparaître"
-"will appear"|"apparaîtra"
-"your translated message will appear here..."|"votre message traduit apparaîtra ici..."
+back|retournez
+search|cherchez
+up|en haut
+down|vers le bas
+volume|le volume
+end|finissez
+call|l'appel
+waiting|attente
+save|sauvez
+cancel|annulez
+delete|supprimez
+change|changez
+please|s'il vous plait,
+enter|entrez
+your|votre
+first|premier
+name|nom
+first name|prénom
+last|dernier
+last name|nom de famille
+and|et
+of|de
+one|un
+of one|d'un
+contact|contact
+associated|associé
+with|avec
+account|compte
+so|alors
+we|nous
+can|allons
+verify|vérifier
+identity|l'identité
+new|nouveau
+pin|épingle
+restore|restaurez
+please enter your first name, last name, and name of one contact associated with your account so we can verify your identity.|s'il vous plait, entrez votre prénom, nom de famille, et nom d'un contact associé avec votre compte. Alors, nous allons vérifier l'identité.
+unread|non lu
+out|en dehors
+log out|déconnectez
+logout|déconnectez
+add|ajoutez
+username|nom d'utilisateur
+user name|nom d'utilisateur
+in|dans
+log in|connectez
+login|connectez
+forgot|oublié
+image|l'image
+translate|traduisez
+send|envoyez
+click|cliquez
+type|tapez
+message|message
+here|ici
+type your message here...|tapez votre message ici...
+click here to type your message...|cliquez ici pour taper votre message...
+to|à
+copy|copiez
+text|texte
+box|boîte
+copy to text box|copiez dans la zone de texte
+translated message|message traduit
+will|a
+appear|apparaître
+will appear|apparaîtra
+your translated message will appear here...|votre message traduit apparaîtra ici...
