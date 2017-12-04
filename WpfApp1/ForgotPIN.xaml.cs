@@ -18,21 +18,127 @@ namespace WpfApp1
     /// Interaction logic for Window6.xaml
     /// </summary>
     public partial class ForgotPIN : Window
+        
     {
+        string[] numbers = new string[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+        Boolean verified;
         public ForgotPIN()
         {
             InitializeComponent();
+            verified = false;
         }
         void OnClickRestore(object sender, RoutedEventArgs e)
         {
-            //to do... figure out what we want to do when we restore account
-            this.Close();
+            string username = Uname.Text;
+            string lastname = Lname.Text;
+            string contactFname = CFname.Text;
+            string contactLname = CLname.Text;
+            string pin1 = PIN1.Text;
+            string pin2 = PIN2.Text;
+            string pin3 = PIN3.Text;
+            string pin4 = PIN4.Text;
+            string PIN = pin1 + pin2 + pin3 + pin4;
+
+            if (Global_Data.existing_Usernames.Contains(Uname.Text) && Global_Data.lastnames.Contains(CLname.Text))
+            {
+                int index = Array.IndexOf(Global_Data.existing_Usernames, Uname.Text);
+                int index2 = Array.IndexOf(Global_Data.lastnames, CLname.Text); //get last name index
+                string friendUname = Global_Data.existing_Usernames[index2]; //get index of contact
+                if (lastname == Global_Data.lastnames[index])
+                {
+                    Console.WriteLine("YAY");
+                }
+                int n = 0;
+                int length = Global_Data.contacts.GetLength(1);
+                while (n < length)
+                {
+                    if (Global_Data.contacts[index, n] == friendUname)
+                    {
+                        verified = true;
+                        Global_Data.passwords[index] = PIN; //change PIN here
+                    }
+                    n++;
+                }
+            }
+
+                
+
+            if (verified == true) //if contact is verified
+            {
+                Home_Screen x = new Home_Screen();
+                x.Show();
+                this.Close();
+            }
+            else
+            {
+                Verify.Content = "";
+                Verify.Content = "*Cannot Verify\n Account.";
+            }
+               
         }
         void OnClickFP(object sender, RoutedEventArgs e)
         {
             Login l = new Login();
             l.Show();
             this.Close();
+        }
+        void vPin1(object sender, RoutedEventArgs e)
+        {
+            PIN2.Focus();
+            if (!numbers.Contains(PIN1.Text))
+            {
+                validPIN.Content = "*PIN must be numerical";
+                buttonRA.IsEnabled = false;
+            }
+            else
+            {
+                validPIN.Content = "";
+                buttonRA.IsEnabled = true;
+            }
+
+        }
+        void vPin2(object sender, RoutedEventArgs e)
+        {
+            PIN3.Focus();
+            if (!numbers.Contains(PIN2.Text))
+            {
+                validPIN.Content = "*PIN must be numerical";
+                buttonRA.IsEnabled = false;
+            }
+            else
+            {
+                validPIN.Content = "";
+                buttonRA.IsEnabled = true;
+            }
+
+        }
+        void vPin3(object sender, RoutedEventArgs e)
+        {
+            PIN4.Focus();
+            if (!numbers.Contains(PIN3.Text))
+            {
+                validPIN.Content = "*PIN must be numerical";
+                buttonRA.IsEnabled = false;
+            }
+            else
+            {
+                validPIN.Content = "";
+                buttonRA.IsEnabled = true;
+            }
+
+        }
+        void vPin4(object sender, RoutedEventArgs e)
+        {
+            if (!numbers.Contains(PIN4.Text))
+            {
+                validPIN.Content = "*PIN must be numerical";
+                buttonRA.IsEnabled = false;
+            }
+            else
+            {
+                validPIN.Content = "";
+                buttonRA.IsEnabled = true;
+            }
         }
 
 
