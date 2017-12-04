@@ -287,5 +287,12 @@ namespace WpfApp1
             // Return the final message.
             return finalMessage;
         }
+
+        private void CopyToTextBoxButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageScreen oldWindow = (MessageScreen)this.DataContext;
+            oldWindow.messageBox.Text = finalMessageBox.Text;
+            this.Close();
+        }
     }
 }

@@ -75,14 +75,6 @@ namespace WpfApp1
 #line hidden
 
 
-#line 15 "..\..\TranslationMenu.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button translateButton_Copy;
-
-#line default
-#line hidden
-
-
 #line 16 "..\..\TranslationMenu.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.ComboBox initialLanguageMenu;
@@ -188,6 +180,7 @@ namespace WpfApp1
 
         internal System.Windows.Controls.Button reverseButton;
         internal System.Windows.Controls.Label translationErrorMessage;
+        internal System.Windows.Controls.Button copyToTextBoxButton;
     }
 }
 
