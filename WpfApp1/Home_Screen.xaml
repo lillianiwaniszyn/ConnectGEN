@@ -5,9 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Home" Height="344.8" Width="520.8">
+        Title="Home" Height="825" Width="1500">
     <Grid Margin="0,0,2,0">
-        <Rectangle HorizontalAlignment="Left" Height="319" Stroke="Black" VerticalAlignment="Top" Width="515">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="209*"/>
+            <RowDefinition Height="586*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="77*"/>
+            <ColumnDefinition Width="1413*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle HorizontalAlignment="Left" Height="825" Stroke="Black" VerticalAlignment="Top" Width="1500" Margin="-45,10,0,-41" Grid.ColumnSpan="2" Grid.RowSpan="2">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -15,7 +23,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Rectangle HorizontalAlignment="Left" Height="319" Stroke="Black" VerticalAlignment="Top" Width="92">
+        <Rectangle HorizontalAlignment="Left" Height="825" Stroke="Black" VerticalAlignment="Top" Width="150" Grid.ColumnSpan="2" Margin="0,0,0,-31" Grid.RowSpan="2">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -23,23 +31,23 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Button BorderThickness="0" x:Name="logoutButton" HorizontalAlignment="Left" Height="54" Margin="10,255,0,0" VerticalAlignment="Top" Width="65" Background="Transparent" Click="LogoutButton_Click" >
-            <Image Source="Images/logout.png" Height="53" Width="72" />
+        <Button BorderThickness="0" x:Name="logoutButton" HorizontalAlignment="Left" Height="70" Margin="10,425.5,0,0" VerticalAlignment="Top" Width="100" Background="Transparent" Click="LogoutButton_Click" Grid.ColumnSpan="2" Grid.Row="1" >
+            <Image Source="Images/logout.png" Height="70" Width="94" />
         </Button>
-        <Label x:Name="unreadLabel" Content="   UNREAD" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="92" Foreground="White" FontWeight="Bold" FontSize="14"/>
-        <Button  BorderThickness="0" x:Name="middleContact" HorizontalAlignment="Left" Height="123" Margin="249,99,0,0" VerticalAlignment="Top" Width="125" Background="Transparent" Click="MiddleContact_Click_1" >
-            <Image x:Name="MiddleImage" Source="Images/jazmineBrown.png" Height="113" Width="133"/>
+        <Label x:Name="unreadLabel" Content=" UNREAD" HorizontalAlignment="Left" Height="66" VerticalAlignment="Top" Width="171" Foreground="White" FontWeight="Bold" FontSize="30" Grid.ColumnSpan="2"/>
+        <Button  BorderThickness="0" x:Name="middleContact" HorizontalAlignment="Left" Height="323" Margin="566,18.5,0,0" VerticalAlignment="Top" Width="313" Background="Transparent" Click="MiddleContact_Click_1" Grid.Column="1" Grid.Row="1" >
+            <Image x:Name="MiddleImage" Source="Images/jazmineBrown.png" Height="269" Width="303"/>
         </Button>
-        <Button  BorderThickness="0" x:Name="leftContact" HorizontalAlignment="Left" VerticalAlignment="Top" Width="83" Margin="161,119,0,0" Height="80" Background="Transparent" Click="LeftContact_Click">
-            <Image x:Name="LeftImage" Source="Images/joaquinSimmons.jpg" Height="53" Width="84"/>
+        <Button  BorderThickness="0" x:Name="leftContact" HorizontalAlignment="Left" VerticalAlignment="Top" Width="215" Margin="314,71.5,0,0" Height="218" Background="Transparent" Click="LeftContact_Click" Grid.Column="1" Grid.Row="1">
+            <Image x:Name="LeftImage" Source="Images/joaquinSimmons.jpg" Height="177" Width="222"/>
         </Button>
-        <Button  BorderThickness="0" x:Name="rightContact" HorizontalAlignment="Left" VerticalAlignment="Top" Width="83" Margin="379,119,0,0" Height="80" Background="Transparent" Click="RightContact_Click">
-            <Image x:Name="RightImage" Source="Images/malikBrown.jpg"/>
+        <Button  BorderThickness="0" x:Name="rightContact" HorizontalAlignment="Left" VerticalAlignment="Top" Width="215" Margin="910,71.5,0,0" Height="218" Background="Transparent" Click="RightContact_Click" Grid.Column="1" Grid.Row="1">
+            <Image x:Name="RightImage" Source="Images/malikBrown.jpg" Height="208" Width="215"/>
         </Button>
-        <Button  BorderThickness="0" x:Name="leftArrow" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Margin="111,141,0,0" Height="31" Background="Transparent" Click="leftArrow_Click" >
+        <Button  BorderThickness="0" x:Name="leftArrow" HorizontalAlignment="Left" VerticalAlignment="Top" Width="164" Margin="101,149.5,0,0" Height="80" Background="Transparent" Click="leftArrow_Click" Grid.Column="1" Grid.Row="1" >
             <Image Source="Images/back.png"/>
         </Button>
-        <Button  BorderThickness="0" x:Name="rightArrow" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Background="Transparent" Margin="467,139,0,0" RenderTransformOrigin="0.5,0.5" Height="35" Click="rightArrow_Click">
+        <Button  BorderThickness="0" x:Name="rightArrow" HorizontalAlignment="Left" VerticalAlignment="Top" Width="162" Background="Transparent" Margin="1175,130.5,0,0" RenderTransformOrigin="0.5,0.5" Height="99" Click="rightArrow_Click" Grid.Column="1" Grid.Row="1">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -48,7 +56,7 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </Button.RenderTransform>
-            <Image Source="Images/back.png" RenderTransformOrigin="0.5,0.5">
+            <Image Source="Images/back.png" RenderTransformOrigin="0.5,0.5" Height="80" Width="152">
                 <Image.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -59,14 +67,31 @@
                 </Image.RenderTransform>
             </Image>
         </Button>
-        <Button  BorderThickness="0" x:Name="addContactImageButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Margin="111,10,0,0" Height="42" Background =" Transparent" Click="AddContactImageButton_Click">
-            <Image Source ="images/plus3.png"/>
+        <Button  BorderThickness="0" x:Name="addContactImageButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="133" Margin="158,10,0,0" Height="89" Background =" Transparent" Click="AddContactImageButton_Click" Grid.Column="1">
+            <Image Source ="images/plus3.png" Height="82" Width="115"/>
         </Button>
-        <Button  BorderThickness="0" Name= "myProfilePictureButton" HorizontalAlignment="Left" Height="35" Margin="356,10,0,0" VerticalAlignment="Top" Width="35" Background="Transparent" Click="MyProfilePictureButton_Click">
+        <Button  BorderThickness="0" Name= "myProfilePictureButton" HorizontalAlignment="Left" Height="111" Margin="1029,10,0,0" VerticalAlignment="Top" Width="121" Background="Transparent" Click="MyProfilePictureButton_Click" Grid.Column="1">
             <Image  Name ="currentProfPic" Source="images/coraBrown.jpg"/>
         </Button>
-        <Button BorderThickness="0" x:Name ="myProfileButton" Content="CORA BROWN" HorizontalAlignment="Left" VerticalAlignment="Top" Width="92" Margin="391,19,0,0" Foreground="White" Background="Transparent" FontWeight="Bold" Click="MyProfileButton_Click"/>
-        <Button BorderThickness="0" x:Name ="addContactButton" Content="ADD CONTACT" HorizontalAlignment="Left" Height="25" Margin="92,45,0,0" VerticalAlignment="Top" Width="79" Foreground="White" Background="Transparent" Click="AddContactButton_Click" FontSize="10" FontWeight="Bold"/>
-        <Slider HorizontalAlignment="Left" Height="29" Margin="161,290,0,0" VerticalAlignment="Top" Width="301"/>
+        <Button BorderThickness="0" x:Name ="myProfileButton" Content="CORA BROWN" HorizontalAlignment="Left" VerticalAlignment="Top" Width="228" Margin="1150,24,0,0" Foreground="White" Background="Transparent" FontWeight="Bold" Click="MyProfileButton_Click" Height="75" FontSize="30" Grid.Column="1"/>
+        <Button BorderThickness="0" x:Name ="addContactButton" Content="ADD CONTACT" HorizontalAlignment="Left" Height="39" Margin="138,99,0,0" VerticalAlignment="Top" Width="181" Foreground="White" Background="Transparent" Click="AddContactButton_Click" FontSize="22" FontWeight="Bold" Grid.Column="1"/>
+        <Button x:Name="infoIcon" HorizontalAlignment="Left" Height="87" Margin="665,112,0,0" VerticalAlignment="Top" Width="106" Background="Transparent" Click="infoIcon_Click" Visibility="Visible" Grid.Column="1">
+            <Image Source=" images/info2.png"/>
+        </Button >
+        <Button x:Name="messageIcon" HorizontalAlignment="Left" Height="111" Margin="522,347,0,0" VerticalAlignment="Top" Width="118" Background="Transparent" Click="messageIcon_Click" Visibility="Visible" Grid.Column="1" Grid.Row="1">
+            <Image Source=" images/message.png"/>
+        </Button >
+        <Button x:Name="audioIcon" HorizontalAlignment="Left" Height="114" Margin="665,347,0,0" VerticalAlignment="Top" Width="106" Background="Transparent" Click="audioIcon_Click" Visibility="Visible" Grid.Column="1" Grid.Row="1">
+            <Image Source="images/call.png"/>
+        </Button >
+        <Button x:Name="videoIcon"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="118" Margin="799,347,0,0" Height="111" Background="Transparent" Click="videoIcon_Click" Visibility="Visible" Grid.Column="1" Grid.Row="1" >
+            <Image Source=" images/video.png"/>
+        </Button >
+        <Button x:Name="infoLabel" Content="Edit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="106" Margin="665,202,0,0" Foreground="White" Background="Transparent" FontWeight="Bold" Click="infoLabel_Click" Visibility="Visible" Grid.Column="1" Grid.RowSpan="2" Height="48" FontSize="24"/>
+        <Button x:Name="messageLabel" Content="Message" HorizontalAlignment="Left" VerticalAlignment="Top" Width="118" Foreground="White" Background="Transparent" Margin="522,458,0,0" FontWeight="Bold" Click="messageLabel_Click" Visibility="Visible" Grid.Column="1" Grid.Row="1" Height="37" FontSize="24"/>
+        <Button x:Name="audioLabel" Content="Audio" HorizontalAlignment="Left" VerticalAlignment="Top" Width="106" Margin="665,458,0,0" Height="37" Foreground="White" Background="Transparent" FontWeight="Bold" Click="audioLabel_Click" Visibility="Visible" Grid.Column="1" Grid.Row="1" FontSize="24"/>
+        <Button x:Name="videoLabel" Content="Video" HorizontalAlignment="Left" VerticalAlignment="Top" Width="118" Margin="799,458,0,0" Height="37" Foreground="White" Background="Transparent" FontWeight="Bold" Click="videoLabel_Click" Visibility="Visible" Grid.Column="1" Grid.Row="1" FontSize="24"/>
+        <Button x:Name="logOutLabel" Content="LOG OUT" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,500.5,0,0" Foreground="White" Background="Transparent" FontWeight="Bold" Click="logOutLabel_Click" Height="60" FontSize="24" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <Slider x:Name="slider" HorizontalAlignment="Left" Height="42" Margin="396,500.5,0,0" VerticalAlignment="Top" Width="754" Grid.Column="1" Grid.Row="1"/>
     </Grid>
 </Window>

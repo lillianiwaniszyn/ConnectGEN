@@ -21,6 +21,12 @@ namespace WpfApp1
     {
         Global_Data dataClass = new Global_Data();
         int middleImage;
+        MessageScreen message = new MessageScreen();
+        EditProfile editprofile = new EditProfile();
+        EditContact editcontact = new EditContact();
+        AudioCallWaiting audio = new AudioCallWaiting();
+        VideoCallWaiting video = new VideoCallWaiting();
+
         public Home_Screen()
         {
             InitializeComponent();
@@ -29,26 +35,29 @@ namespace WpfApp1
         private void MiddleContact_Click_1(object sender, RoutedEventArgs e)
         {
             // make the pop-ups visible
-            PopUps popups = new PopUps();
-            popups.infoIcon.Visibility = System.Windows.Visibility.Visible;
-            popups.messageIcon.Visibility = System.Windows.Visibility.Visible;
-            popups.audioIcon.Visibility = System.Windows.Visibility.Visible;
-            popups.videoIcon.Visibility = System.Windows.Visibility.Visible;
-            popups.Visibility = System.Windows.Visibility.Visible;
+            infoIcon.Visibility = System.Windows.Visibility.Visible;
+            messageIcon.Visibility = System.Windows.Visibility.Visible;
+            audioIcon.Visibility = System.Windows.Visibility.Visible;
+            videoIcon.Visibility = System.Windows.Visibility.Visible;
+            infoLabel.Visibility = System.Windows.Visibility.Visible;
+            messageLabel.Visibility = System.Windows.Visibility.Visible;
+            audioLabel.Visibility = System.Windows.Visibility.Visible;
+            videoLabel.Visibility = System.Windows.Visibility.Visible;
+
         }
 
         void MyProfileButton_Click(object sender, RoutedEventArgs e)
         {
-            
+            editprofile.Show();
             this.Close();
         }
 
         private void MyProfilePictureButton_Click(object sender, RoutedEventArgs e)
         {
 
-            Change_Profile_Picture cpp = new Change_Profile_Picture();
-            cpp.DataContext = this;
-            cpp.ShowDialog();
+            //Change_Profile_Picture cpp = new Change_Profile_Picture();
+            //cpp.DataContext = this;
+            //cpp.ShowDialog();
            // this.Close();
         }
 
@@ -99,6 +108,71 @@ namespace WpfApp1
             LeftImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage - 1]));
             MiddleImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage]));
             RightImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage + 1]));
+        }
+        private void infoIcon_Click(object sender, RoutedEventArgs e)
+        {
+            // move to edit contact page 
+            editcontact.Show();
+            this.Close();
+        }
+
+        private void messageIcon_Click(object sender, RoutedEventArgs e)
+        {
+            message.Show();
+            this.Close();
+        }
+
+        private void audioIcon_Click(object sender, RoutedEventArgs e)
+        {
+            audio.Show();
+            this.Close();
+        }
+
+        private void videoIcon_Click(object sender, RoutedEventArgs e)
+        {
+            video.Show();
+            this.Close();
+        }
+
+        private void messageLabel_Click(object sender, RoutedEventArgs e)
+        {
+            message.Show();
+            this.Close();
+        }
+
+        private void audioLabel_Click(object sender, RoutedEventArgs e)
+        { 
+            audio.Show();
+            this.Close();
+        }
+
+        private void videoLabel_Click(object sender, RoutedEventArgs e)
+        {
+            video.Show();
+            this.Close();
+        }
+
+        private void infoLabel_Click(object sender, RoutedEventArgs e)
+        {
+            // move to edit contact page 
+            editcontact.Show();
+            this.Close();
+        }
+
+        private void logOutLabel_Click(object sender, RoutedEventArgs e)
+        {
+            Login_Main lm = new Login_Main();
+            lm.Show();
+            this.Close();
+        }
+
+        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            middleImage++;
+            LeftImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage - 1]));
+            MiddleImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage]));
+            RightImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage + 1]));
+
         }
     }
 }
