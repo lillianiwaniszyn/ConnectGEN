@@ -69,9 +69,6 @@
     <Compile Include="Change_Profile_Picture.xaml.cs">
       <DependentUpon>Change_Profile_Picture.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ConfirmPicture.xaml.cs">
-      <DependentUpon>ConfirmPicture.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ContactsUC.xaml.cs">
       <DependentUpon>ContactsUC.xaml</DependentUpon>
     </Compile>
@@ -140,10 +137,6 @@
     <Page Include="Change_Profile_Picture.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ConfirmPicture.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ContactsUC.xaml">
       <SubType>Designer</SubType>
