@@ -7,10 +7,6 @@
         mc:Ignorable="d"
         Title="Login" Height="350" Width="525">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black" Offset="0"/>
@@ -25,29 +21,30 @@
                 <ImageBrush/>
             </Label.Background>
         </Label>
+        <ScrollViewer Margin="110,73,159.667,89.667" >
+            <Grid Height="249" >
+                <Button HorizontalAlignment="Left"  Margin="10,0,0,0" VerticalAlignment="Top" Width="211" Height="65" Click="OnClickB">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="images/corabrown.jpg"/>
+                        <TextBlock Text="Cora Brown:&#x0a;Press to Login" VerticalAlignment="Center" FontSize="20" FontFamily="Arial Black" Width="185"/>
+                    </StackPanel>
+                </Button>
+                <Button  HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top" Width="211" Height="65" Click="OnClickC"/>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="images/blank2.png" Margin="15,102,0,101.333" Width="40"/>
+                    <TextBlock Text="Other User:&#xA;Press to Login" VerticalAlignment="Center" FontSize="20" FontFamily="Arial Black" Width="157" Margin="0,102,0,101.333"/>
+                </StackPanel>
+
+            </Grid>
 
 
+        </ScrollViewer>
         <Label HorizontalContentAlignment="Center" Name="addAccount"  
     Content="Create New Account"  Foreground="#FFE0E0E0"   
     FontSize="20" FontFamily="Arial Black"  
-    FontWeight="Bold" Margin="81,224,141.667,45.667" Grid.Column="1"/>
-        <Button Margin="97,87,141.667,169.667" Grid.Column="1" Click="OnClickB">
-            <StackPanel Orientation="Horizontal">
-                <Image Source="images/corabrown.jpg"/>
-                <TextBlock Text="Cora Brown:&#x0a;Press to Login" VerticalAlignment="Center" FontSize="20" FontFamily="Arial Black" Width="185"/>
-            </StackPanel>
-
-        </Button>
-        <Button Margin="97,160,141.667,96.667" Grid.Column="1" Click="OnClickC">
-            <StackPanel Orientation="Horizontal">
-                <Image Source="images/blank.png" Width="56"/>
-                <TextBlock Text="Other User:&#x0a;Press to Login" VerticalAlignment="Center" FontSize="20" FontFamily="Arial Black" Width="185"/>
-            </StackPanel>
-
-        </Button>
-        <Button BorderThickness="0"  
-    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="198,266,0,0" VerticalAlignment="Top" Width="75" Background="Transparent" Click="OnClickA">
-            <Image Source ="images/plus3.png" />
+    FontWeight="Bold" Margin="88,231,134.667,52.667"/>
+        <Button Name ="SelectImage" BorderThickness="0" HorizontalAlignment="Left" Margin="201,266,0,0" VerticalAlignment="Top" Width="74" Height="45" Background="Transparent" Click="OnClickA">
+            <Image Source="images\plus3.png"/>
         </Button>
 
     </Grid>
