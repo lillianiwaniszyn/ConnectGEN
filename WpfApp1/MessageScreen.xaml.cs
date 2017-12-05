@@ -37,11 +37,6 @@ namespace WpfApp1
             SimulateIncomingMessage("Malik", "Will you be able to go to dinner tomorrow?");
             //
 
-            // Recreate prompt text.
-            // Makes sure that there isn't a message typed into the text box. (Since mouse has to leave the textbox in order to send the message.)
-            if (messageBox.Text == "")
-                // Sets the contents of the text box to the standard prompt.
-                messageBox.Text = "Click here to type your message.";
         }
 
         // WORKS. Method for exiting the chat. Opens unto the contacts screen.
@@ -113,8 +108,8 @@ namespace WpfApp1
         {
             // Obtain the text message written in the messageBox.
             string textMessage = messageBox.Text;
-            // Erases the message, such that user can write something new without erasing the previous message.
-            messageBox.Text = "";
+            // Recreates the prompt, such that user knows they can write something new.
+            messageBox.Text = "Click here to type your message.";
 
             // Error Check: If the standard message is still in the text box...
             // Will assume that user will not enter in a message that consists only of spaces.
