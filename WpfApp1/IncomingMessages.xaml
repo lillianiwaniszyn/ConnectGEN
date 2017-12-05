@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="222" d:DesignWidth="980">
     <Grid>
-        <Image x:Name="TextBubble" Source="TextBubble.png" HorizontalAlignment="Left" Height="220" VerticalAlignment="Top" Width="315" Margin="26,2,0,0"/>
+        <Image x:Name="TextBubble" Source="images/TextBubble.png" HorizontalAlignment="Left" Height="220" VerticalAlignment="Top" Width="315" Margin="26,2,0,0"/>
         <Label x:Name="TimeStamp" Content="[time]" Foreground="White" HorizontalAlignment="Left" Margin="315,171,0,0" VerticalAlignment="Top" Width="153" Height="42" FontFamily="Arial Black" FontSize="20"/>
         <Label x:Name="TextMsg" Content="[text message]" Foreground="White" HorizontalAlignment="Left" Margin="88,39,0,0" VerticalAlignment="Top" Height="117" Width="198" FontFamily="Arial Black" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MouseDoubleClick="CallTranslation"/>
     </Grid>

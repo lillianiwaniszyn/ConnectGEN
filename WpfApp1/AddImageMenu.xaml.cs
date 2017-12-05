@@ -132,8 +132,12 @@ namespace WpfApp1
                 newImageMessage.imageSent.Source = imageBitmap;
             }
 
-            // Add to message screen.
+            // Get message screen.
             MessageScreen oldWindow = (MessageScreen)this.DataContext;
+            // Get time. Format using method from message screen.
+            string timeCreated = oldWindow.GetTimefromVar(DateTime.Now);
+            newImageMessage.TimeStamp.Content = timeCreated;
+            // Add user control to msgDisplay.
             oldWindow.msgDisplay.Children.Add(newImageMessage);
             
             // Close menu.

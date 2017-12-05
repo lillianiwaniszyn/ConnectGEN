@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Closed="AddImagesMenu_Closed"
-        Title="Select Picture" Height="400" Width="410">
+        Title="Select Picture" Height="404" Width="410">
     <Grid>
         <ScrollViewer HorizontalAlignment="Left" Height="370" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="394" CanContentScroll="True">
             <Grid Height="900" Width="375">
