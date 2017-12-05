@@ -21,6 +21,8 @@ namespace WpfApp1
     {
         Global_Data dataClass = new Global_Data();
         int middleImage = 1;
+        int count = 0;
+
         /*
         MessageScreen message = new MessageScreen();
         EditProfile editprofile = new EditProfile();
@@ -35,15 +37,33 @@ namespace WpfApp1
 
         private void MiddleContact_Click_1(object sender, RoutedEventArgs e)
         {
-            // make the pop-ups visible
-            infoIcon.Visibility = System.Windows.Visibility.Visible;
-            messageIcon.Visibility = System.Windows.Visibility.Visible;
-            audioIcon.Visibility = System.Windows.Visibility.Visible;
-            videoIcon.Visibility = System.Windows.Visibility.Visible;
-            infoLabel.Visibility = System.Windows.Visibility.Visible;
-            messageLabel.Visibility = System.Windows.Visibility.Visible;
-            audioLabel.Visibility = System.Windows.Visibility.Visible;
-            videoLabel.Visibility = System.Windows.Visibility.Visible;
+            if (count == 0)
+            {
+                // make the pop-ups visible
+                infoIcon.Visibility = System.Windows.Visibility.Visible;
+                messageIcon.Visibility = System.Windows.Visibility.Visible;
+                audioIcon.Visibility = System.Windows.Visibility.Visible;
+                videoIcon.Visibility = System.Windows.Visibility.Visible;
+                infoLabel.Visibility = System.Windows.Visibility.Visible;
+                messageLabel.Visibility = System.Windows.Visibility.Visible;
+                audioLabel.Visibility = System.Windows.Visibility.Visible;
+                videoLabel.Visibility = System.Windows.Visibility.Visible;
+                count++;
+            }
+            else if (count == 1)
+            {
+                // disable the buttons
+                infoIcon.Visibility = System.Windows.Visibility.Hidden;
+                messageIcon.Visibility = System.Windows.Visibility.Hidden;
+                audioIcon.Visibility = System.Windows.Visibility.Hidden;
+                videoIcon.Visibility = System.Windows.Visibility.Hidden;
+                infoLabel.Visibility = System.Windows.Visibility.Hidden;
+                messageLabel.Visibility = System.Windows.Visibility.Hidden;
+                audioLabel.Visibility = System.Windows.Visibility.Hidden;
+                videoLabel.Visibility = System.Windows.Visibility.Hidden;
+                count--;
+            }
+
 
         }
 
@@ -193,6 +213,54 @@ namespace WpfApp1
             MiddleImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage]));
             RightImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage + 1]));
 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Login_Main lm = new Login_Main();
+            lm.Show();
+            this.Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            // move to search for a contact page
+            //this.Close();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            EditProfile editprofile = new EditProfile();
+            editprofile.Show();
+            this.Close();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            MessageScreen message = new MessageScreen();
+            message.Show();
+            this.Close();
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            AudioCallWaiting audio = new AudioCallWaiting();
+            audio.Show();
+            this.Close();
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            VideoCallWaiting video = new VideoCallWaiting();
+            video.Show();
+            this.Close();
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            EditContact editcontact = new EditContact();
+            editcontact.Show();
+            this.Close();
         }
     }
 }
