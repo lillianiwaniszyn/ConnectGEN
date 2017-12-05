@@ -7,8 +7,8 @@
 */obj/*
 */.vs/*
 */bin/*
-%/WpfApp1/obj/*
-%/WpfApp1/bin/*
-%/WpfApp1/.vs/*
+/WpfApp1/obj/*
+/WpfApp1/bin/*
+/WpfApp1/.vs/*
 .exe
 .obj
