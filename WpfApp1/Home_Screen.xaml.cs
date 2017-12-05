@@ -98,21 +98,28 @@ namespace WpfApp1
 
         private void rightArrow_Click(object sender, RoutedEventArgs e)
         {
-            middleImage++;
-            //LeftImage.Source = new BitmapImage(new Uri("@" + dataClass.profilePicPath[middleImage - 1]));
-            //MiddleImage.Source = new BitmapImage(new Uri("@" + dataClass.profilePicPath[middleImage]));
-            //RightImage.Source = new BitmapImage(new Uri("@" + dataClass.profilePicPath[middleImage + 1]));
-            LeftImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage - 1], UriKind.Relative));
-            MiddleImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage], UriKind.Relative));
-            RightImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage + 1], UriKind.Relative));
+            if(middleImage < 3)
+            {
+
+                middleImage++;
+                LeftImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage - 1], UriKind.Relative));
+                MiddleImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage], UriKind.Relative));
+                RightImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage + 1], UriKind.Relative));
+            }
+            
         }
 
         private void leftArrow_Click(object sender, RoutedEventArgs e)
         {
-            middleImage--;
-            LeftImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage - 1], UriKind.Relative));
-            MiddleImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage], UriKind.Relative));
-            RightImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage + 1], UriKind.Relative));
+            if(middleImage > 1)
+            {
+                middleImage--;
+                LeftImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage - 1], UriKind.Relative));
+                MiddleImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage], UriKind.Relative));
+                RightImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage + 1], UriKind.Relative));
+
+            }
+            
         }
         private void infoIcon_Click(object sender, RoutedEventArgs e)
         {
