@@ -51,11 +51,11 @@ namespace WpfApp1
             contacts[0, 1] = "Simon22"; // simon is also Lillian's friend
             contacts[1, 0] = "liwanisz"; // lillian is Karla's friend
             contacts[3, 0] = "liwnaisz"; //lillian is simons friend
-            //profilePicPath[0] = "images/cimoneSimmons.jpeg";
-            //profilePicPath[1] = "images/jazmineBrown.jpg";
-            //profilePicPath[2] = "images/joaquinSimmons.png";
-            //profilePicPath[3] = "images/coraBrown.jpg";
-            //profilePicPath[4] = "images/malikBrown.jpg";
+            profilePicPath[0] = "images/cimoneSimmons.jpeg";
+            profilePicPath[1] = "images/jazmineBrown.jpg";
+            profilePicPath[2] = "images/joaquinSimmons.png";
+            profilePicPath[3] = "images/coraBrown.jpg";
+            profilePicPath[4] = "images/malikBrown.jpg";
             
         }
     }
