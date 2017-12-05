@@ -14,3 +14,6 @@
 .obj
 /.vs/WpfApp1/v15/sqlite3
 /.vs/WpfApp1/v15/.suo
+/.vsS
+/obj
+/WpfApp1/WpfApp1/obj/*
