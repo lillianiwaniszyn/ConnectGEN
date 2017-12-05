@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace WpfApp1
 {
@@ -20,9 +21,37 @@ namespace WpfApp1
     public partial class AudioCallWaiting : Window
     {
         Home_Screen homescreen = new Home_Screen();
+        System.Timers.Timer aTimer;
+
+        DispatcherTimer _timer;
+        TimeSpan _time;
         public AudioCallWaiting()
         {
             InitializeComponent();
+            /*aTimer = new System.Timers.Timer(1000);
+            aTimer.Elapsed += new System.Timers.ElapsedEventHandler(OnTimedEvent);
+            aTimer.Enabled = true;
+            aTimer.SynchronizingObject = this;
+            */
+            _time = TimeSpan.FromSeconds(0);
+
+            _timer = new DispatcherTimer(new TimeSpan(0, 0, 1), DispatcherPriority.Normal, delegate
+            {
+                Timer.Content = _time.ToString("c");
+                
+                _time = _time.Add(TimeSpan.FromSeconds(1));
+            }, Application.Current.Dispatcher);
+
+            _timer.Start();
+
+            //aTimer.Start();
+        }
+
+        private void OnTimedEvent(Object sender, System.Timers.ElapsedEventArgs e)
+        {
+            
+            //Timer.Content = e.SignalTime.ToString();
+
         }
 
         private void End_Call_Click(object sender, RoutedEventArgs e)
