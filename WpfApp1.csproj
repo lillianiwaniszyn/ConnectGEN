@@ -57,11 +57,29 @@
     <Compile Include="AddContacts.xaml.cs">
       <DependentUpon>AddContacts.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AddImageMenu.xaml.cs">
+      <DependentUpon>AddImageMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AudioCall.xaml.cs">
       <DependentUpon>AudioCall.xaml</DependentUpon>
     </Compile>
     <Compile Include="AudioCallWaiting.xaml.cs">
       <DependentUpon>AudioCallWaiting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Change_Profile_Picture.xaml.cs">
+      <DependentUpon>Change_Profile_Picture.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmPicture.xaml.cs">
+      <DependentUpon>ConfirmPicture.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContactsUC.xaml.cs">
+      <DependentUpon>ContactsUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditContact.xaml.cs">
+      <DependentUpon>EditContact.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditProfile.xaml.cs">
+      <DependentUpon>EditProfile.xaml</DependentUpon>
     </Compile>
     <Compile Include="Global_Data.cs" />
     <Compile Include="Login_Main.xaml.cs">
@@ -100,7 +118,14 @@
     <Compile Include="Browse_Pictures.xaml.cs">
       <DependentUpon>Browse_Pictures.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VideoCallWaiting.xaml.cs">
+      <DependentUpon>VideoCallWaiting.xaml</DependentUpon>
+    </Compile>
     <Page Include="AddContacts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddImageMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -111,6 +136,26 @@
     <Page Include="AudioCallWaiting.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Change_Profile_Picture.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ConfirmPicture.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ContactsUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditContact.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditProfile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Login_Main.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -161,8 +206,8 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="TranslationMenu.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Videocall.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -173,6 +218,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Browse_Pictures.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VideoCallWaiting.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -282,6 +331,33 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\selfie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\white_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Communication\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Translation\French.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Translation\German.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Translation\Italian.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Translation\Polish.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Translation\Russian.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Translation\Spanish.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\KarlaJuego.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
