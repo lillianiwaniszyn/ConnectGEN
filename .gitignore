@@ -10,4 +10,5 @@
 /WpfApp1/obj/
 /WpfApp1/bin/
 /WpfApp1/.vs/
-
+.exe
+.obj
