@@ -36,6 +36,12 @@ namespace WpfApp1
             SimulateIncomingMessage("Malik", "That is good to hear.");
             SimulateIncomingMessage("Malik", "Will you be able to go to dinner tomorrow?");
             //
+
+            // Recreate prompt text.
+            // Makes sure that there isn't a message typed into the text box. (Since mouse has to leave the textbox in order to send the message.)
+            if (messageBox.Text == "")
+                // Sets the contents of the text box to the standard prompt.
+                messageBox.Text = "Click here to type your message.";
         }
 
         // WORKS. Method for exiting the chat. Opens unto the contacts screen.
@@ -92,6 +98,15 @@ namespace WpfApp1
             }
         }
 
+        // Works. Method that creates the prompt text as long as mouse stays away from the textbox.
+        private void CreatePromptText(object sender, MouseEventArgs e)
+        {
+            // Makes sure that there isn't a message typed into the text box. (Since mouse has to leave the textbox in order to send the message.)
+            if (messageBox.Text == "")
+                // Sets the contents of the text box to the standard prompt.
+                messageBox.Text = "Click here to type your message.";
+        }
+
         // WORKS. Method for extracting the message from the text box and calling the SimulateOutgoingMessage function.
         // Need to create: Method that makes sure that the content in the box is not the standard message. Will have to create an error message/notification.
         private void SendMessageButton_Click(object sender, RoutedEventArgs e)
@@ -140,7 +155,7 @@ namespace WpfApp1
             newMessage.TimeStamp.Content = timeStamp;
             newMessage.TextMsg.Content = finalTextMessage;
             // Add userControl to stackPanel.
-            msgDisplay.Children.Add(newMessage);
+            msgDisplay.Children.Add(newMessage);            
         }
 
         // WORKS. Method that changes the format of the DateTime variable to only contain the time.
