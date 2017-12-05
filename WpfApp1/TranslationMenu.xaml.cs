@@ -55,21 +55,6 @@ namespace WpfApp1
             }
         }
 
-        private void ReverseButton_Click(object sender, RoutedEventArgs e)
-        {
-            //
-            object temporaryVar = initialLanguageMenu.SelectedValue;
-            initialLanguageMenu.SelectedValue = finalLanguageMenu.SelectedValue;
-            finalLanguageMenu.SelectedValue = temporaryVar;
-            //
-
-            /*
-            string temporaryVar = initialLanguageMenu.SelectedValue.ToString();
-            initialLanguageMenu.SelectedValue = finalLanguageMenu.SelectedValue;
-            finalLanguageMenu.SelectedValue = temporaryVar;
-            */
-        }
-
         private void TranslateButton_Click(object sender, RoutedEventArgs e)
         {
             // Get languages from the menus.
@@ -294,6 +279,13 @@ namespace WpfApp1
             }
             // Return the final message.
             return finalMessage;
+        }
+
+        private void ReverseButton_Click(object sender, RoutedEventArgs e)
+        {
+            object temporaryVar = initialLanguageMenu.SelectedValue;
+            initialLanguageMenu.SelectedValue = finalLanguageMenu.SelectedValue;
+            finalLanguageMenu.SelectedValue = temporaryVar;
         }
 
         private void CopyToTextBoxButton_Click(object sender, RoutedEventArgs e)
