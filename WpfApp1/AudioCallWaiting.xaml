@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="AudioCallWaiting" Height="450" Width="600">
+        Title="AudioCallWaiting" Height="850" Width="1500">
     <Grid>
         <Rectangle Stroke="Black" Margin="0,-2,-1,0">
             <Rectangle.Fill>
@@ -15,20 +15,20 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Button x:Name="End_Call" Content="End Call" Margin="213,356,185,10" Background="Red" FontSize="20" FontWeight="Bold" FontFamily="Arial"/>
-        <Image x:Name="Receiving" Source="images/malikBrown.jpg" Margin="70,40,40,132"/>
-        <Label x:Name="Volume" Content="Volume" Foreground="#FFDED5D5" HorizontalContentAlignment="Center" FontSize="16" Margin="263,292,242,86" FontFamily="Arial"/>
-        <Button x:Name="End_Call_Copy" Content="" Margin="176,292,329,74" BorderThickness="0">
+        <Button x:Name="End_Call" Content="End Call" Margin="540,656,500,29" Background="Red" FontSize="50" FontWeight="Bold" FontFamily="Arial" Click="End_Call_Click"/>
+        <Image x:Name="Receiving" Source="images/malikBrown.jpg" Margin="170,40,185,345"/>
+        <Label x:Name="Volume" Content="Volume" Foreground="#FFDED5D5" HorizontalContentAlignment="Center" FontSize="48" Margin="380,518,331,168" FontFamily="Arial" FontWeight="Bold"/>
+        <Button x:Name="Volume_Up" Content="" Margin="308,474,831,178" BorderThickness="0">
             <Button.Background>
                 <ImageBrush ImageSource="images/triangleUp.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="End_Call_Copy1" Content="" VerticalContentAlignment="Center" Margin="355,292,150,74" BorderThickness="0">
+        <Button x:Name="Volume_Down" Content="" VerticalContentAlignment="Center" Margin="908,488,238,168" BorderThickness="0">
             <Button.Background>
                 <ImageBrush ImageSource="images/triangleDown.png"/>
             </Button.Background>
         </Button>
-        <Label x:Name="Waiting" Content="W a i t i n g" HorizontalAlignment="Left" Height="58" Margin="195,209,0,0" VerticalAlignment="Top" Width="231" FontSize="36" Foreground="White" HorizontalContentAlignment="Center" FontFamily="Arial">
+        <Label x:Name="Waiting" Content="W a i t i n g" HorizontalAlignment="Left" Height="128" Margin="368,360,0,0" VerticalAlignment="Top" Width="771" FontSize="90" Foreground="White" HorizontalContentAlignment="Center" FontFamily="Arial" FontWeight="Bold">
             <Label.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -36,7 +36,7 @@
                 </LinearGradientBrush>
             </Label.Background>
         </Label>
-        <Label x:Name="Timer" Content="00:30" HorizontalAlignment="Left" Height="39" Margin="213,1,0,0" VerticalAlignment="Top" Width="183" Foreground="White" FontSize="20" HorizontalContentAlignment="Center" FontFamily="Arial" Visibility="Hidden"/>
+        <Label x:Name="Timer" Content="00:30" HorizontalAlignment="Left" Height="132" Margin="74,337,0,0" VerticalAlignment="Top" Width="294" Foreground="White" FontSize="70" HorizontalContentAlignment="Center" FontFamily="Arial" FontWeight="Bold" Visibility="Hidden"/>
 
     </Grid>
 </Window>

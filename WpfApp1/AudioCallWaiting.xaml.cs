@@ -23,5 +23,10 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void End_Call_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
