@@ -21,12 +21,13 @@ namespace WpfApp1
     {
         Global_Data dataClass = new Global_Data();
         int middleImage;
+        /*
         MessageScreen message = new MessageScreen();
         EditProfile editprofile = new EditProfile();
         EditContact editcontact = new EditContact();
         AudioCallWaiting audio = new AudioCallWaiting();
         VideoCallWaiting video = new VideoCallWaiting();
-
+        */
         public Home_Screen()
         {
             InitializeComponent();
@@ -48,6 +49,7 @@ namespace WpfApp1
 
         void MyProfileButton_Click(object sender, RoutedEventArgs e)
         {
+            EditProfile editprofile = new EditProfile();
             editprofile.Show();
             this.Close();
         }
@@ -112,42 +114,49 @@ namespace WpfApp1
         private void infoIcon_Click(object sender, RoutedEventArgs e)
         {
             // move to edit contact page 
+            EditContact editcontact = new EditContact();
             editcontact.Show();
             this.Close();
         }
 
         private void messageIcon_Click(object sender, RoutedEventArgs e)
         {
+            MessageScreen message = new MessageScreen();
             message.Show();
             this.Close();
         }
 
         private void audioIcon_Click(object sender, RoutedEventArgs e)
         {
+            AudioCallWaiting audio = new AudioCallWaiting();
             audio.Show();
             this.Close();
         }
 
         private void videoIcon_Click(object sender, RoutedEventArgs e)
         {
+            VideoCallWaiting video = new VideoCallWaiting();
             video.Show();
             this.Close();
         }
 
         private void messageLabel_Click(object sender, RoutedEventArgs e)
         {
+            MessageScreen message = new MessageScreen();
             message.Show();
             this.Close();
         }
 
         private void audioLabel_Click(object sender, RoutedEventArgs e)
-        { 
+        {
+            AudioCallWaiting audio = new AudioCallWaiting();
             audio.Show();
             this.Close();
         }
 
         private void videoLabel_Click(object sender, RoutedEventArgs e)
         {
+            VideoCallWaiting video = new VideoCallWaiting();
             video.Show();
             this.Close();
         }
@@ -155,6 +164,7 @@ namespace WpfApp1
         private void infoLabel_Click(object sender, RoutedEventArgs e)
         {
             // move to edit contact page 
+            EditContact editcontact = new EditContact();
             editcontact.Show();
             this.Close();
         }

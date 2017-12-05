@@ -75,22 +75,22 @@
         </Button>
         <Button BorderThickness="0" x:Name ="myProfileButton" Content="CORA BROWN" HorizontalAlignment="Left" VerticalAlignment="Top" Width="228" Margin="1150,24,0,0" Foreground="White" Background="Transparent" FontWeight="Bold" Click="MyProfileButton_Click" Height="75" FontSize="30" Grid.Column="1"/>
         <Button BorderThickness="0" x:Name ="addContactButton" Content="ADD CONTACT" HorizontalAlignment="Left" Height="39" Margin="138,99,0,0" VerticalAlignment="Top" Width="181" Foreground="White" Background="Transparent" Click="AddContactButton_Click" FontSize="22" FontWeight="Bold" Grid.Column="1"/>
-        <Button x:Name="infoIcon" HorizontalAlignment="Left" Height="87" Margin="665,112,0,0" VerticalAlignment="Top" Width="106" Background="Transparent" Click="infoIcon_Click" Visibility="Visible" Grid.Column="1">
+        <Button x:Name="infoIcon" HorizontalAlignment="Left" Height="87" Margin="665,112,0,0" VerticalAlignment="Top" Width="106" Background="Transparent" Click="infoIcon_Click" Visibility="Hidden" Grid.Column="1">
             <Image Source=" images/info2.png"/>
         </Button >
-        <Button x:Name="messageIcon" HorizontalAlignment="Left" Height="111" Margin="522,347,0,0" VerticalAlignment="Top" Width="118" Background="Transparent" Click="messageIcon_Click" Visibility="Visible" Grid.Column="1" Grid.Row="1">
+        <Button x:Name="messageIcon" HorizontalAlignment="Left" Height="111" Margin="522,347,0,0" VerticalAlignment="Top" Width="118" Background="Transparent" Click="messageIcon_Click" Visibility="Hidden" Grid.Column="1" Grid.Row="1">
             <Image Source=" images/message.png"/>
         </Button >
-        <Button x:Name="audioIcon" HorizontalAlignment="Left" Height="114" Margin="665,347,0,0" VerticalAlignment="Top" Width="106" Background="Transparent" Click="audioIcon_Click" Visibility="Visible" Grid.Column="1" Grid.Row="1">
+        <Button x:Name="audioIcon" HorizontalAlignment="Left" Height="114" Margin="665,347,0,0" VerticalAlignment="Top" Width="106" Background="Transparent" Click="audioIcon_Click" Visibility="Hidden" Grid.Column="1" Grid.Row="1">
             <Image Source="images/call.png"/>
         </Button >
-        <Button x:Name="videoIcon"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="118" Margin="799,347,0,0" Height="111" Background="Transparent" Click="videoIcon_Click" Visibility="Visible" Grid.Column="1" Grid.Row="1" >
+        <Button x:Name="videoIcon"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="118" Margin="799,347,0,0" Height="111" Background="Transparent" Click="videoIcon_Click" Visibility="Hidden" Grid.Column="1" Grid.Row="1" >
             <Image Source=" images/video.png"/>
         </Button >
-        <Button x:Name="infoLabel" Content="Edit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="106" Margin="665,202,0,0" Foreground="White" Background="Transparent" FontWeight="Bold" Click="infoLabel_Click" Visibility="Visible" Grid.Column="1" Grid.RowSpan="2" Height="48" FontSize="24"/>
-        <Button x:Name="messageLabel" Content="Message" HorizontalAlignment="Left" VerticalAlignment="Top" Width="118" Foreground="White" Background="Transparent" Margin="522,458,0,0" FontWeight="Bold" Click="messageLabel_Click" Visibility="Visible" Grid.Column="1" Grid.Row="1" Height="37" FontSize="24"/>
-        <Button x:Name="audioLabel" Content="Audio" HorizontalAlignment="Left" VerticalAlignment="Top" Width="106" Margin="665,458,0,0" Height="37" Foreground="White" Background="Transparent" FontWeight="Bold" Click="audioLabel_Click" Visibility="Visible" Grid.Column="1" Grid.Row="1" FontSize="24"/>
-        <Button x:Name="videoLabel" Content="Video" HorizontalAlignment="Left" VerticalAlignment="Top" Width="118" Margin="799,458,0,0" Height="37" Foreground="White" Background="Transparent" FontWeight="Bold" Click="videoLabel_Click" Visibility="Visible" Grid.Column="1" Grid.Row="1" FontSize="24"/>
+        <Button x:Name="infoLabel" Content="Edit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="106" Margin="665,202,0,0" Foreground="White" Background="Transparent" FontWeight="Bold" Click="infoLabel_Click" Visibility="Hidden" Grid.Column="1" Grid.RowSpan="2" Height="48" FontSize="24"/>
+        <Button x:Name="messageLabel" Content="Message" HorizontalAlignment="Left" VerticalAlignment="Top" Width="118" Foreground="White" Background="Transparent" Margin="522,458,0,0" FontWeight="Bold" Click="messageLabel_Click" Visibility="Hidden" Grid.Column="1" Grid.Row="1" Height="37" FontSize="24"/>
+        <Button x:Name="audioLabel" Content="Audio" HorizontalAlignment="Left" VerticalAlignment="Top" Width="106" Margin="665,458,0,0" Height="37" Foreground="White" Background="Transparent" FontWeight="Bold" Click="audioLabel_Click" Visibility="Hidden" Grid.Column="1" Grid.Row="1" FontSize="24"/>
+        <Button x:Name="videoLabel" Content="Video" HorizontalAlignment="Left" VerticalAlignment="Top" Width="118" Margin="799,458,0,0" Height="37" Foreground="White" Background="Transparent" FontWeight="Bold" Click="videoLabel_Click" Visibility="Hidden" Grid.Column="1" Grid.Row="1" FontSize="24"/>
         <Button x:Name="logOutLabel" Content="LOG OUT" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,500.5,0,0" Foreground="White" Background="Transparent" FontWeight="Bold" Click="logOutLabel_Click" Height="60" FontSize="24" Grid.ColumnSpan="2" Grid.Row="1"/>
         <Slider x:Name="slider" HorizontalAlignment="Left" Height="42" Margin="396,500.5,0,0" VerticalAlignment="Top" Width="754" Grid.Column="1" Grid.Row="1"/>
     </Grid>
