@@ -41,26 +41,41 @@ namespace WpfApp1
             {
                 // make the pop-ups visible
                 infoIcon.Visibility = System.Windows.Visibility.Visible;
+                infobutton.IsEnabled = true;
                 messageIcon.Visibility = System.Windows.Visibility.Visible;
+                messagebutton.IsEnabled = true;
                 audioIcon.Visibility = System.Windows.Visibility.Visible;
+                audiobutton.IsEnabled = true;
                 videoIcon.Visibility = System.Windows.Visibility.Visible;
+                videobutton.IsEnabled = true;
                 infoLabel.Visibility = System.Windows.Visibility.Visible;
                 messageLabel.Visibility = System.Windows.Visibility.Visible;
                 audioLabel.Visibility = System.Windows.Visibility.Visible;
                 videoLabel.Visibility = System.Windows.Visibility.Visible;
+                infobutton.Visibility = System.Windows.Visibility.Visible;
+                messagebutton.Visibility = System.Windows.Visibility.Visible;
+                audiobutton.Visibility = System.Windows.Visibility.Visible;
+                videobutton.Visibility = System.Windows.Visibility.Visible;
                 count++;
             }
             else if (count == 1)
             {
-                // disable the buttons
                 infoIcon.Visibility = System.Windows.Visibility.Hidden;
+                infobutton.IsEnabled = false;
                 messageIcon.Visibility = System.Windows.Visibility.Hidden;
+                messagebutton.IsEnabled = false;
                 audioIcon.Visibility = System.Windows.Visibility.Hidden;
+                audiobutton.IsEnabled = false;
                 videoIcon.Visibility = System.Windows.Visibility.Hidden;
+                videobutton.IsEnabled = false;
                 infoLabel.Visibility = System.Windows.Visibility.Hidden;
                 messageLabel.Visibility = System.Windows.Visibility.Hidden;
                 audioLabel.Visibility = System.Windows.Visibility.Hidden;
                 videoLabel.Visibility = System.Windows.Visibility.Hidden;
+                infobutton.Visibility = System.Windows.Visibility.Hidden;
+                messagebutton.Visibility = System.Windows.Visibility.Hidden;
+                audiobutton.Visibility = System.Windows.Visibility.Hidden;
+                videobutton.Visibility = System.Windows.Visibility.Hidden;
                 count--;
             }
 
@@ -106,13 +121,49 @@ namespace WpfApp1
 
         private void RightContact_Click(object sender, RoutedEventArgs e)
         {
-            // move contact to center, then make pop-ups visible
+            // move contact to center
+            // make popups visible
+            infoIcon.Visibility = System.Windows.Visibility.Visible;
+            infobutton.IsEnabled = true;
+            messageIcon.Visibility = System.Windows.Visibility.Visible;
+            messagebutton.IsEnabled = true;
+            audioIcon.Visibility = System.Windows.Visibility.Visible;
+            audiobutton.IsEnabled = true;
+            videoIcon.Visibility = System.Windows.Visibility.Visible;
+            videobutton.IsEnabled = true;
+            infoLabel.Visibility = System.Windows.Visibility.Visible;
+            messageLabel.Visibility = System.Windows.Visibility.Visible;
+            audioLabel.Visibility = System.Windows.Visibility.Visible;
+            videoLabel.Visibility = System.Windows.Visibility.Visible;
+            infobutton.Visibility = System.Windows.Visibility.Visible;
+            messagebutton.Visibility = System.Windows.Visibility.Visible;
+            audiobutton.Visibility = System.Windows.Visibility.Visible;
+            videobutton.Visibility = System.Windows.Visibility.Visible;
+            count++;
             this.Close();
         }
 
         private void LeftContact_Click(object sender, RoutedEventArgs e)
         {
-            // move contact to center, then make pop-ups visible 
+            // move contact to center
+            // make popups visible
+            infoIcon.Visibility = System.Windows.Visibility.Visible;
+            infobutton.IsEnabled = true;
+            messageIcon.Visibility = System.Windows.Visibility.Visible;
+            messagebutton.IsEnabled = true;
+            audioIcon.Visibility = System.Windows.Visibility.Visible;
+            audiobutton.IsEnabled = true;
+            videoIcon.Visibility = System.Windows.Visibility.Visible;
+            videobutton.IsEnabled = true;
+            infoLabel.Visibility = System.Windows.Visibility.Visible;
+            messageLabel.Visibility = System.Windows.Visibility.Visible;
+            audioLabel.Visibility = System.Windows.Visibility.Visible;
+            videoLabel.Visibility = System.Windows.Visibility.Visible;
+            infobutton.Visibility = System.Windows.Visibility.Visible;
+            messagebutton.Visibility = System.Windows.Visibility.Visible;
+            audiobutton.Visibility = System.Windows.Visibility.Visible;
+            videobutton.Visibility = System.Windows.Visibility.Visible;
+            count++;
             this.Close();
         }
 
@@ -126,7 +177,26 @@ namespace WpfApp1
                 MiddleImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage], UriKind.Relative));
                 RightImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage + 1], UriKind.Relative));
             }
-            
+            if (count == 1)
+            {
+                infoIcon.Visibility = System.Windows.Visibility.Hidden;
+                infobutton.IsEnabled = false;
+                messageIcon.Visibility = System.Windows.Visibility.Hidden;
+                messagebutton.IsEnabled = false;
+                audioIcon.Visibility = System.Windows.Visibility.Hidden;
+                audiobutton.IsEnabled = false;
+                videoIcon.Visibility = System.Windows.Visibility.Hidden;
+                videobutton.IsEnabled = false;
+                infoLabel.Visibility = System.Windows.Visibility.Hidden;
+                messageLabel.Visibility = System.Windows.Visibility.Hidden;
+                audioLabel.Visibility = System.Windows.Visibility.Hidden;
+                videoLabel.Visibility = System.Windows.Visibility.Hidden;
+                infobutton.Visibility = System.Windows.Visibility.Hidden;
+                messagebutton.Visibility = System.Windows.Visibility.Hidden;
+                audiobutton.Visibility = System.Windows.Visibility.Hidden;
+                videobutton.Visibility = System.Windows.Visibility.Hidden;
+                count--;
+            }
         }
 
         private void leftArrow_Click(object sender, RoutedEventArgs e)
@@ -138,6 +208,26 @@ namespace WpfApp1
                 MiddleImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage], UriKind.Relative));
                 RightImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage + 1], UriKind.Relative));
 
+            }
+            if (count == 1)
+            {
+                infoIcon.Visibility = System.Windows.Visibility.Hidden;
+                infobutton.IsEnabled = false;
+                messageIcon.Visibility = System.Windows.Visibility.Hidden;
+                messagebutton.IsEnabled = false;
+                audioIcon.Visibility = System.Windows.Visibility.Hidden;
+                audiobutton.IsEnabled = false;
+                videoIcon.Visibility = System.Windows.Visibility.Hidden;
+                videobutton.IsEnabled = false;
+                infoLabel.Visibility = System.Windows.Visibility.Hidden;
+                messageLabel.Visibility = System.Windows.Visibility.Hidden;
+                audioLabel.Visibility = System.Windows.Visibility.Hidden;
+                videoLabel.Visibility = System.Windows.Visibility.Hidden;
+                infobutton.Visibility = System.Windows.Visibility.Hidden;
+                messagebutton.Visibility = System.Windows.Visibility.Hidden;
+                audiobutton.Visibility = System.Windows.Visibility.Hidden;
+                videobutton.Visibility = System.Windows.Visibility.Hidden;
+                count--;
             }
             
         }
