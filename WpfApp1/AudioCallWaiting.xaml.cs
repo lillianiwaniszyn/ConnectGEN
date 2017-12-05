@@ -19,6 +19,7 @@ namespace WpfApp1
     /// </summary>
     public partial class AudioCallWaiting : Window
     {
+        Home_Screen homescreen = new Home_Screen();
         public AudioCallWaiting()
         {
             InitializeComponent();
@@ -26,7 +27,8 @@ namespace WpfApp1
 
         private void End_Call_Click(object sender, RoutedEventArgs e)
         {
-
+            homescreen.Show();
+            this.Close();
         }
     }
 }

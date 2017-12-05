@@ -19,9 +19,16 @@ namespace WpfApp1
     /// </summary>
     public partial class VideoCallWaiting : Window
     {
+        Home_Screen homescreen = new Home_Screen();
         public VideoCallWaiting()
         {
             InitializeComponent();
+        }
+
+        private void End_Call_Click(object sender, RoutedEventArgs e)
+        {
+            homescreen.Show();
+            this.Close();
         }
     }
 }
