@@ -20,9 +20,16 @@ namespace WpfApp1
     /// </summary>
     public partial class VideoCall : Window
     {
+        Home_Screen homescreen = new Home_Screen();
         public VideoCall()
         {
             InitializeComponent();
+        }
+
+        private void End_Call_Click(object sender, RoutedEventArgs e)
+        {
+            homescreen.Show();
+            this.Close();
         }
     }
 }

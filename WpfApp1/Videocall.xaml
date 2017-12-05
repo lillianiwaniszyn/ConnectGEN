@@ -15,7 +15,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Button x:Name="End_Call" Content="End Call" Height="149" Canvas.Left="21" Canvas.Top="660" Width="216" OpacityMask="Black" Background="Red" Foreground="Black" FontWeight="Bold" FontSize="50" FontFamily="Arial"/>
+        <Button x:Name="End_Call" Content="End Call" Height="149" Canvas.Left="21" Canvas.Top="660" Width="216" OpacityMask="Black" Background="Red" Foreground="Black" FontWeight="Bold" FontSize="50" FontFamily="Arial" Click="End_Call_Click"/>
         <Image x:Name="Receiving" Height="809" Canvas.Left="539" Width="1012" Source="images/malikBrown.jpg" Canvas.Top="10" OpacityMask="Black"/>
         <Image x:Name="Caller" Height="399" Canvas.Left="113" Width="546" Source="images/coraBrown.jpg" OpacityMask="Black" Canvas.Top="10"/>
         <Label x:Name="receiverName" Content="Malik Brown" Height="120" Canvas.Left="1198" Width="294" FontSize="36" Foreground="Black" Canvas.Top="10" OpacityMask="Black" FontFamily="Arial"/>
