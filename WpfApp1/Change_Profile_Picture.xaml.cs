@@ -32,7 +32,7 @@ namespace WpfApp1
             malikBrown.Background = Brushes.Transparent;
             joaquinSimmons.Background = Brushes.Transparent;
             jazmineBrown.Background = Brushes.Transparent;
-            girl_selfie.Background = Brushes.Transparent;
+            kid1.Background = Brushes.Transparent;
             coraBrown.Background = Brushes.Transparent;
             selfie.Background = Brushes.Transparent;
 
@@ -63,9 +63,9 @@ namespace WpfApp1
             {
                 selectedPic = "images/jazmineBrown.png";
             }
-            if (girl_selfie.Background == Brushes.SteelBlue)
+            if (kid1.Background == Brushes.SteelBlue)
             {
-                selectedPic = "images/girl_selfie.jpg";
+                selectedPic = "images/kid1.png";
             }
             if (coraBrown.Background == Brushes.SteelBlue)
             {
@@ -91,7 +91,7 @@ namespace WpfApp1
         void Set_Profile_Picture(object sender, RoutedEventArgs e)
         {
             string s = (sender as Button).Name; //get name of button sending us to this function
-            if (s == "jazmineBrown")
+            if (s == "jazmineBrown" || s == "kid1")
             {
                 s = s + ".png";
             }

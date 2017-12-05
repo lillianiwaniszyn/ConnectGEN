@@ -25,8 +25,8 @@
                 <Button Name ="jazmineBrown" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Width="75" Background="Transparent" MouseDoubleClick="Set_Profile_Picture" Click="HighLight">
                     <Image Source="images/jazmineBrown.png" Height="50"/>
                 </Button>
-                <Button Name ="girl_selfie" HorizontalAlignment="Left" Margin="143,134,0,0" VerticalAlignment="Top" Width="75" Background="Transparent" MouseDoubleClick="Set_Profile_Picture" Click="HighLight">
-                    <Image Source="images/girl_selfie.jpg" Height="50"/>
+                <Button Name ="kid1" HorizontalAlignment="Left" Margin="143,134,0,0" VerticalAlignment="Top" Width="75" Background="Transparent" MouseDoubleClick="Set_Profile_Picture" Click="HighLight">
+                    <Image Source="images/kid1.png" Height="50"/>
                 </Button>
                 <Button Name="coraBrown" HorizontalAlignment="Left" Margin="10,198,0,0" VerticalAlignment="Top" Width="75" Background="Transparent" MouseDoubleClick="Set_Profile_Picture" Click="HighLight">
                     <Image Source="images/coraBrown.jpg" Height="50"/>
