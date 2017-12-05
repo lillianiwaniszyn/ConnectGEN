@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace WpfApp1
 {
@@ -20,9 +21,22 @@ namespace WpfApp1
     public partial class VideoCallWaiting : Window
     {
         Home_Screen homescreen = new Home_Screen();
+        DispatcherTimer _timer;
+        TimeSpan _time;
         public VideoCallWaiting()
         {
             InitializeComponent();
+
+            _time = TimeSpan.FromSeconds(0);
+
+            _timer = new DispatcherTimer(new TimeSpan(0, 0, 1), DispatcherPriority.Normal, delegate
+            {
+                Timer.Content = _time.ToString("c");
+                //if (_time == TimeSpan.Zero) _timer.Stop();
+                _time = _time.Add(TimeSpan.FromSeconds(1));
+            }, Application.Current.Dispatcher);
+
+            _timer.Start();
         }
 
         private void End_Call_Click(object sender, RoutedEventArgs e)

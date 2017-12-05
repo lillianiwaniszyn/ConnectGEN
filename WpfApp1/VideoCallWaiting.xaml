@@ -38,7 +38,7 @@
                 </LinearGradientBrush>
             </Label.Background>
         </Label>
-        <Label Content="00:30" Height="79" Canvas.Left="10" Canvas.Top="547" Width="216" Foreground="White" FontSize="48" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+        <Label x:Name="Timer" Content="00:00:00" Height="79" Canvas.Left="10" Canvas.Top="547" Width="216" Foreground="White" FontSize="48" HorizontalContentAlignment="Center" FontWeight="Bold"/>
 
     </Canvas>
 </Window>

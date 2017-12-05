@@ -38,7 +38,7 @@ namespace WpfApp1
             _timer = new DispatcherTimer(new TimeSpan(0, 0, 1), DispatcherPriority.Normal, delegate
             {
                 Timer.Content = _time.ToString("c");
-                
+                //if (_time == TimeSpan.Zero) _timer.Stop();
                 _time = _time.Add(TimeSpan.FromSeconds(1));
             }, Application.Current.Dispatcher);
 
