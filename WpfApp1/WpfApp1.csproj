@@ -335,9 +335,7 @@
   <ItemGroup>
     <Resource Include="images\white_search.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Communication\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="Translation\French.txt" />
   </ItemGroup>
@@ -358,6 +356,21 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\KarlaJuego.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Communication\liwanisz.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Communication\Karla1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Communication\cora.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Communication\Simon22.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Communication\MalikBrown.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
