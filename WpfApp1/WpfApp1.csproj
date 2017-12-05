@@ -66,6 +66,9 @@
     <Compile Include="AudioCallWaiting.xaml.cs">
       <DependentUpon>AudioCallWaiting.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Change_Profile_Picture.xaml.cs">
+      <DependentUpon>Change_Profile_Picture.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ConfirmPicture.xaml.cs">
       <DependentUpon>ConfirmPicture.xaml</DependentUpon>
     </Compile>
@@ -131,6 +134,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AudioCallWaiting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Change_Profile_Picture.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
