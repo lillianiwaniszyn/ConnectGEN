@@ -4,11 +4,11 @@
 
 /.vs/WpfApp1/v15/Server/sqlite3
 /WpfApp1/obj/Release/AddImageMenu.g.cs
-/obj/*
-/.vs/*
-/bin/*
-/WpfApp1/obj/*
-/WpfApp1/bin/*
-/WpfApp1/.vs/*
+*/obj/*
+*/.vs/*
+*/bin/*
+%/WpfApp1/obj/*
+%/WpfApp1/bin/*
+%/WpfApp1/.vs/*
 .exe
 .obj
