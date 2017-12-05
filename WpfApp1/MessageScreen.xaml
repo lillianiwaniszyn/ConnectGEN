@@ -20,7 +20,7 @@
                 </Button>
                 <Label Content="BACK" Foreground="White" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="35" Canvas.Left="86" Canvas.Top="44" Width="122"/>
                 <Button x:Name="logOutButton" Foreground="White" HorizontalAlignment="Left" Height="124" VerticalAlignment="Top" Width="154" Background="Transparent" Click="LogOutButton_Click" Canvas.Left="50" Canvas.Top="590" BorderBrush="{x:Null}">
-                    <Image Name="logOutImg" Source="images/LogOutIcon.ico" Stretch="Fill" Height ="112" Width="93"/>
+                    <Image Name="logOutImg" Source="images/logout.png" Stretch="Fill" Height ="112" Width="93"/>
                 </Button>
                 <Label Content="LOG OUT" Foreground="White" Canvas.Left="34" Canvas.Top="731" FontFamily="Arial Black" FontSize="35"/>
             </Canvas>

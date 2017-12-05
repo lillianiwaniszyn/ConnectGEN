@@ -57,14 +57,17 @@ namespace WpfApp1
 
         private void ReverseButton_Click(object sender, RoutedEventArgs e)
         {
-            /*
+            //
             object temporaryVar = initialLanguageMenu.SelectedValue;
             initialLanguageMenu.SelectedValue = finalLanguageMenu.SelectedValue;
             finalLanguageMenu.SelectedValue = temporaryVar;
-            */
+            //
+
+            /*
             string temporaryVar = initialLanguageMenu.SelectedValue.ToString();
             initialLanguageMenu.SelectedValue = finalLanguageMenu.SelectedValue;
             finalLanguageMenu.SelectedValue = temporaryVar;
+            */
         }
 
         private void TranslateButton_Click(object sender, RoutedEventArgs e)
