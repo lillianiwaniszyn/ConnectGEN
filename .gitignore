@@ -12,3 +12,5 @@
 /WpfApp1/.vs/*
 .exe
 .obj
+/.vs/WpfApp1/v15/sqlite3
+/.vs/WpfApp1/v15/.suo
