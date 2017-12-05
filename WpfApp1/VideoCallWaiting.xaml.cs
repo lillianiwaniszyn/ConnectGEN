@@ -23,16 +23,26 @@ namespace WpfApp1
         Home_Screen homescreen = new Home_Screen();
         DispatcherTimer _timer;
         TimeSpan _time;
+        TimeSpan waitTime;
         public VideoCallWaiting()
         {
             InitializeComponent();
 
-            _time = TimeSpan.FromSeconds(0);
+            _time = TimeSpan.FromSeconds(-10);
+            waitTime = TimeSpan.FromSeconds(10);
 
             _timer = new DispatcherTimer(new TimeSpan(0, 0, 1), DispatcherPriority.Normal, delegate
             {
-                Timer.Content = _time.ToString("c");
-                //if (_time == TimeSpan.Zero) _timer.Stop();
+
+                if (waitTime <= TimeSpan.Zero)
+                {
+                    Timer.Content = _time.ToString("c");
+                    this.Timer.Visibility = Visibility.Visible;
+                    this.Waiting.Visibility = Visibility.Hidden;
+
+                    //_timer.Stop();
+                }
+                waitTime = waitTime.Add(TimeSpan.FromSeconds(-1));
                 _time = _time.Add(TimeSpan.FromSeconds(1));
             }, Application.Current.Dispatcher);
 
