@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="222" d:DesignWidth="980">
     <Grid>
-        <Image x:Name="TextBubble" Source="TextBubble.png" HorizontalAlignment="Left" Height="220" VerticalAlignment="Top" Width="302" Margin="656,-1,0,0" RenderTransformOrigin="0.5,0.5">
+        <Image x:Name="TextBubble" Source="images/TextBubble.png" HorizontalAlignment="Left" Height="220" VerticalAlignment="Top" Width="302" Margin="656,-1,0,0" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="-1"/>
@@ -19,5 +19,6 @@
         </Image>
         <Label x:Name="TimeStamp" Content="[time]" Foreground="White" HorizontalAlignment="Left" Margin="515,171,0,0" VerticalAlignment="Top" Width="157" Height="42" FontFamily="Arial Black" FontSize="20"/>
         <Label x:Name="TextMsg" Content="[text message]" Foreground="White" HorizontalAlignment="Left" Margin="686,39,0,0" VerticalAlignment="Top" Height="117" Width="198" FontFamily="Arial Black" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Image x:Name="imageSent" HorizontalAlignment="Left" Height="110" Margin="727,40,0,0" VerticalAlignment="Top" Width="151"/>
     </Grid>
 </UserControl>

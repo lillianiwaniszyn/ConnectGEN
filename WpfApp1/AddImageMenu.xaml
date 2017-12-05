@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Closed="AddImagesMenu_Closed"
         Title="Select Picture" Height="400" Width="410">
-    <ScrollViewer HorizontalAlignment="Left" Height="370" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="394" CanContentScroll="True">
+    <Grid>
+        <ScrollViewer HorizontalAlignment="Left" Height="370" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="394" CanContentScroll="True">
         <Grid Height="900" Width="375">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*" />
@@ -71,5 +72,11 @@
                 <Image Source="images/cimoneSimmons.jpeg"/>
             </Button>
         </Grid>
-    </ScrollViewer>
+        </ScrollViewer>
+        <Canvas Height="30" Width="376" Margin="1,340,27.2,0.4" Background="LightGray">
+            <Button x:Name="sendNowButton" Content="Send Now" Canvas.Left="4" Canvas.Top="5" Width="117" FontFamily="Arial Black" Click="SendNowButton_Click"/>
+            <Button x:Name="addToMessageButton" Content="Add to Message" Canvas.Left="130" Canvas.Top="5" Width="117" FontFamily="Arial Black" Click="AddToMessageButton_Click"/>
+            <Button x:Name="cancelButton" Content="Cancel" Canvas.Left="256" Canvas.Top="5" Width="117" FontFamily="Arial Black" Click="CancelButton_Click"/>
+        </Canvas>
+    </Grid>
 </Window>
