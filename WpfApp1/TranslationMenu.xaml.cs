@@ -21,6 +21,7 @@ namespace WpfApp1
     /// </summary>
     public partial class TranslationMenu : Window
     {
+        
         public TranslationMenu()
         {
             InitializeComponent();

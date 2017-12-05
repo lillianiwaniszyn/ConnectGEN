@@ -39,7 +39,7 @@
             </ComboBox>
             <Label x:Name="toLabel" Content="To" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="199" Canvas.Top="229" FontSize="25" FontFamily="Arial Black"/>
             <Label x:Name="errorMessageLabel" Content="[Error Message]" Canvas.Left="20" Canvas.Top="6" Width="844" Height="49" FontFamily="Arial Black" FontSize="25" Visibility="Hidden"/>
-            <Button x:Name="reverseButton" Canvas.Left="247" Canvas.Top="231" Width="75" Height="33" Click="ReverseButton_Click">
+            <Button x:Name="reverseButton" Canvas.Left="247" Canvas.Top="231" Width="75" Height="33" Click="ReverseButton_Click" ToolTip="Switch Languages Chosen">
                 <Image Source="images/reverseArrows.png"/>
             </Button>
             <Label x:Name="translationErrorMessage" Content="[error message]" Canvas.Left="10" Canvas.Top="10" Height="45" Width="959" FontFamily="Arial Black" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Red" Visibility="Hidden"/>
