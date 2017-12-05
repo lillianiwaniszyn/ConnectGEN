@@ -134,7 +134,6 @@ namespace WpfApp1
                 System.IO.StreamReader file = new System.IO.StreamReader(stream);
                 while ((line = file.ReadLine()) != null)
                 {
-                    Console.WriteLine(line);
                     twoLanguages = line.Split(splitLine);
 
                     if (twoLanguages[0] == currentWord)
