@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Net;
+using System.IO;
 
 namespace WpfApp1
 {
@@ -92,7 +94,6 @@ namespace WpfApp1
             finalMessageBox.Text = translatedMessage;
         }
 
-        // Cannot be used for screen initialization using language. Will be creating a method specific for phrases.
         public string FromEnglishTranslation(string oldMessage, string newLanguage)
         {
             // Initialize final message.
@@ -125,10 +126,15 @@ namespace WpfApp1
             {
                 currentWord = oldMessageArray[i].ToLower();
 
+                // Get file online.
+                WebClient client = new WebClient();
+                Stream stream = client.OpenRead("https://raw.githubusercontent.com/lillianiwaniszyn/ConnectGEN/master/WpfApp1/Translation/" + newLanguage + ".txt");
+
                 // Read the file.
-                System.IO.StreamReader file = new System.IO.StreamReader("Translation/" + newLanguage + ".txt");
+                System.IO.StreamReader file = new System.IO.StreamReader(stream);
                 while ((line = file.ReadLine()) != null)
                 {
+                    Console.WriteLine(line);
                     twoLanguages = line.Split(splitLine);
 
                     if (twoLanguages[0] == currentWord)
@@ -219,8 +225,12 @@ namespace WpfApp1
             {
                 currentWord = oldMessageArray[i].ToLower();
 
+                // Get file online.
+                WebClient client = new WebClient();
+                Stream stream = client.OpenRead("https://raw.githubusercontent.com/lillianiwaniszyn/ConnectGEN/master/WpfApp1/Translation/" + oldLanguage + ".txt");
+
                 // Read the file.
-                System.IO.StreamReader file = new System.IO.StreamReader("Translation/" + oldLanguage + ".txt");
+                System.IO.StreamReader file = new System.IO.StreamReader(stream);
                 while ((line = file.ReadLine()) != null)
                 {
                     twoLanguages = line.Split(splitLine);
