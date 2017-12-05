@@ -37,6 +37,9 @@ namespace WpfApp1
             SimulateIncomingMessage("Malik", "Will you be able to go to dinner tomorrow?");
             //
 
+            // Recreate prompt text.
+            messageBox.Text = "Click here to type your message.";
+
         }
 
         // WORKS. Method for exiting the chat. Opens unto the contacts screen.
@@ -84,7 +87,7 @@ namespace WpfApp1
         private void DeletePromptText(object sender, MouseEventArgs e)
         {
             // Make that the error label isn't there.
-            // noMessageErrorLabel.Visibility = Visibility.Hidden;
+            noMessageErrorLabel.Visibility = Visibility.Hidden;
             // Makes sure that there isn't a message typed into the text box. 
             if (messageBox.Text == "Click here to type your message.")
             {
@@ -332,6 +335,5 @@ namespace WpfApp1
             // Not sure what this is needed for.
             System.Console.ReadLine();
         }
-
     }
 }

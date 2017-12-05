@@ -58,7 +58,7 @@
                     </LinearGradientBrush>
                 </Rectangle.Fill>
             </Rectangle>
-            <TextBox x:Name="messageBox" HorizontalAlignment="Left" Height="168" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="823" ScrollViewer.CanContentScroll="True" AutomationProperties.HelpText="Please type your message here." HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="269" Canvas.Top="619" Foreground="White" FontFamily="Arial Black"  FontSize="25">
+            <TextBox x:Name="messageBox" HorizontalAlignment="Left" Height="168" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="823" ScrollViewer.CanContentScroll="True" AutomationProperties.HelpText="Please type your message here." HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="269" Canvas.Top="619" Foreground="White" FontFamily="Arial Black"  FontSize="25" MouseEnter="DeletePromptText" MouseLeave="CreatePromptText">
                 <TextBox.Background>
                     <ImageBrush/>
                 </TextBox.Background>
@@ -70,6 +70,7 @@
                 <StackPanel x:Name="msgDisplay" Height="444" Canvas.Left="260" Canvas.Top="162" Width="980"/>
             </ScrollViewer>
             <Label Content="SEND" Canvas.Left="1105" Canvas.Top="736" Foreground="White" FontFamily="Arial Black" FontSize="35"/>
+            <Label x:Name="noMessageErrorLabel" Content="ERROR: A message was NOT entered. Please type a message below." Canvas.Left="272" Canvas.Top="619" Width="820" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Red" FontFamily="Arial Black" FontSize="20" Visibility="Hidden"/>
         </Canvas>
 
     </Grid>
