@@ -18,12 +18,12 @@
         <Button x:Name="End_Call" Content="End Call" Margin="213,356,185,10" Background="Red" FontSize="20" FontWeight="Bold" FontFamily="Arial"/>
         <Image x:Name="Receiving" Source="images/malikBrown.jpg" Margin="70,40,40,132"/>
         <Label x:Name="Volume" Content="Volume" Foreground="#FFDED5D5" HorizontalContentAlignment="Center" FontSize="16" Margin="263,292,242,86" FontFamily="Arial"/>
-        <Button x:Name="End_Call_Copy" Content="" Margin="176,292,329,74">
+        <Button x:Name="End_Call_Copy" Content="" Margin="176,292,329,74" BorderThickness="0">
             <Button.Background>
                 <ImageBrush ImageSource="images/triangleUp.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="End_Call_Copy1" Content="" VerticalContentAlignment="Center" Margin="355,292,150,74">
+        <Button x:Name="End_Call_Copy1" Content="" VerticalContentAlignment="Center" Margin="355,292,150,74" BorderThickness="0">
             <Button.Background>
                 <ImageBrush ImageSource="images/triangleDown.png"/>
             </Button.Background>

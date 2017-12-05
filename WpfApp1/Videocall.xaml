@@ -20,7 +20,7 @@
         <Image x:Name="Caller" Height="141" Canvas.Left="125" Width="156" Source="images/coraBrown.jpg" OpacityMask="Black" Canvas.Top="-2"/>
         <Label x:Name="receiverName" Content="Malik Brown" Height="42" Canvas.Left="415" Width="142" FontSize="18" Foreground="Black" Canvas.Top="-2" OpacityMask="Black" FontFamily="Arial"/>
         <Label x:Name="Volume" Content="Volume" Height="41" Canvas.Left="21" Canvas.Top="118" Width="87" Foreground="#FFDED5D5" HorizontalContentAlignment="Center" FontSize="16" OpacityMask="Black" FontFamily="Arial"/>
-        <Button x:Name="End_Call_Copy" Content="" Height="53" Canvas.Left="21" Canvas.Top="46" Width="87" OpacityMask="Black">
+        <Button x:Name="End_Call_Copy" Content="" Height="53" Canvas.Left="21" Canvas.Top="46" Width="87" OpacityMask="Black" BorderThickness="0">
             <Button.Background>
                 <ImageBrush ImageSource="images/triangleUp.png"/>
             </Button.Background>
