@@ -21,14 +21,14 @@
                 <ImageBrush/>
             </Label.Background>
         </Label>
-        <ScrollViewer Margin="505,107,205.333,283">
+        <ScrollViewer Margin="505,107,205.333,316">
             <ScrollViewer.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
                     <GradientStop Color="#FF3C607C" Offset="1"/>
                 </LinearGradientBrush>
             </ScrollViewer.Background>
-            <Grid Height="249" >
+            <Grid Height="475" >
                 <Button HorizontalAlignment="Left"  Margin="10,0,0,0" VerticalAlignment="Top" Width="416" Height="91" Click="OnClickB">
                     <StackPanel Orientation="Horizontal" Height="99" Width="348">
                         <Image Source="images/corabrown.jpg"/>
@@ -36,9 +36,15 @@
                     </StackPanel>
                 </Button>
                 <Button  HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top" Width="416" Height="97" Click="OnClickC"/>
-                <StackPanel Orientation="Horizontal" Height="99" Margin="45,128,191,22">
+                <StackPanel Orientation="Horizontal" Height="99" Margin="39,130,197,246">
                     <Image Source="images/blank2.png" Margin="0,0,0,-0.667" Width="76"/>
-                    <TextBlock Text="Other User:&#xA;Press to Login" VerticalAlignment="Center" FontSize="20" FontFamily="Arial Black" Width="185"/>
+                    <TextBlock Text="Other User:&#xA;Press to Login" VerticalAlignment="Center" FontSize="20" FontFamily="Arial Black" Width="185" Margin="0,27,0,26.333"/>
+                </StackPanel>
+
+                <Button  HorizontalAlignment="Left" Margin="10,260,0,0" VerticalAlignment="Top" Width="416" Height="97" Click="OnClickC" Visibility="Collapsed"/>
+                <StackPanel Orientation="Horizontal" Height="99" Margin="39,260,197,116" Visibility="Collapsed">
+                    <Image Source="images/KarlaJuego.jpg" Margin="10,0,0,-0.667" Width="76"/>
+                    <TextBlock Text="Karla Juego:&#xA;Press to Login" VerticalAlignment="Center" FontSize="20" FontFamily="Arial Black" Width="185"/>
                 </StackPanel>
 
             </Grid>
