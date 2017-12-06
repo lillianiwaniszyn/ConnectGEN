@@ -63,14 +63,14 @@ namespace WpfApp1
             contacts[1, 0] = "liwanisz"; // lillian is Karla's friend
             contacts[3, 0] = "liwnaisz"; //lillian is simons friend
             contacts[4, 0] = "cora"; //Cora is Malik's Friend 
-            profilePicPath[0] = "headshot.jpg";
-            profilePicPath[1] = "headshot.jpg";
-            profilePicPath[2] = "coraBrown.jpg";
-            profilePicPath[3] = "simon.jpg";
-            profilePicPath[4] = "malikBrown.jpg";
-            profilePicPath[5] = "simone.jpg";
-            profilePicPath[6] = "cimoneSimmons.jpeg";
-            profilePicPath[7] = "headshot.jpg";
+            profilePicPath[0] = "images/headshot.jpg";
+            profilePicPath[1] = "images/headshot.jpg";
+            profilePicPath[2] = "images/coraBrown.jpg";
+            profilePicPath[3] = "images/simon.jpg";
+            profilePicPath[4] = "images/malikBrown.jpg";
+            profilePicPath[5] = "images/simone.jpg";
+            profilePicPath[6] = "images/cimoneSimmons.jpeg";
+            profilePicPath[7] = "images/headshot.jpg";
         }
     }
 

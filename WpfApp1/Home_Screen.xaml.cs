@@ -316,8 +316,9 @@ namespace WpfApp1
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            // move to search for a contact page
-            //this.Close();
+            AddContacts addC = new AddContacts();
+            addC.Show();
+            this.Close();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)

@@ -27,35 +27,33 @@ namespace WpfApp1
 
         void ChangePic(object sender, RoutedEventArgs e)
         {
-            Browse_Pictures bp = new Browse_Pictures();
-            bp.DataContext = this;
-            bp.ShowDialog();
-
+            //Browse_Pictures bp = new Browse_Pictures();
+            //bp.DataContext = this;
+            //bp.ShowDialog();
+            MessageBox.Show("This function has not been implemented yet!");
             // this.Close();
         }
 
         private void ChangeName(object sender, RoutedEventArgs e)
         {
-            popup.IsOpen = true;
-        }
-        private void text_GotKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
-        {
-            popup.IsOpen = true;
+            //popup.IsOpen = true;
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
-            //Do the popup 
+            Home_Screen home = new Home_Screen();
+            home.Show();
+            this.Close();
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            //Do the popup
+            MessageBox.Show("This function has not been implemented yet!");
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
-            //Do the popup
+            MessageBox.Show("This function has not been implemented yet!");
         }
     }
 

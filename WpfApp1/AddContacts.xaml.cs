@@ -34,7 +34,8 @@ namespace WpfApp1
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            //Go back to main menu
+            Home_Screen home = new Home_Screen();
+            home.Show();
             this.Close();
         }
 
