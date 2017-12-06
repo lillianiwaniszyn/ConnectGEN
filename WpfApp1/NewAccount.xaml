@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Fill Account Details" Height="350" Width="525">
+        Title="Fill Account Details" Height="825" Width="1500">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -13,38 +13,38 @@
                 <GradientStop Color="#FF2D628D" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Label HorizontalContentAlignment="Center" Name="ConnectGEN"  
+        <Label HorizontalContentAlignment="Center"  Name="ConnectGEN"  
     Content="Click to add new profle picture" Height="40"  Foreground="#FFE0E0E0"
     Canvas.Left="10" Canvas.Top="10"   
-    FontSize="12" FontFamily="Arial Black"  
-     Margin="101,60,112.667,220.667">
+    FontSize="24" FontFamily="Arial Black"  
+     Margin="78,98,136.333,658">
             <Label.Background>
                 <ImageBrush/>
             </Label.Background>
         </Label>
 
-        <TextBox Name="Fname" Margin="159,88,196.667,206.667" TextChanged="Validate_Username"/>
-        <TextBox Name="Lname" Margin="159,119,196.667,175.667" />
-        <TextBox Name="Age" Margin="159,150,196.667,144.667"/>
-        <TextBox Name="PIN1" Margin="159,181,337.667,113.667" TextChanged="Validate_PIN1"/>
-        <TextBox Name="PIN2" Margin="186,181,310.667,113.667" TextChanged="Validate_PIN2"/>
-        <TextBox Name="PIN3" Margin="213,181,283.667,113.667" TextChanged="Validate_PIN3"/>
-        <TextBox Name="PIN4" Margin="240,181,256.667,113.667" TextChanged="Validate_PIN4"/>
+        <TextBox Name="Fname" FontSize="50" Margin="441,158,551.333,576" TextChanged="Validate_Username"/>
+        <TextBox Name="Lname" FontSize="50" Margin="441,240,551.333,491" />
+        <TextBox Name="Age" FontSize="50" Margin="441,327,551.333,403"/>
+        <TextBox Name="PIN1" FontSize="50" Margin="441,436,950,279" TextChanged="Validate_PIN1"/>
+        <TextBox Name="PIN2" FontSize="50" Margin="571,435,830,279" TextChanged="Validate_PIN2"/>
+        <TextBox Name="PIN3" FontSize="50" Margin="693,436,710.333,279" TextChanged="Validate_PIN3"/>
+        <TextBox Name="PIN4" FontSize="50" Margin="814,435,582.333,279" TextChanged="Validate_PIN4"/>
         <Button BorderThickness="0"  
-    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Name="btnAnswer1" Click="OnClick2" Margin="-31,252,397.667,-0.333" Background="Transparent">
-            <Image Source="images/back-button.png"></Image>
+    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Name="btnAnswer1" Click="OnClick2" Margin="10,635,1264.333,10" Background="Transparent">
+            <Image Source="images/back-button.png" Height="146" Width="215"></Image>
         </Button>
-        <Button Name="createAccountBtn" Click="CreateAccount" Margin="170,269,196.667,9.667"  Content="Create Account">
+        <Button Name="createAccountBtn" Click="CreateAccount" FontSize="30" Margin="502,703,603.333,10"  Content="Create Account">
 
         </Button>
-        <Label Content="User Name:" Name="UserNameLabel" Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="89,88,0,0" VerticalAlignment="Top"/>
-        <Label Content="First Name:" Name="FNameLabel"  Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="90,119,0,0" VerticalAlignment="Top"/>
-        <Label Content="Last Name:" Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="89,150,0,0" VerticalAlignment="Top"/>
-        <Label Content="PIN:" Name="PINLabel"  Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="90,181,0,0" VerticalAlignment="Top"/>
-        <Label Content="Language:" Foreground="#FFE0E0E0" Name="LanguageLabel" HorizontalAlignment="Left" Margin="89,212,0,0" VerticalAlignment="Top"/>
+        <Label Content="User Name:" Name="UserNameLabel" FontSize="30" Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="255,170,0,0" VerticalAlignment="Top"/>
+        <Label Content="First Name:" FontSize="30" Name="FNameLabel"  Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="252,255,0,0" VerticalAlignment="Top"/>
+        <Label Content="Last Name:" Foreground="#FFE0E0E0" HorizontalAlignment="Left" FontSize="30" Margin="252,343,0,0" VerticalAlignment="Top"/>
+        <Label Content="PIN:" Name="PINLabel"  FontSize="30" Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="347,467,0,0" VerticalAlignment="Top"/>
+        <Label Content="Language:" FontSize="30" Foreground="#FFE0E0E0" Name="LanguageLabel" HorizontalAlignment="Left" Margin="347,548,0,0" VerticalAlignment="Top"/>
         <Label  Name ="validUsername" Foreground="#FF0000" HorizontalAlignment="Left" Margin="327,88,0,0" VerticalAlignment="Top"/>
         <Label Name ="validPIN"  Foreground="#FF0000" HorizontalAlignment="Left" Margin="327,186,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="languageMenu" HorizontalAlignment="Left" Margin="159,216,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBox x:Name="languageMenu" HorizontalAlignment="Left" FontSize="30" Margin="522,548,0,0" VerticalAlignment="Top" Width="273">
             <ComboBoxItem IsSelected="True">English</ComboBoxItem>
             <ComboBoxItem>French</ComboBoxItem>
             <ComboBoxItem>German</ComboBoxItem>
@@ -54,10 +54,10 @@
             <ComboBoxItem>Spanish</ComboBoxItem>
         </ComboBox>
         <Button BorderThickness="0"  
-     HorizontalAlignment="Left" Margin="213,10,0,0" VerticalAlignment="Top" Width="75" Background="Transparent" Click="ChangePic">
-            <Image  Name ="profPic" Source="images/blank2.png" Height="45" />
+     HorizontalAlignment="Left" Margin="650,10,0,0" VerticalAlignment="Top" Width="145" Background="Transparent" Click="ChangePic" Height="88">
+            <Image  Name ="profPic" Source="images/blank2.png" Height="94" Width="145" />
         </Button>
-        
+
 
 
 
