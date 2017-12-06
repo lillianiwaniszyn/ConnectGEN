@@ -68,9 +68,10 @@ namespace WpfApp1
         }
         void Validate_Username(object sender, TextChangedEventArgs e)
         {
+            Global_Data gd = new Global_Data();
 
             
-            if (Global_Data.existing_Usernames.Contains(Fname.Text))
+            if (gd.existing_Usernames.Contains(Fname.Text))
                 {
                     validUsername.Content = "*Username already taken";
                 createAccountBtn.IsEnabled = false;

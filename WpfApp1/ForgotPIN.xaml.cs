@@ -20,15 +20,18 @@ namespace WpfApp1
     public partial class ForgotPIN : Window
         
     {
+        
         string[] numbers = new string[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
         Boolean verified;
         public ForgotPIN()
         {
+            
             InitializeComponent();
             verified = false;
         }
         void OnClickRestore(object sender, RoutedEventArgs e)
         {
+            Global_Data gd = new Global_Data();
             string username = Uname.Text;
             string lastname = Lname.Text;
             string contactFname = CFname.Text;
@@ -39,23 +42,23 @@ namespace WpfApp1
             string pin4 = PIN4.Text;
             string PIN = pin1 + pin2 + pin3 + pin4;
 
-            if (Global_Data.existing_Usernames.Contains(Uname.Text) && Global_Data.lastnames.Contains(CLname.Text))
+            if (gd.existing_Usernames.Contains(Uname.Text) && gd.lastnames.Contains(CLname.Text))
             {
-                int index = Array.IndexOf(Global_Data.existing_Usernames, Uname.Text);
-                int index2 = Array.IndexOf(Global_Data.lastnames, CLname.Text); //get last name index
-                string friendUname = Global_Data.existing_Usernames[index2]; //get index of contact
-                if (lastname == Global_Data.lastnames[index])
+                int index = Array.IndexOf(gd.existing_Usernames, Uname.Text);
+                int index2 = Array.IndexOf(gd.lastnames, CLname.Text); //get last name index
+                string friendUname = gd.existing_Usernames[index2]; //get index of contact
+                if (lastname == gd.lastnames[index])
                 {
                     Console.WriteLine("YAY");
                 }
                 int n = 0;
-                int length = Global_Data.contacts.GetLength(1);
+                int length = gd.contacts.GetLength(1);
                 while (n < length)
                 {
-                    if (Global_Data.contacts[index, n] == friendUname)
+                    if (gd.contacts[index, n] == friendUname)
                     {
                         verified = true;
-                        Global_Data.passwords[index] = PIN; //change PIN here
+                        gd.passwords[index] = PIN; //change PIN here
                     }
                     n++;
                 }

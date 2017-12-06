@@ -78,7 +78,8 @@ namespace WpfApp1
             }
             NewAccount n = (NewAccount)this.DataContext;
             Image myImage = new Image();
-            Global_Data.currentProfilePic = selectedPic;
+            Global_Data gd = new Global_Data();
+            gd.currentProfilePic = selectedPic;
             myImage.Source = new BitmapImage(new Uri(selectedPic, UriKind.RelativeOrAbsolute));
 
             this.Close();
@@ -103,7 +104,8 @@ namespace WpfApp1
             string selectedPicture = "images/" + s;
             NewAccount n = (NewAccount)this.DataContext;
             Image myImage = new Image();
-            Global_Data.currentProfilePic = selectedPicture;
+            Global_Data gd = new Global_Data();
+            gd.currentProfilePic = selectedPicture;
             myImage.Source = new BitmapImage(new Uri(selectedPicture, UriKind.RelativeOrAbsolute));
 
             this.Close();
