@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp1"
         
         mc:Ignorable="d"
-        Title="ForgotPIN?" Height="350" Width="525">
+        Title="ForgotPIN?" Height="825" Width="1500">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -15,35 +15,34 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Label HorizontalContentAlignment="Center" Name="ConnectGEN"  
-    Content="ConnectGEN" Foreground="#FFE0E0E0"
-    Width="200" Height="40"  
+    Content="ConnectGEN" Foreground="#FFE0E0E0"  
     Canvas.Left="10" Canvas.Top="10"   
-    FontSize="24" FontFamily="Arial Black"  
-    FontWeight="Bold" Margin="167,10,151.667,270.667">
+    FontSize="48" FontFamily="Arial Black"  
+    FontWeight="Bold" Margin="519,10,581.333,703">
             <Label.Background>
                 <ImageBrush/>
             </Label.Background>
         </Label>
-        <TextBox Name="Uname" Margin="196,91,159.667,203.667"/>
-        <Label Content="Please enter your username, Last Name, and name of one contact&#x0a; associated with your account so we can verify your identity." Name="FNameLabel"  Foreground="#FFE0E0E0" Margin="73,50,40.667,211.667" FontWeight="Bold"/>
-        <TextBox Name="Lname" Margin="196,122,159.667,172.667" />
-        <TextBox Name="CFname" Margin="196,153,159.667,141.667" />
-        <TextBox Name="CLname" Margin="196,184,159.667,110.667" />
-        <Button Name ="buttonRA" Margin="167,272,159.667,9.667" Click="OnClickRestore">Restore Account</Button>
-        <TextBox Name="PIN1" Margin="196,215,300.667,79.667" TextChanged="vPin1"/>
-        <TextBox Name="PIN2" Margin="223,215,273.667,79.667" TextChanged="vPin2"/>
-        <TextBox Name="PIN3" Margin="250,215,246.667,79.667" TextChanged="vPin3"/>
-        <TextBox Name="PIN4" Margin="277,215,219.667,79.667" TextChanged="vPin4"/>
+        <TextBox Name="Uname" FontSize="30" Margin="519,154,517.333,570"/>
+        <Label Content="Please enter your username, Last Name, and name of one contact&#x0a; associated with your account so we can verify your identity." Name="FNameLabel"  Foreground="#FFE0E0E0" FontSize="24" Margin="359,70,373.333,647" FontWeight="Bold"/>
+        <TextBox Name="Lname"  FontSize="30" Margin="519,254,517.333,465" />
+        <TextBox Name="CFname" FontSize="30" Margin="519,355,517.333,363" />
+        <TextBox Name="CLname" FontSize="30" Margin="519,456,517.333,268" />
+        <Button Name ="buttonRA" FontSize="30" Margin="519,703,533.333,10" Click="OnClickRestore">Restore Account</Button>
+        <TextBox Name="PIN1" FontSize="30" Margin="519,574,893.333,150" TextChanged="vPin1"/>
+        <TextBox Name="PIN2" FontSize="30" Margin="633,574,780.333,150" TextChanged="vPin2"/>
+        <TextBox Name="PIN3" FontSize="30" Margin="744,574,656.333,150" TextChanged="vPin3"/>
+        <TextBox Name="PIN4" FontSize="30" Margin="869,574,533.333,150" TextChanged="vPin4"/>
         <Button BorderThickness="0"  
-    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" HorizontalAlignment="Left" Margin="10,253,0,0" VerticalAlignment="Top" Width="75" Background="Transparent" Click="OnClickFP">
-            <Image Source="images/back-button.png"/>
+    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" HorizontalAlignment="Left" Margin="10,645,0,0" VerticalAlignment="Top" Width="181" Background="Transparent" Click="OnClickFP" Height="123">
+            <Image Source="images/back-button.png" Height="130" Width="162"/>
         </Button>
-        <Label Content="Your username:" Name="Message"  Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="95,91,0,0" VerticalAlignment="Top"/>
-        <Label Content="Your Last Name:" Foreground="#FFE0E0E0" Name="LNameLabel" HorizontalAlignment="Left" Margin="90,122,0,0" VerticalAlignment="Top"/>
-        <Label Content="Contact First Name:" Name="ContactFName"  Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="73,154,0,0" VerticalAlignment="Top"/>
-        <Label Content="Contact Last Name:" Name="ContactLName"  Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="78,184,0,0" VerticalAlignment="Top"/>
-        <Label Content="New PIN:" Name="PINLabel"  Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="112,215,0,0" VerticalAlignment="Top"/>
+        <Label Content="Your username:" FontSize="30" Name="Message"  Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="255,166,0,0" VerticalAlignment="Top"/>
+        <Label Content="Your Last Name:" FontSize="30" Foreground="#FFE0E0E0" Name="LNameLabel" HorizontalAlignment="Left" Margin="255,254,0,0" VerticalAlignment="Top"/>
+        <Label Content="Contact First Name:"  FontSize="30" Name="ContactFName"  Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="209,355,0,0" VerticalAlignment="Top"/>
+        <Label Content="Contact Last Name:" FontSize="30" Name="ContactLName"  Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="211,456,0,0" VerticalAlignment="Top"/>
+        <Label Content="New PIN:" FontSize="30" Name="PINLabel"  Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="336,574,0,0" VerticalAlignment="Top"/>
         <Label Name="validPIN" Foreground="Red" HorizontalAlignment="Left" Margin="359,216,0,0" VerticalAlignment="Top"/>
-        <Label Name="Verify" Foreground="Red" HorizontalAlignment="Left" Margin="377,272,0,0" VerticalAlignment="Top"/>
+        <Label Name="Verify" Foreground="Red" FontSize="30" HorizontalAlignment="Left" Margin="1045,614,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
