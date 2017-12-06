@@ -41,8 +41,8 @@
                     <TextBlock Text="Other User:&#xA;Press to Login" VerticalAlignment="Center" FontSize="20" FontFamily="Arial Black" Width="185" Margin="0,27,0,26.333"/>
                 </StackPanel>
 
-                <Button  HorizontalAlignment="Left" Margin="10,260,0,0" VerticalAlignment="Top" Width="416" Height="97" Click="OnClickC" Visibility="Collapsed"/>
-                <StackPanel Orientation="Horizontal" Height="99" Margin="39,260,197,116" Visibility="Collapsed">
+                <Button  Name ="Karla" HorizontalAlignment="Left" Margin="10,260,0,0" VerticalAlignment="Top" Width="416" Height="97" Click="OnClickKarla" />
+                <StackPanel Name="KarlaSP" Orientation="Horizontal" Height="99" Margin="39,260,197,116" >
                     <Image Source="images/KarlaJuego.jpg" Margin="10,0,0,-0.667" Width="76"/>
                     <TextBlock Text="Karla Juego:&#xA;Press to Login" VerticalAlignment="Center" FontSize="20" FontFamily="Arial Black" Width="185"/>
                 </StackPanel>

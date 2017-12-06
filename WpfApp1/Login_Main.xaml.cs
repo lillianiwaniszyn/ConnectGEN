@@ -20,8 +20,22 @@ namespace WpfApp1
     public partial class Login_Main : Window
     {
         public Login_Main()
-        { //add more later... will be tedious...
+        {
+
+           
             InitializeComponent();
+            Console.WriteLine(Global_Data.LoginScreenButtonVisibility);
+            if (Global_Data.LoginScreenButtonVisibility)
+            {
+                Karla.Visibility = Visibility.Visible;
+                KarlaSP.Visibility = Visibility.Visible;
+            }
+            if (!Global_Data.LoginScreenButtonVisibility)
+            {
+                Karla.Visibility = Visibility.Collapsed;
+                KarlaSP.Visibility = Visibility.Collapsed;
+
+            }
         }
         void OnClickA(object sender, RoutedEventArgs e)
         {
@@ -29,6 +43,18 @@ namespace WpfApp1
 
             NewAccount na = new NewAccount();
             na.Show();
+            this.Close();
+
+        }
+        void OnClickKarla(object sender, RoutedEventArgs e)
+        {
+
+
+            Global_Data.currentUserStatic = "Karla1";
+            Home_Screen hs = new Home_Screen();
+            //set current user to Cora
+
+            hs.Show();
             this.Close();
 
         }

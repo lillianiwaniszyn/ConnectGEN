@@ -114,6 +114,7 @@ namespace WpfApp1
         void LogoutButton_Click(object sender, RoutedEventArgs e)
         {
             // move to main page when app opened (with profile choices)
+            Global_Data.LoginScreenButtonVisibility = true;
             Login_Main lm = new Login_Main();
             lm.Show();
             this.Close();

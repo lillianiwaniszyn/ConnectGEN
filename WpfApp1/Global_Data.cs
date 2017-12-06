@@ -9,6 +9,7 @@ namespace WpfApp1
     public class Global_Data
 
     {
+        public static Boolean LoginScreenButtonVisibility;
         public string[] existing_Usernames = new string[100]; //{ "liwanisz", "Lillian", "cora", "Cora", "Cora1" };
         public string[] passwords = new string[100]; //{ "1234", "3245", "0000", "1111", "3333" };
         //public string currentUser = "Cora1"; //hard coded... change later
@@ -72,6 +73,7 @@ namespace WpfApp1
             profilePicPath[5] = "images/simone.jpg";
             profilePicPath[6] = "images/cimoneSimmons.jpeg";
             profilePicPath[7] = "images/headshot.jpg";
+
         }
     }
 
