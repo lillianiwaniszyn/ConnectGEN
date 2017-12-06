@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Net;
+using System.IO;
 
 namespace WpfApp1
 {
@@ -32,17 +34,9 @@ namespace WpfApp1
         public MessageScreen()
         {
             InitializeComponent();
-            //
-            // Test Messages are successively shown. Can remove.
-            SimulateIncomingMessage("Malik", "Hi Grandma Cora. It was very nice seeing you. I hope to see you again!");
-            SimulateOutgoingMessage("Thanks Malik. I had a lot of fun, too.");
-            SimulateIncomingMessage("Malik", "That is good to hear.");
-            SimulateIncomingMessage("Malik", "Will you be able to go to dinner tomorrow?");
-            //
 
-            // Recreate prompt text.
-            messageBox.Text = "Click here to type your message.";
-
+            // Get the message history.
+            SetUpScreen("MalikBrown");
         }
 
         // Constructor with UserName (this will be official constructor)
@@ -54,6 +48,59 @@ namespace WpfApp1
 
             // Will read message file using contact user name.
             // Call on appropriate methods based on file input.
+        }
+
+        public void SetUpScreen(string userName)
+        {
+            // Get image.
+
+            // Get "chosen" name for chat name.
+
+            // Local Variables
+            string line = "";
+            string[] commStates;
+            char[] splitLine = { '|' };
+
+            // Get file online.
+            WebClient client = new WebClient();
+            Stream stream = client.OpenRead("https://raw.githubusercontent.com/lillianiwaniszyn/ConnectGEN/master/WpfApp1/Communication/" + userName + ".txt");
+
+            // Read the file.
+            System.IO.StreamReader file = new System.IO.StreamReader(stream);
+            while ((line = file.ReadLine()) != null)
+            {
+                commStates = line.Split(splitLine);
+
+                // Check for messages.
+                if (commStates[1] == "M")
+                {
+                    // Find out if the message is incoming or outgoing.
+                    if (commStates[2] == "I")
+                    {
+                        // Call simulateIncomingMessages.
+                        // Do I really need to pass the username as a parameter?
+                        SimulateIncomingMessage(userName, commStates[3].ToString());
+                    }
+                    else if (commStates[2] == "O")
+                    {
+                        // Call simulateOutgoingMessages.
+                        SimulateOutgoingMessage(commStates[3].ToString());
+                    }
+                }
+                // Check for audio calls.
+                else if (commStates[1] == "A")
+                {
+
+                }
+                // Check for video calls.
+                else if (commStates[1] == "V")
+                {
+
+                }
+            }
+            file.Close();
+            // Not sure what this is supposed to do.
+            System.Console.ReadLine();
         }
 
         // WORKS. Method for exiting the chat. Opens unto the contacts screen.
