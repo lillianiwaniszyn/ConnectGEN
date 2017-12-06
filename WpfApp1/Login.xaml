@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Login" Height="350" Width="525">
+        Title="Login" Height="825" Width="1500">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="44*"/>
@@ -20,9 +20,8 @@
         </Grid.Background>
         <Label HorizontalContentAlignment="Center" Name="ConnectGEN"  Foreground="#FFE0E0E0"
     Content="ConnectGEN"   
-    Width="200" Height="40"   
-    FontSize="24" FontFamily="Arial Black"  
-    FontWeight="Bold" Margin="113,28,161.667,252.667" Grid.Column="1" Grid.ColumnSpan="2">
+    FontSize="48" FontFamily="Arial Black"  
+    FontWeight="Bold" Margin="127,26,560.333,687" Grid.Column="2">
             <Label.Background>
                 <ImageBrush/>
             </Label.Background>
@@ -30,24 +29,24 @@
 
         <Label HorizontalContentAlignment="Center" Name="addAccount"  
     Content="Login"  Foreground="#FFE0E0E0"   
-    FontSize="20" FontFamily="Arial Black"  
-    FontWeight="Bold" Margin="83,155,140.667,114.667" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <TextBox Name="PIN1" Margin="12.804,107,310.667,186.667" RenderTransformOrigin="4.332,4.212" Grid.Column="2" TextChanged="Pin1"/>
-        <TextBox Name="PIN2" Margin="51.804,107,271.667,186.667" RenderTransformOrigin="4.332,4.212" Grid.Column="2" TextChanged="Pin2"/>
-        <TextBox Name="PIN3" Margin="90.804,107,232.667,186.667" RenderTransformOrigin="4.332,4.212" Grid.Column="2" TextChanged="Pin3"/>
-        <TextBox Name="PIN4" Margin="129.804,107,193.667,186.667" RenderTransformOrigin="4.332,4.212" Grid.Column="2"/>
-        <TextBox Name="Username" Margin="12.804,73,216.667,220.667" RenderTransformOrigin="4.332,4.212" Grid.Column="2"/>
-        <Button Margin="99,267,161.667,9.667" Grid.Column="1" Grid.ColumnSpan="2"  Click="OnClickFP">Forgot PIN?</Button>
+    FontSize="32" FontFamily="Arial Black"  
+    FontWeight="Bold" Margin="36,498,560.333,192" Grid.Column="2"/>
+        <TextBox Name="PIN1" Margin="0,305,925,399" Grid.Column="2" FontSize="30" TextChanged="Pin1"/>
+        <TextBox Name="PIN2" Margin="125,305,800,399"  Grid.Column="2" FontSize="30" TextChanged="Pin2"/>
+        <TextBox Name="PIN3" Margin="250,305,675.333,399"  Grid.Column="2" FontSize="30" TextChanged="Pin3"/>
+        <TextBox Name="PIN4" Margin="375,305,550,399"  FontSize="30" Grid.Column="2"/>
+        <TextBox Name="Username" FontSize="30" Margin="10,176,491.333,537" RenderTransformOrigin="4.332,4.212" Grid.Column="2"/>
+        <Button Margin="10,681,533.333,10" Grid.Column="2" FontSize="30" Click="OnClickFP">Forgot PIN?</Button>
         <Button BorderThickness="0"  
-    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="0,257,0,0" VerticalAlignment="Top" Width="87" Height="54" Background="Transparent" Click="OnClickBack">
+    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" HorizontalAlignment="Left" Margin="10,647,0,0" VerticalAlignment="Top" Width="215" Height="139" Background="Transparent" Click="OnClickBack" Grid.ColumnSpan="2">
             <Image Source=" images/back-button.png"/>
         </Button>
         <Button BorderThickness="0"  
-    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Grid.Column="2" HorizontalAlignment="Left" Margin="49.667,187,0,0" VerticalAlignment="Top" Width="75" Background="Transparent" Click="OnClickLogin">
+    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Grid.Column="2" HorizontalAlignment="Left" Margin="222,557,0,0" VerticalAlignment="Top" Width="75" Background="Transparent" Click="OnClickLogin">
             <Image Source=" images/plus3.png"/>
         </Button>
-        <Label Content="User Name:" Name="UserNameLabel" Foreground="#FFE0E0E0"  FontSize="16" FontWeight="Bold" Grid.Column="1" HorizontalAlignment="Left" Margin="18,68,0,0" VerticalAlignment="Top" Width="107" RenderTransformOrigin="0.924,0.662" Grid.ColumnSpan="2"/>
-        <Label Content="PIN:" Name="PINLabel"  Foreground="#FFE0E0E0" FontSize="16" FontWeight="Bold" Grid.Column="1" HorizontalAlignment="Left" Margin="18,103,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.151,0.586"/>
+        <Label Content="User Name:" Name="UserNameLabel" Foreground="#FFE0E0E0"  FontSize="30" FontWeight="Bold" Grid.Column="1" HorizontalAlignment="Left" Margin="141.333,209,0,0" VerticalAlignment="Top" Width="186" RenderTransformOrigin="0.924,0.662"/>
+        <Label Content="PIN:" Name="PINLabel"  Foreground="#FFE0E0E0" FontSize="30" FontWeight="Bold" Grid.Column="1" HorizontalAlignment="Left" Margin="226.333,337,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.151,0.586"/>
         <Label Name="invalidCreds" Foreground ="Red" Grid.Column="2" HorizontalAlignment="Left" Margin="195.667,99,0,0" VerticalAlignment="Top"/>
 
     </Grid>
