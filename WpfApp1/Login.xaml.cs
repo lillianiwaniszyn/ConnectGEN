@@ -61,7 +61,7 @@ namespace WpfApp1
         }
         void OnClickLogin(object sender, RoutedEventArgs e)
         {
-            //to do.. implement this to go to main screen if username and password are correct
+            Global_Data.currentUserStatic = Username.Text;
             Global_Data gd = new Global_Data();
             Home_Screen hs = new Home_Screen();
             string Pin1 = PIN1.Text;

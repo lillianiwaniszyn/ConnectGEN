@@ -35,8 +35,10 @@ namespace WpfApp1
         void OnClickB(object sender, RoutedEventArgs e)
         {
 
-
-            Home_Screen hs =  new Home_Screen();
+            Global_Data.currentUserStatic = "cora";
+            Home_Screen hs = new Home_Screen();
+            //set current user to Cora
+            
             hs.Show();
             this.Close();
 

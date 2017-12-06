@@ -33,6 +33,13 @@ namespace WpfApp1
         public Home_Screen()
         {
             InitializeComponent();
+            Console.WriteLine("!!!!");
+            Console.WriteLine(Global_Data.currentUserStatic);
+            int index = Array.IndexOf(dataClass.existing_Usernames, Global_Data.currentUserStatic);
+            string fName = dataClass.firstnames[index];
+            string lName = dataClass.lastnames[index];
+            string fullName = fName + " " + lName;
+            myProfileButton.Content = fullName;
         }
 
         private void MiddleContact_Click_1(object sender, RoutedEventArgs e)
@@ -100,8 +107,7 @@ namespace WpfApp1
 
         private void AddContactImageButton_Click(object sender, RoutedEventArgs e)
         {
-            AddContacts addC = new AddContacts();
-            addC.Show();
+            // move to search for a contact page 
             this.Close();
         }
 
@@ -116,8 +122,7 @@ namespace WpfApp1
 
         private void AddContactButton_Click(object sender, RoutedEventArgs e)
         {
-            AddContacts addC = new AddContacts();
-            addC.Show();
+            // move to search for a contact page 
             this.Close();
         }
 
@@ -316,9 +321,8 @@ namespace WpfApp1
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            AddContacts addC = new AddContacts();
-            addC.Show();
-            this.Close();
+            // move to search for a contact page
+            //this.Close();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
