@@ -62,6 +62,7 @@ namespace WpfApp1
         void OnClickLogin(object sender, RoutedEventArgs e)
         {
             //to do.. implement this to go to main screen if username and password are correct
+            Global_Data gd = new Global_Data();
             Home_Screen hs = new Home_Screen();
             string Pin1 = PIN1.Text;
             enteredPIN[0] = Pin1;
@@ -72,10 +73,10 @@ namespace WpfApp1
             string Pin4 = PIN4.Text;
             enteredPIN[3] = Pin4;
             string stringPIN = string.Join("", enteredPIN);
-            int index = Array.IndexOf(Global_Data.existing_Usernames, Username.Text);
+            int index = Array.IndexOf(gd.existing_Usernames, Username.Text);
             Console.WriteLine(stringPIN);
-            Console.WriteLine(Global_Data.passwords[index]);
-            if (stringPIN == Global_Data.passwords[index])
+            Console.WriteLine(gd.passwords[index]);
+            if (stringPIN == gd.passwords[index])
             
             {
                 //authenticate the user here
