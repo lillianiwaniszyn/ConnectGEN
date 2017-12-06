@@ -176,7 +176,7 @@ namespace WpfApp1
 
         private void rightArrow_Click(object sender, RoutedEventArgs e)
         {
-            if(middleImage < 3)
+            if(middleImage < 6)
             {
 
                 middleImage++;
