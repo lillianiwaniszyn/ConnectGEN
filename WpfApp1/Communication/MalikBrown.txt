@@ -1,4 +1,8 @@
-﻿R|M|I|Hi Grandma Cora. It was very nice seeing you. I hope to see you again!
+R|A|I|12:00:00PM|A|00:23
+U|A|O|01:25:00PM|D|00:00
+R|A|O|07:00:00PM|A|01:37
+U|A|I|11:00:00PM|D|00:00
+R|M|I|Hi Grandma Cora. It was very nice seeing you. I hope to see you again!
 R|M|O|Thanks Malik. I had a lot of fun, too.
 R|M|I|That is good to hear.
 R|M|I|Will you be able to go to dinner tomorrow?
