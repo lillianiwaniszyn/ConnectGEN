@@ -63,6 +63,9 @@
     <Compile Include="AudioCall.xaml.cs">
       <DependentUpon>AudioCall.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AudioCallNoAnswer.xaml.cs">
+      <DependentUpon>AudioCallNoAnswer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AudioCallWaiting.xaml.cs">
       <DependentUpon>AudioCallWaiting.xaml</DependentUpon>
     </Compile>
@@ -115,6 +118,9 @@
     <Compile Include="Browse_Pictures.xaml.cs">
       <DependentUpon>Browse_Pictures.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VideoCallNoAnswer.xaml.cs">
+      <DependentUpon>VideoCallNoAnswer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="VideoCallWaiting.xaml.cs">
       <DependentUpon>VideoCallWaiting.xaml</DependentUpon>
     </Compile>
@@ -127,6 +133,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AudioCall.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AudioCallNoAnswer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -211,6 +221,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Browse_Pictures.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VideoCallNoAnswer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
