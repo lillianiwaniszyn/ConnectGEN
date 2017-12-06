@@ -11,7 +11,8 @@ namespace WpfApp1
     {
         public string[] existing_Usernames = new string[100]; //{ "liwanisz", "Lillian", "cora", "Cora", "Cora1" };
         public string[] passwords = new string[100]; //{ "1234", "3245", "0000", "1111", "3333" };
-        public string currentUser = "Cora1"; //hard coded... change later
+        //public string currentUser = "Cora1"; //hard coded... change later
+        public static string currentUserStatic;
         public string[] profilePicPath = new string[100]; //paths to everyone's profile pictures
         public string[,] contacts = new string[100, 100]; //2d arrays in c# are different than Java, FYI
         public string currentProfilePic;
