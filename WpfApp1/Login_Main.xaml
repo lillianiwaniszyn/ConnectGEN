@@ -21,7 +21,7 @@
                 <ImageBrush/>
             </Label.Background>
         </Label>
-        <ScrollViewer Margin="435,107,275.333,283">
+        <ScrollViewer Margin="505,107,205.333,283">
             <ScrollViewer.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -48,8 +48,8 @@
         <Label HorizontalContentAlignment="Center" Name="addAccount"  
     Content="Create New Account"  Foreground="#FFE0E0E0"   
     FontSize="20" FontFamily="Arial Black"  
-    FontWeight="Bold" Margin="486,489,511.333,56"/>
-        <Button Name ="SelectImage" BorderThickness="0" HorizontalAlignment="Left" Margin="579,566,0,0" VerticalAlignment="Top" Width="130" Height="82" Background="Transparent" Click="OnClickA">
+    FontWeight="Bold" Margin="505,535,492.333,10"/>
+        <Button Name ="SelectImage" BorderThickness="0" HorizontalAlignment="Left" Margin="687,610,0,0" VerticalAlignment="Top" Width="130" Height="82" Background="Transparent" Click="OnClickA">
             <Image Source="images\plus3.png" Height="82" Width="163"/>
         </Button>
 
