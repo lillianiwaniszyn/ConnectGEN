@@ -13,24 +13,18 @@
                 <GradientStop Color="#FF2D628D" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Button x:Name="backArrow" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Height ="137" Width="214" Click="back_Click" Margin="0,14,0,0">
-            <Button.Template>
-                <ControlTemplate>
-                    <Image Source="images/back.png"/>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
+        <StackPanel x:Name ="listOfContacts" HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="900" Margin="339,155,0,0"/>
 
-        <TextBox x:Name="searchContact" HorizontalAlignment="Left" Height="73" TextWrapping="Wrap" Text="        SEARCH" VerticalAlignment="Top" Width="747" Margin="492,32,0,0" FontSize="48" Foreground="Gray" TextInput="SearchFor"/>
+        <TextBox x:Name="searchContact" HorizontalAlignment="Left" Height="73" TextWrapping="Wrap" Text="        SEARCH" VerticalAlignment="Top" Width="747" Margin="492,32,0,0" FontSize="48" Foreground="Gray" GotKeyboardFocus="SearchingFor" TextChanged="SearchFor" LostFocus="returnToNormal"/>
         <Image x:Name="searchicon" HorizontalAlignment="Left" Height="69" VerticalAlignment="Top" Width="81" Source="images/search.png" Margin="492,36,0,0" OpacityMask="White"/>
-        <Button x:Name="scrollUp" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="128" Margin="1287,155,0,0" Click="list_scrollUp" Height="122">
+        <Button x:Name="scrollUp" HorizontalAlignment="Left" VerticalAlignment="Top" Width="128"  Height="122" Margin="1302,155,0,0" Click="scrollUp_Click" >
             <Button.Template>
                 <ControlTemplate>
-                    <Image Source="images/whitearrow.png" Height="150" Margin="0,0,8,0"/>
+                    <Image Source="images/whitearrow.png" Height="150" Margin="0,0,8,0" />
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="scrollDown" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="1286,549,0,0" RenderTransformOrigin="0.5,0.5" Click="list_scrollDown" Height="128">
+        <Button x:Name="scrollDown" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5"  Height="128" Margin="1292,491,0,0" Click="Scroll_Down">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -45,8 +39,14 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="backlbutton" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="175" Margin="39,55,0,0" FontFamily="Arial Black" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Height="51" FontSize="36" Click="back_Click"/>
-        <StackPanel HorizontalAlignment="Left" Height="524" VerticalAlignment="Top" Width="941" Margin="298,155,0,0" Background="White"/>
+        <Button x:Name="backArrow" HorizontalAlignment="Left" VerticalAlignment="Top" Height ="137" Width="214" Click="Back_Click" Margin="0,14,0,0">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="images/back.png"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="backlbutton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="166" FontFamily="Arial Black" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Height="51" FontSize="36" Click="Back_Click" Content="Back" Margin="39,54,0,0"/>
 
     </Grid>
 </Window>

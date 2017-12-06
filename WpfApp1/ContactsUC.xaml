@@ -5,12 +5,12 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfApp1"
              mc:Ignorable="d" 
-             d:DesignHeight="70" d:DesignWidth="360">
+             d:DesignHeight="150" d:DesignWidth="900">
     <Grid>
-        <Image x:Name="image" Source="images/headShot.jpg" HorizontalAlignment="Left" Height="70" VerticalAlignment="Center" Width="70"/>
-        <Label x:Name="label" Content="Contact Name" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="75,0,76,0" Height="70" Width="209" FontFamily="Arial Black" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <Image x:Name="addplus" Source="images/plus.png" HorizontalAlignment="Left" Height="70" VerticalAlignment="Bottom" Width="71" Margin="289,0,0,0"/>
-        <Button x:Name="addthiscontact" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="360" Height="70" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="addContact"/>
+        <Image x:Name="Image" Source="images/headShot.jpg" HorizontalAlignment="Left" Height="150" VerticalAlignment="Center" Width="150"/>
+        <Image x:Name="addplus" Source="images/plus.png" HorizontalAlignment="Left" Height="100" VerticalAlignment="Bottom" Width="100" Margin="775,0,0,25"/>
+        <Label x:Name="user_name" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="600" FontFamily="Arial Black" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" Content="User Name" Margin="150,0"/>
+        <Button x:Name="addthiscontact" HorizontalAlignment="Left" VerticalAlignment="Top" Width="900" Height="150" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="AddContact" Margin="0,0,0,0"/>
 
 
     </Grid>

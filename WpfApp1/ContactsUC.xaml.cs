@@ -20,12 +20,17 @@ namespace WpfApp1
     /// </summary>
     public partial class ContactsUC : UserControl
     {
-        public ContactsUC()
+        Global_Data dataClass = new Global_Data();
+        int index;
+        public ContactsUC(int input)
         {
             InitializeComponent();
+            index = input;
+            user_name.Content = dataClass.firstnames[index] + " " + dataClass.lastnames[index];
+            Image.Source = new BitmapImage(new Uri(dataClass.profilePicPath[index], UriKind.Relative));
         }
 
-        private void addContact(object sender, RoutedEventArgs e)
+        private void AddContact(object sender, RoutedEventArgs e)
         {
             //Do something here 
         }
