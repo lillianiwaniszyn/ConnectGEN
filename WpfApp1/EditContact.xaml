@@ -31,7 +31,7 @@
                 </StackPanel>
             </Grid>
         </Popup>
-        <TextBox x:Name="ccname" HorizontalAlignment="Left" Height="85" TextWrapping="Wrap" Text="User Name" VerticalAlignment="Top" Width="698" Margin="737,174,0,0" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontFamily="Arial Black" FontSize="48"/>
+        
         <Button x:Name="Save" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,460,0,0" Height="200" Click="Save_Click">
             <Button.Template>
                 <ControlTemplate>
@@ -56,6 +56,7 @@
         <Label Content="Save" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="272,660,0,0" Height="64" Width="144" Background="{x:Null}" FontFamily="Arial Black" FontSize="48" Foreground="White"/>
         <Label Content="Cancel" HorizontalAlignment="Left" Margin="652,660,0,70" Width="198" Background="{x:Null}" FontFamily="Arial Black" FontSize="48" Foreground="White"/>
         <Label Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1060,660,0,0" Height="64" Width="194" Background="{x:Null}" FontFamily="Arial Black" FontSize="48" Foreground="White"/>
+        <Label Content="Contact Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="737,142,0,0" Height="117" Width="555" Foreground="White" FontFamily="Arial Black" FontSize="48"/>
 
 
 

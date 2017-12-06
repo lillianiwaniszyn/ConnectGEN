@@ -36,7 +36,7 @@ namespace WpfApp1
 
         private void ChangeName(object sender, RoutedEventArgs e)
         {
-            popup.IsOpen = true;
+            MessageBox.Show("This function has not been implemented yet!");
         }
         private void text_GotKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
         {
@@ -45,17 +45,19 @@ namespace WpfApp1
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
-            //Do the popup 
+            Home_Screen home = new Home_Screen();
+            home.Show();
+            this.Close();
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            //Do the popup
+            MessageBox.Show("This function has not been implemented yet!");
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
-            //Do the popup
+            MessageBox.Show("This function has not been implemented yet!");
         }
     }
    
