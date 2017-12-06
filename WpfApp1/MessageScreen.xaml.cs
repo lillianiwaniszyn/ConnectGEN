@@ -24,8 +24,11 @@ namespace WpfApp1
         Login_Main restartWindow = new Login_Main();
         // Might want to change below to mainScreen after the file has been fixed.
         Home_Screen contactScreen = new Home_Screen();
+        // Contact Attribute
+        string specificContact = null;
 
         // Constructor
+        // Will delete after Sabrina makes all instances of MessageScreen have a parameter.
         public MessageScreen()
         {
             InitializeComponent();
@@ -40,6 +43,17 @@ namespace WpfApp1
             // Recreate prompt text.
             messageBox.Text = "Click here to type your message.";
 
+        }
+
+        // Constructor with UserName (this will be official constructor)
+        public MessageScreen(string contactUserName)
+        {
+            InitializeComponent();
+
+            specificContact = contactUserName;
+
+            // Will read message file using contact user name.
+            // Call on appropriate methods based on file input.
         }
 
         // WORKS. Method for exiting the chat. Opens unto the contacts screen.
