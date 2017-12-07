@@ -32,8 +32,8 @@ namespace WpfApp1
         // Contact Attribute
         string specificContact;
 
-        // Constructor
-        // Will delete after Sabrina makes all instances of MessageScreen have a parameter.
+        // Old Constructor
+        // Will hopefully not call on this.
         public MessageScreen()
         {
             InitializeComponent();
@@ -42,11 +42,11 @@ namespace WpfApp1
             msgDisplay.DataContext = this;
 
             // Get the message history.
-            specificContact = "jazmineBrown"; // will have to remove after all constructors have been fixed
+            specificContact = "jazmineBrown";
             SetUpScreen(specificContact);
         }
 
-        // Constructor with UserName (this will be official constructor)
+        // Official Constructor
         public MessageScreen(string contactUserName)
         {
             InitializeComponent();
@@ -56,8 +56,7 @@ namespace WpfApp1
 
             specificContact = contactUserName;
 
-            // Will read message file using contact user name.
-            // Call on appropriate methods based on file input.
+            SetUpScreen(specificContact);
         }
 
         public void SetUpScreen(string userName)

@@ -219,7 +219,7 @@ namespace WpfApp1
 
         private void leftArrow_Click(object sender, RoutedEventArgs e)
         {
-            if(middleImage > 1)
+            if (middleImage > 1)
             {
                 middleImage--;
                 LeftImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage - 1], UriKind.Relative));
@@ -259,7 +259,7 @@ namespace WpfApp1
 
         private void messageIcon_Click(object sender, RoutedEventArgs e)
         {
-            // Need to get image clicked on.
+
             MessageScreen message = new MessageScreen();
             message.Show();
             this.Close();
@@ -281,6 +281,7 @@ namespace WpfApp1
 
         private void messageLabel_Click(object sender, RoutedEventArgs e)
         {
+
             MessageScreen message = new MessageScreen();
             message.Show();
             this.Close();
@@ -338,7 +339,36 @@ namespace WpfApp1
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            MessageScreen message = new MessageScreen();
+            // Actual Message Button Called
+
+            // Need to get image clicked on.
+            Image selectedImage = (Image)middleContact.Content;
+            // Get source.
+            string temporaryContent = selectedImage.Source.ToString();
+            Console.WriteLine("Path:" + temporaryContent);
+            // Split using '/'.
+            string[] splitContent = temporaryContent.Split('/');
+            // Find out place of "Images".
+            int imageArea = 0;
+            while ((splitContent[imageArea] != "Images") && (splitContent[imageArea] != "images"))
+                imageArea++;
+            // Increase count once more.
+            imageArea++;
+            // Image Name
+            string ImageName = splitContent[imageArea];
+            // Create message screen.
+            MessageScreen message = null;
+            // Since username should be either Jasmine or Malik to continue...
+            if (ImageName == "jazmineBrown.png")
+            {
+                message = new MessageScreen("jazmineBrown");
+            }
+            else if (ImageName == "malikBrown.jpg")
+            {
+                message = new MessageScreen("MalikBrown");
+            }
+            Console.WriteLine("FileName: " + ImageName);
+            
             message.Show();
             this.Close();
         }
