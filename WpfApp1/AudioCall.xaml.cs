@@ -22,17 +22,13 @@ namespace WpfApp1
     public partial class AudioCall : Window
     {
         Home_Screen mainScreen = new Home_Screen();
-        System.Timers.Timer aTimer;
 
         DispatcherTimer _timer;
         TimeSpan _time;
         public AudioCall()
         {
             InitializeComponent();
-            aTimer = new System.Timers.Timer(1000);
-            aTimer.Elapsed += new System.Timers.ElapsedEventHandler(OnTimedEvent);
-            aTimer.Enabled = true;
-            aTimer.Start();
+
 
 
             _time = TimeSpan.FromSeconds(0);
@@ -48,11 +44,6 @@ namespace WpfApp1
         }
 
 
-        private void OnTimedEvent(Object sender, System.Timers.ElapsedEventArgs e)
-        {
-            Timer.Content = e.SignalTime.ToString();
-
-        }
         private void End_Call_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
