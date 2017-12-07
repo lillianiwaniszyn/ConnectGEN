@@ -112,21 +112,21 @@ namespace WpfApp1
 
             if (imageName == "cimoneSimmons")
             {
-                string stringPath = "C:/Users/karla/source/repos/ConnectGenApp/ConnectGenApp/AddedImages/" + imageName + ".jpeg";
+                string stringPath = "images/" + imageName + ".jpeg";
                 Uri imageUri = new Uri(stringPath, UriKind.RelativeOrAbsolute);
                 BitmapImage imageBitmap = new BitmapImage(imageUri);
                 newImageMessage.imageSent.Source = imageBitmap;
             }
             else if ((imageName == "jazmineBrown") || (imageName == "kid1") || (imageName == "kid2") || (imageName == "kid3"))
             {
-                string stringPath = "C:/Users/karla/source/repos/ConnectGenApp/ConnectGenApp/AddedImages/" + imageName + ".png";
+                string stringPath = "images/" + imageName + ".png";
                 Uri imageUri = new Uri(stringPath, UriKind.RelativeOrAbsolute);
                 BitmapImage imageBitmap = new BitmapImage(imageUri);
                 newImageMessage.imageSent.Source = imageBitmap;
             }
             else
             {
-                string stringPath = "C:/Users/karla/source/repos/ConnectGenApp/ConnectGenApp/AddedImages/" + imageName + ".jpg";
+                string stringPath = "images/" + imageName + ".jpg";
                 Uri imageUri = new Uri(stringPath, UriKind.RelativeOrAbsolute);
                 BitmapImage imageBitmap = new BitmapImage(imageUri);
                 newImageMessage.imageSent.Source = imageBitmap;

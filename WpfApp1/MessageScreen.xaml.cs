@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Net;
 using System.IO;
+using System.Windows.Controls;
 
 namespace WpfApp1
 {
@@ -55,9 +56,31 @@ namespace WpfApp1
 
         public void SetUpScreen(string userName)
         {
-            // Get image.
-
-            // Get "chosen" name for chat name.
+            // Get image and contact picture.
+            string picturePath = "";
+            if (specificContact == "cora")
+            {
+                picturePath = "images/coraBrown.jpg";
+                chatNameLabel.Content = "Cora";
+            }
+            else if (specificContact == "Karla1")
+            {
+                picturePath = "images/KarlaJuego.jpg";
+                chatNameLabel.Content = "Karla";
+            }
+            else if (specificContact == "MalikBrown")
+            {
+                picturePath = "images/malikBrown.jpg";
+                chatNameLabel.Content = "Malik";
+            }
+            else if (specificContact == "Simon22")
+            {
+                picturePath = "images/simon.jpg";
+                chatNameLabel.Content = "Simon";
+            }
+            Image myImage = new Image();
+            myImage.Source = new BitmapImage(new Uri(picturePath, UriKind.RelativeOrAbsolute));
+            contactPicture.Source = myImage.Source;
 
             // Local Variables
             string line = "";
