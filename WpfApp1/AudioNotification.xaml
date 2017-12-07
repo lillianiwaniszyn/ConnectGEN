@@ -8,7 +8,7 @@
              d:DesignHeight="222" d:DesignWidth="980">
     <Grid>
         <Canvas HorizontalAlignment="Left" Height="222" VerticalAlignment="Top" Width="980" Background="#FF35C8CF">
-            <Label x:Name="standardUnreadMsg" Content="You have an unread message from:" Canvas.Top="6" FontFamily="Arial Black" FontSize="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="980"/>
+            <Label x:Name="standardUnreadMsg" Content="You have an incoming audio call from:" Canvas.Top="6" FontFamily="Arial Black" FontSize="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="980"/>
             <Label x:Name ="senderName" Content="[contact name]" Canvas.Top="50" FontFamily="Arial Black" FontSize="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Red" Width="980"/>
             <Label x:Name="standardAskMsg" Content="Would you like to..." Canvas.Top="99" FontFamily="Arial Black" FontSize="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="979"/>
             <Button x:Name="confirmButton" Canvas.Left="118" Canvas.Top="139" Width="228" Height="54" Click="ConfirmButton_Click">
