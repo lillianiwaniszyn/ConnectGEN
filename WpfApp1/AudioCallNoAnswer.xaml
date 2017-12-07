@@ -37,7 +37,15 @@
                     </LinearGradientBrush>
                 </Label.Background>
             </Label>
-            <Label x:Name="Timer" Content="00:00" HorizontalAlignment="Left" Height="132" Margin="74,337,0,0" VerticalAlignment="Top" Width="294" Foreground="White" FontSize="70" HorizontalContentAlignment="Center" FontFamily="Arial" FontWeight="Bold"/>
+            <Label x:Name="Timer" Content="00:00" HorizontalAlignment="Left" Height="132" Margin="74,337,0,0" VerticalAlignment="Top" Width="294" Foreground="White" FontSize="70" HorizontalContentAlignment="Center" FontFamily="Arial" FontWeight="Bold" Visibility="Hidden"/>
+            <Label x:Name="NoAnswer" Content="No Answer. Going back to Main Menu" Foreground="White" FontSize="65" FontFamily="Arial" Margin="195,390,179,336">
+                <Label.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF56A8E2" Offset="1"/>
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
 
         </Grid>
 

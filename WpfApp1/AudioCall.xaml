@@ -18,7 +18,7 @@
         <Button x:Name="End_Call" Content="End Call" Margin="540,656,500,29" Background="Red" FontSize="50" FontWeight="Bold" FontFamily="Arial" Click="End_Call_Click"/>
         <Image x:Name="Receiving" Source="images/malikBrown.jpg" Margin="170,40,185,345"/>
         <Label x:Name="Volume" Content="Volume" Foreground="#FFDED5D5" HorizontalContentAlignment="Center" FontSize="48" Margin="380,518,331,168" FontFamily="Arial" FontWeight="Bold"/>
-        <Button x:Name="Volume_Up" Content="" Margin="302,469,837,183" BorderThickness="0">
+        <Button x:Name="Volume_Up" Content="" Margin="302,469,828,183" BorderThickness="0">
             <Button.Background>
                 <ImageBrush ImageSource="images/triangleUp.png"/>
             </Button.Background>

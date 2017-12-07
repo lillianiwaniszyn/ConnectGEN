@@ -23,9 +23,16 @@ namespace WpfApp1
         DispatcherTimer _timer;
         TimeSpan _time;
         TimeSpan waitTime;
+        Home_Screen homescreen = new Home_Screen();
         public AudioCallNoAnswer()
         {
             InitializeComponent();
+        }
+
+        private void End_Call_Click(object sender, RoutedEventArgs e)
+        {
+            homescreen.Show();
+            this.Close();
         }
     }
 }

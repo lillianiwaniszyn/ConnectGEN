@@ -7,6 +7,49 @@
         mc:Ignorable="d"
         Title="VideoCallNoAnswer" Height="850" Width="1500">
     <Grid>
-        
+        <Canvas>
+            <Rectangle Height="821" Canvas.Left="-1" Stroke="Black" Canvas.Top="-2" Width="1500" OpacityMask="Black">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF2D628D" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Button x:Name="End_Call" Content="End Call" Height="149" Canvas.Left="21" Canvas.Top="660" Width="216" OpacityMask="Black" Background="Red" Foreground="Black" FontWeight="Bold" FontSize="50" FontFamily="Arial" Click="End_Call_Click"/>
+            <Image x:Name="Receiving" Height="809" Canvas.Left="539" Width="1012" Source="images/malikBrown.jpg" Canvas.Top="10" OpacityMask="Black"/>
+            <Image x:Name="Caller" Height="399" Canvas.Left="113" Width="546" Source="images/coraBrown.jpg" OpacityMask="Black" Canvas.Top="10"/>
+            <Label x:Name="receiverName" Content="Malik Brown" Height="120" Canvas.Left="1198" Width="294" FontSize="36" Foreground="Black" Canvas.Top="10" OpacityMask="Black" FontFamily="Arial"/>
+            <Label x:Name="Volume" Content="Volume" Height="93" Canvas.Left="21" Canvas.Top="278" Width="189" Foreground="#FFDED5D5" HorizontalContentAlignment="Center" FontSize="48" OpacityMask="Black" FontFamily="Arial" FontWeight="Bold"/>
+            <Button x:Name="End_Call_Copy" Content="" Height="169" Canvas.Left="21" Canvas.Top="82" Width="189" OpacityMask="Black" BorderThickness="0">
+                <Button.Background>
+                    <ImageBrush ImageSource="images/triangleUp.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="End_Call_Copy1" Content="" Height="169" Canvas.Left="21" Canvas.Top="376" Width="189" VerticalContentAlignment="Center" OpacityMask="Black" BorderThickness="0">
+                <Button.Background>
+                    <ImageBrush ImageSource="images/triangleDown.png"/>
+                </Button.Background>
+            </Button>
+            <Label x:Name="Waiting" Content="W a i t i n g" HorizontalAlignment="Left" Height="129" VerticalAlignment="Top" Width="754" FontSize="90" Foreground="White" Canvas.Left="673" Canvas.Top="597" FontFamily="Arial" HorizontalContentAlignment="Center">
+                <Label.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF2D628D" Offset="1"/>
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
+            <Label x:Name="Timer" Content="00:00:00" Height="79" Canvas.Left="10" Canvas.Top="547" Width="216" Foreground="White" FontSize="48" HorizontalContentAlignment="Center" FontWeight="Bold" Visibility="Hidden"/>
+            <Label x:Name="NoAnswer" Content="No Answer. Going back to Main Menu" Height="93" Canvas.Left="248" Canvas.Top="376" Width="1118" Foreground="White" FontSize="65" FontFamily="Arial">
+                <Label.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF56A8E2" Offset="1"/>
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
+
+        </Canvas>
+
     </Grid>
 </Window>
