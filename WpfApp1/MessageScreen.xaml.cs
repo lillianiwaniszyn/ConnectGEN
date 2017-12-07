@@ -38,6 +38,9 @@ namespace WpfApp1
         {
             InitializeComponent();
 
+            // Need this.
+            msgDisplay.DataContext = this;
+
             // Get the message history.
             specificContact = "MalikBrown"; // will have to remove after all constructors have been fixed
             SetUpScreen("MalikBrown");
@@ -47,6 +50,9 @@ namespace WpfApp1
         public MessageScreen(string contactUserName)
         {
             InitializeComponent();
+
+            // Need this.
+            msgDisplay.DataContext = this;
 
             specificContact = contactUserName;
 

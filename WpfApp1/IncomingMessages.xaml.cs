@@ -36,12 +36,10 @@ namespace WpfApp1
 
             // Create User Control.
             TranslationMenu translationPopUp = new TranslationMenu();
-            // Make previous user controls disappear and new user control show on stackPanel.
-            Panel stackPanel = this.Parent as Panel;
-            stackPanel.Children.Clear();
-            stackPanel.Children.Add(translationPopUp);
+            translationPopUp.DataContext = (this.Parent as Panel).DataContext;
             // Set the initialMessageBox to contain the untranslatedMsg.
             translationPopUp.initialMessageBox.Text = untranslatedMsg;
+            translationPopUp.Show();
         }
 
         // WORKS. (With a mild bug. New lines results in double spaces. Can live with)

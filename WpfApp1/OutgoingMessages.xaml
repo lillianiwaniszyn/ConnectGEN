@@ -18,7 +18,7 @@
             </Image.RenderTransform>
         </Image>
         <Label x:Name="TimeStamp" Content="[time]" Foreground="White" HorizontalAlignment="Left" Margin="515,171,0,0" VerticalAlignment="Top" Width="157" Height="42" FontFamily="Arial Black" FontSize="20"/>
-        <Label x:Name="TextMsg" Content="[text message]" Foreground="White" HorizontalAlignment="Left" Margin="686,39,0,0" VerticalAlignment="Top" Height="117" Width="198" FontFamily="Arial Black" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="TextMsg" Content="[text message]" Foreground="White" HorizontalAlignment="Left" Margin="686,39,0,0" VerticalAlignment="Top" Height="117" Width="198" FontFamily="Arial Black" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MouseDoubleClick="CallTranslation"/>
         <Image x:Name="imageSent" HorizontalAlignment="Left" Height="110" Margin="727,40,0,0" VerticalAlignment="Top" Width="151"/>
     </Grid>
 </UserControl>
