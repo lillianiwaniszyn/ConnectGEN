@@ -21,11 +21,12 @@ namespace WpfApp1
         public string[] firstnames = new string[100];
         // Set to English as default.
         public static string languageChosen = "English";
-
-        public static void InitializeLanguage(string chosen)
-        {
-            languageChosen = chosen;
-        }
+        // Boolean for messages.
+        public static Boolean sentCora;
+        public static Boolean sentKarla1;
+        public static Boolean sentLiwanisz;
+        public static Boolean sentMalikBrown;
+        public static Boolean sentSimon22;
 
         public Global_Data()
         {
@@ -77,8 +78,45 @@ namespace WpfApp1
             profilePicPath[6] = "images/cimoneSimmons.jpeg";
             profilePicPath[7] = "images/headshot.jpg";
             profilePicPath[8] = "cimoneSimmons.jpeg";
+            // Set message Booleans to false.
+            sentCora = false;
+            sentKarla1 = false;
+            sentLiwanisz = false;
+            sentMalikBrown = false;
+            sentSimon22 = false;
 
         }
+
+        public static void InitializeLanguage(string chosen)
+        {
+            languageChosen = chosen;
+        }
+
+        public static void SetCoraBoolean()
+        {
+            sentCora = true;
+        }
+
+        public static void SetKarlaBoolean()
+        {
+            sentKarla1 = true;
+        }
+
+        public static void SetLillianBoolean()
+        {
+            sentLiwanisz = true;
+        }
+
+        public static void SetMalikBoolean()
+        {
+            sentMalikBrown = true;
+        }
+
+        public static void SetSimonBoolean()
+        {
+            sentSimon22 = true;
+        }
+
     }
 
 
