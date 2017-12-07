@@ -30,6 +30,19 @@ namespace WpfApp1
             string fName = dataClass.firstnames[index];
             string lName = dataClass.lastnames[index];
             string fullName = fName + " " + lName;
+            int rightIndex = 2;
+            int leftIndex = 4;
+            int middleIndex = 3;
+            string rightContactFirst = dataClass.firstnames[rightIndex];
+            string rightContactLast = dataClass.lastnames[rightIndex];
+            string leftContactFirst = dataClass.firstnames[leftIndex];
+            string leftContactLast = dataClass.lastnames[leftIndex];
+            string middleContactFirst = dataClass.firstnames[middleIndex];
+            string middleContactLast = dataClass.lastnames[middleIndex];
+            string rightFull = rightContactFirst + " " + rightContactLast;
+            string leftFull = leftContactFirst + " " + leftContactLast;
+            string middleFull = middleContactFirst + " " + middleContactLast;
+            rightContactLabel.Content = rightFull;
             myProfileButton.Content = fullName;
         }
 
@@ -157,7 +170,7 @@ namespace WpfApp1
         {
             //MessageBox.Show("Move the contact to the middle of the screen if you would like to get in touch with them!");
             // move contact to center
-            if (middleImage > 1)
+            if (middleImage > 2)
             {
                 middleImage--;
                 LeftImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage - 1], UriKind.Relative));
@@ -219,7 +232,7 @@ namespace WpfApp1
 
         private void leftArrow_Click(object sender, RoutedEventArgs e)
         {
-            if (middleImage > 1)
+            if (middleImage > 2)
             {
                 middleImage--;
                 LeftImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage - 1], UriKind.Relative));
