@@ -37,6 +37,7 @@ namespace WpfApp1
             existing_Usernames[5] = "Simonee";
             existing_Usernames[6] = "SimoneSS";
             existing_Usernames[7] = "FakeSimone";
+            existing_Usernames[8] = "SelectedSimone";
             passwords[0] = "1234";
             passwords[1] = "3245";
             passwords[2] = "0000";
@@ -52,6 +53,7 @@ namespace WpfApp1
             firstnames[5] = "Simone";
             firstnames[6] = "Simone";
             firstnames[7] = "Simonella";
+            firstnames[8] = "Simone";
             lastnames[0] = "Iwaniszyn";
             lastnames[1] = "Juego";
             lastnames[2] = "Brown";
@@ -60,6 +62,7 @@ namespace WpfApp1
             lastnames[5] = "Brown";
             lastnames[6] = "Simmons";
             lastnames[7] = "Al";
+            lastnames[8] = "Simone";
             contacts[0, 0] = "Karla1"; //this shows us that Karla is in Lillian's contacts
             contacts[0, 1] = "Simon22"; // simon is also Lillian's friend
             contacts[1, 0] = "liwanisz"; // lillian is Karla's friend
@@ -73,6 +76,7 @@ namespace WpfApp1
             profilePicPath[5] = "images/simone.jpg";
             profilePicPath[6] = "images/cimoneSimmons.jpeg";
             profilePicPath[7] = "images/headshot.jpg";
+            profilePicPath[8] = "cimoneSimmons.jpeg";
 
         }
     }

@@ -108,6 +108,8 @@ namespace WpfApp1
         private void AddContactImageButton_Click(object sender, RoutedEventArgs e)
         {
             // move to search for a contact page 
+            AddContacts addC = new AddContacts();
+            addC.Show();
             this.Close();
         }
 
@@ -124,6 +126,8 @@ namespace WpfApp1
         private void AddContactButton_Click(object sender, RoutedEventArgs e)
         {
             // move to search for a contact page 
+            AddContacts addC = new AddContacts();
+            addC.Show();
             this.Close();
         }
 
@@ -322,8 +326,9 @@ namespace WpfApp1
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            // move to search for a contact page
-            //this.Close();
+            AddContacts addC = new AddContacts();
+            addC.Show();
+            this.Close();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)

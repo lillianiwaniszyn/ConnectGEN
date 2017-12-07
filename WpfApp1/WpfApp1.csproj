@@ -342,7 +342,10 @@
   <ItemGroup>
     <Resource Include="images\white_search.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="images\Grandma_Audio.m4a" />
+    <Content Include="images\Grandpa_Video.mov" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Translation\French.txt" />
   </ItemGroup>

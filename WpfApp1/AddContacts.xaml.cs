@@ -24,6 +24,7 @@ namespace WpfApp1
         ContactsUC contact2 = new ContactsUC(5);
         ContactsUC contact3 = new ContactsUC(6);
         ContactsUC contact4 = new ContactsUC(7);
+        ContactsUC simoneselect = new ContactsUC(8);
         //ContactsUC contact = new ContactsUC();
 
         public AddContacts()
@@ -183,5 +184,26 @@ namespace WpfApp1
                 //Do nothing
             }
         }
+
+        private void SelectC1(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void SelectC2(object sender, RoutedEventArgs e)
+        {
+            //Do nothing
+        }
+
+        private void SelectC3(object sender, RoutedEventArgs e)
+        {
+            //Do nothing
+        }
+
+        private void C1HoverEffect(object sender, MouseEventArgs e)
+        {
+            //select_contact1.Background = 
+        }
+
     }
 }

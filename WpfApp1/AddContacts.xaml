@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="AddContacts" Height="825" Width="1500">
+
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -14,10 +15,43 @@
             </LinearGradientBrush>
         </Grid.Background>
         <StackPanel x:Name ="listOfContacts" HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="900" Margin="339,155,0,0"/>
+        <Button x:Name="select_contact1" Content="CONTACT 1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="900"  Height="150" Margin="339,155,0,0" Click="SelectC1"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Opacity" Value="0.2"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button x:Name="select_contact2" Content="CONTACT 2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="900"  Height="150" Margin="339,305,0,0" Click="SelectC2" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Opacity" Value="0.2"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button x:Name="select_contact3" Content="CONTACT 3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="900"  Height="150" Margin="339,455,0,0" Click="SelectC3" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Opacity" Value="0.2"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
 
         <TextBox x:Name="searchContact" HorizontalAlignment="Left" Height="73" TextWrapping="Wrap" Text="        SEARCH" VerticalAlignment="Top" Width="747" Margin="492,32,0,0" FontSize="48" Foreground="Gray" GotKeyboardFocus="SearchingFor" TextChanged="SearchFor" LostFocus="returnToNormal"/>
         <Image x:Name="searchicon" HorizontalAlignment="Left" Height="69" VerticalAlignment="Top" Width="81" Source="images/search.png" Margin="492,36,0,0" OpacityMask="White"/>
-        <Button x:Name="scrollUp" HorizontalAlignment="Left" VerticalAlignment="Top" Width="128"  Height="122" Margin="1302,155,0,0" Click="scrollUp_Click" >
+        <Button x:Name="scrollUp" HorizontalAlignment="Left" VerticalAlignment="Top" Width="128"  Height="122" Margin="1302,155,0,0" Click="scrollUp_Click" Content="" >
             <Button.Template>
                 <ControlTemplate>
                     <Image Source="images/whitearrow.png" Height="150" Margin="0,0,8,0" />
@@ -47,6 +81,7 @@
             </Button.Template>
         </Button>
         <Button x:Name="backlbutton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="166" FontFamily="Arial Black" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Height="51" FontSize="36" Click="Back_Click" Content="Back" Margin="39,54,0,0"/>
+
 
     </Grid>
 </Window>
