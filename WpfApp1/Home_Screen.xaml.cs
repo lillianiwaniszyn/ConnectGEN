@@ -22,6 +22,9 @@ namespace WpfApp1
         Global_Data dataClass = new Global_Data();
         int middleImage = 1;
         int count = 0;
+        private int rightIndex = 3;
+        private int leftIndex = 1;
+        private int middleIndex = 2;
 
         public Home_Screen()
         {
@@ -30,9 +33,9 @@ namespace WpfApp1
             string fName = dataClass.firstnames[index];
             string lName = dataClass.lastnames[index];
             string fullName = fName + " " + lName;
-            int rightIndex = 2;
-            int leftIndex = 4;
-            int middleIndex = 3;
+            //int rightIndex = 3;
+            //int leftIndex = 1;
+            //int middleIndex = 2;
             string rightContactFirst = dataClass.firstnames[rightIndex];
             string rightContactLast = dataClass.lastnames[rightIndex];
             string leftContactFirst = dataClass.firstnames[leftIndex];
@@ -42,6 +45,8 @@ namespace WpfApp1
             string rightFull = rightContactFirst + " " + rightContactLast;
             string leftFull = leftContactFirst + " " + leftContactLast;
             string middleFull = middleContactFirst + " " + middleContactLast;
+            leftContactLabel.Content = leftFull;
+            middleContactLabel.Content = middleFull;
             rightContactLabel.Content = rightFull;
             myProfileButton.Content = fullName;
         }
@@ -202,7 +207,13 @@ namespace WpfApp1
         {
             if(middleImage < 6)
             {
-
+                // changing the names of the users 
+                rightIndex++;
+                leftIndex++;
+                middleIndex++;
+                rightContactLabel.Content = dataClass.firstnames[rightIndex] + " " + dataClass.lastnames[rightIndex];
+                leftContactLabel.Content = dataClass.firstnames[leftIndex] + " " + dataClass.lastnames[leftIndex];
+                middleContactLabel.Content = dataClass.firstnames[middleIndex] + " " + dataClass.lastnames[middleIndex];
                 middleImage++;
                 LeftImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage - 1], UriKind.Relative));
                 MiddleImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage], UriKind.Relative));
@@ -234,6 +245,13 @@ namespace WpfApp1
         {
             if (middleImage > 2)
             {
+                // changing the names of the users 
+                rightIndex--;
+                leftIndex--;
+                middleIndex--;
+                rightContactLabel.Content = dataClass.firstnames[rightIndex] + " " + dataClass.lastnames[rightIndex];
+                leftContactLabel.Content = dataClass.firstnames[leftIndex] + " " + dataClass.lastnames[leftIndex];
+                middleContactLabel.Content = dataClass.firstnames[middleIndex] + " " + dataClass.lastnames[middleIndex];
                 middleImage--;
                 LeftImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage - 1], UriKind.Relative));
                 MiddleImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage], UriKind.Relative));

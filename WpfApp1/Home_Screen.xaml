@@ -101,7 +101,9 @@
         <Button x:Name="audiobutton" IsEnabled="False" Content="" Grid.Column="1" HorizontalAlignment="Left" Height="154" Margin="665,341,0,0" Grid.Row="1" VerticalAlignment="Top" Width="106" Background="Transparent" Click="Button_Click_4" BorderBrush="{x:Null}" Visibility="Hidden" Opacity=" 0.5"/>
         <Button x:Name ="videobutton" IsEnabled="False" Content="" Grid.Column="1" HorizontalAlignment="Left" Height="152" Margin="799,343,0,0" Grid.Row="1" VerticalAlignment="Top" Width="118" Background="Transparent" Click="Button_Click_5" BorderBrush="{x:Null}" Visibility="Hidden" Opacity=" 0.5"/>
         <Button x:Name ="infobutton" IsEnabled="False" Content="" Grid.Column="1" HorizontalAlignment="Left" Height="151" Margin="665,99,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="106" Background="Transparent" Click="Button_Click_6" BorderBrush="{x:Null}" Foreground="{x:Null}" Visibility="Hidden" Opacity="0.5"/>
-        <Label x:Name="rightContactLabel" Grid.Column="1" HorizontalAlignment="Left" Height="32" Margin="336,289,0,0" Grid.Row="1" VerticalAlignment="Top" Width="171" Background="Transparent" Foreground="White" FontWeight="Bold"/>
-        
+        <Label x:Name="leftContactLabel" Grid.Column="1" HorizontalAlignment="Left" Height="32" Margin="336,289,0,0" Grid.Row="1" VerticalAlignment="Top" Width="171" Background="Transparent" Foreground="White" FontWeight="Bold"/>
+        <Label x:Name="middleContactLabel" Grid.Column="1" HorizontalAlignment="Left" Margin="627,329,0,0" Grid.Row="1" VerticalAlignment="Top" Height="34" Width="197" Background="Transparent" Foreground="White" FontWeight="Bold"/>
+        <Label x:Name="rightContactLabel" Grid.Column="1" HorizontalAlignment="Left" Height="32" Margin="945,289,0,0" Grid.Row="1" VerticalAlignment="Top" Width="150" Background="Transparent" Foreground="White" FontWeight="bold"/>
+
     </Grid>
 </Window>
