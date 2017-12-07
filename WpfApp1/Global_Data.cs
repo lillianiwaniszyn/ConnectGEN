@@ -78,13 +78,6 @@ namespace WpfApp1
             profilePicPath[6] = "images/cimoneSimmons.jpeg";
             profilePicPath[7] = "images/headshot.jpg";
             profilePicPath[8] = "cimoneSimmons.jpeg";
-            // Set message Booleans to false.
-            sentCora = false;
-            sentKarla1 = false;
-            sentLiwanisz = false;
-            sentMalikBrown = false;
-            sentSimon22 = false;
-
         }
 
         public static void InitializeLanguage(string chosen)

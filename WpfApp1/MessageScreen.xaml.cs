@@ -198,7 +198,8 @@ namespace WpfApp1
             System.Console.ReadLine();
 
             // Check if the addedMessages is set to true. If so, will have to read debugging file.
-            Boolean addedMessages = false;
+            Boolean addedMessages = true;
+
             if (specificContact == "cora")
             {
                 addedMessages = Global_Data.sentCora;
@@ -219,12 +220,9 @@ namespace WpfApp1
             {
                 addedMessages = Global_Data.sentSimon22;
             }
-            Console.WriteLine("Check");
-            Console.WriteLine(Global_Data.sentMalikBrown);
             
             if (addedMessages == true)
             {
-                Console.WriteLine("Global Data Variable Set to True");
                 // Read the file.
                 System.IO.StreamReader secondFile = new System.IO.StreamReader(userName + ".txt");
                 // Remove the single line.
@@ -438,7 +436,7 @@ namespace WpfApp1
             }
             else if (specificContact == "MalikBrown")
             {
-                Global_Data.SetMalikBoolean();
+                Global_Data.sentMalikBrown = true;
             }
             else if (specificContact == "Simon22")
             {
