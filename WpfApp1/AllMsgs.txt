@@ -1,6 +1,0 @@
-MALIKBROWN|I|Hi Grandma Cora. It was very nice seeing you. I hope to see you again!
-MALIKBROWN|O|Thanks Malik. I had a lot of fun, too.
-MALIKBROWN|I|That is good to hear.
-MALIKBROWN|I|Will you be able to go to dinner tomorrow?
-
-SIMONESIMMONS|I|What's up, Grandma?

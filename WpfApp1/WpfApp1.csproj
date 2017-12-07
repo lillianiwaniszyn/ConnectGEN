@@ -369,9 +369,6 @@
     <Resource Include="images\blank2.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="AllMsgs.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="images\selfie.jpg" />
   </ItemGroup>
   <ItemGroup>
