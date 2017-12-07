@@ -30,7 +30,7 @@ namespace WpfApp1
         // Notifications Window
         NotificationWindow allNotifications = new NotificationWindow();
         // Contact Attribute
-        string specificContact = null;
+        string specificContact;
 
         // Constructor
         // Will delete after Sabrina makes all instances of MessageScreen have a parameter.
@@ -219,9 +219,12 @@ namespace WpfApp1
             {
                 addedMessages = Global_Data.sentSimon22;
             }
-
+            Console.WriteLine("Check");
+            Console.WriteLine(Global_Data.sentMalikBrown);
+            
             if (addedMessages == true)
             {
+                Console.WriteLine("Global Data Variable Set to True");
                 // Read the file.
                 System.IO.StreamReader secondFile = new System.IO.StreamReader(userName + ".txt");
                 // Remove the single line.
