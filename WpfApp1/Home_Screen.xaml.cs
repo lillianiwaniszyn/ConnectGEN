@@ -23,13 +23,6 @@ namespace WpfApp1
         int middleImage = 1;
         int count = 0;
 
-        /*
-        MessageScreen message = new MessageScreen();
-        EditProfile editprofile = new EditProfile();
-        EditContact editcontact = new EditContact();
-        AudioCallWaiting audio = new AudioCallWaiting();
-        VideoCallWaiting video = new VideoCallWaiting();
-        */
         public Home_Screen()
         {
             InitializeComponent();
@@ -99,10 +92,10 @@ namespace WpfApp1
         private void MyProfilePictureButton_Click(object sender, RoutedEventArgs e)
         {
 
-            //Change_Profile_Picture cpp = new Change_Profile_Picture();
-            //cpp.DataContext = this;
-            //cpp.ShowDialog();
-           // this.Close();
+            Change_Profile_Picture cpp = new Change_Profile_Picture();
+            cpp.DataContext = this;
+            cpp.ShowDialog();
+            this.Close();
         }
 
         private void AddContactImageButton_Click(object sender, RoutedEventArgs e)
@@ -133,50 +126,65 @@ namespace WpfApp1
 
         private void RightContact_Click(object sender, RoutedEventArgs e)
         {
-            // move contact to center
-            // make popups visible
-            infoIcon.Visibility = System.Windows.Visibility.Visible;
-            infobutton.IsEnabled = true;
-            messageIcon.Visibility = System.Windows.Visibility.Visible;
-            messagebutton.IsEnabled = true;
-            audioIcon.Visibility = System.Windows.Visibility.Visible;
-            audiobutton.IsEnabled = true;
-            videoIcon.Visibility = System.Windows.Visibility.Visible;
-            videobutton.IsEnabled = true;
-            infoLabel.Visibility = System.Windows.Visibility.Visible;
-            messageLabel.Visibility = System.Windows.Visibility.Visible;
-            audioLabel.Visibility = System.Windows.Visibility.Visible;
-            videoLabel.Visibility = System.Windows.Visibility.Visible;
-            infobutton.Visibility = System.Windows.Visibility.Visible;
-            messagebutton.Visibility = System.Windows.Visibility.Visible;
-            audiobutton.Visibility = System.Windows.Visibility.Visible;
-            videobutton.Visibility = System.Windows.Visibility.Visible;
-            count++;
-            this.Close();
+            if (middleImage < 6)
+            {
+                // move contact to center
+                middleImage++;
+                LeftImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage - 1], UriKind.Relative));
+                MiddleImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage], UriKind.Relative));
+                RightImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage + 1], UriKind.Relative));
+                // make popups visible
+                infoIcon.Visibility = System.Windows.Visibility.Visible;
+                infobutton.IsEnabled = true;
+                messageIcon.Visibility = System.Windows.Visibility.Visible;
+                messagebutton.IsEnabled = true;
+                audioIcon.Visibility = System.Windows.Visibility.Visible;
+                audiobutton.IsEnabled = true;
+                videoIcon.Visibility = System.Windows.Visibility.Visible;
+                videobutton.IsEnabled = true;
+                infoLabel.Visibility = System.Windows.Visibility.Visible;
+                messageLabel.Visibility = System.Windows.Visibility.Visible;
+                audioLabel.Visibility = System.Windows.Visibility.Visible;
+                videoLabel.Visibility = System.Windows.Visibility.Visible;
+                infobutton.Visibility = System.Windows.Visibility.Visible;
+                messagebutton.Visibility = System.Windows.Visibility.Visible;
+                audiobutton.Visibility = System.Windows.Visibility.Visible;
+                videobutton.Visibility = System.Windows.Visibility.Visible;
+                count++;
+            }
+            //this.Close();
         }
 
         private void LeftContact_Click(object sender, RoutedEventArgs e)
         {
+            //MessageBox.Show("Move the contact to the middle of the screen if you would like to get in touch with them!");
             // move contact to center
-            // make popups visible
-            infoIcon.Visibility = System.Windows.Visibility.Visible;
-            infobutton.IsEnabled = true;
-            messageIcon.Visibility = System.Windows.Visibility.Visible;
-            messagebutton.IsEnabled = true;
-            audioIcon.Visibility = System.Windows.Visibility.Visible;
-            audiobutton.IsEnabled = true;
-            videoIcon.Visibility = System.Windows.Visibility.Visible;
-            videobutton.IsEnabled = true;
-            infoLabel.Visibility = System.Windows.Visibility.Visible;
-            messageLabel.Visibility = System.Windows.Visibility.Visible;
-            audioLabel.Visibility = System.Windows.Visibility.Visible;
-            videoLabel.Visibility = System.Windows.Visibility.Visible;
-            infobutton.Visibility = System.Windows.Visibility.Visible;
-            messagebutton.Visibility = System.Windows.Visibility.Visible;
-            audiobutton.Visibility = System.Windows.Visibility.Visible;
-            videobutton.Visibility = System.Windows.Visibility.Visible;
-            count++;
-            this.Close();
+            if (middleImage > 1)
+            {
+                middleImage--;
+                LeftImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage - 1], UriKind.Relative));
+                MiddleImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage], UriKind.Relative));
+                RightImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage + 1], UriKind.Relative));
+                // make popups visible
+                infoIcon.Visibility = System.Windows.Visibility.Visible;
+                infobutton.IsEnabled = true;
+                messageIcon.Visibility = System.Windows.Visibility.Visible;
+                messagebutton.IsEnabled = true;
+                audioIcon.Visibility = System.Windows.Visibility.Visible;
+                audiobutton.IsEnabled = true;
+                videoIcon.Visibility = System.Windows.Visibility.Visible;
+                videobutton.IsEnabled = true;
+                infoLabel.Visibility = System.Windows.Visibility.Visible;
+                messageLabel.Visibility = System.Windows.Visibility.Visible;
+                audioLabel.Visibility = System.Windows.Visibility.Visible;
+                videoLabel.Visibility = System.Windows.Visibility.Visible;
+                infobutton.Visibility = System.Windows.Visibility.Visible;
+                messagebutton.Visibility = System.Windows.Visibility.Visible;
+                audiobutton.Visibility = System.Windows.Visibility.Visible;
+                videobutton.Visibility = System.Windows.Visibility.Visible;
+                count++;
+            }
+            //this.Close();
         }
 
         private void rightArrow_Click(object sender, RoutedEventArgs e)
@@ -308,15 +316,6 @@ namespace WpfApp1
             this.Close();
         }
 
-        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
-            middleImage++;
-            LeftImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage - 1]));
-            MiddleImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage]));
-            RightImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage + 1]));
-
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Login_Main lm = new Login_Main();
@@ -364,6 +363,11 @@ namespace WpfApp1
             EditContact editcontact = new EditContact();
             editcontact.Show();
             this.Close();
+        }
+
+        private void slider_ValueChanged_1(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            MessageBox.Show("This function has not been implemented yet!");
         }
     }
 }

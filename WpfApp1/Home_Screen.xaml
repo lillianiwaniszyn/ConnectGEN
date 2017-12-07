@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="Home" Height="825" Width="1500">
-    <Grid Margin="0,0,2,0">
+    <Grid Margin="0,0,2,0" >
         <Grid.RowDefinitions>
             <RowDefinition Height="209*"/>
             <RowDefinition Height="586*"/>
@@ -34,6 +34,7 @@
         <Button BorderThickness="0" x:Name="logoutButton" HorizontalAlignment="Left" Height="70" Margin="10,425.5,0,0" VerticalAlignment="Top" Width="100" Background="Transparent" Click="LogoutButton_Click" Grid.ColumnSpan="2" Grid.Row="1" BorderBrush="{x:Null}" >
             <Image Source="Images/logout.png" Height="70" Width="94" />
         </Button>
+
         <Label x:Name="unreadLabel" Content=" UNREAD" HorizontalAlignment="Left" Height="66" VerticalAlignment="Top" Width="171" Foreground="White" FontWeight="Bold" FontSize="30" Grid.ColumnSpan="2"/>
         <Button  BorderThickness="0" x:Name="middleContact" HorizontalAlignment="Left" Height="323" Margin="566,18.5,0,0" VerticalAlignment="Top" Width="313" Background="Transparent" Click="MiddleContact_Click_1" Grid.Column="1" Grid.Row="1" >
             <Image x:Name="MiddleImage" Source="Images/jazmineBrown.png" Height="269" Width="303"/>
@@ -70,21 +71,21 @@
         <Button  BorderThickness="0" x:Name="addContactImageButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="133" Margin="158,10,0,0" Height="89" Background =" Transparent" Click="AddContactImageButton_Click" Grid.Column="1">
             <Image Source ="images/plus3.png" Height="82" Width="115"/>
         </Button>
-        <Button  BorderThickness="0" Name= "myProfilePictureButton" HorizontalAlignment="Left" Height="111" Margin="1029,10,0,0" VerticalAlignment="Top" Width="121" Background="Transparent" Click="MyProfilePictureButton_Click" Grid.Column="1">
+        <Button  BorderThickness="0" Name= "myProfilePictureButton" HorizontalAlignment="Left" Height="89" Margin="1041,10,0,0" VerticalAlignment="Top" Width="109" Background="Transparent" Click="MyProfilePictureButton_Click" Grid.Column="1">
             <Image  Name ="currentProfPic" Source="images/coraBrown.jpg"/>
         </Button>
         <Button BorderThickness="0" x:Name ="myProfileButton" Content="CORA BROWN" HorizontalAlignment="Left" VerticalAlignment="Top" Width="228" Margin="1150,24,0,0" Foreground="White" Background="Transparent" FontWeight="Bold" Click="MyProfileButton_Click" Height="75" FontSize="30" Grid.Column="1"/>
         <Button BorderThickness="0" x:Name ="addContactButton" Content="ADD CONTACT" HorizontalAlignment="Left" Height="39" Margin="138,99,0,0" VerticalAlignment="Top" Width="181" Foreground="White" Background="Transparent" Click="AddContactButton_Click" FontSize="22" FontWeight="Bold" Grid.Column="1"/>
-        <Button x:Name="infoIcon" IsEnabled="False" HorizontalAlignment="Left" Height="87" Margin="665,112,0,0" VerticalAlignment="Top" Width="106" Background="Transparent" Click="infoIcon_Click" Visibility="Hidden"  Grid.Column="1" BorderBrush="{x:Null}">
+        <Button x:Name="infoIcon" HorizontalAlignment="Left" Height="87" Margin="665,112,0,0" VerticalAlignment="Top" Width="106" Background="Transparent" Click="infoIcon_Click" Visibility="Hidden"  Grid.Column="1" BorderBrush="{x:Null}">
             <Image Source=" images/info2.png"/>
         </Button >
-        <Button x:Name="messageIcon" IsEnabled="False" HorizontalAlignment="Left" Height="111" Margin="522,347,0,0" VerticalAlignment="Top" Width="118" Background="Transparent" Click="messageIcon_Click" Visibility="Hidden" Grid.Column="1" Grid.Row="1" BorderBrush="{x:Null}">
+        <Button x:Name="messageIcon"  HorizontalAlignment="Left" Height="111" Margin="522,347,0,0" VerticalAlignment="Top" Width="118" Background="Transparent" Click="messageIcon_Click" Visibility="Hidden" Grid.Column="1" Grid.Row="1" BorderBrush="{x:Null}">
             <Image Source=" images/message.png"/>
         </Button >
-        <Button x:Name="audioIcon" IsEnabled="False" HorizontalAlignment="Left" Height="114" Margin="665,347,0,0" VerticalAlignment="Top" Width="106" Background="Transparent" Click="audioIcon_Click" Visibility="Hidden" Grid.Column="1" Grid.Row="1" BorderBrush="{x:Null}">
+        <Button x:Name="audioIcon"  HorizontalAlignment="Left" Height="114" Margin="665,347,0,0" VerticalAlignment="Top" Width="106" Background="Transparent" Click="audioIcon_Click" Visibility="Hidden" Grid.Column="1" Grid.Row="1" BorderBrush="{x:Null}">
             <Image Source="images/call.png"/>
         </Button >
-        <Button x:Name="videoIcon" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Width="118" Margin="799,347,0,0" Height="111" Background="Transparent" Click="videoIcon_Click" Visibility="Hidden" Grid.Column="1" Grid.Row="1" BorderBrush="{x:Null}" >
+        <Button x:Name="videoIcon" HorizontalAlignment="Left" VerticalAlignment="Top" Width="118" Margin="799,347,0,0" Height="111" Background="Transparent" Click="videoIcon_Click" Visibility="Hidden" Grid.Column="1" Grid.Row="1" BorderBrush="{x:Null}" >
             <Image Source=" images/video.png"/>
         </Button >
         <Button x:Name="infoLabel" Content="Edit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="106" Margin="665,202,0,0" Foreground="White" Background="Transparent" FontWeight="Bold" Click="infoLabel_Click" Visibility="Hidden" Grid.Column="1" Grid.RowSpan="2" Height="48" FontSize="24" BorderBrush="{x:Null}"/>
@@ -92,13 +93,13 @@
         <Button x:Name="audioLabel" Content="Audio" HorizontalAlignment="Left" VerticalAlignment="Top" Width="106" Margin="665,458,0,0" Height="37" Foreground="White" Background="Transparent" FontWeight="Bold" Click="audioLabel_Click" Visibility="Hidden" Grid.Column="1" Grid.Row="1" FontSize="24" BorderBrush="{x:Null}"/>
         <Button x:Name="videoLabel" Content="Video" HorizontalAlignment="Left" VerticalAlignment="Top" Width="118" Margin="799,458,0,0" Height="37" Foreground="White" Background="Transparent" FontWeight="Bold" Click="videoLabel_Click" Visibility="Hidden" Grid.Column="1" Grid.Row="1" FontSize="24" BorderBrush="{x:Null}"/>
         <Button x:Name="logOutLabel" Content="LOG OUT" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,500.5,0,0" Foreground="White" Background="Transparent" FontWeight="Bold" Click="logOutLabel_Click" Height="60" FontSize="24" Grid.ColumnSpan="2" Grid.Row="1" BorderBrush="{x:Null}"/>
-        <Slider x:Name="slider" HorizontalAlignment="Left" Height="42" Margin="396,500.5,0,0" VerticalAlignment="Top" Width="754" Grid.Column="1" Grid.Row="1"/>
-        <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="127" Margin="3,425,0,0" Grid.Row="1" Height="136" Background="Transparent" Grid.ColumnSpan="2" Click="LogoutButton_Click" BorderBrush="{x:Null}"/>
-        <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="181" Grid.Column="1" Margin="138,0,0,0" Height="152" Background="Transparent" Click="Button_Click_1" BorderBrush="{x:Null}"/>
-        <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="362" Margin="1041,0,0,88" Grid.Column="1" Height="121" Background="Transparent" Click="Button_Click_2" BorderBrush="{x:Null}"/>
-        <Button x:Name="messagebutton" IsEnabled="False" Content="" Grid.Column="1" HorizontalAlignment="Left" Height="160" Margin="522,341,0,0" Grid.Row="1" VerticalAlignment="Top" Width="118" Background="Transparent" Click="Button_Click_3"  BorderBrush="{x:Null}" Visibility="Hidden"/>
-        <Button x:Name="audiobutton" IsEnabled="False" Content="" Grid.Column="1" HorizontalAlignment="Left" Height="154" Margin="665,341,0,0" Grid.Row="1" VerticalAlignment="Top" Width="106" Background="Transparent" Click="Button_Click_4" BorderBrush="{x:Null}" Visibility="Hidden"/>
-        <Button x:Name ="videobutton" IsEnabled="False" Content="" Grid.Column="1" HorizontalAlignment="Left" Height="152" Margin="799,343,0,0" Grid.Row="1" VerticalAlignment="Top" Width="118" Background="Transparent" Click="Button_Click_5" BorderBrush="{x:Null}" Visibility="Hidden"/>
-        <Button x:Name ="infobutton" IsEnabled="False" Content="" Grid.Column="1" HorizontalAlignment="Left" Height="151" Margin="665,99,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="106" Background="Transparent" Click="Button_Click_6" BorderBrush="{x:Null}" Foreground="{x:Null}" Visibility="Hidden"/>
+        <Slider x:Name="slider" HorizontalAlignment="Left" Height="42" Margin="396,500.5,0,0" VerticalAlignment="Top" Width="754" Grid.Column="1" Grid.Row="1" SmallChange="1"  ValueChanged="slider_ValueChanged_1"/>
+        <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="127" Margin="3,425,0,0" Grid.Row="1" Height="136" Background="Transparent" Grid.ColumnSpan="2" Click="LogoutButton_Click" BorderBrush="{x:Null}" Opacity="0.5"/>
+        <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="181" Grid.Column="1" Margin="138,0,0,0" Height="152" Background="Transparent" Click="Button_Click_1" BorderBrush="{x:Null}" Opacity="0.5"/>
+        <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="362" Margin="1041,0,0,88" Grid.Column="1" Height="121" Background="Transparent" Click="Button_Click_2" BorderBrush="{x:Null}" Opacity="0.5"/>
+        <Button x:Name="messagebutton" IsEnabled="False" Content="" Grid.Column="1" HorizontalAlignment="Left" Height="160" Margin="522,341,0,0" Grid.Row="1" VerticalAlignment="Top" Width="118" Background="Transparent" Click="Button_Click_3"  BorderBrush="{x:Null}" Visibility="Hidden" Opacity="0.5"/>
+        <Button x:Name="audiobutton" IsEnabled="False" Content="" Grid.Column="1" HorizontalAlignment="Left" Height="154" Margin="665,341,0,0" Grid.Row="1" VerticalAlignment="Top" Width="106" Background="Transparent" Click="Button_Click_4" BorderBrush="{x:Null}" Visibility="Hidden" Opacity=" 0.5"/>
+        <Button x:Name ="videobutton" IsEnabled="False" Content="" Grid.Column="1" HorizontalAlignment="Left" Height="152" Margin="799,343,0,0" Grid.Row="1" VerticalAlignment="Top" Width="118" Background="Transparent" Click="Button_Click_5" BorderBrush="{x:Null}" Visibility="Hidden" Opacity=" 0.5"/>
+        <Button x:Name ="infobutton" IsEnabled="False" Content="" Grid.Column="1" HorizontalAlignment="Left" Height="151" Margin="665,99,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="106" Background="Transparent" Click="Button_Click_6" BorderBrush="{x:Null}" Foreground="{x:Null}" Visibility="Hidden" Opacity="0.5"/>
     </Grid>
 </Window>
