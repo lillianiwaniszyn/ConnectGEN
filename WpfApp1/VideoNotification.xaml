@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="WpfApp1.VideoNotification"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1"
+             mc:Ignorable="d" 
+             d:DesignHeight="222" d:DesignWidth="980">
+    <Grid>
+        <Canvas HorizontalAlignment="Left" Height="222" VerticalAlignment="Top" Width="980" Background="#FF35C8CF">
+            <Label x:Name="standardUnreadMsg" Content="You have an unread message from:" Canvas.Top="6" FontFamily="Arial Black" FontSize="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="980"/>
+            <Label x:Name ="senderName" Content="[contact name]" Canvas.Top="50" FontFamily="Arial Black" FontSize="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Red" Width="980"/>
+            <Label x:Name="standardAskMsg" Content="Would you like to..." Canvas.Top="99" FontFamily="Arial Black" FontSize="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="979"/>
+            <Button x:Name="confirmButton" Canvas.Left="118" Canvas.Top="139" Width="228" Height="54" Click="ConfirmButton_Click">
+                <Image Source ="images/acceptVideo.png"/>
+            </Button>
+            <Button x:Name="cancelButton" Canvas.Left="642" Canvas.Top="139" Width="228" Height="54" Click="CancelButton_Click">
+                <Image Source="images/declineVideo.png"/>
+            </Button>
+            <Label x:Name="declineCallLabel" Content="Decline Call" Canvas.Left="642" Canvas.Top="193" Width="228" FontFamily="Arial Black" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label x:Name="acceptCallLabel" Content="Accept Call" Canvas.Left="118" Canvas.Top="193" Width="228" FontFamily="Arial Black" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        </Canvas>
+    </Grid>
+</UserControl>

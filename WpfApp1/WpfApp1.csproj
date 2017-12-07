@@ -69,6 +69,12 @@
     <Compile Include="AudioCallWaiting.xaml.cs">
       <DependentUpon>AudioCallWaiting.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AudioNotification.xaml.cs">
+      <DependentUpon>AudioNotification.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AVCallUserControl.xaml.cs">
+      <DependentUpon>AVCallUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Change_Profile_Picture.xaml.cs">
       <DependentUpon>Change_Profile_Picture.xaml</DependentUpon>
     </Compile>
@@ -88,6 +94,9 @@
     <Compile Include="IncomingMessages.xaml.cs">
       <DependentUpon>IncomingMessages.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MessageNotification.xaml.cs">
+      <DependentUpon>MessageNotification.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MessageScreen.xaml.cs">
       <DependentUpon>MessageScreen.xaml</DependentUpon>
     </Compile>
@@ -102,6 +111,9 @@
     </Compile>
     <Compile Include="ForgotPIN.xaml.cs">
       <DependentUpon>ForgotPIN.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NotificationWindow.xaml.cs">
+      <DependentUpon>NotificationWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="PopUps.xaml.cs">
       <DependentUpon>PopUps.xaml</DependentUpon>
@@ -124,6 +136,9 @@
     <Compile Include="VideoCallWaiting.xaml.cs">
       <DependentUpon>VideoCallWaiting.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VideoNotification.xaml.cs">
+      <DependentUpon>VideoNotification.xaml</DependentUpon>
+    </Compile>
     <Page Include="AddContacts.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -143,6 +158,14 @@
     <Page Include="AudioCallWaiting.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AudioNotification.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AVCallUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Change_Profile_Picture.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -180,6 +203,10 @@
       <DependentUpon>LoginMainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MessageNotification.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MessageScreen.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -197,6 +224,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ForgotPIN.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NotificationWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -229,6 +260,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="VideoCallWaiting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VideoNotification.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

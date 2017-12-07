@@ -26,6 +26,8 @@ namespace WpfApp1
         Login_Main restartWindow = new Login_Main();
         // Might want to change below to mainScreen after the file has been fixed.
         Home_Screen contactScreen = new Home_Screen();
+        // Notifications Window
+        NotificationWindow allNotifications = new NotificationWindow();
         // Contact Attribute
         string specificContact = null;
 
@@ -36,6 +38,7 @@ namespace WpfApp1
             InitializeComponent();
 
             // Get the message history.
+            specificContact = "MalikBrown"; // will have to remove after all constructors have been fixed
             SetUpScreen("MalikBrown");
         }
 
@@ -79,28 +82,219 @@ namespace WpfApp1
                     {
                         // Call simulateIncomingMessages.
                         // Do I really need to pass the username as a parameter?
-                        SimulateIncomingMessage(userName, commStates[3].ToString());
+                        SimulateIncomingMessage(userName, commStates[3].ToString(), commStates[4].ToString());
                     }
                     else if (commStates[2] == "O")
                     {
                         // Call simulateOutgoingMessages.
-                        SimulateOutgoingMessage(commStates[3].ToString());
+                        SimulateOutgoingMessage(commStates[3].ToString(), commStates[4].ToString());
                     }
                 }
                 // Check for audio calls.
                 else if (commStates[1] == "A")
                 {
+                    AVCallUserControl oldMessage = new AVCallUserControl();
 
+                    if (commStates[4] == "A")
+                    {
+                        if (commStates[2] == "I")
+                        {
+                            string tempTime = commStates[5].ToString();
+                            string lengthOfCall = "";
+                            lengthOfCall = tempTime[0] + "" + tempTime[1] + " minutes and " + tempTime[3] + "" + tempTime[4] + " seconds.";
+                            oldMessage.callMessageLabel.Content = userName + " audiocalled you at " + commStates[3] + " for " + lengthOfCall;
+                        }
+                        else if (commStates[2] == "O")
+                        {
+                            string tempTime = commStates[5].ToString();
+                            string lengthOfCall = "";
+                            lengthOfCall = tempTime[0] + "" + tempTime[1] + " minutes and " + tempTime[3] + "" + tempTime[4] + " seconds.";
+                            oldMessage.callMessageLabel.Content = "You audiocalled " + userName + " at " + commStates[3] + " for " + lengthOfCall;
+                        }
+                        oldMessage.audioAcceptedIcon.Visibility = Visibility.Visible;
+                    }
+                    else if (commStates[4] == "D")
+                    {
+                        if (commStates[2] == "I")
+                        {
+                            oldMessage.callMessageLabel.Content = "You missed an audio call with " + userName + " at " + commStates[3];
+                        }
+                        else if (commStates[2] == "O")
+                        {
+                            oldMessage.callMessageLabel.Content = userName + " missed an audio call with you at " + commStates[3];
+                        }
+                        oldMessage.audioDeclinedIcon.Visibility = Visibility.Visible;
+                    }
+                    msgDisplay.Children.Add(oldMessage);
                 }
                 // Check for video calls.
                 else if (commStates[1] == "V")
                 {
-
+                    AVCallUserControl oldMessage = new AVCallUserControl();
+                    if (commStates[4] == "A")
+                    {
+                        if (commStates[2] == "I")
+                        {
+                            string tempTime = commStates[5].ToString();
+                            string lengthOfCall = "";
+                            lengthOfCall = tempTime[0] + "" + tempTime[1] + " minutes and " + tempTime[3] + "" + tempTime[4] + " seconds.";
+                            oldMessage.callMessageLabel.Content = userName + " videocalled you at " + commStates[3] + " for " + lengthOfCall;
+                        }
+                        else if (commStates[2] == "O")
+                        {
+                            string tempTime = commStates[5].ToString();
+                            string lengthOfCall = "";
+                            lengthOfCall = tempTime[0] + "" + tempTime[1] + " minutes and " + tempTime[3] + "" + tempTime[4] + " seconds.";
+                            oldMessage.callMessageLabel.Content = "You videocalled " + userName + " at " + commStates[3] + " for " + lengthOfCall;
+                        }
+                        oldMessage.videoAcceptedIcon.Visibility = Visibility.Visible;
+                    }
+                    else if (commStates[4] == "D")
+                    {
+                        if (commStates[2] == "I")
+                        {
+                            oldMessage.callMessageLabel.Content = "You missed a video call with " + userName + " at " + commStates[3];
+                        }
+                        else if (commStates[2] == "O")
+                        {
+                            oldMessage.callMessageLabel.Content = userName + " missed a video call with you at " + commStates[3];
+                        }
+                        oldMessage.videoDeclinedIcon.Visibility = Visibility.Visible;
+                    }
+                    msgDisplay.Children.Add(oldMessage);
                 }
             }
             file.Close();
             // Not sure what this is supposed to do.
             System.Console.ReadLine();
+
+            // Check if the addedMessages is set to true. If so, will have to read debugging file.
+            Boolean addedMessages = false;
+            if (specificContact == "cora")
+            {
+                addedMessages = Global_Data.sentCora;
+            }
+            else if (specificContact == "Karla1")
+            {
+                addedMessages = Global_Data.sentKarla1;
+            }
+            else if (specificContact == "liwanisz")
+            {
+                addedMessages = Global_Data.sentLiwanisz;
+            }
+            else if (specificContact == "MalikBrown")
+            {
+                addedMessages = Global_Data.sentMalikBrown;
+            }
+            else if (specificContact == "Simon22")
+            {
+                addedMessages = Global_Data.sentSimon22;
+            }
+
+            if (addedMessages == true)
+            {
+                // Read the file.
+                System.IO.StreamReader secondFile = new System.IO.StreamReader(userName + ".txt");
+                // Remove the single line.
+                line = secondFile.ReadLine();
+                while ((line = secondFile.ReadLine()) != null)
+                {
+                    commStates = line.Split(splitLine);
+
+                    // Check for messages.
+                    if (commStates[1] == "M")
+                    {
+                        // Find out if the message is incoming or outgoing.
+                        if (commStates[2] == "I")
+                        {
+                            // Call simulateIncomingMessages.
+                            // Do I really need to pass the username as a parameter?
+                            SimulateIncomingMessage(userName, commStates[3].ToString(), commStates[4].ToString());
+                        }
+                        else if (commStates[2] == "O")
+                        {
+                            // Call simulateOutgoingMessages.
+                            SimulateOutgoingMessage(commStates[3].ToString(), commStates[4].ToString());
+                        }
+                    }
+                    // Check for audio calls.
+                    else if (commStates[1] == "A")
+                    {
+                        AVCallUserControl oldMessage = new AVCallUserControl();
+
+                        if (commStates[4] == "A")
+                        {
+                            if (commStates[2] == "I")
+                            {
+                                string tempTime = commStates[5].ToString();
+                                string lengthOfCall = "";
+                                lengthOfCall = tempTime[0] + "" + tempTime[1] + " minutes and " + tempTime[3] + "" + tempTime[4] + " seconds.";
+                                oldMessage.callMessageLabel.Content = userName + " audiocalled you at " + commStates[3] + " for " + lengthOfCall;
+                            }
+                            else if (commStates[2] == "O")
+                            {
+                                string tempTime = commStates[5].ToString();
+                                string lengthOfCall = "";
+                                lengthOfCall = tempTime[0] + "" + tempTime[1] + " minutes and " + tempTime[3] + "" + tempTime[4] + " seconds.";
+                                oldMessage.callMessageLabel.Content = "You audiocalled " + userName + " at " + commStates[3] + " for " + lengthOfCall;
+                            }
+                            oldMessage.audioAcceptedIcon.Visibility = Visibility.Visible;
+                        }
+                        else if (commStates[4] == "D")
+                        {
+                            if (commStates[2] == "I")
+                            {
+                                oldMessage.callMessageLabel.Content = "You missed an audio call with " + userName + " at " + commStates[3];
+                            }
+                            else if (commStates[2] == "O")
+                            {
+                                oldMessage.callMessageLabel.Content = userName + " missed an audio call with you at " + commStates[3];
+                            }
+                            oldMessage.audioDeclinedIcon.Visibility = Visibility.Visible;
+                        }
+                        msgDisplay.Children.Add(oldMessage);
+                    }
+                    // Check for video calls.
+                    else if (commStates[1] == "V")
+                    {
+                        AVCallUserControl oldMessage = new AVCallUserControl();
+                        if (commStates[4] == "A")
+                        {
+                            if (commStates[2] == "I")
+                            {
+                                string tempTime = commStates[5].ToString();
+                                string lengthOfCall = "";
+                                lengthOfCall = tempTime[0] + "" + tempTime[1] + " minutes and " + tempTime[3] + "" + tempTime[4] + " seconds.";
+                                oldMessage.callMessageLabel.Content = userName + " videocalled you at " + commStates[3] + " for " + lengthOfCall;
+                            }
+                            else if (commStates[2] == "O")
+                            {
+                                string tempTime = commStates[5].ToString();
+                                string lengthOfCall = "";
+                                lengthOfCall = tempTime[0] + "" + tempTime[1] + " minutes and " + tempTime[3] + "" + tempTime[4] + " seconds.";
+                                oldMessage.callMessageLabel.Content = "You videocalled " + userName + " at " + commStates[3] + " for " + lengthOfCall;
+                            }
+                            oldMessage.videoAcceptedIcon.Visibility = Visibility.Visible;
+                        }
+                        else if (commStates[4] == "D")
+                        {
+                            if (commStates[2] == "I")
+                            {
+                                oldMessage.callMessageLabel.Content = "You missed a video call with " + userName + " at " + commStates[3];
+                            }
+                            else if (commStates[2] == "O")
+                            {
+                                oldMessage.callMessageLabel.Content = userName + " missed a video call with you at " + commStates[3];
+                            }
+                            oldMessage.videoDeclinedIcon.Visibility = Visibility.Visible;
+                        }
+                        msgDisplay.Children.Add(oldMessage);
+                    }
+                }
+                file.Close();
+                // Not sure what this is supposed to do.
+                System.Console.ReadLine();
+            }
         }
 
         // WORKS. Method for exiting the chat. Opens unto the contacts screen.
@@ -166,7 +360,7 @@ namespace WpfApp1
                 messageBox.Text = "Click here to type your message.";
         }
 
-        // WORKS. Method for extracting the message from the text box and calling the SimulateOutgoingMessage function.
+        /// WORKS. Method for extracting the message from the text box and calling the SimulateOutgoingMessage function.
         // Need to create: Method that makes sure that the content in the box is not the standard message. Will have to create an error message/notification.
         private void SendMessageButton_Click(object sender, RoutedEventArgs e)
         {
@@ -180,14 +374,43 @@ namespace WpfApp1
             if (textMessage == "Click here to type your message.")
             {
                 // Make error message visible.
-                // noMessageErrorLabel.Visibility = Visibility.Visible;
+                noMessageErrorLabel.Visibility = Visibility.Visible;
                 // Make sure that prompt is back.
                 messageBox.Text = "Click here to type your message.";
             }
             else
             {
                 // Call the SimulateOutgoingMessage function to put the message into the chat.
-                SimulateOutgoingMessage(textMessage);
+                SimulateOutgoingMessage(null, textMessage);
+            }
+
+            string timeStamp = GetTimefromVar(DateTime.Now);
+
+            // Need to write to text file.
+            string fileName = specificContact + "" + ".txt";
+            string toBeInserted = "R|M|O|" + timeStamp + "|" + textMessage;
+            File.AppendAllText(fileName, Environment.NewLine);
+            File.AppendAllText(fileName, toBeInserted);
+            // Change boolean in global data.
+            if (specificContact == "cora")
+            {
+                Global_Data.SetCoraBoolean();
+            }
+            else if (specificContact == "Karla1")
+            {
+                Global_Data.SetKarlaBoolean();
+            }
+            else if (specificContact == "liwanisz")
+            {
+                Global_Data.SetLillianBoolean();
+            }
+            else if (specificContact == "MalikBrown")
+            {
+                Global_Data.SetMalikBoolean();
+            }
+            else if (specificContact == "Simon22")
+            {
+                Global_Data.SetSimonBoolean();
             }
         }
 
@@ -196,15 +419,19 @@ namespace WpfApp1
         // Need to Complete: Call SimulateMsgNotification function if not.
         // Able to obtain the time that the message was sent. Calls the GetTimefromVar method to change the format.
         // Creates a user control for IncomingMessages, which will contain the time stamp and the message formatted using the ChangeTextFormat function.
-        public void SimulateIncomingMessage(string senderName, string textMessage)
+        public void SimulateIncomingMessage(string senderName, string timeSent, string textMessage)
         {
             // If not on the chat of the sender,
             // Call the SimulateMsgNotification function. User senderName as parameter.
 
             // Otherwise,
             // Get the date and time that the message was sent. Format it, such that only time is shown.
-            DateTime currentDateAndTime = DateTime.Now;
-            string timeStamp = GetTimefromVar(currentDateAndTime);
+            string timeStamp = timeSent;
+            if (timeStamp == null)
+            {
+                DateTime currentDateAndTime = DateTime.Now;
+                timeStamp = GetTimefromVar(currentDateAndTime);
+            }
             // Format the textMessage parameter, such that the message doesn't exceed the size of the text bubble.
             string finalTextMessage = ChangeTextFormat(textMessage);
 
@@ -214,7 +441,9 @@ namespace WpfApp1
             newMessage.TimeStamp.Content = timeStamp;
             newMessage.TextMsg.Content = finalTextMessage;
             // Add userControl to stackPanel.
-            msgDisplay.Children.Add(newMessage);            
+            msgDisplay.Children.Add(newMessage);
+            // Recreate prompt text.
+            messageBox.Text = "Click here to type your message.";
         }
 
         // WORKS. Method that changes the format of the DateTime variable to only contain the time.
@@ -298,11 +527,15 @@ namespace WpfApp1
         // WORKS. 
         // Able to obtain the time that the message was sent. Calls the GetTimefromVar method to change the format.
         // Creates a user control for OutgoingMessages, which will contain the time stamp and the message formatted using the ChangeTextFormat function.
-        public void SimulateOutgoingMessage(string textMessage)
+        public void SimulateOutgoingMessage(string timeSent, string textMessage)
         {
             // Get the date and time that the message was sent. Format it, such that only time is shown.
-            DateTime currentDateAndTime = DateTime.Now;
-            string timeStamp = GetTimefromVar(currentDateAndTime);
+            string timeStamp = timeSent;
+            if (timeStamp == null)
+            {
+                DateTime currentDateAndTime = DateTime.Now;
+                timeStamp = GetTimefromVar(currentDateAndTime);
+            }
             // Format the textMessage parameter, such that the message doesn't exceed the size of the text bubble.
             string finalTextMessage = ChangeTextFormat(textMessage);
 
@@ -313,19 +546,41 @@ namespace WpfApp1
             newMessage.TextMsg.Content = finalTextMessage;
             // Add userControl to stackPanel.
             msgDisplay.Children.Add(newMessage);
+            // Recreate prompt text.
+            messageBox.Text = "Click here to type your message.";
         }
-
 
         // NOT CREATED YET. Will need to display the notification, or multiple. (Can receive multiple messages.)
         // Current Idea: Might want to create a user control for notification, which will replace the message display.
         public void SimulateMsgNotification(string senderName)
         {
-            //MessageNotification newMessage = new MessageNotification();
-            //newMessage.senderName.Content = senderName;
+            MessageNotification newMessage = new MessageNotification();
+            newMessage.senderName.Content = senderName;
 
-            // Bug: Clears other notifications. 
-            msgDisplay.Children.Clear();
-            //msgDisplay.Children.Add(newMessage);
+            allNotifications.notificationDisplay.Children.Add(newMessage);
+            allNotifications.Show();
+        }
+
+        // NOT CREATED YET. Will need to display the notification, or multiple. (Can receive multiple messages.)
+        // Current Idea: Might want to create a user control for notification, which will replace the message display.
+        public void SimulateAudioNotification(string senderName)
+        {
+            AudioNotification newMessage = new AudioNotification();
+            newMessage.senderName.Content = senderName;
+
+            allNotifications.notificationDisplay.Children.Add(newMessage);
+            allNotifications.Show();
+        }
+
+        // NOT CREATED YET. Will need to display the notification, or multiple. (Can receive multiple messages.)
+        // Current Idea: Might want to create a user control for notification, which will replace the message display.
+        public void SimulateVideoNotification(string senderName)
+        {
+            VideoNotification newMessage = new VideoNotification();
+            newMessage.senderName.Content = senderName;
+
+            allNotifications.notificationDisplay.Children.Add(newMessage);
+            allNotifications.Show();
         }
 
         // In the event that an action that demands all attention has stopped taking place, all buttons must be enabled again.
@@ -357,44 +612,6 @@ namespace WpfApp1
             addImageButton.IsEnabled = false;
             // Translate Button
             translateButton.IsEnabled = false;
-        }
-
-        public void ReadTextFile(string temporaryUsername)
-        {
-            string line;
-            string currentMessage;
-            // 5 Places in the event an out of bound issues occurs.
-            string[] msgContents;
-            char[] splitOn = { '|' };
-
-            // Read the file.
-            System.IO.StreamReader file = new System.IO.StreamReader("AllMsgs.txt");
-            while ((line = file.ReadLine()) != null)
-            {
-                currentMessage = line;
-                msgContents = currentMessage.Split(splitOn);
-                
-                if (msgContents[0] == temporaryUsername)
-                {
-                    /* Works. Shows only the messages for username.
-                    System.Console.WriteLine(msgContents[0]);
-                    System.Console.WriteLine(msgContents[1]);
-                    System.Console.WriteLine(msgContents[2]);
-                    */
-                    if (msgContents[1] == "I")
-                    {
-                        SimulateIncomingMessage(temporaryUsername, msgContents[2]);
-                    }
-
-                    else if (msgContents[1] == "O")
-                    {
-                        SimulateOutgoingMessage(msgContents[2]);
-                    }
-                }
-            }
-            file.Close();
-            // Not sure what this is needed for.
-            System.Console.ReadLine();
         }
     }
 }
