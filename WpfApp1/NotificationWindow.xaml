@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
+        Closed="NotificationWindow_Closed"
         Title="Notifications" Height="478" Width="1001">
     <Grid>
         <ScrollViewer HorizontalAlignment="Left" Height="441" Margin="0,0,0,-0.2" VerticalAlignment="Top" Width="988" CanContentScroll="True">

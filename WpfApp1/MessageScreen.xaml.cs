@@ -57,10 +57,15 @@ namespace WpfApp1
             specificContact = contactUserName;
 
             SetUpScreen(specificContact);
+
+            // Test Video
+            SimulateVideoNotification("Malik");
         }
 
         public void SetUpScreen(string userName)
         {
+            // Set DataContext of Notification Window.
+            allNotifications.DataContext = this;
             // Get image and contact picture.
             string picturePath = "";
             if (specificContact == "cora")
@@ -593,9 +598,11 @@ namespace WpfApp1
         public void SimulateMsgNotification(string senderName)
         {
             MessageNotification newMessage = new MessageNotification();
+            newMessage.DataContext = allNotifications;
             newMessage.senderName.Content = senderName;
 
             allNotifications.notificationDisplay.Children.Add(newMessage);
+            this.Visibility = Visibility.Hidden;
             allNotifications.Show();
         }
 
@@ -604,9 +611,11 @@ namespace WpfApp1
         public void SimulateAudioNotification(string senderName)
         {
             AudioNotification newMessage = new AudioNotification();
+            newMessage.DataContext = allNotifications;
             newMessage.senderName.Content = senderName;
 
             allNotifications.notificationDisplay.Children.Add(newMessage);
+            this.Visibility = Visibility.Hidden;
             allNotifications.Show();
         }
 
@@ -615,9 +624,11 @@ namespace WpfApp1
         public void SimulateVideoNotification(string senderName)
         {
             VideoNotification newMessage = new VideoNotification();
+            newMessage.DataContext = allNotifications;
             newMessage.senderName.Content = senderName;
 
             allNotifications.notificationDisplay.Children.Add(newMessage);
+            this.Visibility = Visibility.Hidden;
             allNotifications.Show();
         }
 

@@ -23,5 +23,12 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void NotificationWindow_Closed(object sender, EventArgs e)
+        {
+            // Get messageScreen.
+            MessageScreen oldWindow = (MessageScreen)this.DataContext;
+            oldWindow.Visibility = Visibility.Visible;
+        }
     }
 }
