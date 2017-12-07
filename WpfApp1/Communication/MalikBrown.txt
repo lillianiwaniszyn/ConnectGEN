@@ -1,12 +1,12 @@
-R|A|I|12:00:00PM|A|00:23
-U|A|O|01:25:00PM|D|00:00
-R|A|O|07:00:00PM|A|01:37
-U|A|I|11:00:00PM|D|00:00
-R|V|I|12:00:00PM|A|59:03
-U|V|O|01:25:00PM|D|00:00
-R|V|O|07:00:00PM|A|47:32
-U|V|I|11:00:00PM|D|00:00
-R|M|I|11:10:00PM|Hi Grandma Cora. It was very nice seeing you. I hope to see you again!
-R|M|O|06:00:00AM|Thanks Malik. I had a lot of fun, too.
-R|M|I|08:30:00PM|That is good to hear.
-R|M|I|08:31:00PM|Will you be able to go to dinner tonight?
+R|A|I|12:00:00 PM|A|00:23
+U|A|O|1:25:00 PM|D|00:00
+R|A|O|7:00:00 PM|A|01:37
+U|A|I|11:00:00 PM|D|00:00
+R|V|I|12:00:00 PM|A|59:03
+U|V|O|1:25:00 PM|D|00:00
+R|V|O|7:00:00 PM|A|47:32
+U|V|I|11:00:00 PM|D|00:00
+R|M|I|11:10:00 PM|Hi Grandma Cora. It was very nice seeing you. I hope to see you again!
+R|M|O|6:00:00 AM|Thanks Malik. I had a lot of fun, too.
+R|M|I|8:30:00 PM|That is good to hear.
+R|M|I|8:31:00 PM|Will you be able to go to dinner tonight?
