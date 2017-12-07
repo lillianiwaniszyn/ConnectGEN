@@ -42,8 +42,8 @@ namespace WpfApp1
             msgDisplay.DataContext = this;
 
             // Get the message history.
-            specificContact = "MalikBrown"; // will have to remove after all constructors have been fixed
-            SetUpScreen("MalikBrown");
+            specificContact = "jazmineBrown"; // will have to remove after all constructors have been fixed
+            SetUpScreen(specificContact);
         }
 
         // Constructor with UserName (this will be official constructor)
@@ -83,6 +83,11 @@ namespace WpfApp1
             {
                 picturePath = "images/simon.jpg";
                 chatNameLabel.Content = "Simon";
+            }
+            else if (specificContact == "jazmineBrown")
+            {
+                picturePath = "images/jazmineBrown.png";
+                chatNameLabel.Content = "Jazmine";
             }
             Image myImage = new Image();
             myImage.Source = new BitmapImage(new Uri(picturePath, UriKind.RelativeOrAbsolute));
@@ -219,6 +224,10 @@ namespace WpfApp1
             else if (specificContact == "Simon22")
             {
                 addedMessages = Global_Data.sentSimon22;
+            }
+            else if (specificContact == "jazmineBrown")
+            {
+                addedMessages = Global_Data.sentJazmine;
             }
             
             if (addedMessages == true)
@@ -424,15 +433,15 @@ namespace WpfApp1
             // Change boolean in global data.
             if (specificContact == "cora")
             {
-                Global_Data.SetCoraBoolean();
+                Global_Data.sentCora = true;
             }
             else if (specificContact == "Karla1")
             {
-                Global_Data.SetKarlaBoolean();
+                Global_Data.sentKarla1 = true;
             }
             else if (specificContact == "liwanisz")
             {
-                Global_Data.SetLillianBoolean();
+                Global_Data.sentLiwanisz = true;
             }
             else if (specificContact == "MalikBrown")
             {
@@ -440,7 +449,7 @@ namespace WpfApp1
             }
             else if (specificContact == "Simon22")
             {
-                Global_Data.SetSimonBoolean();
+                Global_Data.sentSimon22 = true;
             }
         }
 

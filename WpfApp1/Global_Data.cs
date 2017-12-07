@@ -17,7 +17,7 @@ namespace WpfApp1
         public string[] profilePicPath = new string[100]; //paths to everyone's profile pictures
         public string[,] contacts = new string[100, 100]; //2d arrays in c# are different than Java, FYI
         public string currentProfilePic;
-        public string[] lastnames = new string [100];
+        public string[] lastnames = new string[100];
         public string[] firstnames = new string[100];
         // Set to English as default.
         public static string languageChosen = "English";
@@ -27,6 +27,7 @@ namespace WpfApp1
         public static Boolean sentLiwanisz;
         public static Boolean sentMalikBrown;
         public static Boolean sentSimon22;
+        public static Boolean sentJazmine;
 
         public Global_Data()
         {
@@ -85,32 +86,6 @@ namespace WpfApp1
             languageChosen = chosen;
         }
 
-        public static void SetCoraBoolean()
-        {
-            sentCora = true;
-        }
-
-        public static void SetKarlaBoolean()
-        {
-            sentKarla1 = true;
-        }
-
-        public static void SetLillianBoolean()
-        {
-            sentLiwanisz = true;
-        }
-
-        public static void SetMalikBoolean()
-        {
-            sentMalikBrown = true;
-        }
-
-        public static void SetSimonBoolean()
-        {
-            sentSimon22 = true;
-        }
-
     }
-
 
 }
