@@ -40,7 +40,7 @@
                 </Label.Background>
             </Label>
             <Label x:Name="Timer" Content="00:00:00" Height="79" Canvas.Left="10" Canvas.Top="547" Width="216" Foreground="White" FontSize="48" HorizontalContentAlignment="Center" FontWeight="Bold" Visibility="Hidden"/>
-            <Label x:Name="NoAnswer" Content="No Answer. Going back to Main Menu" Height="93" Canvas.Left="248" Canvas.Top="376" Width="1118" Foreground="White" FontSize="65" FontFamily="Arial">
+            <Label x:Name="NoAnswer" Content="No Answer. Going back to Main Menu" Height="93" Canvas.Left="248" Canvas.Top="376" Width="1118" Foreground="White" FontSize="65" FontFamily="Arial" Visibility="Hidden">
                 <Label.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="Black" Offset="0"/>
