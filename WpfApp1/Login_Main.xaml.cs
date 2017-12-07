@@ -71,7 +71,7 @@ namespace WpfApp1
         }
         void OnClickC(object sender, RoutedEventArgs e)
         {
-
+            Global_Data.LoginScreenButtonVisibility = true;
             Login l = new Login();
             l.Show();
             this.Close();

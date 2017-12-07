@@ -26,8 +26,6 @@ namespace WpfApp1
         public Home_Screen()
         {
             InitializeComponent();
-            Console.WriteLine("!!!!");
-            Console.WriteLine(Global_Data.currentUserStatic);
             int index = Array.IndexOf(dataClass.existing_Usernames, Global_Data.currentUserStatic);
             string fName = dataClass.firstnames[index];
             string lName = dataClass.lastnames[index];
@@ -109,7 +107,7 @@ namespace WpfApp1
         void LogoutButton_Click(object sender, RoutedEventArgs e)
         {
             // move to main page when app opened (with profile choices)
-            Global_Data.LoginScreenButtonVisibility = true;
+            //Global_Data.LoginScreenButtonVisibility = true;
             Login_Main lm = new Login_Main();
             lm.Show();
             this.Close();
