@@ -35,8 +35,8 @@ namespace WpfApp1
 
         private void GetActions(object sender, RoutedEventArgs e)
         {
-            // Can't pick another image.
-            DisableAllButtons();
+            // Remove highlight from other images.
+            RemoveHighlight();
 
             // Change Title of Window as one method of feedback.
             Title = (sender as Button).Name + " was selected.";
@@ -67,36 +67,20 @@ namespace WpfApp1
             cancelButton.IsEnabled = true;
         }
 
-        public void DisableAllButtons()
+        public void RemoveHighlight()
         {
-            KarlaJuego.IsEnabled = false;
-            selfie.IsEnabled = false;
-            simone.IsEnabled = false;
-            malikBrown.IsEnabled = false;
-            simon.IsEnabled = false;
-            kid1.IsEnabled = false;
-            kid2.IsEnabled = false;
-            kid3.IsEnabled = false;
-            coraBrown.IsEnabled = false;
-            jazmineBrown.IsEnabled = false;
-            joaquinSimmons.IsEnabled = false;
-            cimoneSimmons.IsEnabled = false;
-        }
-
-        public void EnableAllButtons()
-        {
-            KarlaJuego.IsEnabled = true;
-            selfie.IsEnabled = true;
-            simone.IsEnabled = true;
-            malikBrown.IsEnabled = true;
-            simon.IsEnabled = true;
-            kid1.IsEnabled = true;
-            kid2.IsEnabled = true;
-            kid3.IsEnabled = true;
-            coraBrown.IsEnabled = true;
-            jazmineBrown.IsEnabled = true;
-            joaquinSimmons.IsEnabled = true;
-            cimoneSimmons.IsEnabled = true;
+            KarlaJuego.Background = Brushes.Transparent;
+            selfie.Background = Brushes.Transparent;
+            simone.Background = Brushes.Transparent;
+            malikBrown.Background = Brushes.Transparent;
+            simon.Background = Brushes.Transparent;
+            kid1.Background = Brushes.Transparent;
+            kid2.Background = Brushes.Transparent;
+            kid3.Background = Brushes.Transparent;
+            coraBrown.Background = Brushes.Transparent;
+            jazmineBrown.Background = Brushes.Transparent;
+            joaquinSimmons.Background = Brushes.Transparent;
+            cimoneSimmons.Background = Brushes.Transparent;
         }
 
         private void SendNowButton_Click(object sender, RoutedEventArgs e)
@@ -188,9 +172,6 @@ namespace WpfApp1
             // Disable action buttons again.
             DisableActionButtons();
 
-            // Enable image clicking.
-            EnableAllButtons();
-            
             // Make the selected image's background transparent again.
             selectedImageButton.Background = Brushes.Transparent;
         }
