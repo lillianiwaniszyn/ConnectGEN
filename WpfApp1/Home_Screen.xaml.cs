@@ -261,6 +261,7 @@ namespace WpfApp1
 
         private void messageIcon_Click(object sender, RoutedEventArgs e)
         {
+            // Need to get image clicked on.
             MessageScreen message = new MessageScreen();
             message.Show();
             this.Close();
