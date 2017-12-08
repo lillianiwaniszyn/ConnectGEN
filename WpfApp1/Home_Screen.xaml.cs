@@ -52,7 +52,7 @@ namespace WpfApp1
             rightContactLabel.Content = rightFull;
             myProfileButton.Content = fullName;
 
-            /* Testing unread notifications;
+            // Testing unread notifications;
             UnreadNotification unread1 = new UnreadNotification();
             unread1.SetMsg("Jasmine");
             UnreadNotification unread2 = new UnreadNotification();
@@ -63,7 +63,7 @@ namespace WpfApp1
             unreadStackPanel.Children.Add(unread1);
             unreadStackPanel.Children.Add(unread2);
             unreadStackPanel.Children.Add(unread3);
-            */
+            //
         }
 
         private void MiddleContact_Click_1(object sender, RoutedEventArgs e)
