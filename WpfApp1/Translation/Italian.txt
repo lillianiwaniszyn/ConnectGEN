@@ -67,3 +67,59 @@ will|volere
 appear|apparire
 will appear|apparirà
 your translated message will appear here...|il tuo messaggio tradotto apparirà qui...
+hi|ciao
+grandma|nonna
+cora|cora
+it|esso
+was| era
+very|molto
+nice|simpatico
+seeing|vedendo
+you|tu
+i|io
+hope|speranza 
+see|vedere
+again|ancora
+thanks|grazie
+malik|malik
+had|aveva
+a|un
+lot|molto
+much|molto
+of|di
+fun|divertimento
+too|pure
+that|quella
+is|è
+good|bene
+hear|sentire
+able|capace
+go|partire
+dinner|cena
+tonight|stasera
+hey|ciao
+grams|grams
+just|appenda
+wanted|ricercato
+say|dire
+happy|felice
+birthday|compleanno
+thank|grazie
+how|come
+are|siamo
+family|famiglia
+us|noi
+we're|noi siamo
+doing|fare
+great|grande
+actually|in realtà
+we'll|noi
+be|essere
+heading|intestazione
+down|giù
+visit|visita
+gramps|gramps
+next|il prossimo
+week|settimana
+looking|analizzare
+forward|inoltrare

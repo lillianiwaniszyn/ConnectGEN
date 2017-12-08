@@ -64,3 +64,58 @@ will|será
 appear|aparecer
 will appear|aparecerá
 your translated message will appear here...|su mensaje traducido aparecerá aquí...
+hi|hola
+grandma|abuela
+cora|cora
+it|eso
+was|estabo
+very|muy
+nice|bunito
+seeing|viendo
+you|tú
+i|yo
+hope|esperenza 
+see|ver
+again|de neuvo
+thanks|gracias
+malik|malik
+had|tenido
+a|un
+lot|mucho
+much|mucho
+fun|divertido
+too|también
+that|ese
+is|es
+good|bueno
+hear|oir
+able|poder
+go|ir
+dinner|cena
+tonight|esta nocha
+hey|hola
+grams|grams
+just|solo
+wanted|querido
+say|decir
+happy|feliz
+birthday|cumpleaños
+thank|gracias
+how|como
+are|son
+family|familia
+us|nos
+we're|estamos
+doing|obra
+great|estupendo
+actually|actualmente
+we'll|los haremos
+be|ser
+heading|titulo
+down|abajo
+visit|visitar
+gramps|gramps
+next|siguiente
+week|semana
+looking|mirando
+forward|adelante

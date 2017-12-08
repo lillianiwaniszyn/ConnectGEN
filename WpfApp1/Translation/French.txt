@@ -65,3 +65,58 @@ will|a
 appear|apparaître
 will appear|apparaîtra
 your translated message will appear here...|votre message traduit apparaîtra ici...
+hi|bonjour
+grandma|grand-mère
+cora|cora
+it|il
+was|était
+very|très
+nice|agréable
+seeing|voyant
+you|toi
+i|je
+hope|éspere 
+see|voir
+again|encore
+thanks|merci
+malik|malik
+had|avait
+a|une
+lot|beaucoup
+much|beacoup
+of|de
+fun|amusement
+too|aussi
+that|cette
+is|est
+good|bien
+hear|entrendre
+able|capable
+go|aller
+dinner|dîner
+tonight|ce soir
+hey|salut
+grams|grams
+just|juste
+wanted|voulait
+say|dire
+happy|bon
+birthday|anniversaire
+thank|remerciez
+how|comment
+are|sont
+family|famille
+us|nous
+we're|nous sommes
+doing|faire
+great|génial
+actually|réellement
+we'll|nous allons
+be|être
+heading|titre
+visit|visiter
+gramps|gramps
+next|prochain
+week|semaine
+looking|regardes
+forward|vers l'avant

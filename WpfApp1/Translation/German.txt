@@ -67,3 +67,59 @@ will|werden
 appear|erscheinen
 will appear|wird auftauchen
 your translated message will appear here...|ihre übersetzte nachricht wird hier angezeigt...
+hi|hallo
+grandma|oma
+cora|cora
+it|es
+was| war
+very|sehr
+nice|nett
+seeing|sehen
+you|sie
+i|ich
+hope|hoffnug 
+see|sehen
+again|nochmal
+thanks|danke
+malik|malik
+had|hätten
+a|en
+lot|viel
+much|viel
+of|von
+fun|spaß
+too|auch
+that|das
+is|ist
+good|gut
+hear|hören
+able|fähig
+go|gehen
+dinner|abendessen
+tonight|heute abend
+hey|hallo
+grams|grams
+just|gerade
+wanted|gewollt
+say|sagen
+happy|glücklich
+birthday|geburtstag
+thank|danken
+how|wie
+are|sind
+family|familie
+us|unds
+we're|wir sind
+doing|tun
+great|groß
+actually|tatsächlich
+we'll|wir werden
+be|sein
+heading|Überschrift
+down|nieder
+visit|besuch
+gramps|gramps
+next|nächster
+week|woche
+looking|schauend
+forward|nach vorne
