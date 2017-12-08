@@ -37,7 +37,7 @@
 
         <Label x:Name="unreadLabel" Content=" UNREAD" HorizontalAlignment="Left" Height="66" VerticalAlignment="Top" Width="171" Foreground="White" FontWeight="Bold" FontSize="30" Grid.ColumnSpan="2"/>
         <Button  BorderThickness="0" x:Name="middleContact" HorizontalAlignment="Left" Height="323" Margin="566,18.5,0,0" VerticalAlignment="Top" Width="313" Background="Transparent" Click="MiddleContact_Click_1" Grid.Column="1" Grid.Row="1" >
-            <Image x:Name="MiddleImage" Source="images/simon.jpg" Height="269" Width="303"/>
+            <Image x:Name="MiddleImage" Source="images/jazmineBrown.png" Height="269" Width="303"/>
         </Button>
         <Button  BorderThickness="0" x:Name="leftContact" HorizontalAlignment="Left" VerticalAlignment="Top" Width="215" Margin="314,71.5,0,0" Height="218" Background="Transparent" Click="LeftContact_Click" Grid.Column="1" Grid.Row="1">
             <Image x:Name="LeftImage" Source="images/headshot.jpg" Height="177" Width="222"/>
@@ -106,6 +106,7 @@
         <StackPanel x:Name="unreadStackPanel" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="558" Margin="0,71,0,0" VerticalAlignment="Top" Width="150" Grid.RowSpan="2"/>
         <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="25" Margin="332,535,0,0" Grid.Row="1" VerticalAlignment="Top" Width="793" Fill="#FF817E7E"/>
         <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="32" Grid.Column="1" Margin="713,507,0,0" Grid.Row="1" Height="78" Background="#FF515151" BorderBrush="Transparent" Click="SliderMessage"/>
+        <Image x:Name ="notification" Grid.Column="1" HorizontalAlignment="Left" Height="138" Margin="818,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="87" Source="images/exclamation.png" Visibility="Visible"/>
 
     </Grid>
 </Window>

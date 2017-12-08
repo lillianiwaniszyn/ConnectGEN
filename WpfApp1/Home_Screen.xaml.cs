@@ -237,10 +237,16 @@ namespace WpfApp1
 
         private void rightArrow_Click(object sender, RoutedEventArgs e)
         {
-          
-            
             if (middleImage < numContacts)
             {
+                if (dataClass.homescreenNotifs[middleImage + 1])
+                {
+                    notification.Visibility = System.Windows.Visibility.Visible;
+                }
+                else
+                {
+                    notification.Visibility = System.Windows.Visibility.Hidden;
+                }
                 middleImage++;
                 rightContactLabel.Content = dataClass.homescreenNames[middleImage + 1];
                 middleContactLabel.Content = dataClass.homescreenNames[middleImage];
@@ -273,7 +279,15 @@ namespace WpfApp1
 
         private void leftArrow_Click(object sender, RoutedEventArgs e)
         {
-            
+                if (dataClass.homescreenNotifs[middleImage - 1])
+                {
+                    notification.Visibility = System.Windows.Visibility.Visible;
+                }
+                else
+                {
+                    notification.Visibility = System.Windows.Visibility.Hidden;
+                }
+
             if (middleImage > 1)
             {
                 middleImage--;

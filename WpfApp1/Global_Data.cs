@@ -22,6 +22,7 @@ namespace WpfApp1
         public string[] checks = new string[100];
         public string[] homescreenContacts = new string[100];
         public string[] homescreenNames = new string[100];
+        public bool[] homescreenNotifs = new bool[100];
         // Set to English as default.
         public static string languageChosen = "English";
         // Boolean for messages.
@@ -37,20 +38,29 @@ namespace WpfApp1
         {
             homescreenContacts[0] = "images/blankpp.png";
             homescreenContacts[1] = "images/headshot.jpg";
-            homescreenContacts[2] = "images/simon.jpg";
+            homescreenContacts[2] = "images/jazmineBrown.png";
             homescreenContacts[3] = "images/malikBrown.jpg";
-            homescreenContacts[4] = "images/simone.jpg";
+            homescreenContacts[4] = "images/kid1.png";
             homescreenContacts[5] = "images/headshot.jpg";
             homescreenContacts[6] = "images/joaquinSimmons.jpg";
             homescreenContacts[7] = "images/blankpp.png";
             homescreenNames[0] = " ";
             homescreenNames[1] = "Lillian Iwaniszyn";
-            homescreenNames[2] = "Simon Cowell";
+            homescreenNames[2] = "Jasmine Brown";
             homescreenNames[3] = "Malik Brown";
-            homescreenNames[4] = "Simone Brown";
-            homescreenNames[5] = "Simonella Al";
+            homescreenNames[4] = "Alex Simmons";
+            homescreenNames[5] = "Jack Brown";
             homescreenNames[6] = "Joaquin Simmons";
             homescreenNames[7] = " ";
+            homescreenNotifs[0] = false;
+            homescreenNotifs[1] = false;
+            homescreenNotifs[2] = true; 
+            homescreenNotifs[3] = true;
+            homescreenNotifs[4] = false;
+            homescreenNotifs[5] = false;
+            homescreenNotifs[6] = false;
+            homescreenNotifs[7] = false;
+
 
             existing_Usernames[0] = "liwanisz";
             existing_Usernames[1] = "Karla1";
