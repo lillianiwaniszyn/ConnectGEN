@@ -28,7 +28,7 @@
         <TextBox Name="Age" FontSize="40" Margin="441,327,551.333,403"/>
         <TextBox Name="PIN1" FontSize="40" Margin="441,436,950,279" TextChanged="Validate_PIN1"/>
         <TextBox Name="PIN2" FontSize="40" Margin="571,435,830,279" TextChanged="Validate_PIN2"/>
-        <TextBox Name="PIN3" FontSize="540" Margin="693,436,710.333,279" TextChanged="Validate_PIN3"/>
+        <TextBox Name="PIN3" FontSize="40" Margin="693,436,710.333,279" TextChanged="Validate_PIN3"/>
         <TextBox Name="PIN4" FontSize="40" Margin="814,435,582.333,279" TextChanged="Validate_PIN4"/>
         <Button BorderThickness="0"  
     Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Name="btnAnswer1" Click="OnClick2" Margin="10,635,1264.333,10" Background="Transparent">
