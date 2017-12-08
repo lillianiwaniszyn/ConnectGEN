@@ -121,6 +121,9 @@
     <Compile Include="TranslationMenu.xaml.cs">
       <DependentUpon>TranslationMenu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UnreadNotification.xaml.cs">
+      <DependentUpon>UnreadNotification.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Videocall.xaml.cs">
       <DependentUpon>Videocall.xaml</DependentUpon>
     </Compile>
@@ -240,6 +243,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="TranslationMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UnreadNotification.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
