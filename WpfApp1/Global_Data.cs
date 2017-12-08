@@ -52,6 +52,7 @@ namespace WpfApp1
             homescreenNames[5] = "Jack Brown";
             homescreenNames[6] = "Joaquin Simmons";
             homescreenNames[7] = " ";
+
             homescreenNotifs[0] = false;
             homescreenNotifs[1] = false;
             homescreenNotifs[2] = true; 

@@ -15,7 +15,7 @@
             <ColumnDefinition Width="77*"/>
             <ColumnDefinition Width="1413*"/>
         </Grid.ColumnDefinitions>
-        <Rectangle HorizontalAlignment="Left" Height="825" Stroke="Black" VerticalAlignment="Top" Width="1500" Margin="0,0,-10,-31" Grid.ColumnSpan="2" Grid.RowSpan="2">
+        <Rectangle HorizontalAlignment="Left" Height="825" Stroke="Black" VerticalAlignment="Top" Width="1500" Margin="-10,-31,0,0" Grid.ColumnSpan="2" Grid.RowSpan="2">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>

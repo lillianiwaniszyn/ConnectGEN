@@ -69,7 +69,6 @@
             <Image Source="images/back.png"/>
         </Button>
         <Button x:Name="backlbutton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="166" FontFamily="Arial Black" Background="Transparent" BorderBrush="{x:Null}" Foreground="White" Height="51" FontSize="36" Click="Back_Click" Content="Back" Margin="39,54,0,0"/>
-        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="214" Margin="10,0,0,643" Height="137"/>
 
 
     </Grid>
