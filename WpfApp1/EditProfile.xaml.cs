@@ -30,6 +30,11 @@ namespace WpfApp1
             string firstName = gd.firstnames[index];
             string fullName = firstName + " " + lastName;
             userName.Content = fullName;
+
+            string ppPath = gd.profilePicPath[index];
+            Image myImage = new Image();
+            myImage.Source = new BitmapImage(new Uri(ppPath, UriKind.RelativeOrAbsolute));
+            User.Source = myImage.Source;
         }
 
         void ChangePic(object sender, RoutedEventArgs e)
