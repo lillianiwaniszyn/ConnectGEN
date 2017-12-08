@@ -58,8 +58,9 @@ namespace WpfApp1
 
             SetUpScreen(specificContact);
 
-            // Test Video
-            SimulateMsgNotification("Malik");
+            // Notification
+            if (specificContact == "jazmineBrown")
+                SimulateMsgNotification("Malik");
         }
 
         public void SetUpScreen(string userName)
