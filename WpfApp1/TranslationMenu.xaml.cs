@@ -61,38 +61,50 @@ namespace WpfApp1
         private void TranslateButton_Click(object sender, RoutedEventArgs e)
         {
             // Get languages from the menus.
-            string initialLanguage = initialLanguageMenu.SelectedValue.ToString();
-            string finalLanguage = finalLanguageMenu.SelectedValue.ToString();
-            // Get message that needs to be translated.
-            string toBeTranslated = initialMessageBox.Text;
-            string translatedMessage = "";
 
-            if (initialLanguage == finalLanguage)
-            {
-                translatedMessage = toBeTranslated;
-            }
-            else if (initialLanguage == "English")
-            {
-                // If so, call the final language's text file.
-                // Use the English translation to get the translation.
+            object initialSelection = initialLanguageMenu.SelectedValue;
+            object finalSelection = finalLanguageMenu.SelectedValue;
 
-                translatedMessage = FromEnglishTranslation(toBeTranslated, finalLanguage);
-            }
-            else if (finalLanguage == "English")
+            // Check if languages are valid.
+            if ((initialSelection != null) && (finalSelection != null))
             {
-                // Need to call the initial language's text file.
-                translatedMessage = ToEnglishTranslation(toBeTranslated, initialLanguage);
+                string initialLanguage = initialLanguageMenu.SelectedValue.ToString();
+                string finalLanguage = finalLanguageMenu.SelectedValue.ToString();
+                // Get message that needs to be translated.
+                string toBeTranslated = initialMessageBox.Text;
+                string translatedMessage = "";
+
+                if (initialLanguage == finalLanguage)
+                {
+                    translatedMessage = toBeTranslated;
+                }
+                else if (initialLanguage == "English")
+                {
+                    // If so, call the final language's text file.
+                    // Use the English translation to get the translation.
+
+                    translatedMessage = FromEnglishTranslation(toBeTranslated, finalLanguage);
+                }
+                else if (finalLanguage == "English")
+                {
+                    // Need to call the initial language's text file.
+                    translatedMessage = ToEnglishTranslation(toBeTranslated, initialLanguage);
+                }
+                else
+                {
+                    // Otherwise, need to call the initial language's text file to obtain the English translation.
+                    // Call the final language's text file.
+                    // Use the English translation to get the translation.
+                    string midTranslation = ToEnglishTranslation(toBeTranslated, initialLanguage);
+                    translatedMessage = FromEnglishTranslation(midTranslation, finalLanguage);
+                }
+
+                finalMessageBox.Text = translatedMessage;
             }
             else
             {
-                // Otherwise, need to call the initial language's text file to obtain the English translation.
-                // Call the final language's text file.
-                // Use the English translation to get the translation.
-                string midTranslation = ToEnglishTranslation(toBeTranslated, initialLanguage);
-                translatedMessage = FromEnglishTranslation(midTranslation, finalLanguage);
+                errorMessageLabel.Content = "Please select two langugages: one for the language that the message is in," + Environment.NewLine + "and one for the language that you would like the message to be in.";
             }
-
-            finalMessageBox.Text = translatedMessage;
         }
 
         public string FromEnglishTranslation(string oldMessage, string newLanguage)
