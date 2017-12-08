@@ -71,7 +71,7 @@ namespace WpfApp1
             contacts[3, 0] = "liwnaisz"; //lillian is simons friend
             contacts[4, 0] = "cora"; //Cora is Malik's Friend 
             profilePicPath[0] = "images/headshot.jpg";
-            profilePicPath[1] = "images/headshot.jpg";
+            profilePicPath[1] = "images/KarlaJuego.jpg";
             profilePicPath[2] = "images/coraBrown.jpg";
             profilePicPath[3] = "images/simon.jpg";
             profilePicPath[4] = "images/malikBrown.jpg";
