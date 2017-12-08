@@ -23,13 +23,13 @@
             </Label.Background>
         </Label>
 
-        <TextBox Name="Fname" FontSize="50" Margin="441,158,551.333,576" TextChanged="Validate_Username"/>
-        <TextBox Name="Lname" FontSize="50" Margin="441,240,551.333,491" />
-        <TextBox Name="Age" FontSize="50" Margin="441,327,551.333,403"/>
-        <TextBox Name="PIN1" FontSize="50" Margin="441,436,950,279" TextChanged="Validate_PIN1"/>
-        <TextBox Name="PIN2" FontSize="50" Margin="571,435,830,279" TextChanged="Validate_PIN2"/>
-        <TextBox Name="PIN3" FontSize="50" Margin="693,436,710.333,279" TextChanged="Validate_PIN3"/>
-        <TextBox Name="PIN4" FontSize="50" Margin="814,435,582.333,279" TextChanged="Validate_PIN4"/>
+        <TextBox Name="Fname" FontSize="40" Margin="441,158,551.333,576" TextChanged="Validate_Username"/>
+        <TextBox Name="Lname" FontSize="40" Margin="441,240,551.333,491" />
+        <TextBox Name="Age" FontSize="40" Margin="441,327,551.333,403"/>
+        <TextBox Name="PIN1" FontSize="40" Margin="441,436,950,279" TextChanged="Validate_PIN1"/>
+        <TextBox Name="PIN2" FontSize="40" Margin="571,435,830,279" TextChanged="Validate_PIN2"/>
+        <TextBox Name="PIN3" FontSize="40" Margin="693,436,710.333,279" TextChanged="Validate_PIN3"/>
+        <TextBox Name="PIN4" FontSize="40" Margin="814,435,582.333,279" TextChanged="Validate_PIN4"/>
         <Button BorderThickness="0"  
     Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Name="btnAnswer1" Click="OnClick2" Margin="10,635,1264.333,10" Background="Transparent">
             <Image Source="images/back-button.png" Height="146" Width="215"></Image>
@@ -42,8 +42,8 @@
         <Label Content="Last Name:" Foreground="#FFE0E0E0" HorizontalAlignment="Left" FontSize="30" Margin="252,343,0,0" VerticalAlignment="Top"/>
         <Label Content="PIN:" Name="PINLabel"  FontSize="30" Foreground="#FFE0E0E0" HorizontalAlignment="Left" Margin="347,467,0,0" VerticalAlignment="Top"/>
         <Label Content="Language:" FontSize="30" Foreground="#FFE0E0E0" Name="LanguageLabel" HorizontalAlignment="Left" Margin="347,548,0,0" VerticalAlignment="Top"/>
-        <Label  Name ="validUsername" Foreground="#FF0000" HorizontalAlignment="Left" Margin="327,88,0,0" VerticalAlignment="Top"/>
-        <Label Name ="validPIN"  Foreground="#FF0000" HorizontalAlignment="Left" Margin="327,186,0,0" VerticalAlignment="Top"/>
+        <Label  Name ="validUsername" Foreground="#FF0000" HorizontalAlignment="Left" Margin="1054,158,0,0" VerticalAlignment="Top" FontSize="30"/>
+        <Label Name ="validPIN"  Foreground="#FF0000" HorizontalAlignment="Left" Margin="984,436,0,0" VerticalAlignment="Top" FontSize="40"/>
         <ComboBox x:Name="languageMenu" HorizontalAlignment="Left" FontSize="30" Margin="522,548,0,0" VerticalAlignment="Top" Width="273">
             <ComboBoxItem IsSelected="True">English</ComboBoxItem>
             <ComboBoxItem>French</ComboBoxItem>

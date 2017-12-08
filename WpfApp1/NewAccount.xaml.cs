@@ -59,7 +59,9 @@ namespace WpfApp1
         }
         void CreateAccount(object sender, RoutedEventArgs e)
         {
+            Global_Data.currentUserStatic = "cora";
             Home_Screen hs = new Home_Screen();
+            
             String s = languageMenu.Text;
             Global_Data.languageChosen = s;
             hs.Show();
@@ -90,6 +92,7 @@ namespace WpfApp1
         }
         void Validate_PIN1(object sender, TextChangedEventArgs e)
         {
+            PIN2.Focus();
             if (!numbers.Contains(PIN1.Text))
             {
                 validPIN.Content = "*PIN must be numerical";
@@ -104,7 +107,9 @@ namespace WpfApp1
             }
         }
         void Validate_PIN2(object sender, TextChangedEventArgs e)
+            
         {
+            PIN3.Focus();
             if (!numbers.Contains(PIN2.Text))
             {
                 validPIN.Content = "*PIN must be numerical";
@@ -122,6 +127,7 @@ namespace WpfApp1
         }
         void Validate_PIN3(object sender, TextChangedEventArgs e)
         {
+            PIN4.Focus();
             if (!numbers.Contains(PIN3.Text))
             {
                 validPIN.Content = "*PIN must be numerical";
