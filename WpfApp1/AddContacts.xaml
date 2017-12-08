@@ -51,14 +51,10 @@
 
         <TextBox x:Name="searchContact" HorizontalAlignment="Left" Height="73" TextWrapping="Wrap" Text="        SEARCH" VerticalAlignment="Top" Width="747" Margin="492,32,0,0" FontSize="48" Foreground="Gray" GotKeyboardFocus="SearchingFor" TextChanged="SearchFor" LostFocus="returnToNormal"/>
         <Image x:Name="searchicon" HorizontalAlignment="Left" Height="69" VerticalAlignment="Top" Width="81" Source="images/search.png" Margin="492,36,0,0" OpacityMask="White"/>
-        <Button x:Name="scrollUp" HorizontalAlignment="Left" VerticalAlignment="Top" Width="128"  Height="122" Margin="1302,155,0,0" Click="scrollUp_Click" Content="" >
-            <Button.Template>
-                <ControlTemplate>
-                    <Image Source="images/whitearrow.png" Height="150" Margin="0,0,8,0" />
-                </ControlTemplate>
-            </Button.Template>
+        <Button x:Name="scrollUp" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125"  Height="125" Margin="1300,155,0,0" Click="scrollUp_Click" Background="Transparent" BorderBrush="Transparent" >
+            <Image Name="scrollup" Source="images/whitearrow.png" Height="125" Width="125" />
         </Button>
-        <Button x:Name="scrollDown" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5"  Height="128" Margin="1292,491,0,0" Click="Scroll_Down">
+        <Button x:Name="scrollDown" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" RenderTransformOrigin="0.5,0.5"  Height="125" Margin="1300,470,0,0" Click="Scroll_Down" Background="Transparent" BorderBrush="Transparent">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -67,20 +63,13 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </Button.RenderTransform>
-            <Button.Template>
-                <ControlTemplate>
-                    <Image Source="images/whitearrow.png" Height="Auto" Margin="-2,-4,2,4"/>
-                </ControlTemplate>
-            </Button.Template>
+            <Image Source="images/whitearrow.png" Height="125" Margin="-2,-4,2,4"/>
         </Button>
-        <Button x:Name="backArrow" HorizontalAlignment="Left" VerticalAlignment="Top" Height ="137" Width="214" Click="Back_Click" Margin="0,14,0,0">
-            <Button.Template>
-                <ControlTemplate>
-                    <Image Source="images/back.png"/>
-                </ControlTemplate>
-            </Button.Template>
+        <Button x:Name="backArrow" HorizontalAlignment="Left" VerticalAlignment="Top" Height ="137" Width="214" Click="Back_Click" Margin="0,14,0,0" Background="Transparent" BorderBrush="Transparent">
+            <Image Source="images/back.png"/>
         </Button>
-        <Button x:Name="backlbutton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="166" FontFamily="Arial Black" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Height="51" FontSize="36" Click="Back_Click" Content="Back" Margin="39,54,0,0"/>
+        <Button x:Name="backlbutton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="166" FontFamily="Arial Black" Background="Transparent" BorderBrush="{x:Null}" Foreground="White" Height="51" FontSize="36" Click="Back_Click" Content="Back" Margin="39,54,0,0"/>
+        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="214" Margin="10,0,0,643" Height="137"/>
 
 
     </Grid>

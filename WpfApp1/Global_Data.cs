@@ -20,6 +20,8 @@ namespace WpfApp1
         public string[] lastnames = new string[100];
         public string[] firstnames = new string[100];
         public string[] checks = new string[100];
+        public string[] homescreenContacts = new string[100];
+        public string[] homescreenNames = new string[100];
         // Set to English as default.
         public static string languageChosen = "English";
         // Boolean for messages.
@@ -33,6 +35,23 @@ namespace WpfApp1
 
         public Global_Data()
         {
+            homescreenContacts[0] = "images/blankpp.png";
+            homescreenContacts[1] = "images/headshot.jpg";
+            homescreenContacts[2] = "images/simon.jpg";
+            homescreenContacts[3] = "images/malikBrown.jpg";
+            homescreenContacts[4] = "images/simone.jpg";
+            homescreenContacts[5] = "images/headshot.jpg";
+            homescreenContacts[6] = "images/joaquinSimmons.jpg";
+            homescreenContacts[7] = "images/blankpp.png";
+            homescreenNames[0] = " ";
+            homescreenNames[1] = "Lillian Iwaniszyn";
+            homescreenNames[2] = "Simon Cowell";
+            homescreenNames[3] = "Malik Brown";
+            homescreenNames[4] = "Simone Brown";
+            homescreenNames[5] = "Simonella Al";
+            homescreenNames[6] = "Joaquin Simmons";
+            homescreenNames[7] = " ";
+
             existing_Usernames[0] = "liwanisz";
             existing_Usernames[1] = "Karla1";
             existing_Usernames[2] = "cora";

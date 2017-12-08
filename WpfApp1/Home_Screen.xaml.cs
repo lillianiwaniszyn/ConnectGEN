@@ -22,6 +22,10 @@ namespace WpfApp1
         Global_Data dataClass = new Global_Data();
         int middleImage = 1;
         int count = 0;
+        private int rightIndex = 3;
+        private int middleIndex = 2;
+        private int leftIndex = 1;
+        private int numContacts = 6;
 
         public Home_Screen()
         {
@@ -37,19 +41,12 @@ namespace WpfApp1
             string fName = dataClass.firstnames[index];
             string lName = dataClass.lastnames[index];
             string fullName = fName + " " + lName;
-            int rightIndex = 2;
-            int leftIndex = 4;
-            int middleIndex = 3;
-            string rightContactFirst = dataClass.firstnames[rightIndex];
-            string rightContactLast = dataClass.lastnames[rightIndex];
-            string leftContactFirst = dataClass.firstnames[leftIndex];
-            string leftContactLast = dataClass.lastnames[leftIndex];
-            string middleContactFirst = dataClass.firstnames[middleIndex];
-            string middleContactLast = dataClass.lastnames[middleIndex];
-            string rightFull = rightContactFirst + " " + rightContactLast;
-            string leftFull = leftContactFirst + " " + leftContactLast;
-            string middleFull = middleContactFirst + " " + middleContactLast;
-            rightContactLabel.Content = rightFull;
+            string rightContact = dataClass.homescreenNames[rightIndex];
+            string leftContact = dataClass.homescreenNames[leftIndex];
+            string middleContact = dataClass.homescreenNames[middleIndex];
+            rightContactLabel.Content = rightContact;
+            leftContactLabel.Content = leftContact;
+            middleContactLabel.Content = middleContact;
             myProfileButton.Content = fullName;
 
             // Testing unread notifications;
@@ -64,6 +61,20 @@ namespace WpfApp1
             unreadStackPanel.Children.Add(unread2);
             unreadStackPanel.Children.Add(unread3);
             //
+            if (Global_Data.addSimone == true)
+            {
+                numContacts = 7;
+                dataClass.homescreenContacts[8] = dataClass.homescreenContacts[7];
+                dataClass.homescreenNames[8] = dataClass.homescreenNames[7];
+                dataClass.homescreenContacts[7] = "images/cimoneSimmons.jpeg";
+                dataClass.homescreenNames[7] = "Simone Simmons";
+            }
+            else
+            {
+                dataClass.homescreenContacts[7] = "images/blankpp.png";
+                dataClass.homescreenNames[7] = " ";
+                numContacts = 6;
+            }
         }
 
         private void MiddleContact_Click_1(object sender, RoutedEventArgs e)
@@ -157,13 +168,16 @@ namespace WpfApp1
 
         private void RightContact_Click(object sender, RoutedEventArgs e)
         {
-            if (middleImage < 6)
+            if (middleImage < numContacts)
             {
                 // move contact to center
                 middleImage++;
-                LeftImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage - 1], UriKind.Relative));
-                MiddleImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage], UriKind.Relative));
-                RightImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage + 1], UriKind.Relative));
+                rightContactLabel.Content = dataClass.homescreenNames[middleImage + 1];
+                middleContactLabel.Content = dataClass.homescreenNames[middleImage];
+                leftContactLabel.Content = dataClass.homescreenNames[middleImage - 1];
+                LeftImage.Source = new BitmapImage(new Uri(dataClass.homescreenContacts[middleImage - 1], UriKind.Relative));
+                MiddleImage.Source = new BitmapImage(new Uri(dataClass.homescreenContacts[middleImage], UriKind.Relative));
+                RightImage.Source = new BitmapImage(new Uri(dataClass.homescreenContacts[middleImage + 1], UriKind.Relative));
                 // make popups visible
                 infoIcon.Visibility = System.Windows.Visibility.Visible;
                 infobutton.IsEnabled = true;
@@ -181,7 +195,7 @@ namespace WpfApp1
                 messagebutton.Visibility = System.Windows.Visibility.Visible;
                 audiobutton.Visibility = System.Windows.Visibility.Visible;
                 videobutton.Visibility = System.Windows.Visibility.Visible;
-                count++;
+                count = 1;
             }
             //this.Close();
         }
@@ -190,12 +204,15 @@ namespace WpfApp1
         {
             //MessageBox.Show("Move the contact to the middle of the screen if you would like to get in touch with them!");
             // move contact to center
-            if (middleImage > 2)
+            if (middleImage > 1)
             {
                 middleImage--;
-                LeftImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage - 1], UriKind.Relative));
-                MiddleImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage], UriKind.Relative));
-                RightImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage + 1], UriKind.Relative));
+                rightContactLabel.Content = dataClass.homescreenNames[middleImage + 1];
+                middleContactLabel.Content = dataClass.homescreenNames[middleImage];
+                leftContactLabel.Content = dataClass.homescreenNames[middleImage - 1];
+                LeftImage.Source = new BitmapImage(new Uri(dataClass.homescreenContacts[middleImage - 1], UriKind.Relative));
+                MiddleImage.Source = new BitmapImage(new Uri(dataClass.homescreenContacts[middleImage], UriKind.Relative));
+                RightImage.Source = new BitmapImage(new Uri(dataClass.homescreenContacts[middleImage + 1], UriKind.Relative));
                 // make popups visible
                 infoIcon.Visibility = System.Windows.Visibility.Visible;
                 infobutton.IsEnabled = true;
@@ -213,20 +230,24 @@ namespace WpfApp1
                 messagebutton.Visibility = System.Windows.Visibility.Visible;
                 audiobutton.Visibility = System.Windows.Visibility.Visible;
                 videobutton.Visibility = System.Windows.Visibility.Visible;
-                count++;
+                count = 1;
             }
             //this.Close();
         }
 
         private void rightArrow_Click(object sender, RoutedEventArgs e)
         {
-            if(middleImage < 6)
+          
+            
+            if (middleImage < numContacts)
             {
-
                 middleImage++;
-                LeftImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage - 1], UriKind.Relative));
-                MiddleImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage], UriKind.Relative));
-                RightImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage + 1], UriKind.Relative));
+                rightContactLabel.Content = dataClass.homescreenNames[middleImage + 1];
+                middleContactLabel.Content = dataClass.homescreenNames[middleImage];
+                leftContactLabel.Content = dataClass.homescreenNames[middleImage - 1];
+                LeftImage.Source = new BitmapImage(new Uri(dataClass.homescreenContacts[middleImage - 1], UriKind.Relative));
+                MiddleImage.Source = new BitmapImage(new Uri(dataClass.homescreenContacts[middleImage], UriKind.Relative));
+                RightImage.Source = new BitmapImage(new Uri(dataClass.homescreenContacts[middleImage + 1], UriKind.Relative));
             }
             if (count == 1)
             {
@@ -246,18 +267,22 @@ namespace WpfApp1
                 messagebutton.Visibility = System.Windows.Visibility.Hidden;
                 audiobutton.Visibility = System.Windows.Visibility.Hidden;
                 videobutton.Visibility = System.Windows.Visibility.Hidden;
-                count--;
+                count = 0;
             }
         }
 
         private void leftArrow_Click(object sender, RoutedEventArgs e)
         {
-            if (middleImage > 2)
+            
+            if (middleImage > 1)
             {
                 middleImage--;
-                LeftImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage - 1], UriKind.Relative));
-                MiddleImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage], UriKind.Relative));
-                RightImage.Source = new BitmapImage(new Uri(dataClass.profilePicPath[middleImage + 1], UriKind.Relative));
+                rightContactLabel.Content = dataClass.homescreenNames[middleImage + 1];
+                middleContactLabel.Content = dataClass.homescreenNames[middleImage];
+                leftContactLabel.Content = dataClass.homescreenNames[middleImage - 1];
+                LeftImage.Source = new BitmapImage(new Uri(dataClass.homescreenContacts[middleImage - 1], UriKind.Relative));
+                MiddleImage.Source = new BitmapImage(new Uri(dataClass.homescreenContacts[middleImage], UriKind.Relative));
+                RightImage.Source = new BitmapImage(new Uri(dataClass.homescreenContacts[middleImage + 1], UriKind.Relative));
 
             }
             if (count == 1)
@@ -278,7 +303,7 @@ namespace WpfApp1
                 messagebutton.Visibility = System.Windows.Visibility.Hidden;
                 audiobutton.Visibility = System.Windows.Visibility.Hidden;
                 videobutton.Visibility = System.Windows.Visibility.Hidden;
-                count--;
+                count = 0;
             }
             
         }
@@ -426,10 +451,9 @@ namespace WpfApp1
             editcontact.Show();
             this.Close();
         }
-
-        private void slider_ValueChanged_1(object sender, RoutedPropertyChangedEventArgs<double> e)
+        private void SliderMessage(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("This function has not been implemented yet!");
+            MessageBox.Show("This function has not been implemented!");
         }
     }
 }

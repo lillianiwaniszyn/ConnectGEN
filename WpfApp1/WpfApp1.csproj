@@ -384,6 +384,7 @@
   <ItemGroup>
     <Resource Include="images\stopHand.png" />
     <Resource Include="images\eye.png" />
+    <Resource Include="images\blankpp.png" />
     <Content Include="images\Grandma_Audio.m4a" />
     <Content Include="images\Grandpa_Video.mov" />
   </ItemGroup>
