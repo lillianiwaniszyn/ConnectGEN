@@ -52,5 +52,11 @@ namespace WpfApp1
             this.Close();
             mainScreen.Show();
         }
+
+        private void EndCallImage_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            mainScreen.Show();
+            this.Close();
+        }
     }
 }

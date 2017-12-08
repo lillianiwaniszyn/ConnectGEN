@@ -15,7 +15,6 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Button x:Name="End_Call" Content="End Call" Height="149" Canvas.Left="21" Canvas.Top="660" Width="216" OpacityMask="Black" Background="Red" Foreground="Black" FontWeight="Bold" FontSize="50" FontFamily="Arial" Click="End_Call_Click"/>
         <Image x:Name="Receiving" Height="809" Canvas.Left="539" Width="1012" Source="images/malikBrown.jpg" Canvas.Top="10" OpacityMask="Black"/>
         <Image x:Name="Caller" Height="399" Canvas.Left="147" Width="546" Source="images/KarlaJuego.jpg" OpacityMask="Black" Canvas.Top="10"/>
         <Label x:Name="receiverName" Content="Malik Brown" Height="120" Canvas.Left="1198" Width="294" FontSize="36" Foreground="Black" Canvas.Top="10" OpacityMask="Black" FontFamily="Arial"/>
@@ -39,6 +38,8 @@
             </Label.Background>
         </Label>
         <Label x:Name="Timer" Content="00:30" Height="79" Canvas.Left="10" Canvas.Top="547" Width="216" Foreground="White" FontSize="48" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+        <Button x:Name="End_Call" Content="End Call" Height="149" Canvas.Left="21" Canvas.Top="660" Width="366" OpacityMask="Black" Background="Red" Foreground="Black" FontWeight="Bold" FontSize="50" FontFamily="Arial" Click="End_Call_Click"/>
+        <Image x:Name="EndCall_Image" HorizontalAlignment="Left" Height="110" VerticalAlignment="Top" Width="85" Source="images/endcall.png" MouseUp="EndCall_Image_MouseUp" Canvas.Left="21" Canvas.Top="693" RenderTransformOrigin="-1.178,-0.328"/>
 
     </Canvas>
 </Window>
