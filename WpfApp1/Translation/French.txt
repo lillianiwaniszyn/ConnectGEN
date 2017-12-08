@@ -119,7 +119,7 @@ jazmine.|jazmine.
 how|comment
 are|sont
 family|famille
-family|famille?
+family?|famille?
 oh|oh
 oh,|oh,
 us|nous
