@@ -45,6 +45,7 @@ namespace WpfApp1
                 if(waitTime == TimeSpan.Zero)
                 {
                     this.Video.Visibility = Visibility.Visible;
+                    this.Receiving.Visibility = Visibility.Hidden;
                     Video.Play();
                 }
                 waitTime = waitTime.Add(TimeSpan.FromSeconds(-1));
