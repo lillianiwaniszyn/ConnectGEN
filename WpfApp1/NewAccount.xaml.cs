@@ -59,7 +59,9 @@ namespace WpfApp1
         }
         void CreateAccount(object sender, RoutedEventArgs e)
         {
+            Global_Data.currentUserStatic = "cora";
             Home_Screen hs = new Home_Screen();
+            
             String s = languageMenu.Text;
             Global_Data.languageChosen = s;
             hs.Show();
