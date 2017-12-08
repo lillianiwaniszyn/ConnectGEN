@@ -39,10 +39,10 @@ namespace WpfApp1
 
         void ChangePic(object sender, RoutedEventArgs e)
         {
-            //Browse_Pictures bp = new Browse_Pictures();
-            //bp.DataContext = this;
-            //bp.ShowDialog();
-            MessageBox.Show("This function has not been implemented yet!");
+            Edit_Profile_Pic npp = new Edit_Profile_Pic();
+            npp.DataContext = this;
+            npp.ShowDialog();
+            //MessageBox.Show("This function has not been implemented yet!");
             // this.Close();
         }
 
