@@ -22,6 +22,8 @@ namespace WpfApp1
     public partial class AudioCall : Window
     {
         Home_Screen mainScreen = new Home_Screen();
+        
+
 
         DispatcherTimer _timer;
         TimeSpan _time;
@@ -43,6 +45,7 @@ namespace WpfApp1
             _timer.Start();
         }
 
+        
 
         private void End_Call_Click(object sender, RoutedEventArgs e)
         {
