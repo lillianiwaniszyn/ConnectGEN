@@ -75,14 +75,14 @@ namespace WpfApp1
             {
                 selectedPic = "images/selfie.jpg";
             }
-            NewAccount n = (NewAccount)this.DataContext;
+            EditProfile n = (EditProfile)this.DataContext;
             Image myImage = new Image();
             Global_Data gd = new Global_Data();
             gd.currentProfilePic = selectedPic;
             myImage.Source = new BitmapImage(new Uri(selectedPic, UriKind.RelativeOrAbsolute));
 
             this.Close();
-            n.profPic.Source = myImage.Source;
+            n.User.Source = myImage.Source;
             n.Show();
         }
 
