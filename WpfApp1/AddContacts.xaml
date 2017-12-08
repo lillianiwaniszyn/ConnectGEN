@@ -15,7 +15,7 @@
             </LinearGradientBrush>
         </Grid.Background>
         <StackPanel x:Name ="listOfContacts" HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="900" Margin="339,155,0,0"/>
-        <Button x:Name="select_contact1" Content="CONTACT 1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="900"  Height="150" Margin="339,155,0,0" Click="SelectC1"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}">
+        <Button x:Name="select_contact1" Content="CONTACT 1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="900"  Height="150" Margin="339,155,0,0" Click="SelectC1"  Background="Transparent" BorderBrush="{x:Null}" Foreground="{x:Null}">
             <Button.Style>
                 <Style TargetType="Button">
                     <Style.Triggers>
@@ -26,7 +26,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Button x:Name="select_contact2" Content="CONTACT 2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="900"  Height="150" Margin="339,305,0,0" Click="SelectC2" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}">
+        <Button x:Name="select_contact2" Content="CONTACT 2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="900"  Height="150" Margin="339,305,0,0" Click="SelectC2" Background="Transparent" BorderBrush="{x:Null}" Foreground="{x:Null}">
             <Button.Style>
                 <Style TargetType="Button">
                     <Style.Triggers>
@@ -37,7 +37,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Button x:Name="select_contact3" Content="CONTACT 3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="900"  Height="150" Margin="339,455,0,0" Click="SelectC3" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}">
+        <Button x:Name="select_contact3" Content="CONTACT 3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="900"  Height="150" Margin="339,455,0,0" Click="SelectC3" Background="Transparent" BorderBrush="{x:Null}" Foreground="{x:Null}">
             <Button.Style>
                 <Style TargetType="Button">
                     <Style.Triggers>
