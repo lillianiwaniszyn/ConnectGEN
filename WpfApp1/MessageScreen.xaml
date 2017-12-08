@@ -66,7 +66,7 @@
             <Button x:Name="sendMessageButton" Canvas.Left="1133" Canvas.Top="642" Height="84" Width="66" Background ="Transparent"  Click="SendMessageButton_Click" BorderBrush="{x:Null}" >
                 <Image Source="images/send.png" Height="73" Width="64"/>
             </Button>
-            <ScrollViewer Canvas.Left="262" Canvas.Top="162" Width="979" CanContentScroll="True">
+            <ScrollViewer x:Name="myScrollViewer" xmlns:AutoScrollBehavior.AutoScroll="True" Canvas.Left="262" Canvas.Top="162" Width="979" CanContentScroll="True" ScrollChanged="ScrollViewer_ScrollChanged">
                 <StackPanel x:Name="msgDisplay" Height="444" Canvas.Left="260" Canvas.Top="162" Width="980"/>
             </ScrollViewer>
             <Label Content="SEND" Canvas.Left="1105" Canvas.Top="736" Foreground="White" FontFamily="Arial Black" FontSize="35"/>

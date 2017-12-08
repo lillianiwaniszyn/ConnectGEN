@@ -59,7 +59,7 @@ namespace WpfApp1
             SetUpScreen(specificContact);
 
             // Test Video
-            SimulateMsgNotification("Malik");
+            // SimulateMsgNotification("Malik");
         }
 
         public void SetUpScreen(string userName)
@@ -164,6 +164,7 @@ namespace WpfApp1
                         oldMessage.audioDeclinedIcon.Visibility = Visibility.Visible;
                     }
                     msgDisplay.Children.Add(oldMessage);
+ 
                 }
                 // Check for video calls.
                 else if (commStates[1] == "V")
@@ -200,6 +201,7 @@ namespace WpfApp1
                         oldMessage.videoDeclinedIcon.Visibility = Visibility.Visible;
                     }
                     msgDisplay.Children.Add(oldMessage);
+
                 }
             }
             file.Close();
@@ -337,6 +339,7 @@ namespace WpfApp1
                 file.Close();
                 // Not sure what this is supposed to do.
                 System.Console.ReadLine();
+
             }
         }
 
@@ -602,8 +605,8 @@ namespace WpfApp1
             newMessage.senderName.Content = senderName;
 
             allNotifications.notificationDisplay.Children.Add(newMessage);
-            //this.Visibility = Visibility.Hidden;
             allNotifications.Show();
+            allNotifications.Topmost = true;
         }
 
         // NOT CREATED YET. Will need to display the notification, or multiple. (Can receive multiple messages.)
@@ -615,8 +618,8 @@ namespace WpfApp1
             newMessage.senderName.Content = senderName;
 
             allNotifications.notificationDisplay.Children.Add(newMessage);
-            this.Visibility = Visibility.Hidden;
             allNotifications.Show();
+            allNotifications.Topmost = true;
         }
 
         // NOT CREATED YET. Will need to display the notification, or multiple. (Can receive multiple messages.)
@@ -628,8 +631,8 @@ namespace WpfApp1
             newMessage.senderName.Content = senderName;
 
             allNotifications.notificationDisplay.Children.Add(newMessage);
-            this.Visibility = Visibility.Hidden;
             allNotifications.Show();
+            allNotifications.Topmost = true;
         }
 
         // In the event that an action that demands all attention has stopped taking place, all buttons must be enabled again.
@@ -661,6 +664,33 @@ namespace WpfApp1
             addImageButton.IsEnabled = false;
             // Translate Button
             translateButton.IsEnabled = false;
+        }
+
+        private Boolean AutoScroll = true;
+
+        private void ScrollViewer_ScrollChanged(object sender, ScrollChangedEventArgs e)
+        {
+            // User scroll event : set or unset auto-scroll mode
+            if (e.ExtentHeightChange == 0)
+            {   // Content unchanged : user scroll event
+                if (myScrollViewer.VerticalOffset == myScrollViewer.ScrollableHeight)
+                {   // Scroll bar is in bottom
+                    // Set auto-scroll mode
+                    AutoScroll = true;
+                }
+                else
+                {   // Scroll bar isn't in bottom
+                    // Unset auto-scroll mode
+                    AutoScroll = false;
+                }
+            }
+
+            // Content scroll event : auto-scroll eventually
+            if (AutoScroll && e.ExtentHeightChange != 0)
+            {   // Content changed and auto-scroll mode set
+                // Autoscroll
+                myScrollViewer.ScrollToVerticalOffset(myScrollViewer.ExtentHeight);
+            }
         }
     }
 }

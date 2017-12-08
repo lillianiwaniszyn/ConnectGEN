@@ -378,7 +378,6 @@ namespace WpfApp1
             Image selectedImage = (Image)middleContact.Content;
             // Get source.
             string temporaryContent = selectedImage.Source.ToString();
-            Console.WriteLine("Path:" + temporaryContent);
             // Split using '/'.
             string[] splitContent = temporaryContent.Split('/');
             // Find out place of "Images".
@@ -400,7 +399,6 @@ namespace WpfApp1
             {
                 message = new MessageScreen("MalikBrown");
             }
-            Console.WriteLine("FileName: " + ImageName);
             
             message.Show();
             this.Close();
