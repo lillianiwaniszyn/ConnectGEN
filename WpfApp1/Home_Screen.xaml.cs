@@ -49,18 +49,11 @@ namespace WpfApp1
             middleContactLabel.Content = middleContact;
             myProfileButton.Content = fullName;
 
-            /* Testing unread notifications;
+            // Testing unread notifications;
             UnreadNotification unread1 = new UnreadNotification();
             unread1.SetMsg("Jasmine");
-            UnreadNotification unread2 = new UnreadNotification();
-            unread2.SetAudio("Malik");
-            UnreadNotification unread3 = new UnreadNotification();
-            unread3.SetVideo("Simone");
-
             unreadStackPanel.Children.Add(unread1);
-            unreadStackPanel.Children.Add(unread2);
-            unreadStackPanel.Children.Add(unread3);
-            */
+            //
 
             if (Global_Data.addSimone == true)
             {

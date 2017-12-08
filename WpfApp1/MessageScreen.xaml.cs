@@ -91,7 +91,7 @@ namespace WpfApp1
             else if (specificContact == "jazmineBrown")
             {
                 picturePath = "images/jazmineBrown.png";
-                chatNameLabel.Content = "Jazmine";
+                chatNameLabel.Content = "Jasmine";
             }
             Image myImage = new Image();
             myImage.Source = new BitmapImage(new Uri(picturePath, UriKind.RelativeOrAbsolute));
@@ -467,6 +467,10 @@ namespace WpfApp1
             else if (specificContact == "Simon22")
             {
                 Global_Data.sentSimon22 = true;
+            }
+            else if (specificContact == "jazmineBrown")
+            {
+                Global_Data.sentJazmine = true;
             }
         }
 
