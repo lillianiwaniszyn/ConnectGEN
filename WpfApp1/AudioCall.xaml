@@ -18,12 +18,12 @@
         <Button x:Name="End_Call" Content="End Call" Margin="540,656,500,29" Background="Red" FontSize="50" FontWeight="Bold" FontFamily="Arial" Click="End_Call_Click"/>
         <Image x:Name="Receiving" Source="images/malikBrown.jpg" Margin="170,40,185,345"/>
         <Label x:Name="Volume" Content="Volume" Foreground="#FFDED5D5" HorizontalContentAlignment="Center" FontSize="48" Margin="380,518,331,168" FontFamily="Arial" FontWeight="Bold"/>
-        <Button x:Name="Volume_Up" Content="" Margin="302,469,828,183" BorderThickness="0">
+        <Button x:Name="Volume_Up" Content="" Margin="302,469,828,183" BorderThickness="0" ToolTip="Volume Up">
             <Button.Background>
                 <ImageBrush ImageSource="images/triangleUp.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="Volume_Down" Content="" VerticalContentAlignment="Center" Margin="899,488,247,168" BorderThickness="0">
+        <Button x:Name="Volume_Down" Content="" VerticalContentAlignment="Center" Margin="899,488,247,168" BorderThickness="0" ToolTip="Volume Down">
             <Button.Background>
                 <ImageBrush ImageSource="images/triangleDown.png"/>
             </Button.Background>
@@ -38,7 +38,7 @@
         </Label>
         <Label x:Name="Timer" Content="00:00:00" HorizontalAlignment="Left" Height="132" Margin="74,337,0,0" VerticalAlignment="Top" Width="294" Foreground="White" FontSize="70" HorizontalContentAlignment="Center" FontFamily="Arial" FontWeight="Bold"/>
         <MediaElement HorizontalAlignment="Left" Height="79" Margin="1070,209,0,0" VerticalAlignment="Top" Width="91" Source="images/Grandma_Audio.m4a" Volume="1"/>
-        <Image x:Name="EndCallImage" HorizontalAlignment="Left" Height="134" Margin="535,656,0,0" VerticalAlignment="Top" Width="129" Source="images/endcall.png" MouseUp="EndCallImage_MouseUp"/>
+        <Image x:Name="EndCallImage" HorizontalAlignment="Left" Height="134" Margin="535,656,0,0" VerticalAlignment="Top" Width="129" Source="images/endcall.png"/>
 
     </Grid>
 </Window>

@@ -46,9 +46,9 @@ namespace WpfApp1
                 }
                 if(waitTime == TimeSpan.Zero)
                 {
-                    this.Video.Visibility = Visibility.Visible;
-                    this.Receiving.Visibility = Visibility.Hidden;
-                    Video.Play();
+                    //this.Video.Visibility = Visibility.Visible;
+                    this.Receiving.Source = new BitmapImage(new Uri("images/simone.jpg", UriKind.Relative));
+                    //Video.Play();
                 }
                 waitTime = waitTime.Add(TimeSpan.FromSeconds(-1));
                 _time = _time.Add(TimeSpan.FromSeconds(1));
