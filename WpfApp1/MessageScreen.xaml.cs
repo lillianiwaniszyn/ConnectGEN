@@ -373,6 +373,7 @@ namespace WpfApp1
             AddImageMenu newImageMenu = new AddImageMenu();
             newImageMenu.DataContext = this;
             newImageMenu.Show();
+            newImageMenu.Topmost = true;
         }
 
         // NOT CREATED YET. Messages are cleared from the screen and replaced with the translate menu.
@@ -390,6 +391,7 @@ namespace WpfApp1
             DisableAllButtons();
             // Show the new window.
             currentTranslationMenu.Show();
+            currentTranslationMenu.Topmost = true;
         }
 
         // Works. Method that removes the prompt text as long as the mouse is over the textbox.

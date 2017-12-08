@@ -40,6 +40,7 @@ namespace WpfApp1
             // Set the initialMessageBox to contain the untranslatedMsg.
             translationPopUp.initialMessageBox.Text = untranslatedMsg;
             translationPopUp.Show();
+            translationPopUp.Topmost = true;
         }
 
         // WORKS. (With a mild bug. New lines results in double spaces. Can live with)
