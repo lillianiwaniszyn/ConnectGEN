@@ -16,7 +16,7 @@
         <Image x:Name="User" Source="images/headshot.jpg" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="300" Margin="432,31,0,0"/>
         <Image Source="images/whiteedit.png" HorizontalAlignment="Left" Margin="432,336,0,391" Width="69" />
         <Label Content="Change" HorizontalAlignment="Left" VerticalAlignment="Top" Height="67" Width="211" Margin="506,336,0,0" Foreground="White" FontFamily="Arial Black" FontSize="36" RenderTransformOrigin="0.194,0.355"/>
-        <Button Content="changeImage" HorizontalAlignment="Left" VerticalAlignment="Top" Width="285" Margin="432,336,0,0" Height="67" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="ChangePic"/>
+        <Button  HorizontalAlignment="Left" VerticalAlignment="Top" Width="285" Margin="432,336,0,0" Height="67" Background="Transparent" BorderThickness="0" Click="ChangePic"/>
         <Image Source="images/whiteedit.png" HorizontalAlignment="Left" Margin="1076,264,0,463" Width="72" />
         <Label Content="Change" HorizontalAlignment="Left" VerticalAlignment="Top" Height="67" Width="211" Margin="1150,264,0,0" Foreground="White" FontFamily="Arial Black" FontSize="36" RenderTransformOrigin="0.194,0.355"/>
         <Button x:Name="changeUserName" Content="changeImage" HorizontalAlignment="Left" VerticalAlignment="Top" Width="285" Margin="1076,264,0,0" Height="67" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="ChangeName"/>
@@ -30,26 +30,14 @@
             </Grid>
         </Popup>
         <Label x:Name="userName" Content="Current User" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="737,174,0,0" Height="85" Width="698" FontFamily="Arial Black" Foreground="White" FontSize="48"/>
-        <Button x:Name="Save" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,460,0,0" Height="200" Click="Save_Click">
-            <Button.Template>
-                <ControlTemplate>
-                    <Image Source="images/saveicon.ico" Height="200" Margin="0,0,0,0"/>
-                </ControlTemplate>
-            </Button.Template>
+        <Button x:Name="Save" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,460,0,0" Height="200" Click="Save_Click" BorderThickness="0" Background="Transparent">
+            <Image Source="images/saveicon.ico" Height="200" Margin="0,0,0,0"/>
         </Button>
-        <Button x:Name="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="650,460,0,0" Height="200" Click="Cancel_Click">
-            <Button.Template>
-                <ControlTemplate>
-                    <Image Source="images/cancelicon.png" Height="200" Margin="0,0,0,0"/>
-                </ControlTemplate>
-            </Button.Template>
+        <Button x:Name="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="650,460,0,0" Height="200" Click="Cancel_Click" Background="Transparent" BorderThickness="0">
+            <Image Source="images/cancelicon.png" Height="200" Margin="0,0,0,0"/>
         </Button>
-        <Button x:Name="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="1050,460,0,0" Height="200" Click="Delete_Click">
-            <Button.Template>
-                <ControlTemplate>
-                    <Image Source="images/deleteicon.png" Height="200" Margin="0,0,0,0"/>
-                </ControlTemplate>
-            </Button.Template>
+        <Button x:Name="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="1050,460,0,0" Height="200" Click="Delete_Click" Background="Transparent" BorderThickness="0">
+            <Image Source="images/deleteicon.png" Height="200" Margin="0,0,0,0"/>
         </Button>
         <Label Content="Save" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="272,660,0,0" Height="64" Width="144" Background="{x:Null}" FontFamily="Arial Black" FontSize="48" Foreground="White"/>
         <Label Content="Cancel" HorizontalAlignment="Left" Margin="652,660,0,70" Width="198" Background="{x:Null}" FontFamily="Arial Black" FontSize="48" Foreground="White"/>

@@ -87,6 +87,9 @@
     <Compile Include="EditProfile.xaml.cs">
       <DependentUpon>EditProfile.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Edit_Profile_Pic.xaml.cs">
+      <DependentUpon>Edit_Profile_Pic.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Global_Data.cs" />
     <Compile Include="Login_Main.xaml.cs">
       <DependentUpon>Login_Main.xaml</DependentUpon>
@@ -185,6 +188,10 @@
     <Page Include="EditProfile.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Edit_Profile_Pic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Login_Main.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -384,7 +391,6 @@
   <ItemGroup>
     <Resource Include="images\stopHand.png" />
     <Resource Include="images\eye.png" />
-    <Resource Include="images\blankpp.png" />
     <Content Include="images\Grandma_Audio.m4a" />
     <Content Include="images\Grandpa_Video.mov" />
   </ItemGroup>
