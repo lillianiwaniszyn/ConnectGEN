@@ -37,8 +37,8 @@
             </Label.Background>
         </Label>
         <Label x:Name="Timer" Content="00:00:00" HorizontalAlignment="Left" Height="132" Margin="74,337,0,0" VerticalAlignment="Top" Width="294" Foreground="White" FontSize="70" HorizontalContentAlignment="Center" FontFamily="Arial" FontWeight="Bold"/>
-        <MediaElement HorizontalAlignment="Left" Height="79" Margin="1070,209,0,0" VerticalAlignment="Top" Width="91" Source="images/Grandma_Audio.m4a" Volume="1"/>
-        <Image x:Name="EndCallImage" HorizontalAlignment="Left" Height="134" Margin="535,656,0,0" VerticalAlignment="Top" Width="129" Source="images/endcall.png"/>
+        <MediaElement HorizontalAlignment="Left" Height="79" Margin="1070,209,0,0" VerticalAlignment="Top" Width="91" Source="images/Grandma_Audio.m4a" Volume="1" Visibility="Hidden"/>
+        <Image x:Name="EndCallImage" HorizontalAlignment="Left" Height="124" Margin="540,656,0,0" VerticalAlignment="Top" Width="124" Source="images/endcall.png"/>
 
     </Grid>
 </Window>

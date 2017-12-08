@@ -37,7 +37,7 @@
             </Label.Background>
         </Label>
         <Label x:Name="Timer" Content="00:00:00" HorizontalAlignment="Left" Height="132" Margin="74,337,0,0" VerticalAlignment="Top" Width="294" Foreground="White" FontSize="70" HorizontalContentAlignment="Center" FontFamily="Arial" FontWeight="Bold" Visibility="Hidden"/>
-        <Image x:Name="EndCall_Image" HorizontalAlignment="Left" Height="134" Margin="535,656,0,0" VerticalAlignment="Top" Width="129" Source="images/endcall.png" MouseUp="EndCall_Image_MouseUp"/>
+        <Image x:Name="EndCall_Image" HorizontalAlignment="Left" Height="134" Margin="540,656,0,0" VerticalAlignment="Top" Width="121" Source="images/endcall.png" MouseUp="EndCall_Image_MouseUp"/>
 
     </Grid>
 </Window>
