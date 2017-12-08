@@ -27,6 +27,7 @@ namespace WpfApp1
         TimeSpan _time;
         TimeSpan waitTime;
         int seconds = 0;
+        Global_Data dataClass = new Global_Data();
         public AudioCallWaiting()
         {
             InitializeComponent();
@@ -72,7 +73,10 @@ namespace WpfApp1
 
         }
         */
-
+        public void setImage(int index)
+        {
+            Receiving.Source = new BitmapImage(new Uri(dataClass.homescreenContacts[index], UriKind.Relative));
+        }
 
         private void End_Call_Click(object sender, RoutedEventArgs e)
         {

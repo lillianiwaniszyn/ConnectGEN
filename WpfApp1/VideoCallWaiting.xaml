@@ -17,7 +17,7 @@
         </Rectangle>
         <Button x:Name="End_Call" Content="End Call" Height="149" Canvas.Left="21" Canvas.Top="660" Width="216" OpacityMask="Black" Background="Red" Foreground="Black" FontWeight="Bold" FontSize="50" FontFamily="Arial" Click="End_Call_Click"/>
         <Image x:Name="Receiving" Height="809" Canvas.Left="539" Width="1012" Source="images/malikBrown.jpg" Canvas.Top="10" OpacityMask="Black"/>
-        <Image x:Name="Caller" Height="399" Canvas.Left="113" Width="546" Source="images/coraBrown.jpg" OpacityMask="Black" Canvas.Top="10"/>
+        <Image x:Name="Caller" Height="399" Canvas.Left="165" Width="514" Source="images/KarlaJuego.jpg" OpacityMask="Black" Canvas.Top="10"/>
         <Label x:Name="receiverName" Content="Malik Brown" Height="120" Canvas.Left="1198" Width="294" FontSize="36" Foreground="Black" Canvas.Top="10" OpacityMask="Black" FontFamily="Arial"/>
         <Label x:Name="Volume" Content="Volume" Height="93" Canvas.Left="21" Canvas.Top="278" Width="189" Foreground="#FFDED5D5" HorizontalContentAlignment="Center" FontSize="48" OpacityMask="Black" FontFamily="Arial" FontWeight="Bold"/>
         <Button x:Name="End_Call_Copy" Content="" Height="169" Canvas.Left="21" Canvas.Top="82" Width="189" OpacityMask="Black" BorderThickness="0">
@@ -39,7 +39,7 @@
             </Label.Background>
         </Label>
         <Label x:Name="Timer" Height="79" Canvas.Left="10" Canvas.Top="547" Width="216" Foreground="White" FontSize="48" HorizontalContentAlignment="Center" FontWeight="Bold" Visibility="Hidden"/>
-        <MediaElement x:Name="Video" Height="809" Width="953" Source="images/Grandpa_Video.mov" LoadedBehavior="Manual" Canvas.Left="539" Canvas.Top="10" Volume="1"/>
+        <MediaElement x:Name="Video" Height="809" Width="887" Source="images/Grandpa_Video.mov" LoadedBehavior="Manual" Canvas.Left="605" Canvas.Top="10" Volume="1"/>
 
     </Canvas>
 </Window>

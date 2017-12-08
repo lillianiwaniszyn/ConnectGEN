@@ -24,6 +24,8 @@ namespace WpfApp1
         TimeSpan _time;
         TimeSpan waitTime;
         Home_Screen homescreen = new Home_Screen();
+        Global_Data dataClass = new Global_Data();
+
         public VideoCallNoAnswer()
         {
             InitializeComponent();
@@ -51,6 +53,11 @@ namespace WpfApp1
             }, Application.Current.Dispatcher);
 
             _timer.Start();
+        }
+
+        public void setImage(int index)
+        {
+            Receiving.Source = new BitmapImage(new Uri(dataClass.homescreenContacts[index], UriKind.Relative));
         }
 
         private void End_Call_Click(object sender, RoutedEventArgs e)
