@@ -37,6 +37,9 @@ namespace WpfApp1
             // Create User Control.
             TranslationMenu translationPopUp = new TranslationMenu();
             translationPopUp.DataContext = (this.Parent as Panel).DataContext;
+            // Disable buttons on message screen.
+            MessageScreen oldestWindow = (MessageScreen)translationPopUp.DataContext;
+            oldestWindow.DisableAllButtons();
             // Set the initialMessageBox to contain the untranslatedMsg.
             translationPopUp.initialMessageBox.Text = untranslatedMsg;
             translationPopUp.Show();
