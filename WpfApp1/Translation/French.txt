@@ -68,49 +68,68 @@ your translated message will appear here...|votre message traduit apparaîtra ici
 hi|bonjour
 grandma|grand-mère
 cora|cora
+cora.|cora.
 it|il
+it!|il!
 was|était
 very|très
 nice|agréable
 seeing|voyant
 you|toi
+you.|toi.
 i|je
 hope|éspere 
 see|voir
 again|encore
+again!|encore!
 thanks|merci
 malik|malik
+malik.|malik.
 had|avait
 a|une
 lot|beaucoup
 much|beacoup
 of|de
 fun|amusement
+fun,|amusement,
 too|aussi
+too.|aussi.
 that|cette
 is|est
 good|bien
 hear|entrendre
+hear.|entrendre.
 able|capable
 go|aller
 dinner|dîner
 tonight|ce soir
+tonight?|ce soir?
 hey|salut
 grams|grams
+grams!|grams!
 just|juste
 wanted|voulait
 say|dire
 happy|bon
 birthday|anniversaire
+birthday!|anniversaire!
 thank|remerciez
+jazmine|jazmine
+jazmine.|jazmine.
 how|comment
 are|sont
 family|famille
+family|famille?
+oh|oh
+oh,|oh,
 us|nous
+us?|nous?
 we're|nous sommes
 doing|faire
 great|génial
+great.|génial.
 actually|réellement
+actually,|réellement,
 we'll|nous allons
 be|être
 heading|titre
@@ -118,5 +137,6 @@ visit|visiter
 gramps|gramps
 next|prochain
 week|semaine
+week.|semaine.
 looking|regardes
 forward|vers l'avant

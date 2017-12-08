@@ -67,18 +67,23 @@ your translated message will appear here...|su mensaje traducido aparecerá aquí.
 hi|hola
 grandma|abuela
 cora|cora
+cora.|cora.
 it|eso
+it!|eso!
 was|estabo
 very|muy
 nice|bunito
 seeing|viendo
 you|tú
+you.|tú.
 i|yo
 hope|esperenza 
 see|ver
 again|de neuvo
+again!|de neuvo!
 thanks|gracias
 malik|malik
+malik.|malik.
 had|tenido
 a|un
 lot|mucho
@@ -95,20 +100,28 @@ dinner|cena
 tonight|esta nocha
 hey|hola
 grams|grams
+grams!|grams!
 just|solo
 wanted|querido
 say|decir
 happy|feliz
 birthday|cumpleaños
+birthday!|cumpleaños!
 thank|gracias
+jazmine|jazmine
+jazmine.|jazmine.
 how|como
 are|son
 family|familia
+family?|familia?
+oh,|oh,
 us|nos
 we're|estamos
 doing|obra
 great|estupendo
+great.|estupendo.
 actually|actualmente
+actually,|actualmente,
 we'll|los haremos
 be|ser
 heading|titulo
@@ -117,5 +130,6 @@ visit|visitar
 gramps|gramps
 next|siguiente
 week|semana
+week.|semana.
 looking|mirando
 forward|adelante

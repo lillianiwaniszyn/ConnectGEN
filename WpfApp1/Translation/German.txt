@@ -70,49 +70,68 @@ your translated message will appear here...|ihre übersetzte nachricht wird hier 
 hi|hallo
 grandma|oma
 cora|cora
+cora.|cora.
 it|es
+it!|es!
 was| war
 very|sehr
 nice|nett
 seeing|sehen
 you|sie
+you.|sie.
 i|ich
 hope|hoffnug 
 see|sehen
 again|nochmal
+again!|nochmal!
 thanks|danke
 malik|malik
+malik.|malik.
 had|hätten
 a|en
 lot|viel
 much|viel
 of|von
 fun|spaß
+fun,|spaß,
 too|auch
+too.|auch.
 that|das
 is|ist
 good|gut
 hear|hören
+hear.|hören.
 able|fähig
 go|gehen
 dinner|abendessen
 tonight|heute abend
+tonight?|heute abend?
 hey|hallo
 grams|grams
+grams!|grams!
 just|gerade
 wanted|gewollt
 say|sagen
 happy|glücklich
 birthday|geburtstag
+birthday!|geburtstag!
 thank|danken
+jazmine|jazmine
+jazmine.|jazmine.
 how|wie
 are|sind
 family|familie
+family?|familie?
+oh|oh
+oh,|oh,
 us|unds
+us?|unds?
 we're|wir sind
 doing|tun
 great|groß
+great.|groß.
 actually|tatsächlich
+actually,|tatsächlich,
 we'll|wir werden
 be|sein
 heading|Überschrift
@@ -121,5 +140,6 @@ visit|besuch
 gramps|gramps
 next|nächster
 week|woche
+week.|woche.
 looking|schauend
 forward|nach vorne

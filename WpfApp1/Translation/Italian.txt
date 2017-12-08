@@ -70,49 +70,68 @@ your translated message will appear here...|il tuo messaggio tradotto apparirà q
 hi|ciao
 grandma|nonna
 cora|cora
+cora.|cora.
 it|esso
+it!|esso!
 was| era
 very|molto
 nice|simpatico
 seeing|vedendo
 you|tu
+you.|tu.
 i|io
 hope|speranza 
 see|vedere
 again|ancora
+again!|ancora!
 thanks|grazie
 malik|malik
+malik.|malik.
 had|aveva
 a|un
 lot|molto
 much|molto
 of|di
 fun|divertimento
+fun,|divertimento,
 too|pure
+too.|pure.
 that|quella
 is|è
 good|bene
 hear|sentire
+hear.|sentire.
 able|capace
 go|partire
 dinner|cena
 tonight|stasera
+tonight?|stasera?
 hey|ciao
 grams|grams
+grams!|grams!
 just|appenda
 wanted|ricercato
 say|dire
 happy|felice
 birthday|compleanno
+birthday!|compleanno!
 thank|grazie
+jazmine|jazmine
+jazmine.|jazmine.
 how|come
 are|siamo
 family|famiglia
+family?|famiglia?
+oh|oh
+oh,|oh,
 us|noi
+us?|noi?
 we're|noi siamo
 doing|fare
 great|grande
+great.|grande.
 actually|in realtà
+actually,|in realtà,
 we'll|noi
 be|essere
 heading|intestazione
@@ -121,5 +140,6 @@ visit|visita
 gramps|gramps
 next|il prossimo
 week|settimana
+week.|settimana.
 looking|analizzare
 forward|inoltrare
