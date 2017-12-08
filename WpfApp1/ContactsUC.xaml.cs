@@ -28,11 +28,7 @@ namespace WpfApp1
             index = input;
             user_name.Content = dataClass.firstnames[index] + " " + dataClass.lastnames[index];
             Image.Source = new BitmapImage(new Uri(dataClass.profilePicPath[index], UriKind.Relative));
-        }
-
-        private void AddContact(object sender, RoutedEventArgs e)
-        {
-            //Do something here 
+            addplus.Source = new BitmapImage(new Uri(dataClass.checks[index], UriKind.Relative));
         }
     }
 }

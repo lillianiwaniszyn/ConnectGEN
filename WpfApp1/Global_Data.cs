@@ -19,6 +19,7 @@ namespace WpfApp1
         public string currentProfilePic;
         public string[] lastnames = new string[100];
         public string[] firstnames = new string[100];
+        public string[] checks = new string[100];
         // Set to English as default.
         public static string languageChosen = "English";
         // Boolean for messages.
@@ -28,6 +29,7 @@ namespace WpfApp1
         public static Boolean sentMalikBrown;
         public static Boolean sentSimon22;
         public static Boolean sentJazmine;
+        public static Boolean addSimone; 
 
         public Global_Data()
         {
@@ -64,7 +66,7 @@ namespace WpfApp1
             lastnames[5] = "Brown";
             lastnames[6] = "Simmons";
             lastnames[7] = "Al";
-            lastnames[8] = "Simone";
+            lastnames[8] = "Simmons";
             contacts[0, 0] = "Karla1"; //this shows us that Karla is in Lillian's contacts
             contacts[0, 1] = "Simon22"; // simon is also Lillian's friend
             contacts[1, 0] = "liwanisz"; // lillian is Karla's friend
@@ -78,7 +80,17 @@ namespace WpfApp1
             profilePicPath[5] = "images/simone.jpg";
             profilePicPath[6] = "images/cimoneSimmons.jpeg";
             profilePicPath[7] = "images/headshot.jpg";
-            profilePicPath[8] = "cimoneSimmons.jpeg";
+            profilePicPath[8] = "images/cimoneSimmons.jpeg";
+
+            checks[0] = "images/plus.png";
+            checks[1] = "images/plus.png";
+            checks[2] = "images/plus.png";
+            checks[3] = "images/plus.png";
+            checks[4] = "images/plus.png";
+            checks[5] = "images/plus.png";
+            checks[6] = "images/plus.png";
+            checks[7] = "images/plus.png";
+            checks[8] = "images/checkmark.png";
         }
 
         public static void InitializeLanguage(string chosen)

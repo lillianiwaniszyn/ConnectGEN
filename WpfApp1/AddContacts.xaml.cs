@@ -25,6 +25,8 @@ namespace WpfApp1
         ContactsUC contact3 = new ContactsUC(6);
         ContactsUC contact4 = new ContactsUC(7);
         ContactsUC simoneselect = new ContactsUC(8);
+        int counter = 0;
+        Boolean check;
         //ContactsUC contact = new ContactsUC();
 
         public AddContacts()
@@ -54,7 +56,6 @@ namespace WpfApp1
 
         private void SearchFor(object sender, TextChangedEventArgs e)
         {
-
             string searchFor = searchContact.Text;
             if (searchFor.Equals("s"))
             {
@@ -64,17 +65,24 @@ namespace WpfApp1
                         listOfContacts.Children.Remove(contact4);
                     listOfContacts.Children.Add(contact1);
                     listOfContacts.Children.Add(contact2);
-                    listOfContacts.Children.Add(contact3);
+                    if (Global_Data.addSimone == false)
+                        listOfContacts.Children.Add(contact3);
+                    else
+                        listOfContacts.Children.Add(simoneselect);
                 }
             }
             else if (searchFor.Equals("si"))
             {
+
                 if (!listOfContacts.Children.Contains(contact1))
                 {
                     if (listOfContacts.Children.Contains(contact4))
                         listOfContacts.Children.Remove(contact4);
                     listOfContacts.Children.Remove(contact2);
-                    listOfContacts.Children.Remove(contact3);
+                    if (Global_Data.addSimone == false)
+                        listOfContacts.Children.Remove(contact3);
+                    else
+                        listOfContacts.Children.Remove(simoneselect);
                     listOfContacts.Children.Add(contact1);
                     listOfContacts.Children.Add(contact2);
                     listOfContacts.Children.Add(contact3);
@@ -87,10 +95,16 @@ namespace WpfApp1
                     if (listOfContacts.Children.Contains(contact4))
                         listOfContacts.Children.Remove(contact4);
                     listOfContacts.Children.Remove(contact2);
-                    listOfContacts.Children.Remove(contact3);
+                    if (Global_Data.addSimone == false)
+                        listOfContacts.Children.Remove(contact3);
+                    else
+                        listOfContacts.Children.Remove(simoneselect);
                     listOfContacts.Children.Add(contact1);
                     listOfContacts.Children.Add(contact2);
-                    listOfContacts.Children.Add(contact3);
+                    if (Global_Data.addSimone == false)
+                        listOfContacts.Children.Add(contact3);
+                    else
+                        listOfContacts.Children.Add(simoneselect);
                 }
             }
             else if (searchFor.Equals("simo"))
@@ -100,10 +114,16 @@ namespace WpfApp1
                     if (listOfContacts.Children.Contains(contact4))
                         listOfContacts.Children.Remove(contact4);
                     listOfContacts.Children.Remove(contact2);
-                    listOfContacts.Children.Remove(contact3);
+                    if (Global_Data.addSimone == false)
+                        listOfContacts.Children.Remove(contact3);
+                    else
+                        listOfContacts.Children.Remove(simoneselect);
                     listOfContacts.Children.Add(contact1);
                     listOfContacts.Children.Add(contact2);
-                    listOfContacts.Children.Add(contact3);
+                    if (Global_Data.addSimone == false)
+                        listOfContacts.Children.Add(contact3);
+                    else
+                        listOfContacts.Children.Add(simoneselect);
                 }
             }
             else if (searchFor.Equals("simon"))
@@ -113,25 +133,36 @@ namespace WpfApp1
                     if (listOfContacts.Children.Contains(contact4))
                         listOfContacts.Children.Remove(contact4);
                     listOfContacts.Children.Remove(contact2);
-                    listOfContacts.Children.Remove(contact3);
+                    if (Global_Data.addSimone == false)
+                        listOfContacts.Children.Remove(contact3);
+                    else
+                        listOfContacts.Children.Remove(simoneselect);
                     listOfContacts.Children.Add(contact1);
                     listOfContacts.Children.Add(contact2);
-                    listOfContacts.Children.Add(contact3);
+                    if (Global_Data.addSimone == false)
+                        listOfContacts.Children.Add(contact3);
+                    else
+                        listOfContacts.Children.Add(simoneselect);
                 }
             }
             else if (searchFor.Equals("simone"))
             {
+                check = true;
                 listOfContacts.Children.Remove(contact1);
                 if (!listOfContacts.Children.Contains(contact4))
                     listOfContacts.Children.Add(contact4);
             }
             else
             {
+                check = false;
                 if (listOfContacts.Children.Contains(contact4))
                     listOfContacts.Children.Remove(contact4);
                 listOfContacts.Children.Remove(contact1);
                 listOfContacts.Children.Remove(contact2);
-                listOfContacts.Children.Remove(contact3);
+                if (Global_Data.addSimone == false)
+                    listOfContacts.Children.Remove(contact3);
+                else
+                    listOfContacts.Children.Remove(simoneselect);
             }
 
         }
@@ -145,11 +176,17 @@ namespace WpfApp1
             else if (searchContact.Text != "simone" && !listOfContacts.Children.Contains(contact1) && listOfContacts.Children.Contains(contact4))
             {
                 listOfContacts.Children.Remove(contact2);
-                listOfContacts.Children.Remove(contact3);
+                if (Global_Data.addSimone == false)
+                    listOfContacts.Children.Remove(contact3);
+                else
+                    listOfContacts.Children.Remove(simoneselect);
                 listOfContacts.Children.Remove(contact4);
                 listOfContacts.Children.Add(contact1);
                 listOfContacts.Children.Add(contact2);
-                listOfContacts.Children.Add(contact3);
+                if (Global_Data.addSimone == false)
+                    listOfContacts.Children.Add(contact3);
+                else
+                    listOfContacts.Children.Add(simoneselect);
             }
             else
             {
@@ -174,9 +211,15 @@ namespace WpfApp1
             {
                 listOfContacts.Children.Remove(contact1);
                 listOfContacts.Children.Remove(contact2);
-                listOfContacts.Children.Remove(contact3);
+                if (Global_Data.addSimone == false)
+                    listOfContacts.Children.Remove(contact3);
+                else
+                    listOfContacts.Children.Remove(simoneselect);
                 listOfContacts.Children.Add(contact2);
-                listOfContacts.Children.Add(contact3);
+                if (Global_Data.addSimone == false)
+                    listOfContacts.Children.Add(contact3);
+                else
+                    listOfContacts.Children.Add(simoneselect);
                 listOfContacts.Children.Add(contact4);
             }
             else
@@ -187,22 +230,54 @@ namespace WpfApp1
 
         private void SelectC1(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            //Do nothing
         }
 
         private void SelectC2(object sender, RoutedEventArgs e)
         {
-            //Do nothing
+            if(listOfContacts.Children.IndexOf(contact3) == 1 || listOfContacts.Children.IndexOf(simoneselect) == 1)
+            {
+                if (counter % 2 == 0)
+                {
+                    Global_Data.addSimone = true;
+                    listOfContacts.Children.Remove(contact3);
+                    listOfContacts.Children.Insert(1, simoneselect);
+                    counter++;
+                }
+                else
+                {
+                    Global_Data.addSimone = false;
+                    listOfContacts.Children.Remove(simoneselect);
+                    listOfContacts.Children.Insert(1, contact3);
+                    counter++;
+                }
+            }
+            //WANT THIS ONE TO BE SELECTED
+
+
+
         }
 
         private void SelectC3(object sender, RoutedEventArgs e)
         {
+            if (listOfContacts.Children.IndexOf(contact3) == 2 || listOfContacts.Children.IndexOf(simoneselect) == 2)
+            {
+                if (counter % 2 == 0)
+                {
+                    Global_Data.addSimone = true;
+                    listOfContacts.Children.Remove(contact3);
+                    listOfContacts.Children.Insert(2, simoneselect);
+                    counter++;
+                }
+                else
+                {
+                    Global_Data.addSimone = false;
+                    listOfContacts.Children.Remove(simoneselect);
+                    listOfContacts.Children.Insert(2, contact3);
+                    counter++;
+                }
+            }
             //Do nothing
-        }
-
-        private void C1HoverEffect(object sender, MouseEventArgs e)
-        {
-            //select_contact1.Background = 
         }
 
     }
