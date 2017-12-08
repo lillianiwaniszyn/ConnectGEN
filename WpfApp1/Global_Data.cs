@@ -56,7 +56,7 @@ namespace WpfApp1
             homescreenNotifs[0] = false;
             homescreenNotifs[1] = false;
             homescreenNotifs[2] = true; 
-            homescreenNotifs[3] = true;
+            homescreenNotifs[3] = false;
             homescreenNotifs[4] = false;
             homescreenNotifs[5] = false;
             homescreenNotifs[6] = false;
