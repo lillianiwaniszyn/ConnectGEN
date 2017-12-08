@@ -104,6 +104,7 @@
         <Label x:Name="leftContactLabel" Grid.Column="1" HorizontalAlignment="Left" Height="32" Margin="336,289,0,0" Grid.Row="1" VerticalAlignment="Top" Width="171" Background="Transparent" Foreground="White" FontWeight="Bold"/>
         <Label x:Name="middleContactLabel" Grid.Column="1" HorizontalAlignment="Left" Margin="627,329,0,0" Grid.Row="1" VerticalAlignment="Top" Height="34" Width="197" Background="Transparent" Foreground="White" FontWeight="Bold"/>
         <Label x:Name="rightContactLabel" Grid.Column="1" HorizontalAlignment="Left" Height="32" Margin="945,289,0,0" Grid.Row="1" VerticalAlignment="Top" Width="150" Background="Transparent" Foreground="White" FontWeight="bold"/>
+        <StackPanel x:Name="unreadStackPanel" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="558" Margin="0,71,0,0" VerticalAlignment="Top" Width="150" Grid.RowSpan="2"/>
 
     </Grid>
 </Window>
