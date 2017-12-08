@@ -59,7 +59,7 @@ namespace WpfApp1
             SetUpScreen(specificContact);
 
             // Test Video
-            // SimulateMsgNotification("Malik");
+            SimulateMsgNotification("Malik");
         }
 
         public void SetUpScreen(string userName)

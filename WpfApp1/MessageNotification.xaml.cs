@@ -35,8 +35,8 @@ namespace WpfApp1
         private void ConfirmButton_Click(object sender, RoutedEventArgs e)
         {
             (this.Parent as Panel).Children.Clear();
-
-            // Need to add message history of the desired contact.
+            // Default Malik Brown.
+            MessageScreen newScreen = new MessageScreen("MalikBrown");
         }
     }
 }
