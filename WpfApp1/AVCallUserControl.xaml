@@ -8,10 +8,10 @@
              d:DesignHeight="222" d:DesignWidth="980">
     <Grid>
         <Label x:Name="callMessageLabel" Content="[text message]" HorizontalAlignment="Left" Margin="1,114,0,0" VerticalAlignment="Top" Height="98" Width="979" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ScrollViewer.CanContentScroll="True" FontFamily="Arial Black" FontSize="15" Foreground="White"/>
-        <Image x:Name="audioAcceptedIcon" Source="acceptIcon.png" Visibility="Hidden" HorizontalAlignment="Left" Height="68" Margin="452,10,0,0" VerticalAlignment="Top" Width="79"/>
-        <Image x:Name="audioDeclinedIcon" Source="declineicon.png" Visibility="Hidden" HorizontalAlignment="Left" Height="68" Margin="452,10,0,0" VerticalAlignment="Top" Width="79"/>
-        <Image x:Name="videoAcceptedIcon" Source="acceptvideo.png" Visibility="Hidden" HorizontalAlignment="Left" Height="68" Margin="452,10,0,0" VerticalAlignment="Top" Width="79"/>
-        <Image x:Name="videoDeclinedIcon" Source="declinevideo.png" Visibility="Hidden" HorizontalAlignment="Left" Height="68" Margin="452,10,0,0" VerticalAlignment="Top" Width="79"/>
+        <Image x:Name="audioAcceptedIcon" Source="images/acceptIcon.png" Visibility="Hidden" HorizontalAlignment="Left" Height="68" Margin="452,10,0,0" VerticalAlignment="Top" Width="79"/>
+        <Image x:Name="audioDeclinedIcon" Source="images/declineicon.png" Visibility="Hidden" HorizontalAlignment="Left" Height="68" Margin="452,10,0,0" VerticalAlignment="Top" Width="79"/>
+        <Image x:Name="videoAcceptedIcon" Source="images/acceptvideo.png" Visibility="Hidden" HorizontalAlignment="Left" Height="68" Margin="452,10,0,0" VerticalAlignment="Top" Width="79"/>
+        <Image x:Name="videoDeclinedIcon" Source="images/declinevideo.png" Visibility="Hidden" HorizontalAlignment="Left" Height="68" Margin="452,10,0,0" VerticalAlignment="Top" Width="79"/>
 
     </Grid>
 </UserControl>

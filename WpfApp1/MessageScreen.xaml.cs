@@ -149,7 +149,8 @@ namespace WpfApp1
                             lengthOfCall = tempTime[0] + "" + tempTime[1] + " minutes and " + tempTime[3] + "" + tempTime[4] + " seconds.";
                             oldMessage.callMessageLabel.Content = "You audiocalled " + userName + " at " + commStates[3] + " for " + lengthOfCall;
                         }
-                        oldMessage.audioAcceptedIcon.Visibility = Visibility.Visible;
+                        //oldMessage.audioAcceptedIcon.Visibility = Visibility.Visible;
+                        oldMessage.WasAcceptedAudio();
                     }
                     else if (commStates[4] == "D")
                     {
@@ -161,7 +162,8 @@ namespace WpfApp1
                         {
                             oldMessage.callMessageLabel.Content = userName + " missed an audio call with you at " + commStates[3];
                         }
-                        oldMessage.audioDeclinedIcon.Visibility = Visibility.Visible;
+                        //oldMessage.audioDeclinedIcon.Visibility = Visibility.Visible;
+                        oldMessage.WasDeclinedAudio();
                     }
                     msgDisplay.Children.Add(oldMessage);
  
@@ -186,7 +188,8 @@ namespace WpfApp1
                             lengthOfCall = tempTime[0] + "" + tempTime[1] + " minutes and " + tempTime[3] + "" + tempTime[4] + " seconds.";
                             oldMessage.callMessageLabel.Content = "You videocalled " + userName + " at " + commStates[3] + " for " + lengthOfCall;
                         }
-                        oldMessage.videoAcceptedIcon.Visibility = Visibility.Visible;
+                        //oldMessage.videoAcceptedIcon.Visibility = Visibility.Visible;
+                        oldMessage.WasAcceptedVideo();
                     }
                     else if (commStates[4] == "D")
                     {
@@ -198,7 +201,8 @@ namespace WpfApp1
                         {
                             oldMessage.callMessageLabel.Content = userName + " missed a video call with you at " + commStates[3];
                         }
-                        oldMessage.videoDeclinedIcon.Visibility = Visibility.Visible;
+                        //oldMessage.videoDeclinedIcon.Visibility = Visibility.Visible;
+                        oldMessage.WasDeclinedVideo();
                     }
                     msgDisplay.Children.Add(oldMessage);
 
@@ -283,7 +287,8 @@ namespace WpfApp1
                                 lengthOfCall = tempTime[0] + "" + tempTime[1] + " minutes and " + tempTime[3] + "" + tempTime[4] + " seconds.";
                                 oldMessage.callMessageLabel.Content = "You audiocalled " + userName + " at " + commStates[3] + " for " + lengthOfCall;
                             }
-                            oldMessage.audioAcceptedIcon.Visibility = Visibility.Visible;
+                            //oldMessage.audioAcceptedIcon.Visibility = Visibility.Visible;
+                            oldMessage.WasAcceptedAudio();
                         }
                         else if (commStates[4] == "D")
                         {
@@ -295,7 +300,8 @@ namespace WpfApp1
                             {
                                 oldMessage.callMessageLabel.Content = userName + " missed an audio call with you at " + commStates[3];
                             }
-                            oldMessage.audioDeclinedIcon.Visibility = Visibility.Visible;
+                            //oldMessage.audioDeclinedIcon.Visibility = Visibility.Visible;
+                            oldMessage.WasDeclinedAudio();
                         }
                         msgDisplay.Children.Add(oldMessage);
                     }
@@ -319,7 +325,8 @@ namespace WpfApp1
                                 lengthOfCall = tempTime[0] + "" + tempTime[1] + " minutes and " + tempTime[3] + "" + tempTime[4] + " seconds.";
                                 oldMessage.callMessageLabel.Content = "You videocalled " + userName + " at " + commStates[3] + " for " + lengthOfCall;
                             }
-                            oldMessage.videoAcceptedIcon.Visibility = Visibility.Visible;
+                            //oldMessage.videoAcceptedIcon.Visibility = Visibility.Visible;
+                            oldMessage.WasAcceptedVideo();
                         }
                         else if (commStates[4] == "D")
                         {
@@ -331,7 +338,8 @@ namespace WpfApp1
                             {
                                 oldMessage.callMessageLabel.Content = userName + " missed a video call with you at " + commStates[3];
                             }
-                            oldMessage.videoDeclinedIcon.Visibility = Visibility.Visible;
+                            //oldMessage.videoDeclinedIcon.Visibility = Visibility.Visible;
+                            oldMessage.WasDeclinedVideo();
                         }
                         msgDisplay.Children.Add(oldMessage);
                     }

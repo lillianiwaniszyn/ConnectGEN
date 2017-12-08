@@ -30,5 +30,25 @@ namespace WpfApp1
             videoAcceptedIcon.Visibility = Visibility.Hidden;
             videoDeclinedIcon.Visibility = Visibility.Hidden;
         }
+
+        public void WasAcceptedAudio()
+        {
+            audioAcceptedIcon.Visibility = Visibility.Visible;
+        }
+
+        public void WasDeclinedAudio()
+        {
+            audioDeclinedIcon.Visibility = Visibility.Visible;
+        }
+
+        public void WasAcceptedVideo()
+        {
+            videoAcceptedIcon.Visibility = Visibility.Visible;
+        }
+
+        public void WasDeclinedVideo()
+        {
+            videoDeclinedIcon.Visibility = Visibility.Visible;
+        }
     }
 }
