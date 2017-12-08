@@ -39,7 +39,7 @@
             </Label.Background>
         </Label>
         <Label x:Name="Timer" Height="79" Canvas.Left="10" Canvas.Top="547" Width="216" Foreground="White" FontSize="48" HorizontalContentAlignment="Center" FontWeight="Bold" Visibility="Hidden"/>
-        <MediaElement x:Name="Video" Height="809" Width="953" Source="images/Grandpa_Video.mov" LoadedBehavior="Manual" Canvas.Left="539" Canvas.Top="10"/>
+        <MediaElement x:Name="Video" Height="809" Width="953" Source="images/Grandpa_Video.mov" LoadedBehavior="Manual" Canvas.Left="539" Canvas.Top="10" Volume="1"/>
 
     </Canvas>
 </Window>
