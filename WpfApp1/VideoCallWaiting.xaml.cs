@@ -42,6 +42,11 @@ namespace WpfApp1
 
                     //_timer.Stop();
                 }
+                if(waitTime == TimeSpan.Zero)
+                {
+                    this.Video.Visibility = Visibility.Visible;
+                    Video.Play();
+                }
                 waitTime = waitTime.Add(TimeSpan.FromSeconds(-1));
                 _time = _time.Add(TimeSpan.FromSeconds(1));
             }, Application.Current.Dispatcher);

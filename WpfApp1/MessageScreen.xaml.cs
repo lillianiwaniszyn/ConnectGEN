@@ -59,7 +59,7 @@ namespace WpfApp1
             SetUpScreen(specificContact);
 
             // Test Video
-            SimulateVideoNotification("Malik");
+            //SimulateVideoNotification("Malik");
         }
 
         public void SetUpScreen(string userName)
@@ -602,7 +602,7 @@ namespace WpfApp1
             newMessage.senderName.Content = senderName;
 
             allNotifications.notificationDisplay.Children.Add(newMessage);
-            this.Visibility = Visibility.Hidden;
+            //this.Visibility = Visibility.Hidden;
             allNotifications.Show();
         }
 
