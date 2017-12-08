@@ -21,8 +21,15 @@ namespace WpfApp1
     {
         Global_Data dataClass = new Global_Data();
         public EditProfile()
+
         {
             InitializeComponent();
+            Global_Data gd = new Global_Data();
+            int index = Array.IndexOf(gd.existing_Usernames, Global_Data.currentUserStatic);
+            string lastName = gd.lastnames[index];
+            string firstName = gd.firstnames[index];
+            string fullName = firstName + " " + lastName;
+            userName.Content = fullName;
         }
 
         void ChangePic(object sender, RoutedEventArgs e)
