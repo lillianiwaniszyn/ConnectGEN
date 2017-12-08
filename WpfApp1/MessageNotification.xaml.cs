@@ -35,8 +35,7 @@ namespace WpfApp1
         private void ConfirmButton_Click(object sender, RoutedEventArgs e)
         {
             (this.Parent as Panel).Children.Clear();
-            // Default Malik Brown.
-            MessageScreen newScreen = new MessageScreen("MalikBrown");
+            // Do not call this method.
         }
     }
 }
